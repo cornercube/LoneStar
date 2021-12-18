@@ -147,10 +147,9 @@
 	time = 40
 	reqs = list(
 			/obj/item/clothing/suit/armor/f13/combat = 1,
-			/obj/item/stack/sheet/cloth = 15,
-			/obj/item/stack/sheet/sinew = 10,
-			/obj/item/stack/sheet/animalhide/deathclaw= 2,
-			/obj/item/stack/sheet/bone = 20
+			/obj/item/stack/sheet/cloth = 10,
+			/obj/item/stack/sheet/sinew = 5,
+			/obj/item/stack/sheet/bone = 5
 			)
 	result = /obj/item/clothing/suit/armor/f13/tribal_combat_armor
 	category = CAT_TRIBAL
@@ -162,9 +161,8 @@
 	reqs = list(
 			/obj/item/clothing/head/helmet/f13/combat = 1,
 			/obj/item/stack/sheet/cloth = 5,
-			/obj/item/stack/sheet/sinew = 5,
-			/obj/item/stack/sheet/animalhide/deathclaw= 1,
-			/obj/item/stack/sheet/bone = 10
+			/obj/item/stack/sheet/sinew = 3,
+			/obj/item/stack/sheet/bone = 3
 			)
 	result = /obj/item/clothing/head/helmet/f13/combat/wayfarer/tribe_helmet
 	category = CAT_TRIBAL
