@@ -341,3 +341,14 @@
 				/obj/item/stack/sheet/cloth = 4)
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
+
+/datum/crafting_recipe/tribalradio
+	name = "Primitive Radio"
+	result = /obj/item/radio/tribal
+	time = 25
+	reqs = list(//obj/item/stack/crafting/electronicparts = 2,
+				/obj/item/stack/crafting/metalparts = 2,
+				/obj/item/stack/cable_coil = 1)
+	category = CAT_TRIBAL
+	tools = list(TOOL_WORKBENCH)
+	always_availible = FALSE
