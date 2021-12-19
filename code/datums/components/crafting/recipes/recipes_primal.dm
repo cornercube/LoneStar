@@ -346,7 +346,7 @@
 	name = "Primitive Radio"
 	result = /obj/item/radio/tribal
 	time = 25
-	reqs = list(//obj/item/stack/crafting/electronicparts = 2,
+	reqs = list(/obj/item/stack/crafting/electronicparts = 2,
 				/obj/item/stack/crafting/metalparts = 2,
 				/obj/item/stack/cable_coil = 1)
 	category = CAT_TRIBAL
