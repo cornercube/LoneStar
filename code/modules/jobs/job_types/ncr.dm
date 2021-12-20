@@ -153,7 +153,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	outfit = /datum/outfit/job/ncr/f13captain
-	exp_requirements = 2000
+	exp_requirements = 1800
 
 	loadout_options = list(
 		/datum/outfit/loadout/elcapitan,	// Service Rifle
@@ -632,7 +632,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_HEAVYTROOPER
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
-	exp_requirements = 750
+	exp_requirements = 600
 
 /datum/outfit/job/ncr/f13heavytrooper	// R84 LMG, 9mm sidearm, Bayonet, Heavy armor
 	name = "NCR Heavy Trooper"
@@ -759,7 +759,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	outfit = /datum/outfit/job/ncr/f13mp
-	exp_requirements = 300
+	exp_requirements = 120
 
 /datum/outfit/job/ncr/f13mp		// .45 Pistol, Military baton
 	name = "NCR Military Police"
