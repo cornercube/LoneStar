@@ -29,7 +29,7 @@ Mayor
 	description = "You are the benevolent tyrant of Oasis, chosen by the people to represent and lead them. Pass laws to protect your citizens, distribute town funds and make deals with the powers present within the Region to better the people, and yourself, of course."
 	selection_color = "#d7b088"
 
-	exp_requirements = 1500
+	exp_requirements = 1000
 
 	outfit = /datum/outfit/job/den/f13mayor
 	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
@@ -83,7 +83,7 @@ Mayor
 	supervisors = "The Mayor"
 	description = "You are the mayor's assistant, you help them with anything and everything they require and make sure trivial problems do not concern them. You handle clerical work, hear complaints, and set meetings. An efficient and smooth running town means a happy mayor."
 	selection_color = "#d7b088"
-	exp_requirements = 800
+	exp_requirements = 540
 
 	outfit = /datum/outfit/job/den/f13secretary
 	
@@ -158,7 +158,7 @@ Mayor
 	supervisors = "Oasis Government"
 	description = "You are the Mayor's best friend, you helped them get where they are. While they handle civil matters, you've been rewarded with more hands-on work, as preferred. With your loyal patrolmen, you maintain your claim to authority by keeping the peace, and protecting the citizens from threats within and without. Never leave Oasis undefended, and don't let its people die out. You have nowhere left to go, if this town falls, so will you."
 	selection_color = "#d7b088"
-	exp_requirements = 1500
+	exp_requirements = 1000
 
 	outfit = /datum/outfit/job/den/f13sheriff
 	
@@ -246,7 +246,7 @@ Mayor
 	selection_color = "#dcba97"
 	exp_requirements = 12
 	exp_type = EXP_TYPE_OASIS
-	exp_requirements = 600
+	exp_requirements = 420
 
 	loadout_options = list(
 	/datum/outfit/loadout/frontierjustice,
