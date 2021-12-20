@@ -52,7 +52,7 @@ Tribal Chief
 	description = "The leader and central political figure in the Wayfarer Tribe. You engage in diplomatic meetings with the powers present within the Region to ensure the village's safety and independence."
 	selection_color = "#006666"
 	outfit = /datum/outfit/job/tribal/f13chief
-	exp_requirements = 2400
+	exp_requirements = 1000
 
 	access = list(ACCESS_TRIBE)
 	minimal_access = list(ACCESS_TRIBE)
@@ -96,7 +96,7 @@ Tribal Shaman
 	forbids = "Abusing technology and using Pre-Collapse weapons."
 	description = "The spiritual leader and cultural core of the Wayfarer Tribe. You aid villagers in their day to day lives by offering guidance and advice, while also acting as the direct aid to the chief. You are the guardian of the tribe's customs, their health, and knowledge."
 	selection_color = "#006666"
-	exp_requirements = 1800
+	exp_requirements = 600
 
 	outfit = /datum/outfit/job/tribal/f13shaman
 
@@ -171,7 +171,7 @@ Tribal Head Hunter
 	forbids = "Abusing technology and using Pre-Collapse weapons."
 	description = "You are the village Head Hunter; you organize the hunters of the tribe and are the authority in matters of protecting the tribe and the land of the Wayfarers. You lead the Great Hunts and War-Bands in time of conflict."
 	selection_color = "#006666"
-	exp_requirements = 1800
+	exp_requirements = 600
 
 	outfit = /datum/outfit/job/tribal/f13Hhunter
 	access = list(ACCESS_TRIBE)
@@ -225,7 +225,7 @@ Druid
 	forbids = "Abusing technology and using Pre-Collapse weapons."
 	description = "You are a Druid in the tribe; you perform rituals, and bless pre-collapse relics and other artifacts for the tribe to use. You also are the spiritual guides of the tribe, and work with the Shaman during rituals or other spiritual matters."
 	selection_color = "#006666"
-	exp_requirements = 600
+	exp_requirements = 120
 
 	outfit = /datum/outfit/job/tribal/f13druid
 	access = list(ACCESS_TRIBE)
@@ -282,7 +282,7 @@ Villager
 	supervisors = "Tribal Chief, Shaman and Headhunter"
 	description = "A proud member of the Wayfarer tribe, you do what needs to be done to ensure the survival of yourself and your people while following the laws of the tribe. While it is common to venture out into the wasteland, do not tread far or without informing your kin."
 	selection_color = "#006666"
-	exp_requirements = 300
+	exp_requirements = 120
 
 	outfit = /datum/outfit/job/tribal/f13villager
 
