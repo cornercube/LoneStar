@@ -152,3 +152,21 @@
 	name = "Oasis intercom"
 	channels = list(RADIO_CHANNEL_TOWN = 1)
 
+/obj/item/radio/intercom/retro
+	name = "vintage intercom"
+	icon_state = "intercom_retro"
+	
+/obj/item/radio/intercom/retro/process()
+	if(((world.timeofday - last_tick) > 30) || ((world.timeofday - last_tick) < 0))
+		last_tick = world.timeofday
+
+		var/area/A = get_area(src)
+		if(!A || emped)
+			on = FALSE
+		else
+			on = A.powered(EQUIP) // set "on" to the power status
+
+		if(!on)
+			icon_state = "intercom_retro_on"
+		else
+			icon_state = initial(icon_state)
