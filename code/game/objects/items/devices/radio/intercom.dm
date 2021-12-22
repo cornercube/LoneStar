@@ -147,5 +147,8 @@
 	inverse = TRUE
 	custom_materials = list(/datum/material/iron = 75, /datum/material/glass = 25)
 
+
 /obj/item/radio/intercom/kebob
 	name = "Oasis intercom"
+	channels = list(RADIO_CHANNEL_TOWN = 1)
+
