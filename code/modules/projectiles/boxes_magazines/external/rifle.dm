@@ -78,7 +78,7 @@
 	name = "Assault Rifle Magazine (5mm)"
 	icon_state = "r30"
 	caliber = "m5mm"
-	ammo_type = /obj/item/projectile/bullet/m5mm
+	ammo_type = /obj/item/ammo_casing/m5mm
 	max_ammo = 30
 	multiple_sprites = 2
 
