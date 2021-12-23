@@ -147,11 +147,6 @@
 	inverse = TRUE
 	custom_materials = list(/datum/material/iron = 75, /datum/material/glass = 25)
 
-
-/obj/item/radio/intercom/kebob
-	name = "Oasis intercom"
-	channels = list(RADIO_CHANNEL_TOWN = 1)
-
 /obj/item/radio/intercom/retro
 	name = "vintage intercom"
 	icon_state = "intercom_retro"
@@ -170,3 +165,11 @@
 			icon_state = "intercom_retro_on"
 		else
 			icon_state = initial(icon_state)
+
+/obj/item/radio/intercom/retro/kebob
+	name = "Oasis intercom"
+	channels = list(RADIO_CHANNEL_TOWN = 1)
+	
+/obj/item/radio/intercom/retro/foa
+	name = "Clinic intercom"
+	channels = list(RADIO_CHANNEL_MEDICAL = 1)
