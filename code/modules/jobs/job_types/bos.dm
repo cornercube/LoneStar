@@ -200,7 +200,7 @@ Head Scribe
 	supervisors = "the elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 1500
+	exp_requirements = 900
 
 	loadout_options = list(
 	/datum/outfit/loadout/hsstand,
@@ -268,7 +268,7 @@ Head Knight
 	supervisors = "the elder"
 	selection_color = "#7f8c8d"
 
-	exp_requirements = 1500
+	exp_requirements = 900
 
 	loadout_options = list(
 	/datum/outfit/loadout/capstand, //Wattz 2k
@@ -436,7 +436,7 @@ Paladin
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Senior Paladin and Head Paladin"
 	selection_color = "#95a5a6"
-	exp_requirements = 300
+	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladina, //R91
