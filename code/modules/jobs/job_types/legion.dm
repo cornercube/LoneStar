@@ -365,7 +365,7 @@ commented out pending rework*/
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 	access = list(ACCESS_LEGION, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_LEGION,  ACCESS_LEGION_COMMAND)
-	exp_requirements = 720
+	exp_requirements = 600
 
 	loadout_options = list(
 		/datum/outfit/loadout/decprimfront,	// Grease Gun, Gladius, Smoke bomb
@@ -438,7 +438,7 @@ commented out pending rework*/
 	supervisors = "the Prime/Veteran Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANREC
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
-	exp_requirements = 600
+	exp_requirements = 300
 
 	loadout_options = list(
 		/datum/outfit/loadout/recdeclegion,	// .44 Revolver, Bumper sword, Smokebomb
@@ -586,7 +586,7 @@ commented out pending rework*/
 	supervisors = "the Veteran Decanus and Centurion must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist."
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
-	exp_requirements = 240
+	exp_requirements = 300
 
 	loadout_options = list(
 		/datum/outfit/loadout/expsniper,	// sniper rifle, .45 Revolver, Machete, Smokebomb
@@ -662,7 +662,7 @@ commented out pending rework*/
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	exp_requirements = 420
+	exp_requirements = 300
 
 	loadout_options = list(
 		/datum/outfit/loadout/vetshielder,	// .44 DA Revolver, Shield, Gladius, Armor plate
@@ -987,7 +987,7 @@ commented out pending rework*/
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/auxilia
-	exp_requirements = 120
+	exp_requirements = 240
 
 	loadout_options = list(
 		/datum/outfit/loadout/auxassist, // Keep track of the money, handle trading beneath the warriors
@@ -1068,6 +1068,8 @@ commented out pending rework*/
 	supervisors = "Officers and Slavemaster first, then Auxilia, then warriors."
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
 	outfit = /datum/outfit/job/CaesarsLegion/slave
+	exp_requirements = 120
+
 
 	loadout_options = list(
 		/datum/outfit/loadout/slaveservant,
