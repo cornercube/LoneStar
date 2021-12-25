@@ -170,6 +170,22 @@
 	name = "Oasis intercom"
 	channels = list(RADIO_CHANNEL_TOWN = 1)
 	
+/obj/item/radio/intercom/retro/kebob/mayor
+	name = "Mayor's intercom"
+	use_command = TRUE
+	command = TRUE
+	
 /obj/item/radio/intercom/retro/foa
 	name = "Clinic intercom"
 	channels = list(RADIO_CHANNEL_MEDICAL = 1)
+	
+/obj/item/radio/intercom/retro/pirate
+	name = "Pirate Radio Broadcaster"
+	desc = "A radio that has been hacked to send and recieve from any frequency."
+	freerange = TRUE
+	canhear_range = 1 
+
+/obj/item/radio/intercom/retro/NCR
+	name = "NCR intercom"
+	canhear_range = 1 
+	channels = list(RADIO_CHANNEL_NCR = 1)
