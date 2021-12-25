@@ -185,7 +185,6 @@
 	freerange = TRUE
 	canhear_range = 1 
 
-/obj/item/radio/intercom/retro/NCR
+/obj/item/radio/intercom/retro/bear
 	name = "NCR intercom"
-	canhear_range = 1 
 	channels = list(RADIO_CHANNEL_NCR = 1)
