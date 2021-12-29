@@ -1150,8 +1150,8 @@
 	desc = "A would-be advanced holographic dogtag, if it was working. Kept as a reminder to something."
 
 /obj/item/card/id/denid
-	name = "Den Gang Membership Certificate
-	desc = "A certificate declaring your loyalty to the gang
+	name = "Den Gang Membership Certificate"
+	desc = "A certificate declaring your loyalty to the gang"
 	assignment = "gang tattoo"
 
 	access = list(ACCESS_DEN)
