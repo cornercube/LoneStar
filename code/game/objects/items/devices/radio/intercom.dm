@@ -168,16 +168,19 @@
 
 /obj/item/radio/intercom/retro/kebob
 	name = "Oasis intercom"
-	channels = list(RADIO_CHANNEL_TOWN = 1)
+	frequency = FREQ_TOWN
+	freqlock = FALSE
 	
 /obj/item/radio/intercom/retro/kebob/mayor
 	name = "Mayor's intercom"
 	use_command = TRUE
 	command = TRUE
+
 	
 /obj/item/radio/intercom/retro/foa
 	name = "Clinic intercom"
-	channels = list(RADIO_CHANNEL_MEDICAL = 1)
+	frequency = FREQ_MEDICAL
+	freqlock = FALSE
 	
 /obj/item/radio/intercom/retro/pirate
 	name = "Pirate Radio Broadcaster"
@@ -187,4 +190,5 @@
 
 /obj/item/radio/intercom/retro/bear
 	name = "NCR intercom"
-	channels = list(RADIO_CHANNEL_NCR = 1)
+	frequency = FREQ_NCR
+	freqlock = FALSE
