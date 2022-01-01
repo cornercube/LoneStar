@@ -168,19 +168,29 @@
 
 /obj/item/radio/intercom/retro/kebob
 	name = "Oasis intercom"
-	frequency = FREQ_TOWN
-	freqlock = FALSE
+	freqlock = TRUE
+	
+/obj/item/radio/intercom/retro/kebob/initialize
+	. = ..()
+	set_frequency(1369)
 	
 /obj/item/radio/intercom/retro/kebob/mayor
 	name = "Mayor's intercom"
 	use_command = TRUE
 	command = TRUE
 
+/obj/item/radio/intercom/retro/kebob/mayor/initialize
+	. = ..()
+	set_frequency(1369)
 	
 /obj/item/radio/intercom/retro/foa
 	name = "Clinic intercom"
-	frequency = FREQ_MEDICAL
-	freqlock = FALSE
+	freqlock = TRUE
+	
+/obj/item/radio/intercom/retro/foa/initialize
+	. = ..()
+	set_frequency(1355)
+	set_broadcasting(TRUE)
 	
 /obj/item/radio/intercom/retro/pirate
 	name = "Pirate Radio Broadcaster"
@@ -190,5 +200,9 @@
 
 /obj/item/radio/intercom/retro/bear
 	name = "NCR intercom"
-	frequency = FREQ_NCR
-	freqlock = FALSE
+	freqlock = TRUE
+	
+/obj/item/radio/intercom/retro/bear/initialize
+	. = ..()
+	set_frequency(1363)
+	set_broadcasting(TRUE)
