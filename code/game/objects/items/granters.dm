@@ -994,23 +994,18 @@
 		switch(choice)
 			if(null)
 				return 0
-			
 		if("Tribal Healing")
 			granted_trait = TRAIT_SURGERY_LOW
 			traitname = "minor surgery"
-		
 		if("Scrapping the Old World")
 			granted_trait = TRAIT_TECHNOPHREAK
 			traitname = "craftsmanship"
-		
 		if("Grognak the Barbarian")
 			granted_trait = TRAIT_BIG_LEAGUES
-			traitname - "big leagues"
-			
+			traitname = "big leagues"
 		if("Skinning the Gecko")
 			granted_trait = TRAIT_TRAPPER	
 			traitname = "trapper"
-			
 		if("Inner Strength. Outer Resillience")
 			granted_trait = TRAIT_LIFEGIVER	
 			traitname = "lifegiver"
