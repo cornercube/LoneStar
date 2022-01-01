@@ -989,6 +989,11 @@
 		
 /obj/item/book/granter/trait/selection/tribal/attack_self(mob/user)
 	var/list/choices = list("Tribal Healing","Scrapping the Old World","Grognak the Barbarian","Skinning the Gecko","Inner Strength. Outer Resillience")
+	if(granted_trait == null)
+		var/choice = input("Choose a trait:") in choices
+		if(null)
+				return 0
+			
 		if("Tribal Healing")
 			granted_trait = TRAIT_SURGERY_LOW
 			traitname = "minor surgery"
