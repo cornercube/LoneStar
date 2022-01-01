@@ -1389,7 +1389,7 @@ datum/job/wasteland/f13dendoctor
 	box =         /obj/item/storage/survivalkit_tribal
 	shoes =     /obj/item/clothing/shoes/sandal
 	gloves =    /obj/item/clothing/gloves/f13/handwraps
-	r_hand = /obj/item/book/granter/trait/selection
+	r_hand = /obj/item/book/granter/trait/selection/tribal
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
