@@ -18,7 +18,6 @@
 								/obj/item/stack/ore/gold = 7,
 								/obj/item/stack/ore/silver = 2,
 								/obj/item/stack/ore/iron = 1,
-								/obj/item/stack/sheet/leather = 3,
 								/obj/item/reagent_containers/pill/patch/jet = 5,
 								/obj/item/reagent_containers/hypospray/medipen/psycho = 15,
 								/obj/item/reagent_containers/hypospray/medipen/medx = 15
@@ -53,7 +52,6 @@
 	dat += "Silver : 5 caps<br>"
 	dat += "Gold : 15 caps<br>"
 	dat += "Diamond : 50 caps<br>"
-	dat += "Leather : 5 caps<br>"
 	dat += "Jet/Psycho/MedX : 5-15 caps<br>"
 	dat += ""
 	dat += "</div>"
@@ -268,3 +266,42 @@ Fence
 	popup.set_content(dat)
 	popup.open()
 	return
+
+/obj/machinery/mineral/wasteland_trader/gunbuyer
+	name = "Gun Repository"
+	desc = "Place weapon inside slot. Weapon is sent out of the region for post-processing. Recieve compensation. Enjoy disarming the wasteland"
+	goods_list = list(/obj/item/gun/ballistic/automatic/pistol = 5,
+						/obj/item/gun/ballistic/revolver = 5,
+						/obj/item/gun/ballistic/shotgun = 10,
+						/obj/item/gun/ballistic/rifle = 10,
+						/obj/item/gun/energy/laser/wattz = 25,
+						/obj/item/gun/energy/laser/pistol = 25,
+						/obj/item/gun/energy/laser/complianceregulator = 25,
+						/obj/item/gun/ballistic/shotgun/automatic = 100,
+						/obj/item/gun/ballistic/automatic = 100,
+						/obj/item/gun/energy/laser = 150,
+						/obj/item/gun/energy/laser/plasma/pistol = 300
+						/obj/item/gun/energy/laser/plasma = 400
+						
+						
+/obj/machinery/mineral/wasteland_trader/gunbuyer/ui_interact(mob/user)
+	. = ..()
+	var/dat
+	dat +="<div class='statusDisplay'>"
+	dat += "<b>Bottle caps stored:</b> [stored_caps]. <A href='?src=[REF(src)];choice=eject'>Eject caps</A><br>"
+	dat += "</div>"
+	dat += "<br>"
+	dat +="<div class='statusDisplay'>"
+	dat += "<b>Disarming the Wasteland one gun at a time.</b><br>"
+	dat += "<b>Warning: The automated system cannot guarantee an accurate appraisal of value.</b><br>"
+	dat += "<b>Accepted goods and prices:</b><br>"
+	dat += "Pistols and revolvers: 5 caps<br>"
+	dat += "Rifles : 10 caps<br>"
+	dat += "Laser Pistols : 25 caps<br>"
+	dat += "<b>High Value Goods.</b><br>"
+	dat += "Automatic Weaponry : 100 caps<br>"
+	dat += "Laser rifles : 150 caps<br>"
+	dat += "Plasma Weapons: 300-400<br>"
+	dat += ""
+	dat += "</div>"
+						
