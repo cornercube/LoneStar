@@ -169,9 +169,6 @@
 /obj/item/radio/intercom/retro/kebob
 	name = "Oasis intercom"
 	freqlock = TRUE
-	
-/obj/item/radio/intercom/retro/kebob/initialize(mapload)
-	. = ..()
 	set_frequency(1369)
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/kebob)
@@ -180,23 +177,14 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/kebob)
 	name = "Mayor's intercom"
 	use_command = TRUE
 	command = TRUE
-
-/obj/item/radio/intercom/retro/kebob/mayor/initialize()
-	. = ..()
-	set_frequency(1369)
 	
-MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/kebob/mayor)
 
 /obj/item/radio/intercom/retro/foa
 	name = "Clinic intercom"
 	freqlock = TRUE
-	
-/obj/item/radio/intercom/retro/foa/initialize()
-	. = ..()
 	set_frequency(1355)
-	set_broadcasting(TRUE)
+
 	
-MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/foa)
 
 /obj/item/radio/intercom/retro/pirate
 	name = "Pirate Radio Broadcaster"
@@ -208,9 +196,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/foa)
 	name = "NCR intercom"
 	freqlock = TRUE
 	
-/obj/item/radio/intercom/retro/bear/initialize()
-	. = ..()
-	set_frequency(1363)
-	set_broadcasting(TRUE)
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/bear)
+
+
