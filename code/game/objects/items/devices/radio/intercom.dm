@@ -170,7 +170,7 @@
 	name = "Oasis intercom"
 	freqlock = TRUE
 	
-/obj/item/radio/intercom/retro/kebob/initialize
+/obj/item/radio/intercom/retro/kebob/initialize()
 	. = ..()
 	set_frequency(1369)
 	
@@ -179,7 +179,7 @@
 	use_command = TRUE
 	command = TRUE
 
-/obj/item/radio/intercom/retro/kebob/mayor/initialize
+/obj/item/radio/intercom/retro/kebob/mayor/initialize()
 	. = ..()
 	set_frequency(1369)
 	
@@ -187,7 +187,7 @@
 	name = "Clinic intercom"
 	freqlock = TRUE
 	
-/obj/item/radio/intercom/retro/foa/initialize
+/obj/item/radio/intercom/retro/foa/initialize()
 	. = ..()
 	set_frequency(1355)
 	set_broadcasting(TRUE)
@@ -202,7 +202,7 @@
 	name = "NCR intercom"
 	freqlock = TRUE
 	
-/obj/item/radio/intercom/retro/bear/initialize
+/obj/item/radio/intercom/retro/bear/initialize()
 	. = ..()
 	set_frequency(1363)
 	set_broadcasting(TRUE)
