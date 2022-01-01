@@ -987,8 +987,8 @@
 		name = "Book of Ancient Knowledge"
 		desc = "A compendium of knowledge passed down from the elders. It looks to be in poor condition."
 		
-	/obj/item/book/granter/trait/selection/tribal/attack_self(mob/user)
-	var/list/choices = list("Tribal Healing","Scrapping the Old World","Grognak the Barbarian","Skinning the Gecko","Inner Strength, Outer Resillience")
+/obj/item/book/granter/trait/selection/tribal/attack_self(mob/user)
+	var/list/choices = list("Tribal Healing","Scrapping the Old World","Grognak the Barbarian","Skinning the Gecko","Inner Strength. Outer Resillience")
 		if("Tribal Healing")
 			granted_trait = TRAIT_SURGERY_LOW
 			traitname = "minor surgery"
@@ -1005,10 +1005,9 @@
 			granted_trait = TRAIT_TRAPPER	
 			traitname = "trapper"
 			
-		if("Inner Strength, Outer Resillience")
+		if("Inner Strength. Outer Resillience")
 			granted_trait = TRAIT_LIFEGIVER	
 			traitname = "lifegiver"
-			
 	return ..()
 	
 /obj/item/book/granter/trait/selection/tribal/Initialize()
