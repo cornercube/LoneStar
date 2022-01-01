@@ -271,7 +271,7 @@ Fence
 
 /obj/machinery/mineral/wasteland_trader/gunbuyer
 	name = "Gun Repository"
-	desc = "Place weapon inside slot. Weapon is sent out of the region for post-processing. Recieve compensation. Enjoy disarming the wasteland"
+	desc = "Place weapon inside slot. Weapon is sent out of the region for post-processing. Recieve compensation. Enjoy disarming the wasteland."
 	goods_list = list(	/obj/item/gun/ballistic/automatic/hobo = 2,
 						/obj/item/gun/ballistic/revolver/hobo = 2,
 						/obj/item/gun/ballistic/automatic/pistol = 5,
@@ -309,3 +309,7 @@ Fence
 	dat += ""
 	dat += "</div>"
 						
+	var/datum/browser/popup = new(user, "tradingvendor", "Gun Repository"", 400, 500)
+	popup.set_content(dat)
+	popup.open()
+	return
