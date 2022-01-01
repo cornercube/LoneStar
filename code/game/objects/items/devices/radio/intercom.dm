@@ -169,23 +169,20 @@
 /obj/item/radio/intercom/retro/kebob
 	name = "Oasis intercom"
 	freqlock = TRUE
-	set_frequency(1369)
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/kebob)
+	frequency = 1369 
+	channels = list(RADIO_CHANNEL_TOWN = 1)
 
 /obj/item/radio/intercom/retro/kebob/mayor
 	name = "Mayor's intercom"
 	use_command = TRUE
 	command = TRUE
 	
-
 /obj/item/radio/intercom/retro/foa
 	name = "Clinic intercom"
 	freqlock = TRUE
-	set_frequency(1355)
-
+	frequency = 1355
+	channels = list(RADIO_CHANNEL_MEDICAL = 1)
 	
-
 /obj/item/radio/intercom/retro/pirate
 	name = "Pirate Radio Broadcaster"
 	desc = "A radio that has been hacked to send and recieve from any frequency."
@@ -195,7 +192,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/kebob)
 /obj/item/radio/intercom/retro/bear
 	name = "NCR intercom"
 	freqlock = TRUE
-	
-
+	frequency = 1363
+	channels = list(RADIO_CHANNEL_NCR = 1)
 
 
