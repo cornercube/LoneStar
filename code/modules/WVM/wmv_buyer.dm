@@ -18,6 +18,7 @@
 								/obj/item/stack/ore/gold = 7,
 								/obj/item/stack/ore/silver = 2,
 								/obj/item/stack/ore/iron = 1,
+								/obj/item/reagent_containers/food/snacks/grown = 0.5,
 								/obj/item/reagent_containers/pill/patch/jet = 5,
 								/obj/item/reagent_containers/hypospray/medipen/psycho = 15,
 								/obj/item/reagent_containers/hypospray/medipen/medx = 15
@@ -48,6 +49,7 @@
 	dat += "<br>"
 	dat +="<div class='statusDisplay'>"
 	dat += "<b>Accepted goods and prices:</b><br>"
+	dat += "Fruits/Vegetables : 1 caps<br>"
 	dat += "Iron ore : 1.5 caps<br>"
 	dat += "Silver : 5 caps<br>"
 	dat += "Gold : 15 caps<br>"
