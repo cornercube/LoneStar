@@ -284,8 +284,8 @@ Fence
 						/obj/item/gun/ballistic/shotgun/automatic = 100,
 						/obj/item/gun/ballistic/automatic = 100,
 						/obj/item/gun/energy/laser = 150,
-						/obj/item/gun/energy/laser/plasma/pistol = 300
-						/obj/item/gun/energy/laser/plasma = 400
+						/obj/item/gun/energy/laser/plasma/pistol = 300,
+						/obj/item/gun/energy/laser/plasma = 400,
 						
 						
 /obj/machinery/mineral/wasteland_trader/gunbuyer/ui_interact(mob/user)
