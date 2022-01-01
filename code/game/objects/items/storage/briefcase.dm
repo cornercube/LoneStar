@@ -81,7 +81,7 @@
 		new /obj/item/stack/f13Cash/random/ncr/med(src)
 		new /obj/item/stack/f13Cash/random/denarius/med(src)
 		new /obj/item/stack/f13Cash/random/ncr/med(src)
-		new /obj/item/stack/f13Cash/random/high
+		new /obj/item/stack/f13Cash/random/high(src)
 
 /obj/item/storage/box/lawyer
 	name = "Box of lawyer tools"
