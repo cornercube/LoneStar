@@ -1169,11 +1169,11 @@ obj/item/storage/box/stingbangs
 	icon_state = "syndiebox"
 
 /obj/item/storage/box/sparelimbs/PopulateContents()
-	/obj/item/bodypart/chest/robot
-	/obj/item/bodypart/l_arm/robot
-	/obj/item/bodypart/r_arm/robot
-	/obj/item/bodypart/l_leg/robot
-	/obj/item/bodypart/r_leg/robot
+	new /obj/item/bodypart/chest/robot
+	new /obj/item/bodypart/l_arm/robot
+	new /obj/item/bodypart/r_arm/robot
+	new /obj/item/bodypart/l_leg/robot
+	new /obj/item/bodypart/r_leg/robot
 	
 //Colored boxes.
 /obj/item/storage/box/green
