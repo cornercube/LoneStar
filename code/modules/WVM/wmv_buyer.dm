@@ -305,11 +305,11 @@ Fence
 	dat += "<b>High Value Goods.</b><br>"
 	dat += "Automatic Weaponry : 100 caps<br>"
 	dat += "Laser rifles : 150 caps<br>"
-	dat += "Plasma Weapons: 300-400<br>"
+	dat += "Plasma Weapons: 300-400 caps<br>"
 	dat += ""
 	dat += "</div>"
 						
-	var/datum/browser/popup = new(user, "tradingvendor", "Gun Repository", 400, 500)
+	var/datum/browser/popup = new(user, "tradingvendor", "Trading point", 400, 500)
 	popup.set_content(dat)
 	popup.open()
 	return
