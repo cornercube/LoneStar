@@ -170,10 +170,12 @@
 	name = "Oasis intercom"
 	freqlock = TRUE
 	
-/obj/item/radio/intercom/retro/kebob/initialize()
+/obj/item/radio/intercom/retro/kebob/initialize(mapload)
 	. = ..()
 	set_frequency(1369)
-	
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/kebob)
+
 /obj/item/radio/intercom/retro/kebob/mayor
 	name = "Mayor's intercom"
 	use_command = TRUE
@@ -183,6 +185,8 @@
 	. = ..()
 	set_frequency(1369)
 	
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/kebob/mayor)
+
 /obj/item/radio/intercom/retro/foa
 	name = "Clinic intercom"
 	freqlock = TRUE
@@ -192,6 +196,8 @@
 	set_frequency(1355)
 	set_broadcasting(TRUE)
 	
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/foa)
+
 /obj/item/radio/intercom/retro/pirate
 	name = "Pirate Radio Broadcaster"
 	desc = "A radio that has been hacked to send and recieve from any frequency."
@@ -206,3 +212,5 @@
 	. = ..()
 	set_frequency(1363)
 	set_broadcasting(TRUE)
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/retro/bear)
