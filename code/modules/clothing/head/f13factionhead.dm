@@ -788,7 +788,7 @@
 	name = "commissioner's hat"
 	desc = "(V*) A blue hat with a silver badge"
 	icon_state = "policehelm"
-	armor = list("tier" = 5, "linebullet" = 30, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
+	armor = list("tier" = 5, "linebullet" = 75, "energy" = 40, "bomb" = 25, "bio" = 40, "rad" = 40, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/f13/det_hat_alt
 	name = "detective's fedora"
