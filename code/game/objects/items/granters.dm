@@ -992,7 +992,7 @@
 	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		if(null)
-				return 0
+			return 0
 			
 		if("Tribal Healing")
 			granted_trait = TRAIT_SURGERY_LOW
