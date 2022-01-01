@@ -309,7 +309,7 @@ Fence
 	dat += ""
 	dat += "</div>"
 						
-	var/datum/browser/popup = new(user, "tradingvendor", "Gun Repository"", 400, 500)
+	var/datum/browser/popup = new(user, "tradingvendor", "Gun Repository", 400, 500)
 	popup.set_content(dat)
 	popup.open()
 	return
