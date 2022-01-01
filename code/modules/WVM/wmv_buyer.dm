@@ -286,7 +286,7 @@ Fence
 						/obj/item/gun/energy/laser = 150,
 						/obj/item/gun/energy/laser/plasma/pistol = 300,
 						/obj/item/gun/energy/laser/plasma = 400,
-						
+						)
 						
 /obj/machinery/mineral/wasteland_trader/gunbuyer/ui_interact(mob/user)
 	. = ..()
