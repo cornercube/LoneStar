@@ -272,20 +272,24 @@ Fence
 /obj/machinery/mineral/wasteland_trader/gunbuyer
 	name = "Gun Repository"
 	desc = "Place weapon inside slot. Weapon is sent out of the region for post-processing. Recieve compensation. Yuma Wasteland Supply Inc. thanks you for disarming the wasteland."
-	goods_list = list(	/obj/item/gun/ballistic/automatic/hobo = 2,
-						/obj/item/gun/ballistic/revolver/hobo = 2,
-						/obj/item/gun/ballistic/automatic/pistol = 5,
-						/obj/item/gun/ballistic/revolver = 5,
-						/obj/item/gun/ballistic/shotgun = 10,
-						/obj/item/gun/ballistic/rifle = 10,
-						/obj/item/gun/energy/laser/wattz = 25,
-						/obj/item/gun/energy/laser/pistol = 25,
-						/obj/item/gun/energy/laser/complianceregulator = 25,
-						/obj/item/gun/ballistic/shotgun/automatic = 100,
-						/obj/item/gun/ballistic/automatic = 100,
-						/obj/item/gun/energy/laser = 150,
-						/obj/item/gun/energy/laser/plasma/pistol = 300,
-						/obj/item/gun/energy/laser/plasma = 400,
+	goods_list = list(	/obj/item/gun/ballistic/automatic/hobo = 5,
+						/obj/item/gun/ballistic/revolver/hobo = 5,
+						/obj/item/gun/ballistic/revolver/detective = 5
+						/obj/item/gun/ballistic/revolver/colt6520 = 8,
+						/obj/item/gun/ballistic/automatic/pistol/pistol22 = 8,
+						/obj/item/gun/ballistic/automatic/pistol/ninemil = 8,
+						/obj/item/gun/ballistic/automatic/pistol/sig = 8,
+						/obj/item/gun/ballistic/automatic/pistol/beretta = 8,
+						/obj/item/gun/ballistic/automatic/pistol/m1911 = 8,
+						/obj/item/gun/ballistic/rifle/hunting = 10,
+						/obj/item/gun/ballistic/revolver/colt357 = 10,
+						/obj/item/gun/ballistic/rifle/mosin = 10,
+						/obj/item/gun/ballistic/revolver/caravan_shotgun = 10
+						/obj/item/gun/ballistic/revolver/widowmaker = 10,
+						/obj/item/gun/ballistic/automatic/autopipe = 15,
+						/obj/item/gun/ballistic/rifle/hobo/lasmusket = 15
+						/obj/item/gun/ballistic/revolver/winchesterrebored = 10
+
 						)
 						
 /obj/machinery/mineral/wasteland_trader/gunbuyer/ui_interact(mob/user)
@@ -299,13 +303,9 @@ Fence
 	dat += "<b>Disarming the Wasteland one gun at a time.</b><br>"
 	dat += "<b>Warning: The automated system cannot guarantee an accurate appraisal of value.</b><br>"
 	dat += "<b>Accepted goods and prices:</b><br>"
-	dat += "Pistols and revolvers: 5 caps<br>"
-	dat += "Rifles : 10 caps<br>"
-	dat += "Laser Pistols : 25 caps<br>"
-	dat += "<b>High Value Goods.</b><br>"
-	dat += "Automatic Weaponry : 100 caps<br>"
-	dat += "Laser rifles : 150 caps<br>"
-	dat += "Plasma Weapons: 300-400 caps<br>"
+	dat += "Pistols and revolvers: 5-10 caps<br>"
+	dat += "Rifles and Shotguns : 10-15 caps<br>"
+	dat += "Does not accept weapons of historical or artisanal value. Those belong in a musuem."
 	dat += ""
 	dat += "</div>"
 						
