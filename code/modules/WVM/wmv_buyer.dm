@@ -287,12 +287,11 @@ Fence
 						/obj/item/gun/ballistic/rifle/hunting = 10,
 						/obj/item/gun/ballistic/revolver/colt357 = 10,
 						/obj/item/gun/ballistic/rifle/mosin = 10,
-						/obj/item/gun/ballistic/revolver/caravan_shotgun = 10
+						/obj/item/gun/ballistic/revolver/caravan_shotgun = 10,
 						/obj/item/gun/ballistic/revolver/widowmaker = 10,
 						/obj/item/gun/ballistic/automatic/autopipe = 15,
 						/obj/item/gun/ballistic/rifle/hobo/lasmusket = 15,
 						/obj/item/gun/ballistic/revolver/winchesterrebored = 10,
-
 						)
 						
 /obj/machinery/mineral/wasteland_trader/gunbuyer/ui_interact(mob/user)
