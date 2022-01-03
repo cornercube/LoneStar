@@ -332,6 +332,6 @@
 /obj/item/storage/box/bundleelguapo/PopulateContents()
 	new /obj/item/gun/ballistic/rifle/repeater/cowboy(src)
 	new /obj/item/ammo_box/a357box/ricochet(src)
-	new //obj/item/gun/ballistic/revolver/colt357(src)
+	new /obj/item/gun/ballistic/revolver/colt357(src)
 	new /obj/item/clothing/head/f13/ranger_hat(src)
 	new /obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat(src)
