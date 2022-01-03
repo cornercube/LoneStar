@@ -1043,9 +1043,9 @@
 	name = "worn assault carbine"
 	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces. This one is beat-up and falling apart."
 	icon_state = "assault_carbine"
-	fire_delay = 4
-	burst_shot_delay = 3.0
-	extra_penetration = 0.06
+	fire_delay = 3.25
+	burst_shot_delay = 2.5
+	extra_penetration = -0.04
 	spread = 10
 	extra_damage = -4
 
