@@ -266,7 +266,7 @@
 /datum/gang_item/equipment/bundledenboss
 	name = "Drug Lord"
 	id = "bundledenboss"
-	cost = 2000
+	cost = 850
 	item_path = /obj/item/storage/box/bundledenboss
 	
 /obj/item/storage/box/bundledenboss
@@ -274,7 +274,7 @@
 	desc = "Rule the underworld like the Den Mob of old."
 
 /obj/item/storage/box/bundledenboss/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/assault_carbine(src)
+	new /obj/item/gun/ballistic/automatic/assault_carbine/worn(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
@@ -285,7 +285,7 @@
 /datum/gang_item/equipment/bundleanarchist
 	name = "Mad Bomber Bundle"
 	id = "bundleanarchist"
-	cost = 800
+	cost = 700
 	item_path = /obj/item/storage/box/bundleanarchist
 	
 /obj/item/storage/box/bundleanarchist
@@ -304,7 +304,7 @@
 /datum/gang_item/equipment/bundlegunner
 	name = "Old Soldier Bundle"
 	id = "bundlegunner"
-	cost = 800
+	cost = 700
 	item_path = /obj/item/storage/box/bundlegunner
 	
 /obj/item/storage/box/bundlegunner
