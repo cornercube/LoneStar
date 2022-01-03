@@ -100,7 +100,7 @@
 	
 /datum/gear/suit/punkkit
 	name = "Punk Armor Kit"
-	path = obj/item/clothing/suit/armor/f13/punk
+	path = /obj/item/clothing/suit/armor/f13/punk
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 5
 
