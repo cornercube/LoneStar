@@ -266,7 +266,7 @@
 /datum/gang_item/equipment/bundledenboss
 	name = "Drug Lord"
 	id = "bundledenboss"
-	cost = 1000
+	cost = 2000
 	item_path = /obj/item/storage/box/bundledenboss
 	
 /obj/item/storage/box/bundledenboss
@@ -312,9 +312,8 @@
 	desc = "This wasteland needs a classier kind of raider. Back in my day, we walked uphill both ways to find some victims. "
 
 /obj/item/storage/box/bundledenboss/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/m1garand(src)
-	new /obj/item/ammo_box/magazine/garand308(src)
-	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/gun/ballistic/automatic/smg/greasegun(src)
+	new /obj/item/ammo_box/magazine/greasegun(src)
 	new /obj/item/clothing/head/helmet/armyhelmet(src)
 	new /obj/item/storage/belt(src)
 	new /obj/item/clothing/under/f13/army(src)
@@ -323,7 +322,7 @@
 /datum/gang_item/equipment/bundleelguapo
 	name = "Bandito Bundle"
 	id = "bundleelguapo"
-	cost = 800
+	cost = 600
 	item_path = /obj/item/storage/box/bundlegunner
 	
 /obj/item/storage/box/bundleelguapo
@@ -331,8 +330,8 @@
 	desc = "You burned the Village, raped the horses, and rode off on their women. It was a long time ago, so the details got mixed up, but you get the point. "
 
 /obj/item/storage/box/bundleelguapo/PopulateContents()
-	new /obj/item/gun/ballistic/rifle/repeater/brush(src)
-	new /obj/item/ammo_box/c4570box(src)
-	new /obj/item/gun/ballistic/revolver/m29(src)
+	new /obj/item/gun/ballistic/rifle/repeater/cowboy(src)
+	new /obj/item/ammo_box/a357box/ricochet(src)
+	new //obj/item/gun/ballistic/revolver/colt357(src)
 	new /obj/item/clothing/head/f13/ranger_hat(src)
 	new /obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat(src)
