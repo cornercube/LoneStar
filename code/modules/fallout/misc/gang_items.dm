@@ -304,7 +304,7 @@
 /datum/gang_item/equipment/bundlegunner
 	name = "Old Soldier Bundle"
 	id = "bundlegunner"
-	cost = 600
+	cost = 800
 	item_path = /obj/item/storage/box/bundlegunner
 	
 /obj/item/storage/box/bundlegunner
@@ -323,7 +323,7 @@
 /datum/gang_item/equipment/bundleelguapo
 	name = "Bandito Bundle"
 	id = "bundleelguapo"
-	cost = 600
+	cost = 800
 	item_path = /obj/item/storage/box/bundlegunner
 	
 /obj/item/storage/box/bundleelguapo
@@ -335,4 +335,4 @@
 	new /obj/item/ammo_box/c4570box(src)
 	new /obj/item/gun/ballistic/revolver/m29(src)
 	new /obj/item/clothing/head/f13/ranger_hat(src)
-	new //obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat(src)
+	new /obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat(src)
