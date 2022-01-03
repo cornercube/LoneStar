@@ -1045,6 +1045,7 @@
 	icon_state = "assault_carbine"
 	fire_delay = 4
 	burst_shot_delay = 3.0
+	extra_penetration = 0.06
 	spread = 10
 	extra_damage = -4
 
