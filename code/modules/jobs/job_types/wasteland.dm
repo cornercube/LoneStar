@@ -314,8 +314,8 @@ Raider
 	head_announce = list("Security")
 	faction = FACTION_WASTELAND
 	social_faction = FACTION_RAIDERS
-	total_positions = 12
-	spawn_positions = 12
+	total_positions = 16
+	spawn_positions = 16
 	description = "You are an undesirable figure of some kind- perhaps a corrupt official, or a cannibalistic bartender, or a devious conman, to name a few examples. You have more freedom than anyone else in the wastes, and are not bound by the same moral code as others, but though you may only be interested in self-gain, you still have a responsibility to make your time here interesting, fun, and engaging for others- this means that whatever path you pursue should be more nuanced and flavorful than simple highway robbery or slavery. (Adminhelp if you require help setting up your character for the round.)"
 	supervisors = "Your desire to make things interesting and fun"
 	selection_color = "#ff4747"
@@ -630,6 +630,7 @@ Raider
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/gun/ballistic/automatic/smg/rockwell = 1,
 		/obj/item/ammo_box/magazine/uzim9mm/rockwell = 2,
+		/obj/item/card/id/dogtag/town/mafia=1,
 		)
 
 /datum/job/wasteland/f13wastelander
