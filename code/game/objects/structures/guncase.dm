@@ -101,7 +101,7 @@
 	desc = "A locker that holds shotguns."
 	case_type = "shotgun"
 	gun_category = /obj/item/gun/ballistic/shotgun
-	var/capacity = 8
+	capacity = 8
 
 /obj/structure/guncase/ecase
 	name = "energy gun locker"
