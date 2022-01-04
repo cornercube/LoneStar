@@ -206,7 +206,7 @@
 /datum/gang_item/weapon/type93
 	name = "Worn Type 93"
 	id = "worntype93"
-	cost = 700
+	cost = 500
 	item_path = /obj/item/gun/ballistic/automatic/type93/worn
 
 
@@ -252,6 +252,11 @@
 	id = "c4"
 	cost = 200
 	item_path = /obj/item/grenade/plastic/c4
+	
+/datum/gang_item/equipment/frag
+	name = "Frag grenade"
+	cost = 75
+	item_path = /obj/item/grenade/frag
 
 
 ///////////////////
@@ -285,7 +290,7 @@
 /datum/gang_item/equipment/bundleanarchist
 	name = "Mad Bomber Bundle"
 	id = "bundleanarchist"
-	cost = 700
+	cost = 650
 	item_path = /obj/item/storage/box/bundleanarchist
 	
 /obj/item/storage/box/bundleanarchist
@@ -304,7 +309,7 @@
 /datum/gang_item/equipment/bundlegunner
 	name = "Old Soldier Bundle"
 	id = "bundlegunner"
-	cost = 700
+	cost = 500
 	item_path = /obj/item/storage/box/bundlegunner
 	
 /obj/item/storage/box/bundlegunner
@@ -322,7 +327,7 @@
 /datum/gang_item/equipment/bundleelguapo
 	name = "Bandito Bundle"
 	id = "bundleelguapo"
-	cost = 600
+	cost = 500
 	item_path = /obj/item/storage/box/bundlegunner
 	
 /obj/item/storage/box/bundleelguapo
