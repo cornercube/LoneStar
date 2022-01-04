@@ -269,7 +269,7 @@
 	desc = "choose your weapon."
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "weaponcrate"
-	item_state = ""syringe_kit"
+	item_state = "syringe_kit"
 	
 /obj/item/choice_beacon/weapon/follower
 	name = "Follower of the Apocalpyse standard issue self-defense weapon crate"
