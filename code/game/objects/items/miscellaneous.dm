@@ -291,3 +291,4 @@
 	".357 Police Pistol" = /obj/item/gun/ballistic/revolver/police,
 	".357 Single Action Revolver" = /obj/item/gun/ballistic/revolver/colt357,
 	"5.56mm Varmint Rifle" = /obj/item/gun/ballistic/automatic/varmint
+	)
