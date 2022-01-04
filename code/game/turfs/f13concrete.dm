@@ -149,6 +149,31 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 	new/datum/stack_recipe("concrete barricade", /obj/structure/barricade/concrete, 2, time = 30, one_per_turf = 1, on_floor = 1), \
 	))
 
+/obj/item/stack/sheet/mineral/concrete(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/stack/rods))
+	if (V.get_amount() >= 1 && get_amount() >= 1)
+			var/obj/item/stack/sheet/rconcrete/RG = new (get_turf(user))
+			RG.add_fingerprint(user)
+			var/replace = user.get_inactive_held_item()==src
+			V.use(1)
+			use(1)
+			if(QDELETED(src) && replace)
+				user.put_in_hands(RG)
+		else
+			to_chat(user, "<span class='warning'>You need one rod to reinforce the concrete!</span>")
+			return
+	else
+		return ..()
+
+/obj/item/stack/sheet/mineral/rconcrete
+	name = "reinforced concrete"
+	icon_state = "sheet-concrete"
+	singular_name = "concrete"
+	layer = LOW_ITEM_LAYER
+	novariants = FALSE
+	merge_type = /obj/item/stack/sheet/mineral/concrete
+	walltype = /turf/closed/wall/mineral/rconcrete
+
 /////////
 //WALLS//
 /////////
@@ -217,3 +242,16 @@ GLOBAL_LIST_INIT(concrete_recipes, list ( \
 	girder_type = /obj/structure/barricade/concrete
 	sheet_type = null
 	canSmoothWith = list(/turf/closed/wall/f13/store, /turf/closed/wall/f13/store/constructed, /turf/closed/wall,)
+
+/turf/closed/wall/r_wall/concrete
+	name = "reinforced concrete wall"
+	desc = "A wall made of reinforced concrete. This one has additional rebar inside the structure, making it more difficult to deconstruct."
+	icon = 'icons/turf/walls/f13superstore.dmi'
+	icon_state = "supermart"
+	icon_type_smooth = "supermart"
+	slicing_duration = 150
+	hardness = 40
+	explosion_block = 2
+	smooth = SMOOTH_TRUE
+	sheet_type = /obj/item/stack/sheet/mineral/concrete
+	canSmoothWith = list(/turf/closed/wall/r_wall/concrete, /turf/closed/wall/f13/supermart, /turf/closed/wall/mineral/concrete, /turf/closed/wall,)
