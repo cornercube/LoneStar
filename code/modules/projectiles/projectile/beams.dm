@@ -562,7 +562,7 @@
 
 /obj/item/projectile/beam/laser/wattz2k/hitscan
 	name = "sniper laser bolt"
-	damage = 28
+	damage = 30
 	armour_penetration = 0.2
 	wound_bonus = 10
 	bare_wound_bonus = 20
