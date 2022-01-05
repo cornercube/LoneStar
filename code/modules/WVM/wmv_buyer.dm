@@ -289,9 +289,10 @@ Fence
 						/obj/item/gun/ballistic/rifle/mosin = 10,
 						/obj/item/gun/ballistic/revolver/caravan_shotgun = 10,
 						/obj/item/gun/ballistic/revolver/widowmaker = 10,
+						/obj/item/gun/ballistic/revolver/winchesterrebored = 10,
 						/obj/item/gun/ballistic/automatic/autopipe = 15,
 						/obj/item/gun/ballistic/rifle/hobo/lasmusket = 15,
-						/obj/item/gun/ballistic/revolver/winchesterrebored = 10,
+						/obj/item/stack/crafting/armor_plate = 20,
 						)
 						
 /obj/machinery/mineral/wasteland_trader/gunbuyer/ui_interact(mob/user)
@@ -307,6 +308,7 @@ Fence
 	dat += "<b>Accepted goods and prices:</b><br>"
 	dat += "Pistols and revolvers: 5-10 caps<br>"
 	dat += "Rifles and Shotguns : 10-15 caps<br>"
+	dat += "Armor Plate: 20 caps<br>"
 	dat += "Does not accept weapons of historical or artisanal value. Those belong in a musuem."
 	dat += ""
 	dat += "</div>"
