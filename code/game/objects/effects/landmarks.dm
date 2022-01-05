@@ -739,7 +739,7 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 /obj/effect/landmark/start/f13/secretary
 	name = "Secretary"
-	icom_state = "Lawyer"
+	icon_state = "Lawyer"
 
 /obj/effect/landmark/start/f13/sheriff
 	name = "Sheriff"
