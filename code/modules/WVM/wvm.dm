@@ -589,6 +589,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/followerterminal
 	name = "Follower's Resupply Terminal"
+	desc = "a vending machine stocked with imported medical supplies. The pricing is to cover the cost of shipping and handling."
 	icon_state = "med_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Soap",							/obj/item/soap/deluxe,												50),
