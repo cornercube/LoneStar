@@ -314,7 +314,7 @@ Mayor
 	suit = /obj/item/clothing/suit/armor/bulletproof
 	head = /obj/item/clothing/head/helmet
 	neck = /obj/item/storage/belt/holster/legholster
-	l_hand = /obj/item/gun/ballistic/automatic/marksman/policerifle
+	l_hand = /obj/item/gun/ballistic/automatic/assault_carbine/policerifle
 	shoes = /obj/item/clothing/shoes/f13/military
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle = 2,
