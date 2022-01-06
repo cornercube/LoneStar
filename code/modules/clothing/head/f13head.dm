@@ -779,6 +779,10 @@
 	armor = list("tier" = 1, "energy" = 0, "bomb" = 25, "bio" = 0, "rad" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 
+/obj/item/clothing/head/f13/police/reinforced
+	desc = "(III*) The wasteland's finest. This one has been modified by the OPD to be both protective and stylish."
+	armor = list("tier" = 3, "linebullet" = 50, "energy" = 20, "bomb" = 25, "bio" = 0, "rad" = 0)
+	
 /obj/item/clothing/head/simplekitty
 	name = "kitty headband"
 	desc = "A headband with a pair of cute kitty ears."
