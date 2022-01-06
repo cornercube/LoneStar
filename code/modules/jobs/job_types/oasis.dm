@@ -317,7 +317,7 @@ Mayor
 	l_hand = /obj/item/gun/ballistic/automatic/assault_carbine/policerifle
 	shoes = /obj/item/clothing/shoes/f13/military
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23=1,
 		/obj/item/ammo_box/magazine/m45exp=2,
 		/obj/item/flashlight/seclite = 1,
