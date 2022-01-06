@@ -269,7 +269,7 @@
 ///////////////////
 
 /datum/gang_item/equipment/bundledenboss
-	name = "Drug Lord"
+	name = "Drug Lord Bundle"
 	id = "bundledenboss"
 	cost = 850
 	item_path = /obj/item/storage/box/bundledenboss
