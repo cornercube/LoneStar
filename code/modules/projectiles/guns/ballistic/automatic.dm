@@ -1038,6 +1038,24 @@
 	flight_y_offset = 21
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
+	
+
+	//Police rifle			Keywords: OASIS, 5mm, Semi-auto, 30 round magazine
+/obj/item/gun/ballistic/automatic/assault_carbine/policerifle
+	name = "Police Rifle"
+	desc = "A pre-war Rifle that has been constantly repaired and rebuilt by the Oasis Police Department. Held together by duct tape and prayers, it somehow still shoots."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon_state = "rifle-police"
+	item_state = "assault_carbine"
+	burst_size = 1
+	spread = 1.1
+	extra_penetration = 0.15
+	burst_shot_delay = 4.2
+	fire_delay = 4.2
+	semi_auto = TRUE
+
 
 //FN-FAL				Keywords: 7.62mm, Automatic, 10/20 round magazine NOT CANON
 /obj/item/gun/ballistic/automatic/fnfal
