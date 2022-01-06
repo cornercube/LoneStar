@@ -377,6 +377,7 @@ Follower Volunteer
 		/obj/item/gun/energy/laser/complianceregulator = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/storage/firstaid/ancient = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
 	)
 
 /datum/outfit/loadout/guard_ranged
