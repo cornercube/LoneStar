@@ -583,8 +583,9 @@ Raider
 	uniform = /obj/item/clothing/under/f13/exile/vault
 	id = /obj/item/card/id/rusted/fadedvaultid
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv = 2,
+		/obj/item/gun/ballistic/automatic/smg/smg10mm/worn = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/ext = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/imitation = 2,
 		)
 
 /datum/outfit/loadout/raider_cannibal
