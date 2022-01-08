@@ -516,14 +516,15 @@ Raider
 	name = "Quack Doctor"
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/followers
 	l_hand = /obj/item/storage/backpack/duffelbag/med/surgery
-	r_hand = /obj/item/book/granter/trait/medical
+	r_hand = /obj/item/book/granter/trait/midsurgery
 	suit_store = /obj/item/gun/energy/laser/wattz
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec=1,
 		/obj/item/reagent_containers/pill/patch/jet = 3,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/storage/pill_bottle/aranesp = 1,
-		/obj/item/storage/pill_bottle/happy = 1
+		/obj/item/storage/pill_bottle/happy = 1,
+		/obj/item/book/granter/trait/chemistry = 1,
 		)
 
 /datum/outfit/loadout/raider_ncr
