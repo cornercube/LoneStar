@@ -316,7 +316,7 @@
 	name = "Old Soldier Bundle"
 	desc = "This wasteland needs a classier kind of raider. Back in my day, we walked uphill both ways to find some victims. "
 
-/obj/item/storage/box/bundledenboss/PopulateContents()
+/obj/item/storage/box/bundlegunner/PopulateContents()
 	new /obj/item/gun/ballistic/automatic/smg/greasegun(src)
 	new /obj/item/ammo_box/magazine/greasegun(src)
 	new /obj/item/clothing/head/helmet/armyhelmet(src)
@@ -328,7 +328,7 @@
 	name = "Bandito Bundle"
 	id = "bundleelguapo"
 	cost = 500
-	item_path = /obj/item/storage/box/bundlegunner
+	item_path = /obj/item/storage/box/bundleelguapo
 	
 /obj/item/storage/box/bundleelguapo
 	name = "Bandito Bundle"
