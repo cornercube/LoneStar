@@ -525,6 +525,7 @@ Raider
 		/obj/item/storage/pill_bottle/aranesp = 1,
 		/obj/item/storage/pill_bottle/happy = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
+		/obj/item/stack/sheet/mineral/silver=2,
 		)
 
 /datum/outfit/loadout/raider_ncr
