@@ -679,7 +679,7 @@
 	desc = "The symbol of the greatest pushers."
 	icon_state = "khan_jacket"
 	item_state = "khan_jacket"
-	armor = list("melee" = 45, "bullet" = 35, "laser" = 40,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10))
+	armor = list("melee" = 45, "bullet" = 35, "laser" = 40,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
 
 /obj/item/clothing/suit/armor/khan_jacket/Initialize()
 	. = ..()
