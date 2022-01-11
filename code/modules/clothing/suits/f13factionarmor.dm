@@ -667,7 +667,7 @@
 	name = "deputy trenchcoat"
 	desc = "An armored trench coat with added shoulderpads, a chestplate, and legguards."
 	icon_state = "towntrench_medium"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10))
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
 
 /obj/item/clothing/suit/armor/f13/town/deputy/Initialize()
 	. = ..()
