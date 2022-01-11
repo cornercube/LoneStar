@@ -46,7 +46,7 @@
 	icon_state = "blastmaster"
 	item_state = "blastmaster"
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	armor = list("melee" = 40, "bullet" = 20, "laser" = 40, "bio" = 0, "bomb" = 50 "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 40, "bullet" = 20, "laser" = 40, "bio" = 0, "bomb" = 50, "rad" = 0, "fire" = 25, "acid" = 25)
 	flash_protect = 2
 
 /obj/item/clothing/suit/armor/f13/raider/blastmaster/Initialize()
