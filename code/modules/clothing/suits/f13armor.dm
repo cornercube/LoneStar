@@ -24,6 +24,7 @@
 	item_state = "leather_jacket"
 	desc = "A black, heavy leather jacket."
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/f13/leather_jacket/combat
 	name = "combat leather jacket"
@@ -51,8 +52,9 @@
 	desc = "Separate armor parts you can wear over the clothing to get the most basic protection from the dangers of wasteland.<br>It sure is better than going into the battle without any armor at all."
 	icon_state = "armorkit"
 	item_state = "armorkit"
-	armor = list("melee" = 30, "bullet" = 10, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+	armor = list("melee" = 30, "bullet" = 15, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 	strip_delay = 30
+	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/f13/kit/Initialize()
 	. = ..()
@@ -67,6 +69,7 @@
 	strip_delay = 30
 	icon = 'icons/fallout/clothing/armored_light.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
+	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/f13/punk/Initialize()
 	. = ..()
@@ -79,6 +82,7 @@
 	item_state = "leather_armor"
 	armor = list("melee" = 35, "bullet" = 10, "laser" = 15, "energy" = 25, "bomb" = 32, "bio" = 0, "rad" = 10, "fire" = 30, "acid" = 35)
 	strip_delay = 40
+	slowndown = 0.06
 
 /obj/item/clothing/suit/armor/f13/leatherarmor/reinforced
 	name = "reinforced leather armor"
@@ -118,7 +122,7 @@
 
 /obj/item/clothing/suit/armor/f13/metalarmor/steelbib
 	name = "steel breastplate"
-	desc = "(III*) a steel breastplate, inspired by a pre-war design. It provides some protection against impacts, cuts, and medium-velocity bullets."
+	desc = "a steel breastplate, inspired by a pre-war design. It provides some protection against impacts, cuts, and medium-velocity bullets."
 	icon_state = "steel_bib"
 	item_state = "steel_bib"
 	armor = list("melee" = 20, "bullet" = 45, "laser" = 20, "energy" = 30, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
@@ -131,8 +135,8 @@
 	desc = "An old military grade pre war combat armor."
 	icon_state = "combat_armor"
 	item_state = "combat_armor"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
-	slowdown = 0.1
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 45, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/combat/dark
 	name = "combat armor"
@@ -155,7 +159,7 @@
 	icon_state = "combat_armor_mk2"
 	item_state = "combat_armor_mk2"
 	armor = list("melee" = 48, "bullet" = 48, "laser" = 48, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
-	slowdown = 0.05
+	slowdown = 0.8
 	
 /obj/item/clothing/suit/armor/f13/combat/mk2/dark
 	name = "reinforced combat armor"
@@ -181,17 +185,18 @@
 	icon_state = "rusted_combat_armor"
 	item_state = "rusted_combat_armor"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 35, "bomb" = 45, "bio" = 55, "rad" = 10, "fire" = 60, "acid" = 20)
+	slowdown = 0.12
 	
 /obj/item/clothing/suit/armor/f13/combat/environmental
 	name = "environmental armor"
-	desc = "(V) A pre-war suit developed for use in heavily contaminated environments, and is prized in the Wasteland for its ability to protect against biological threats."
+	desc = "A pre-war suit developed for use in heavily contaminated environments, and is prized in the Wasteland for its ability to protect against biological threats."
 	icon_state = "environmental_armor"
 	item_state = "environmental_armor"
 	w_class = WEIGHT_CLASS_BULKY
 	gas_transfer_coefficient = 0.9
 	permeability_coefficient = 0.5
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 100, "fire" = 60, "acid" = 50)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 40,"energy" = 45, "bomb" = 55, "bio" = 70, "rad" = 100, "fire" = 60, "acid" = 50)
 	strip_delay = 60
 	equip_delay_other = 60
 	flags_inv = HIDEJUMPSUIT
@@ -203,7 +208,7 @@
 /obj/item/clothing/suit/armor/f13/combat/mk2/raider
 	name = "raider combat armor"
 	desc = "An old set of reinforced combat armor with some parts supplanted with painspike armor. It seems less protective than a mint-condition set of combat armor."
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 35, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 40, "energy" = 35, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	slowdown = 0.05
 	item_state = "combat_armor_raider"
 
