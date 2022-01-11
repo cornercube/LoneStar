@@ -529,7 +529,7 @@
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/scout
 	name = "ranger scout armor"
-	desc = "(V) A refurbished set of NCRA 3rd Scouts armor, now with heavier plating together with arm and leg guards. A two-headed bear has been painted on its chest."
+	desc = "A refurbished set of NCRA 3rd Scouts armor, now with heavier plating together with arm and leg guards. A two-headed bear has been painted on its chest."
 	icon_state = "refurb_scout"
 	item_state = "refurb_scout"
 	armor = list("tier" = 5, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
@@ -541,7 +541,7 @@
 	item_state = "ranger"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 45, "energy" = 40, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
-	slowdown = 0.05
+	
 
 /obj/item/clothing/suit/armor/f13/ncrcfjacket
 	name = "NCRCF jacket"
