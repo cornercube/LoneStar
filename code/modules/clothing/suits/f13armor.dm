@@ -82,7 +82,7 @@
 	item_state = "leather_armor"
 	armor = list("melee" = 35, "bullet" = 10, "laser" = 15, "energy" = 25, "bomb" = 32, "bio" = 0, "rad" = 10, "fire" = 30, "acid" = 35)
 	strip_delay = 40
-	slowndown = 0.06
+	slowdown = 0.06
 
 /obj/item/clothing/suit/armor/f13/leatherarmor/reinforced
 	name = "reinforced leather armor"
