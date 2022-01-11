@@ -854,7 +854,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "shank_follower"
 	item_state = "shank_follower"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 35 "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 	strip_delay = 40
 
 /obj/item/clothing/suit/armor/f13/shankduster/Initialize()
