@@ -106,7 +106,6 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a50MG/incendiary
 	damage = 40
-	armour_penetration = 0.5
 	var/fire_stacks = 4
 	zone_accuracy_factor = 100
 
@@ -119,7 +118,6 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a50MG/explosive
 	damage = 30
-	armour_penetration = 0.6
 
 /obj/item/projectile/bullet/a50MG/explosive/on_hit(atom/target, blocked = FALSE)
 	..()
