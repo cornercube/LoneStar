@@ -23,14 +23,12 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/c22
 	name = ".22lr bullet"
 	damage = 20
-	armour_penetration = 0.06
 	wound_bonus = 6
 
 /obj/item/projectile/bullet/c22/rubber
 	name = ".22lr rubber bullet"
 	damage = 2
-	armour_penetration = 0
-	stamina = 15
+	stamina = 20
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -40,14 +38,14 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/c38
 	name = ".38 bullet"
-	damage = 30
+	damage = 33
 	armour_penetration = 0
 	wound_bonus = 10
 
 /obj/item/projectile/bullet/c38/rubber
 	name = ".38 rubber bullet"
 	damage = 5
-	armour_penetration = 25
+	armour_penetration = 33
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -59,27 +57,24 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/c9mm
 	name = "9mm FMJ bullet"
 	damage = 27
-	armour_penetration = 0.05
 	wound_bonus = 15
 
 /obj/item/projectile/bullet/c9mm/op
 	name = "9mm +P bullet"
 	damage = 27
-	armour_penetration = 0.07
+	armour_penetration = 0.05
 	var/extra_speed = 500
 
 /obj/item/projectile/bullet/c9mm/rubber
 	name = "9mm rubber bullet"
 	damage = 4
-	stamina = 23
-	armour_penetration = 0
+	stamina = 27
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/c9mm/wounding
 	name = "9mm wounding bullet"
 	damage = 24
-	armour_penetration = 0
 	ricochets_max = 0
 	sharpness = SHARP_EDGED
 	wound_bonus = 35
@@ -92,19 +87,18 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 ///////////
 // 10 MM //
-///////////				-Medium round, AP focus
+///////////				-Medium round
 
 /obj/item/projectile/bullet/c10mm
 	name = "10mm FMJ bullet"
 	damage = 29
-	armour_penetration = 0.12
 	wound_bonus = 18
 
 /obj/item/projectile/bullet/c10mm/rubber
 	name = "10mm rubber bullet"
 	damage = 8
 	armour_penetration = 0
-	stamina = 26
+	stamina = 29
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -120,7 +114,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/c10mm/incendiary
 	name = "10mm incendiary bullet"
-	damage = 13
+	damage = 10
 	var/fire_stacks = 1
 
 /obj/item/projectile/bullet/c10mm/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -137,15 +131,13 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/c45
 	name = ".45 FMJ bullet"
-	damage = 32
-	armour_penetration = 0.1
+	damage = 33
 	wound_bonus = 20
-
 
 /obj/item/projectile/bullet/c45/op
 	name = ".45 +P bullet"
-	damage = 32
-	armour_penetration = 0.12
+	damage = 33
+	armour_penetration = 0.1
 	var/extra_speed = 500
 
 /obj/item/projectile/bullet/c45/rubber
@@ -158,7 +150,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/c45/incendiary
 	name = ".45 incendiary bullet"
-	damage = 15
+	damage = 12
 	var/fire_stacks = 1
 	
 /obj/item/projectile/bullet/c45/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -175,7 +167,6 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/a357
 	name = ".357 FMJ bullet"
 	damage = 36
-	armour_penetration = 0.15
 	wound_bonus = 14
 	bare_wound_bonus = -14
 
@@ -197,7 +188,6 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/m44
 	name = ".44 FMJ bullet"
 	damage = 38
-	armour_penetration = 0.2
 	wound_bonus = 20
 	bare_wound_bonus = -20
 
@@ -213,7 +203,6 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/c4570
 	name = ".45-70 FMJ bullet"
 	damage = 41
-	armour_penetration = 0.25
 	wound_bonus = 24
 	bare_wound_bonus = -24
 
@@ -235,7 +224,6 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/mm14
 	name = "14mm FMJ bullet"
 	damage = 43
-	armour_penetration = 0.2
 	wound_bonus = 28
 	bare_wound_bonus = -28
 
@@ -249,7 +237,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/a45lc
 	name = ".45 LC bullet"
 	damage = 40 //Right inbetween 44 and 45-70. Gun this is used in has a fire delay of 8, doing the math I'm pretty sure a regular M29 has a higher DPS then dual wielding these unless you bounce shots
-	armour_penetration = 0.25 //Again, right inbetween 44 and 45-70.
+	armour_penetration = 0.2 //will be one of the only weapons to keep integral AP
 	wound_bonus = 20
 	bare_wound_bonus = -20
 	ricochets_max = 3
@@ -267,7 +255,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/needle
 	name = "needle"
 	icon_state = "cbbolt"
-	damage = 32
+	damage = 29
 	armour_penetration = 0.8
 	var/piercing = FALSE
 
