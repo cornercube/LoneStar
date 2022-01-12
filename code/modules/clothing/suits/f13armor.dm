@@ -52,7 +52,7 @@
 	desc = "Separate armor parts you can wear over the clothing to get the most basic protection from the dangers of wasteland.<br>It sure is better than going into the battle without any armor at all."
 	icon_state = "armorkit"
 	item_state = "armorkit"
-	armor = list("melee" = 30, "bullet" = 15, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+	armor = list("melee" = 15, "bullet" = 30, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 	strip_delay = 30
 	slowdown = 0.05
 
@@ -98,7 +98,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 	icon_state = "metal_chestplate"
 	item_state = "metal_chestplate"
-	armor = list("melee" = 40, "bullet" = 24, "laser" = 35, "energy" = 35, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 20, "laser" = 35, "energy" = 35, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0)
 	slowdown = 0.25
 	strip_delay = 10
 
@@ -135,7 +135,7 @@
 	desc = "An old military grade pre war combat armor."
 	icon_state = "combat_armor"
 	item_state = "combat_armor"
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 45, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/combat/dark
@@ -158,8 +158,8 @@
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "combat_armor_mk2"
 	item_state = "combat_armor_mk2"
-	armor = list("melee" = 48, "bullet" = 48, "laser" = 48, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
-	slowdown = 0.8
+	armor = list("melee" = 45, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	slowdown = 0.1
 	
 /obj/item/clothing/suit/armor/f13/combat/mk2/dark
 	name = "reinforced combat armor"
@@ -184,7 +184,7 @@
 	desc = "An old military grade pre war combat armor. This set has seen better days, weathered by time. The composite plates look sound and intact still."
 	icon_state = "rusted_combat_armor"
 	item_state = "rusted_combat_armor"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 35, "bomb" = 45, "bio" = 55, "rad" = 10, "fire" = 60, "acid" = 20)
+	armor = list("melee" = 38, "bullet" = 45, "laser" = 38, "energy" = 35, "bomb" = 45, "bio" = 55, "rad" = 10, "fire" = 60, "acid" = 20)
 	slowdown = 0.12
 	
 /obj/item/clothing/suit/armor/f13/combat/environmental
