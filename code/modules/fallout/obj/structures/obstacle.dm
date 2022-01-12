@@ -56,6 +56,9 @@
 	icon_state = "barbed"
 	density = FALSE
 	var/slowdown = 40
+	var/buildstacktype = /obj/item/stack/rods
+	var/buildstackamount = 5
+	pass_flags = LETPASSTHROW
 
 /obj/structure/obstacle/barbedwire/end
 	icon_state = "barbed_end"
@@ -63,6 +66,16 @@
 /obj/structure/obstacle/barbedwire/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/caltrop, 20, 30, 100, CALTROP_BYPASS_SHOES)
+
+/obj/structure/obstacle/barbedwire/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/wirecutters) && deconstruction_ready)
+		to_chat(user, span_notice("You start deconstructing [src]..."))
+		if(I.use_tool(src, user, 40, volume=50))
+			playsound(src.loc, 'sound/items/deconstruct.ogg', 50, 1)
+			deconstruct(TRUE)
+			return TRUE
+
+	return ..()
 
 //For adding to tops of fences/walls etc
 /obj/effect/overlay/barbed
