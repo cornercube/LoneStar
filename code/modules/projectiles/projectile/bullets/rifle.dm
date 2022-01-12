@@ -18,12 +18,11 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 ////////////////////
 // 5.56 MM & .223 //
-////////////////////		- Moderate damage, pretty good AP. .223 civilian version for hunting/sport.
+////////////////////		- Moderate damage .223 civilian version for hunting/sport.
 
 /obj/item/projectile/bullet/a556
 	name = "5.56 FMJ bullet"
 	damage = 33
-	armour_penetration = 0.18
 	wound_bonus = 18
 	bare_wound_bonus = -18
 
@@ -38,14 +37,13 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 /obj/item/projectile/bullet/a556/sport
 	name = ".223 FMJ bullet"
 	damage = 30
-	armour_penetration = 0.1
 	wound_bonus = 18
 	bare_wound_bonus = -18
 
 /obj/item/projectile/bullet/a556/rubber
 	name = "5.56 rubber bullet"
 	damage = 5
-	stamina = 28
+	stamina = 33
 	sharpness = SHARP_NONE
 	armour_penetration = 0
 	wound_bonus = 0
@@ -71,20 +69,18 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 /obj/item/projectile/bullet/a762
 	name = "7.62 FMJ bullet"
 	damage = 37
-	armour_penetration = 0.2
 	wound_bonus = 20
 	bare_wound_bonus = -20
 
 //.308 Winchester
 /obj/item/projectile/bullet/a762/sport 
 	name = ".308 bullet"
-	damage = 37
-	armour_penetration = 0.15
+	damage = 33
 
 /obj/item/projectile/bullet/a762/rubber
 	name = "7.62 rubber bullet"
 	damage = 5
-	stamina = 35
+	stamina = 37
 	sharpness = SHARP_NONE
 	armour_penetration = 0
 	wound_bonus = 0
@@ -104,8 +100,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 /////////			-Very heavy rifle round.
 
 /obj/item/projectile/bullet/a50MG
-	damage = 53
-	armour_penetration = 0.8
+	damage = 55
 	pixels_per_second = 4000
 	zone_accuracy_factor = 100
 
@@ -149,7 +144,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a473
 	name = "4.73 FMJ bullet"
-	damage = 31
+	damage = 22
 	armour_penetration = 0.25
 	wound_bonus = 10
 	bare_wound_bonus = -10
@@ -166,9 +161,9 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 // 5 MM rifle			 //
 //////////////////////////
 
-/obj/item/projectile/bullet/m5mm  //for rifles//
+/obj/item/projectile/bullet/m5mm  //for rifles// one of the only bullets to have integral AP
 	damage = 19
-	armour_penetration = 0.21
+	armour_penetration = 0.15
 	wound_bonus = 10
 	bare_wound_bonus = -10
 	var/extra_speed = 200
@@ -192,5 +187,5 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/c2mm
 	damage = 45
-	armour_penetration = 0.85
+	armour_penetration = 0.9 //if only one bullet has built in AP, its this one
 	pixels_per_second = TILES_TO_PIXELS(100)
