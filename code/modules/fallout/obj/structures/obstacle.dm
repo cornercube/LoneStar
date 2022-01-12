@@ -69,7 +69,8 @@
 
 /obj/structure/obstacle/barbedwire/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/wirecutters))
-		to_chat(user, span_notice("You start deconstructing [src]..."))
+
+		to_chat(user, span_notice("You start cutting the [src]..."))
 		if(I.use_tool(src, user, 40, volume=50))
 			playsound(src.loc, 'sound/items/deconstruct.ogg', 50, 1)
 			deconstruct(TRUE)
