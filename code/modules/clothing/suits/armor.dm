@@ -9,7 +9,7 @@
 	max_integrity = 250
 	resistance_flags = NONE
 	armor = list("tier" = 4, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)
-	slowdown = 0.1
+	slowdown = 0.01
 	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 
 /obj/item/clothing/suit/armor/examine(mob/user)
@@ -31,17 +31,17 @@
 
 /obj/item/clothing/suit/armor/vest
 	name = "armor vest"
-	desc = "A slim Type I armored vest that provides decent protection against most types of damage."
+	desc = "A slim armored vest with a rigid exterior that provides decent protection against most types of damage."
 	icon_state = "armoralt"
 	item_state = "armoralt"
 	blood_overlay_type = "armor"
 	dog_fashion = /datum/dog_fashion/back
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 10)
 
 /obj/item/clothing/suit/armor/vest/trench
 	name = "followers trenchcoat"
-	desc = "(IV) A grey and which trench coat with dark blue highlights, on the sides and back it has the unique symbol of the followers. Under said coat is an armor vest, perfect for light weight protection."
+	desc = "A grey and which trench coat with dark blue highlights, on the sides and back it has the unique symbol of the followers. Under said coat is an armor vest, perfect for light weight protection."
 	icon_state = "followerstrench"
 	item_state = "followerstrench"
 
@@ -55,7 +55,7 @@
 	desc = "Older generation Type 1 armored vest. Due to degradation over time the vest is far less maneuverable to move in."
 	icon_state = "armor"
 	item_state = "armor"
-	slowdown = 1
+	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/vest/blueshirt
 	name = "large armor vest"
