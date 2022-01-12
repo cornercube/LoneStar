@@ -14,8 +14,8 @@ GLOBAL_LIST_INIT(rod_recipes, list ( \
 		)),
 	null, \
 	new/datum/stack_recipe("barbed wire",/obj/structure/obstacle/barbedwire, 5, time = 10, one_per_turf = 1, on_floor = 1), \
-	new/datum/stack_recipe("barbed wire ends", /obj/structure/obstacle/barbedwire/end, 4, 5, time = 10, one_per_turf = 1, on_floor = 1), \
-
+	new/datum/stack_recipe("barbed wire ends", /obj/structure/obstacle/barbedwire/end, 5, time = 10, one_per_turf = 1, on_floor = 1), \
+	))
 /obj/item/stack/rods
 	name = "metal rod"
 	desc = "Metal rods useful for building various frames and supporting structures."
