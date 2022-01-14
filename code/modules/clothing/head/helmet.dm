@@ -472,10 +472,10 @@
 	
 /obj/item/clothing/head/helmet/armyhelmet/heavy
 	name = "heavy steel helmet"
-	desc = "(IV*) a steel helmet, inspired by several pre-war designs. This one has been modified by oasis citizens to provide more protection to the face and neck."
+	desc = "(V*) a steel helmet, inspired by several pre-war designs. This one has been modified by oasis citizens to provide more protection to the face and neck."
 	icon_state = "armyhelmetheavy"
 	item_state = "armyhelmetheavy"
-	armor = list("tier" = 3, "linebullet" = 50, "linemelee" = 35, "linelaser" = 5, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
+	armor = list("tier" = 3, "linebullet" = 75, "linemelee" = 35, "linelaser" = 5, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 	slowdown = 0.025
 	
 /obj/item/clothing/head/helmet/armyhelmet/heavy/attack_self(mob/user)
