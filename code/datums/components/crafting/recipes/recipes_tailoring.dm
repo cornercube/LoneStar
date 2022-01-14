@@ -1230,3 +1230,26 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 */
+
+/datum/crafting_recipe/armyhelmet
+	name = "Steel Helmet"
+	result = /obj/item/clothing/head/helmet/armyhelmet
+	reqs = list(/obj/item/stack/sheet/leather = 2,
+				/obj/item/weaponcrafting/string = 1,
+				/obj/item/stack/sheet/metal = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+	
+/datum/crafting_recipe/armyhelmetheavy
+	name = "Heavy Steel Helmet"
+	result = /obj/item/clothing/head/helmet/armyhelmet/heavy
+	reqs = list(/obj/item/clothing/head/helmet/armyhelmet,
+				/obj/item/stack/crafting/goodparts = 1,
+				/obj/item/stack/sheet/prewar = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+	always_availible = FALSE
