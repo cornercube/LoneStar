@@ -24,7 +24,7 @@
 	item_state = "leather_jacket"
 	desc = "A black, heavy leather jacket."
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
-	slowdown = 0.05
+	slowdown = 0.025 //token slowdown
 
 /obj/item/clothing/suit/armor/f13/leather_jacket/combat
 	name = "combat leather jacket"
@@ -101,7 +101,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 	icon_state = "metal_chestplate"
 	item_state = "metal_chestplate"
-	armor = list("melee" = 40, "bullet" = 20, "laser" = 35, "energy" = 15, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 35, "bullet" = 20, "laser" = 40, "energy" = 15, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0)
 	slowdown = 0.25
 	strip_delay = 10
 
@@ -119,7 +119,7 @@
 	desc = "A set of polished plates formed together to provide effective protection."
 	icon_state = "metal_chestplate2"
 	item_state = "metal_chestplate2"
-	armor = list("melee" = 45, "bullet" = 25, "laser" = 40, "energy" = 15, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 37, "bullet" = 25, "laser" = 42, "energy" = 15, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = 0.27
 	strip_delay = 10
 
@@ -162,7 +162,7 @@
 	icon_state = "combat_armor_mk2"
 	item_state = "combat_armor_mk2"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
-	slowdown = 0.14
+	slowdown = 0.15
 	
 /obj/item/clothing/suit/armor/f13/combat/mk2/dark
 	name = "reinforced combat armor"
