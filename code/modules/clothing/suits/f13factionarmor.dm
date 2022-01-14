@@ -161,7 +161,7 @@
 	desc = "An old military-grade pre-war combat armor. It appears to be fitted with metal plates to replace the crumbling ceramic."
 	icon_state = "raider_combat"
 	item_state = "raider_combat"
-	armor = list("melee" = 40, "bullet" = 40 , "laser" = 35","energy" = 25, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 40, "bullet" = 40 , "laser" = 35,"energy" = 25, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
 	slowdown = 0.06
 
 /obj/item/clothing/suit/armor/f13/raider/raidermetal
