@@ -447,7 +447,7 @@
 
 /obj/item/clothing/suit/jacket/miljacket
 	name = "military jacket"
-	desc = "(II) A canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable."
+	desc = "A canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable."
 	icon_state = "militaryjacket"
 	item_state = "militaryjacket"
 	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
@@ -500,7 +500,7 @@
 
 /obj/item/clothing/suit/xenos
 	name = "xenos suit"
-	desc = "(I) A suit made out of chitinous alien hide."
+	desc = "A suit made out of chitinous alien hide."
 	icon_state = "xenos"
 	item_state = "xenos_helm"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
@@ -880,7 +880,7 @@
 
 /obj/item/clothing/suit/hooded/wintercoat/narsie/fake
 	name = "runed winter coat"
-	desc = "(I) A dusty button up winter coat in the tones of oblivion and ash. The zipper pull looks like a single drop of blood."
+	desc = "A dusty button up winter coat in the tones of oblivion and ash. The zipper pull looks like a single drop of blood."
 	icon_state = "coatnarsie"
 	item_state = "coatnarsie"
 	real = FALSE
@@ -1014,7 +1014,7 @@
 
 /obj/item/clothing/suit/bomber
 	name = "old bomber jacket"
-	desc = "(II) It looks like someone dragged this out of a muddy lake."
+	desc = "It looks like someone dragged this out of a muddy lake."
 	icon_state = "bomberalt"
 	item_state = "bomberalt"
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 20, "energy" = 15, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
