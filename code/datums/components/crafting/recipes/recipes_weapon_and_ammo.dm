@@ -303,6 +303,18 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
+	
+//police revolver
+/datum/crafting_recipe/policepistol
+	name = "Police Pistol"
+	result = /obj/item/gun/ballistic/revolver/police
+	reqs = list(/obj/item/stack/crafting/metalparts = 3,
+				/obj/item/stack/sheet/metal = 3,)
+	tools = list(TOOL_WORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE	
 
 //hunting rifle
 /datum/crafting_recipe/huntingrifle
@@ -451,6 +463,23 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 	always_availible = FALSE
+	
+	//police rifle
+/datum/crafting_recipe/policerifle
+	name = "Police rifle"
+	result = /obj/item/gun/ballistic/automatic/marksman/policerifle
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/sheet/mineral/wood = 3,
+				/obj/item/stack/crafting/metalparts = 3,
+				/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/crafting/duct_tape = 1,
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_availible = FALSE
+
 
 //r84 lmg
 /datum/crafting_recipe/lmg
