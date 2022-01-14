@@ -240,7 +240,7 @@ Mayor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriothelmet_broken)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriot_ncr)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriothelmet_ncr)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policepistol
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policepistol)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policerifle)
 	H.mind.teach_crafting_recipe(datum/crafting_recipe/steelbib/heavy)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/armyhelmetheavy)
@@ -918,7 +918,7 @@ Mayor
 	..()
 	if(visualsOnly)
 		return
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policepistol
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policepistol)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policerifle)
 	H.mind.teach_crafting_recipe(datum/crafting_recipe/steelbib/heavy)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/armyhelmetheavy)
