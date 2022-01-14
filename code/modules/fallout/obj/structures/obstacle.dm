@@ -78,6 +78,22 @@
 
 	return ..()
 
+/obj/structure/obstacle/barbedwire/proc/shock(mob/user, prb) 	// war crime mode, if you can find an electrical generator
+	
+	if(!in_range(src, user))//To prevent TK and mech users from getting shocked
+		return FALSE
+	var/turf/T = get_turf(src)
+	var/obj/structure/cable/C = T.get_cable_node()
+	if(C)
+		if(electrocute_mob(user, C, src, 1, TRUE))
+			var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
+			s.set_up(3, 1, src)
+			s.start()
+			return TRUE
+		else
+			return FALSE
+	return FALSE
+
 //For adding to tops of fences/walls etc
 /obj/effect/overlay/barbed
 	name = "razorwire"
