@@ -240,6 +240,10 @@ Mayor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriothelmet_broken)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriot_ncr)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriothelmet_ncr)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policepistol
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policerifle)
+	H.mind.teach_crafting_recipe(datum/crafting_recipe/steelbib/heavy)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/armyhelmetheavy)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
@@ -684,6 +688,7 @@ Mayor
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	backpack_contents = list(/obj/item/twohanded/sledgehammer = 1,
 	/obj/item/stack/sheet/metal/twenty = 1,
+	/obj/item/book/granter/trait/ODF = 1,
 	)
 
 /datum/outfit/loadout/outdoorsman
@@ -913,6 +918,10 @@ Mayor
 	..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policepistol
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/policerifle)
+	H.mind.teach_crafting_recipe(datum/crafting_recipe/steelbib/heavy)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/armyhelmetheavy)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
