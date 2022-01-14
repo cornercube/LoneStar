@@ -468,7 +468,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon_state = "armyhelmet"
 	item_state = "armyhelmet"
-	armor = list("tier" = 3, "linebullet" = 25, "linemelee" = 25, energy 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
+	armor = list("tier" = 3, "linebullet" = 25, "linemelee" = 25, energy = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 	
 /obj/item/clothing/head/helmet/armyhelmet/heavy
 	name = "heavy steel helmet"
