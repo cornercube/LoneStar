@@ -753,10 +753,10 @@
 	icon_state = "tribecombatarmor"
 	item_state = "tribecombatarmor"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/melee/onehanded, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
+	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/melee/onehanded, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
 	slowdown = 0.09
-)
+
 
 /obj/item/clothing/suit/armor/f13/wayfarer/tribal_pa
 	name = "tribal full plate armor"
