@@ -492,6 +492,7 @@
 	
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
+
 	desc = "The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
