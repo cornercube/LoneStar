@@ -99,7 +99,7 @@
 	desc = "A sturdy helmet to protect against both the elements and from harm, if only it was not looking in such poor condition."
 	icon_state = "blastmaster"
 	item_state = "blastmaster"
-		armor = list("melee" = 40, "bullet" = 20, "laser" = 40, "bio" = 0, "bomb" = 50, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 40, "bullet" = 20, "laser" = 40, "bio" = 0, "bomb" = 50, "rad" = 0, "fire" = 25, "acid" = 25)
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
