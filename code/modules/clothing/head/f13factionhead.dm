@@ -55,7 +55,7 @@
 	icon_state = "supafly"
 	item_state = "supafly"
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, energy = "20" "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, energy = "20", "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	slowdown = 0
 
