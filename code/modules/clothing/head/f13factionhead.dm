@@ -180,7 +180,7 @@
 	desc = "A combat helmet modified with metal plating"
 	icon_state = "raider_combat_helmet"
 	item_state = "raider_combat_helmet"
-	armor = list("melee" = 40, "bullet" = 40 , "laser" = 35","energy" = 25, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 37, "bullet" = 27, "laser" = 42, "energy" = 27, "bomb" = 47, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	slowdown = 0.025
 
