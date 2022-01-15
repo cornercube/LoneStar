@@ -160,6 +160,7 @@
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_delay = 10
 	extra_damage = 8
+	extra_penetration = 0.05
 	extra_speed = 800
 	spread = 0
 	force = 18
@@ -324,6 +325,7 @@
 	item_state = "amr"
 	mag_type = /obj/item/ammo_box/magazine/amr
 	fire_delay = 11 //Heavy round, tiny bit slower
+	extra_penetration = 0.2
 	recoil = 1
 	spread = 0
 	force = 10 //Big clumsy and sensitive scope, makes for a poor club
