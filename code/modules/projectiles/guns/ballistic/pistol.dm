@@ -55,6 +55,7 @@
 	desc = "The silenced .22 pistol is a sporting handgun with an integrated silencer."
 	icon_state = "silenced22"
 	mag_type = /obj/item/ammo_box/magazine/m22
+	w_class = WEIGHT_CLASS_TINY
 	can_attachments = TRUE
 	can_suppress = FALSE
 	can_unsuppress = FALSE
@@ -231,6 +232,7 @@
 	desc = "A well-maintained stainless-steel frame 1911, with genuine wooden grips."
 	icon_state = "m1911_custom"
 	fire_delay = 3.5
+	extra_damage = 2
 
 //M1911	compact							Keywords: .45 ACP, Semi-auto, Short barrel, 8 round magazine. Special modifiers: damage +1
 /obj/item/gun/ballistic/automatic/pistol/m1911/compact
@@ -238,7 +240,7 @@
 	desc = "The compact version of the classic .45 handgun."
 	icon_state = "c1911"
 	w_class = WEIGHT_CLASS_SMALL
-	extra_damage = -1
+	extra_damage = 0
 	spread = 4
 	suppressor_x_offset = 29
 	suppressor_y_offset = 21
@@ -253,6 +255,7 @@
 	desc = "A very tactical pistol chambered in .45 ACP with a built in laser sight and attachment point for a seclite."
 	icon_state = "mk23"
 	mag_type = /obj/item/ammo_box/magazine/m45exp
+	weapon_weight = WEAPON_MEDIUM
 	fire_delay = 3.5
 	extra_damage = 2
 	spread = 1
@@ -282,6 +285,7 @@
 	weapon_weight = WEAPON_MEDIUM
 	force = 15
 	extra_damage = 3
+	extra_penetration = 0.1
 	extra_speed = 300
 	recoil = 0.1
 	can_suppress = FALSE
@@ -324,6 +328,7 @@
 	weapon_weight = WEAPON_MEDIUM
 	force = 15
 	fire_delay = 5
+	extra_penetration = 0.1
 	recoil = 0.25
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
