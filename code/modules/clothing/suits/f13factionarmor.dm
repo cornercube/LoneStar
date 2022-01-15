@@ -746,7 +746,6 @@
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/melee/onehanded, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	slowdown = 0.025
-)
 
 /obj/item/clothing/suit/armor/f13/tribal_combat_armor
 	name = "tribal combat armor"
