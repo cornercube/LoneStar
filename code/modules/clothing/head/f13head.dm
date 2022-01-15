@@ -436,7 +436,6 @@
 	desc = "A refined suit of power armour, purpose-built by the residents of Vault-115 in order to better keep the peace in their new settlement."
 	icon_state = "vaulttahelm"
 	item_state = "vaulttahelm"
-
 	slowdown = 0.1
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45d
@@ -579,7 +578,7 @@
 //	armor_block_threshold = 0.8
 //	armor_block_chance = 99
 //	deflection_chance = 70
-	armor = list("tier" = 13, "energy" = 90, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0, "wound" = 100)
+	armor = list(("melee" = 85, "bullet" = 85, "laser" = 87, "energy" = 37, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0, "wound" = 100)
 
 /obj/item/clothing/head/helmet/f13/power_armor/advanced/hellfire/wbos
 	name = "advanced Washington power helmet"
