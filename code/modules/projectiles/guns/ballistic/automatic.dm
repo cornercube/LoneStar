@@ -679,7 +679,6 @@
 	icon_state = "rifle-police"
 	item_state = "assault_carbine"
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	extra_damage = -1
 	spread = 1.1
 	fire_delay = 4.2
 	can_suppress = FALSE
@@ -858,7 +857,7 @@
 	fire_delay = 10
 	burst_size = 1
 	extra_speed = 800
-	extra_penetration = 0.2
+	extra_penetration = 0.25
 	extra_damage = 10
 	zoom_amt = 10
 	zoom_out_amt = 13
