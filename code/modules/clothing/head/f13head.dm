@@ -748,7 +748,7 @@
 
 /obj/item/clothing/head/helmet/f13/vaquerohat
 	name = "vaquero hat"
-	desc = An old sombrero worn by Vaqueros to keep off the harsh sun."
+	desc = "An old sombrero worn by Vaqueros to keep off the harsh sun."
 	icon_state = "vaquerohat"
 	item_state = "vaquerohat"
 	flags_inv = HIDEEARS|HIDEHAIR
