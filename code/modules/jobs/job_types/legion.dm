@@ -142,28 +142,24 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	box = /obj/item/storage/box/legate
 
 
-// ORATOR
+// CONSUL
 
 /datum/job/CaesarsLegion/Legionnaire/f13orator
-	title = "Legion Orator"
-	flag = F13ORATOR
+	title = "Legion Consul"
+	flag = F13CONSUL
 	supervisors = "Legate"
 	selection_color = "#ffdddd"
 	req_admin_notify = 1
 	total_positions = 0
 	spawn_positions = 0
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
+	outfit = /datum/outfit/job/CaesarsLegion/auxilia/consul
 	display_order = JOB_DISPLAY_ORDER_ORATOR
 	access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_LEGION, ACCESS_CHANGE_IDS, ACCESS_LEGION_COMMAND)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13orator	// 10mm Revolver, Spatha
-	name = "Orator"
+/datum/outfit/job/CaesarsLegion/auxilia/consul	// 10mm Revolver, Spatha
+	name = "Consul"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13orator
-	neck = /obj/item/storage/belt/holster
-	shoes =	/obj/item/clothing/shoes/f13/military/legate
-	suit = /obj/item/clothing/suit/armor/f13/legion/legate
-	head = null
 	id = /obj/item/card/id/dogtag/legcenturion
 	gloves = null
 	shoes = /obj/item/clothing/shoes/roman
