@@ -65,6 +65,7 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+// Edited desc to help the player figure out it got pockets, the "gimmick" it has.
 /obj/item/clothing/suit/armor/f13/raider/badlands
 	name = "badlands raider armor"
 	desc = "A leather top with a bandolier over it and a straps that cover the arms."
@@ -328,7 +329,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/suit_utility.dmi'
 	icon_state = "legion_slaveleather"
 	item_state = "legion_slaveleather"
-
+	allowed = list(/obj/item/hatchet, /obj/item/scythe, /obj/item/cultivator, /obj/item/shovel)
 
 /*
 /obj/item/clothing/suit/armor/f13/legion/vet/orator
