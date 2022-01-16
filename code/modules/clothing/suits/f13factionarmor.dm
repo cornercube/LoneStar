@@ -198,6 +198,8 @@
 	desc = "Legion Recruits carry very basic protection, repurposed old sports gear with bits of leather and other tribal style armor that the wearer has managed to scrounge up."
 	icon_state = "legion_recruit"
 	item_state = "legion_recruit"
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0)
+	slowdown = 0.04
 
 /obj/item/clothing/suit/armor/f13/legion/prime
 	name = "legion prime armor"
