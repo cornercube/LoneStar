@@ -22,7 +22,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a556
 	name = "5.56 FMJ bullet"
-	damage = 30
+	damage = 25
 	wound_bonus = 15
 	bare_wound_bonus = -18
 
@@ -36,14 +36,14 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a556/sport
 	name = ".223 FMJ bullet"
-	damage = 28
+	damage = 22
 	wound_bonus = 18
 	bare_wound_bonus = -18
 
 /obj/item/projectile/bullet/a556/rubber
 	name = "5.56 rubber bullet"
 	damage = 5
-	stamina = 33
+	stamina = 30
 	sharpness = SHARP_NONE
 	armour_penetration = 0
 	wound_bonus = 0
@@ -68,7 +68,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a762
 	name = "7.62 FMJ bullet"
-	damage = 33
+	damage = 30
 	wound_bonus = 18
 	bare_wound_bonus = -20
 
