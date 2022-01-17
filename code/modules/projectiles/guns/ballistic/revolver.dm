@@ -230,7 +230,7 @@
 	icon_state = "m29"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
 	extra_damage = 36
-	armor_penetration = 0.1
+	extra_penetration = 0.1
 	recoil = 0.1
 	can_scope = FALSE
 	scope_state = "revolver_scope"
