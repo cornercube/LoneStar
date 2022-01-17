@@ -28,9 +28,9 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a556/match
 	name = "5.56 match bullet"
-	damage = 33
+	damage = 29
 	armour_penetration = 0.21
-	wound_bonus = 16
+	wound_bonus = 15
 	bare_wound_bonus = -16
 	var/extra_speed = 200
 
