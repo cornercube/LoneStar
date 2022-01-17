@@ -219,7 +219,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor
 	w_class = WEIGHT_CLASS_HUGE
-	slowdown = 0.4 //+0.1 from helmet = total 0.5
+	slowdown = 0.3 //+0.1 from helmet = total 0.4
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -341,7 +341,7 @@
 		var/mob/living/L = loc
 		to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in armor. Rerouting power to emergency systems.</span>")
 		slowdown += 1.2
-		armor = armor.modifyRating(linemelee = -100, linebullet = -100, linelaser = -100)
+		armor = armor.modifyRating(melee = -100, bullet = -100, laser = -100)
 		if(istype(L))
 			L.update_equipment_speed_mods()
 		addtimer(CALLBACK(src, .proc/end_emp_effect, curremp), 5 SECONDS)
@@ -351,7 +351,7 @@
 		return FALSE
 	if(ismob(loc))
 		var/mob/living/L = loc
-		armor = armor.modifyRating(linemelee = 100, linebullet = 100, linelaser = 100)
+		armor = armor.modifyRating(melee = 100, bullet = 100, laser = 100)
 		slowdown -= 1.2
 		to_chat(loc, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
 		if(istype(L))
@@ -401,7 +401,7 @@
 	item_state = "ncrpowerarmor"
 	armor = list("melee" = 60, "bullet" = 65, "laser" = 65, "energy" = 24, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
-	slowdown = 0.4
+	slowdown = 0.3
 
 /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	powered = FALSE
@@ -410,7 +410,7 @@
 	icon_state = "raiderpa"
 	item_state = "raiderpa"
 	armor = list("melee" = 65, "bullet" = 55, "laser" = 55, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
-	slowdown = 0.4
+	slowdown = 0.3
 	requires_training = FALSE
 
 /obj/item/clothing/suit/armor/f13/power_armor/hotrod
@@ -420,7 +420,7 @@
 	icon_state = "t45hotrod"
 	item_state = "t45hotrod"
 	armor = list("melee" = 55, "bullet" = 55, "laser" = 55, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
-	slowdown = 0.35
+	slowdown = 0.25
 	requires_training = FALSE
 
 /obj/item/clothing/suit/armor/f13/power_armor/vaulttec
@@ -452,7 +452,7 @@
 	desc = "originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
-	slowdown = 0.24
+	slowdown = 0.15
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 25, "bomb" = 65, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 40)
 
 
@@ -492,20 +492,18 @@
 	
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
-
 	desc = "The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
-	slowdown = 0.15 //+0.1 from helmet = total 0.25
+	slowdown = 0.1 //+0.1 from helmet = total 0.2
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 80, "energy" = 27, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51green
 	name = "Hardened T-51b power armor"
-	desc = "The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
+	desc = "The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer. It's plates have been chemially treated to be stronger."
 	icon_state = "t51green"
 	item_state = "t51green"
-	slowdown = 0.15 //+0.1 from helmet = total 0.25
-	armor = list("melee" = 77, "bullet" = 77, "laser" = 82, "energy" = 29, "bomb" = 64, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+	armor = list("melee" = 77, "bullet" = 77, "laser" = 82, "energy" = 27, "bomb" = 64, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
 	name = "Brotherhood T-51b Power Armour"
@@ -545,7 +543,7 @@
 	desc = "Developed in early 2077 after the Anchorage Reclamation, the T-60 series of power armor was designed to eventually replace the T-51b as the pinnacle of powered armor technology in the U.S. military arsenal."
 	icon_state = "t60powerarmor"
 	item_state = "t60powerarmor"
-	slowdown = 0.16
+	slowdown = 0.1
 	armor = list("melee" = 80, "bullet" = 70, "laser" = 80, "energy" = 30, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60/tesla
@@ -553,7 +551,7 @@
 	desc = "(X*) An experimental variant of T-60a power armor featuring an array of tesla coils. A small amount of protection has been sacrificed to give a chance to deflect energy projectiles."
 	icon_state = "t60tesla"
 	item_state = "t60tesla"
-	slowdown = 0.15
+	slowdown = 0.1
 	armor = list("tier" = 10, "linelaser" = 25, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0, "wound" = 80)
 	var/hit_reflect_chance = 20
 
@@ -888,10 +886,10 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 
 /obj/item/clothing/suit/donor/soldier
 	name = "Soldier's Greatcoat"
-	desc = "(III) A resistant, tan greatcoat, typically worn by pre-War Generals."
+	desc = "A resistant, tan greatcoat, typically worn by pre-War Generals."
 	icon_state = "soldier"
 	item_state = "soldier"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 30, "bullet" = 33, "laser" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
 	name = "sniper riot gear"
