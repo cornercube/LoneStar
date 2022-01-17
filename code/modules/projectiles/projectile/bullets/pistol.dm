@@ -22,7 +22,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/c22
 	name = ".22lr bullet"
-	damage = 22
+	damage = 20
 	wound_bonus = 6
 
 /obj/item/projectile/bullet/c22/rubber
@@ -34,7 +34,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /////////////////
 // .38 SPECIAL //
-/////////////////		-Light round, slight damage focus
+/////////////////		-Light round, damage focus
 
 /obj/item/projectile/bullet/c38
 	name = ".38 bullet"
@@ -89,7 +89,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/c10mm
 	name = "10mm FMJ bullet"
-	damage = 26
+	damage = 27
 	wound_bonus = 11
 
 /obj/item/projectile/bullet/c10mm/rubber
@@ -127,7 +127,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/c45
 	name = ".45 FMJ bullet"
-	damage = 30
+	damage = 29
 	wound_bonus = 15
 
 
@@ -177,7 +177,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 ////////////////
 // .44 MAGNUM //
-////////////////		- High power round
+////////////////		- Higher power round
 
 /obj/item/projectile/bullet/m44
 	name = ".44 FMJ bullet"
@@ -192,7 +192,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 ////////////
 // .45-70 //
-////////////			-Heavy round, AP focus
+////////////			-very heavy round
 
 /obj/item/projectile/bullet/c4570
 	name = ".45-70 FMJ bullet"
@@ -212,12 +212,13 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 ///////////
 // 14 MM //
-///////////				-Heavy round, damage focus
+///////////				-very heavy round, rare integral AP (reference to FO1/2)
 
 /obj/item/projectile/bullet/mm14
-	name = "14mm FMJ bullet"
-	damage = 43
-	wound_bonus = 24
+	name = "14mm AP bullet"
+	damage = 33
+	armour_penetration = 0.15
+	wound_bonus = 25
 	bare_wound_bonus = -28
 
 
@@ -230,7 +231,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/a45lc
 	name = ".45 LC bullet"
 	damage = 40 //Right inbetween 44 and 45-70. Gun this is used in has a fire delay of 8, doing the math I'm pretty sure a regular M29 has a higher DPS then dual wielding these unless you bounce shots
-	armour_penetration = 0.15 //only other pistol type to keep integral AP
+	armour_penetration = 0.15 //only other pistol type aside from needler and 14mm to keep integral AP
 	wound_bonus = 20
 	bare_wound_bonus = -20
 	ricochets_max = 3
@@ -251,9 +252,6 @@ Civilian round				=	-10% damage. AP reduced by 50%
 	damage = 32
 	armour_penetration = 0.8 //rare AP pistol ammo
 	var/piercing = FALSE
-
-
-
 
 
 ////////////////
