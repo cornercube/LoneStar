@@ -69,6 +69,7 @@
 	desc = "A pre-war large-framed, gas-operated advanced 10mm pistol."
 	icon_state = "n99"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	recoil = 0.1
 	can_attachments = TRUE
 	can_automatic = TRUE
 	suppressor_state = "n99_suppressor"
@@ -107,6 +108,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
 	fire_delay = 5
 	extra_damage = 1
+	recoil = 0.15
 	spread = 3
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
@@ -220,6 +222,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m45
 	extra_damage = 1
+	recoil = 0.15
 	can_attachments = TRUE
 	suppressor_state = "pistol_suppressor"
 	suppressor_x_offset = 30
@@ -231,6 +234,7 @@
 	name = "M1911 Custom"
 	desc = "A well-maintained stainless-steel frame 1911, with genuine wooden grips."
 	icon_state = "m1911_custom"
+	recoil = 0.1
 	fire_delay = 3.5
 	extra_damage = 2
 
@@ -287,7 +291,7 @@
 	extra_damage = 3
 	extra_penetration = 0.1
 	extra_speed = 300
-	recoil = 0.1
+	recoil = 0.2
 	can_suppress = FALSE
 	automatic_burst_overlay = FALSE
 	fire_sound = 'sound/f13weapons/44mag.ogg'
@@ -328,7 +332,6 @@
 	weapon_weight = WEAPON_MEDIUM
 	force = 15
 	fire_delay = 5
-	extra_penetration = 0.1
 	recoil = 0.25
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
@@ -349,7 +352,6 @@
 	icon_state = "lildev"
 	w_class = WEIGHT_CLASS_SMALL
 	extra_damage = 2
-	extra_penetration = 0.05
 	fire_delay = 4
 
 
