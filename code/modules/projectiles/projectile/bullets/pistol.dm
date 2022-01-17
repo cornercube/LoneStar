@@ -51,12 +51,12 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 //////////
 // 9 MM //
-//////////				-Light round, allround
+//////////				-Light round, all around, these guns should higher capacity
 
 /obj/item/projectile/bullet/c9mm
 	name = "9mm FMJ bullet"
-	damage = 27
-	wound_bonus = 15
+	damage = 25
+	wound_bonus = 10
 
 /obj/item/projectile/bullet/c9mm/op
 	name = "9mm +P bullet"
@@ -66,7 +66,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/c9mm/rubber
 	name = "9mm rubber bullet"
 	damage = 4
-	stamina = 27
+	stamina = 25
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -75,8 +75,8 @@ Civilian round				=	-10% damage. AP reduced by 50%
 	damage = 24
 	ricochets_max = 0
 	sharpness = SHARP_EDGED
-	wound_bonus = 35
-	bare_wound_bonus = 35
+	wound_bonus = 25
+	bare_wound_bonus = 25
 	wound_falloff_tile = -8
 
 /obj/item/projectile/bullet/c9mm/simple //for simple mobs, separate to allow balancing
@@ -85,12 +85,12 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 ///////////
 // 10 MM //
-///////////				-Medium round, AP focus
+///////////				-Medium round, wounding focus, guns in 10mm should have lower capacity
 
 /obj/item/projectile/bullet/c10mm
 	name = "10mm FMJ bullet"
-	damage = 29
-	wound_bonus = 18
+	damage = 26
+	wound_bonus = 11
 
 /obj/item/projectile/bullet/c10mm/rubber
 	name = "10mm rubber bullet"
@@ -104,8 +104,8 @@ Civilian round				=	-10% damage. AP reduced by 50%
 	damage = 24
 	ricochets_max = 0
 	sharpness = SHARP_EDGED
-	wound_bonus = 40
-	bare_wound_bonus = 40
+	wound_bonus = 33
+	bare_wound_bonus = 33
 	wound_falloff_tile = -8
 
 /obj/item/projectile/bullet/c10mm/incendiary
@@ -123,12 +123,12 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /////////////
 // .45 ACP //
-/////////////			-Medium round, damage focus
+/////////////			-Medium round, damage focus, very low capacity guns
 
 /obj/item/projectile/bullet/c45
 	name = ".45 FMJ bullet"
-	damage = 32
-	wound_bonus = 20
+	damage = 30
+	wound_bonus = 15
 
 
 /obj/item/projectile/bullet/c45/op
@@ -162,7 +162,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/a357
 	name = ".357 FMJ bullet"
 	damage = 36
-	wound_bonus = 14
+	wound_bonus = 12
 	bare_wound_bonus = -14
 
 // 3 ricochets, more than enough to kill anything that moves
@@ -182,7 +182,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/m44
 	name = ".44 FMJ bullet"
 	damage = 38
-	wound_bonus = 20
+	wound_bonus = 15
 	bare_wound_bonus = -20
 
 
@@ -197,7 +197,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/c4570
 	name = ".45-70 FMJ bullet"
 	damage = 41
-	wound_bonus = 24
+	wound_bonus = 18
 	bare_wound_bonus = -24
 
 /obj/item/projectile/bullet/c4570/explosive
@@ -217,7 +217,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/mm14
 	name = "14mm FMJ bullet"
 	damage = 43
-	wound_bonus = 28
+	wound_bonus = 24
 	bare_wound_bonus = -28
 
 
