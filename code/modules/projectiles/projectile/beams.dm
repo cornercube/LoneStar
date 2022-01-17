@@ -301,6 +301,7 @@
 /obj/item/projectile/beam/laser/lasgun/hitscan //hitscan aer9 test
 	name = "laser beam"
 	damage = 25
+	armour_penetration = 0.1
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
@@ -323,6 +324,7 @@
 	name = "laser beam"
 	damage = 25
 	hitscan = TRUE
+	armour_penetration = 0.1
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
@@ -330,6 +332,7 @@
 /obj/item/projectile/beam/laser/pistol/hitscan/stun //compliance regulator beam
 	name = "compliance beam"
 	damage = 33
+	armour_penetration = 0.05
 	damage_type = STAMINA
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
 	light_color = LIGHT_COLOR_BLUE
@@ -340,7 +343,7 @@
 
 /obj/item/projectile/beam/laser/recharger/hitscan //hitscan recharger pistol
 	name = "recharger beam"
-	damage = 20
+	damage = 22
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/pulse
 	muzzle_type = /obj/effect/projectile/muzzle/pulse
