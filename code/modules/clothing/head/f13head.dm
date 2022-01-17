@@ -218,7 +218,7 @@
 	ispowerarmor = 1 //TRUE
 	strip_delay = 200
 	equip_delay_self = 20
-	slowdown = 0.1
+	slowdown = 0.05
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDEMASK|HIDEJUMPSUIT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	clothing_flags = THICKMATERIAL
@@ -333,7 +333,7 @@
 	var/curremp = emped
 	if(ismob(loc))
 		to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in helmet. Rerouting power to emergency systems.</span>")
-		armor = armor.modifyRating(linemelee = -100, linebullet = -100, linelaser = -100)
+		armor = armor.modifyRating(melee = -100, bullet = -100, laser = -100)
 		addtimer(CALLBACK(src, .proc/end_emp_effect, curremp), 5 SECONDS)
 
 /obj/item/clothing/head/helmet/f13/power_armor/proc/end_emp_effect(curremp)
@@ -343,7 +343,7 @@
 		var/mob/living/L = loc
 		emped = FALSE
 		to_chat(loc, "<span class='warning'>Helmet power reroute successful. All systems operational.</span>")
-		armor = armor.modifyRating(linemelee = 100, linebullet = 100, linelaser = 100)
+		armor = armor.modifyRating(melee = 100, bullet = 100,laser = 100)
 		if(istype(L))
 			L.update_equipment_speed_mods()
 	return TRUE
