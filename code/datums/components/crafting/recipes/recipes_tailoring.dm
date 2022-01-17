@@ -472,7 +472,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/swag
 	name = "Flame Metal Helmet"
