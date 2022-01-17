@@ -100,7 +100,7 @@
 	ranged_attack_speed = CLICK_CD_RAPID
 	spread = 10
 	weapon_weight = WEAPON_HEAVY
-	extra_penetration = -0.21
+	extra_penetration = -0.15
 	extra_damage = -9
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/minigunbal5mm
