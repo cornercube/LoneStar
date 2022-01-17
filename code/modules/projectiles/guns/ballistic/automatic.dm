@@ -482,7 +482,8 @@
 	burst_size = 1
 	fire_delay = 5
 	spread = 2
-	extra_damage = 2
+	extra_damage = +2
+	slowdown = 0.2
 	automatic_burst_overlay = FALSE
 	can_bayonet = TRUE
 	bayonet_state = "bayonet"
@@ -553,7 +554,7 @@
 ////////////////////
 
 
-//Varmint rifle								Keywords: 5.56, 10/20/30 round magazine, Reduced damage
+//Varmint rifle								Keywords: 5.56, 10/20/30 round magazine, 30dmg
 /obj/item/gun/ballistic/automatic/varmint
 	name = "varmint rifle"
 	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
@@ -565,7 +566,7 @@
 	fire_delay = 9
 	burst_size = 1
 	spread = 0
-	extra_damage = 6
+	extra_damage = 5
 	can_bayonet = FALSE
 	semi_auto = TRUE
 	automatic_burst_overlay = FALSE
@@ -624,7 +625,7 @@
 	can_scope = FALSE
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
-//Service rifle			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine
+//Service rifle			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine, 25dmg
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
 	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
@@ -632,7 +633,7 @@
 	item_state = "servicerifle"
 	icon_prefix = "servicerifle"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 3.5
+	fire_delay = 4
 	burst_size = 1
 	spread = 1
 	can_attachments = TRUE
@@ -669,9 +670,9 @@
 	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
 	icon_state = "scout_carbine"
-	extra_damage = 2
-	fire_delay = 3.5
-	spread = 1
+	fire_delay = 4
+	spread = 1.1
+	slowdown = 0.4
 	can_scope = TRUE
 	scope_state = "scope_short"
 	scope_x_offset = 4
@@ -707,7 +708,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 4
 	extra_penetration = 0.1
-	extra_damage = 6
+	extra_damage = 5
 	burst_size = 1
 	spread = 1
 	can_attachments = TRUE
@@ -728,7 +729,7 @@
 	fire_sound = 'sound/f13weapons/marksman_rifle.ogg'
 
 
-//Colt Rangemaster				Keywords: 7.62mm, Semi-auto, 10/20 round magazine
+//Colt Rangemaster				Keywords: 7.62mm, Semi-auto, 10/20 round magazine, 35dmg
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "Colt Rangemaster"
 	desc = "A Colt Rangemaster semi-automatic rifle, chambered for 7.62x51. Single-shot only."
@@ -737,7 +738,7 @@
 	icon_prefix = "308"
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/m762
-	extra_damage = 7
+	extra_damage = 5
 	burst_size = 1
 	fire_delay = 5
 	spread = 1
@@ -861,7 +862,7 @@
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 
 
-//DKS 501 sniper rifle				Keywords: .308, Semi-auto, 7 round magazine, Scoped, Extra speed +500, Fire delay +1
+//DKS 501 sniper rifle				Keywords: .308, Semi-auto, 7 round magazine, Scoped, Extra speed +500, Fire delay +1, 45dmg 
 /obj/item/gun/ballistic/automatic/marksman/sniper
 	name = "sniper rifle"
 	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert."
@@ -874,7 +875,7 @@
 	burst_size = 1
 	extra_speed = 800
 	extra_penetration = 0.25
-	extra_damage = 10
+	extra_damage = 15
 	zoom_amt = 10
 	zoom_out_amt = 13
 	semi_auto = TRUE
@@ -909,7 +910,7 @@
 	suppressor_y_offset = 28
 
 
-//R91 assault rifle				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine
+//R91 assault rifle				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine, 25dmg
 /obj/item/gun/ballistic/automatic/assault_rifle
 	name = "r91 assault rifle"
 	desc = "The R91 was the standard US Army assault rifle, and so saw wide-spread use after the war. Most are worn out by now."
@@ -976,7 +977,7 @@
 	can_bayonet = FALSE
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
-//Type 93 Chinese rifle				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine
+//Type 93 Chinese rifle				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine, 26dmg
 /obj/item/gun/ballistic/automatic/type93
 	name = "type 93 assault rifle"
 	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
@@ -995,7 +996,7 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 
-/obj/item/gun/ballistic/automatic/type93/worn
+/obj/item/gun/ballistic/automatic/type93/worn //23dmg
 	name = "\improper Worn Type 93"
 	desc = "This Type 93 Chinese assault rifle looks like it has been made in a garage. The bore is shot to hell, the threading is destroyed, but atleast it works."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
@@ -1003,7 +1004,7 @@
 	item_state = "handmade_rifle"
 	fire_delay = 5
 	spread = 13
-	extra_damage = -3
+	extra_damage = -2
 	can_suppress = FALSE
 
 
@@ -1029,7 +1030,7 @@
 	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
 
 
-//Assault Carbine				Keywords: 5mm, Automatic, 30 round magazine, Flashlight
+//Assault Carbine				Keywords: 5mm, Automatic, 30 round magazine, Flashlight, 19dmg/0.15AP
 /obj/item/gun/ballistic/automatic/assault_carbine
 	name = "assault carbine"
 	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces."
