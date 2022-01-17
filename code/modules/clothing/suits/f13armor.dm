@@ -381,7 +381,7 @@
 	item_state = "t45bpowerarmor"
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 60, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
-	slowdown = 1.40
+	slowdown = 1
 	powered = FALSE
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored
@@ -390,7 +390,7 @@
 	requires_training = TRUE
 	armor = list("melee" = 65, "bullet" = 65, "laser" = 65, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 40)
 	powered = TRUE
-	slowdown = 0.24
+	slowdown = 0.15
 
 
 /obj/item/clothing/suit/armor/f13/power_armor/ncr
@@ -401,7 +401,7 @@
 	item_state = "ncrpowerarmor"
 	armor = list("melee" = 60, "bullet" = 65, "laser" = 65, "energy" = 24, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
-	slowdown = 0.3
+	slowdown = 0.25
 
 /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	powered = FALSE
@@ -410,7 +410,7 @@
 	icon_state = "raiderpa"
 	item_state = "raiderpa"
 	armor = list("melee" = 65, "bullet" = 55, "laser" = 55, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
-	slowdown = 0.3
+	slowdown = 0.25
 	requires_training = FALSE
 
 /obj/item/clothing/suit/armor/f13/power_armor/hotrod
@@ -452,7 +452,7 @@
 	desc = "originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
-	slowdown = 0.15
+	slowdown = 0.2
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 25, "bomb" = 65, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 40)
 
 
@@ -495,7 +495,7 @@
 	desc = "The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
-	slowdown = 0.1 //+0.1 from helmet = total 0.2
+	slowdown = 0.15 //+0.05 from helmet = total 0.2
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 80, "energy" = 27, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51green
