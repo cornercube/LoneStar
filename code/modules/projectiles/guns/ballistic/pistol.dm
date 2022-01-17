@@ -70,7 +70,7 @@
 	desc = "A pre-war large-framed, gas-operated advanced 10mm pistol."
 	icon_state = "n99"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
-	extra_damage = 2
+	extra_damage = 20
 	extra_penetration = 0.1
 	fire_delay = 4
 	recoil = 0.05
