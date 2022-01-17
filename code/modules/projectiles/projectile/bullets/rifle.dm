@@ -22,7 +22,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a556
 	name = "5.56 FMJ bullet"
-	damage = 25
+	damage = 0
 	wound_bonus = 15
 	bare_wound_bonus = -18
 
@@ -36,13 +36,13 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a556/sport
 	name = ".223 FMJ bullet"
-	damage = 22
+	damage = -4
 	wound_bonus = 18
 	bare_wound_bonus = -18
 
 /obj/item/projectile/bullet/a556/rubber
 	name = "5.56 rubber bullet"
-	damage = 5
+	damage = 0
 	stamina = 30
 	sharpness = SHARP_NONE
 	armour_penetration = 0
@@ -68,18 +68,18 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a762
 	name = "7.62 FMJ bullet"
-	damage = 30
+	damage = 0
 	wound_bonus = 18
 	bare_wound_bonus = -20
 
 //.308 Winchester
 /obj/item/projectile/bullet/a762/sport 
 	name = ".308 bullet"
-	damage = 33
+	damage = -4
 
 /obj/item/projectile/bullet/a762/rubber
 	name = "7.62 rubber bullet"
-	damage = 5
+	damage = 0
 	stamina = 30
 	sharpness = SHARP_NONE
 	armour_penetration = 0
@@ -100,7 +100,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 /////////			-Very heavy rifle round.
 
 /obj/item/projectile/bullet/a50MG
-	damage = 55
+	damage = 0
 	pixels_per_second = 4000
 	zone_accuracy_factor = 100
 
@@ -117,7 +117,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 		M.IgniteMob()
 
 /obj/item/projectile/bullet/a50MG/explosive
-	damage = 30
+	damage = -20
 
 /obj/item/projectile/bullet/a50MG/explosive/on_hit(atom/target, blocked = FALSE)
 	..()
@@ -125,14 +125,14 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a50MG/rubber
 	name = ".50 rubber bullet"
-	damage = 20
+	damage = 0
 	stamina = 80
 	armour_penetration = 0
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/a50MG/penetrator
 	name = ".50 penetrator round"
-	damage = 45
+	damage = -10
 	movement_type = FLYING | UNSTOPPABLE
 
 
@@ -142,8 +142,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a473
 	name = "4.73 FMJ bullet"
-	damage = 22
-	armour_penetration = 0.25
+	damage = 0
 	wound_bonus = 10
 	bare_wound_bonus = -10
 
@@ -160,14 +159,14 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 //////////////////////////
 
 /obj/item/projectile/bullet/m5mm  //for rifles// one of the only bullets to have integral AP
-	damage = 19
-	armour_penetration = 0.15
+	damage = 0
 	wound_bonus = 10
 	bare_wound_bonus = -10
 	var/extra_speed = 200
 
 /obj/item/projectile/bullet/m5mm/simple //for simple mobs, separate to allow balancing
 	name = "5mm bullet"
+	damage = 19
 	armour_penetration = 0.19
 
 //////////////////////////
@@ -184,6 +183,6 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 /////////////////////////			- Gauss rifle
 
 /obj/item/projectile/bullet/c2mm
-	damage = 45
+	damage = 0
 	armour_penetration = 0.9 //if only one bullet has built in AP, its this one
 	pixels_per_second = TILES_TO_PIXELS(100)
