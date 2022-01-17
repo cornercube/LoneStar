@@ -132,7 +132,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 120
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR	
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/metalmask
 	name = "Metal Mask"
