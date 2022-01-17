@@ -181,7 +181,7 @@
 	burst_shot_delay = 3.25
 	recoil = 0.1
 	spread = 12
-	extra_damage = -2
+	extra_damage = 19
 	can_attachments = TRUE
 	actions_types = null
 
@@ -196,6 +196,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m22smg
 	can_unsuppress = FALSE
 	burst_shot_delay = 1.5 //rapid fire
+	extra_damage = 15
 	suppressed = 1
 	actions_types = null
 	fire_sound = 'sound/f13weapons/american180.ogg'
@@ -209,6 +210,7 @@
 	item_state = "smg9mm"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
 	spread = 8
+	extra_damage = 20
 	burst_shot_delay = 3.25 //Slow rate of fire
 	can_attachments = TRUE
 	suppressor_state = "uzi_suppressor"
@@ -245,8 +247,7 @@
 	desc = "What was once an inexpensive, but reliable submachine gun is now an inexpensive piece of shit. It's impressive this thing still fires at all."
 	can_attachments = FALSE
 	recoil = 0.3
-	extra_damage = -4
-	extra_penetration = -0.1
+	extra_damage = 19
 
 /obj/item/gun/ballistic/automatic/smg/greasegun/worn/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -281,6 +282,9 @@
 	icon_prefix = "smg10mm"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
 	init_mag_type = /obj/item/ammo_box/magazine/m10mm_adv/ext
+	extra_damage = 20
+	extra_penetration = 0.1
+	recoil = 0.05
 	fire_delay = 3.75
 	can_attachments = TRUE
 	suppressor_state = "10mm_suppressor" //activate if sprited
@@ -327,6 +331,7 @@
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	fire_delay = 3
 	burst_shot_delay = 2.5
+	extra_damage = 15
 	can_suppress = TRUE
 	can_attachments = TRUE
 	spread = 10
@@ -367,6 +372,7 @@
 	item_state = "cg45"
 	mag_type = /obj/item/ammo_box/magazine/cg45
 	fire_delay = 3.5
+	extra_damage = 22
 	spread = 8
 	recoil = 0.1
 	can_attachments = TRUE
@@ -387,7 +393,7 @@
 	burst_size = 3
 	burst_shot_delay = 3.25
 	fire_delay = 5
-	extra_damage = -1
+	extra_damage = 25
 	spread = 10
 	recoil = 0.5
 
@@ -398,6 +404,7 @@
 	mag_type = /obj/item/ammo_box/magazine/tommygunm45/stick
 	semi_auto = TRUE
 	fire_delay = 5
+	extra_damage = 28
 	spread = 15
 
 //P90				Keywords: 10mm, Automatic, 50 rounds. Special modifiers: damage +1
@@ -408,6 +415,8 @@
 	item_state = "m90"
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m10mm_p90
+	extra_damage = 12
+	extra_penetration = 0.15
 	burst_size = 3
 	fire_delay = 3
 	spread = 7
@@ -425,7 +434,7 @@
 	desc = "A FN P90 manufactured by Fabrique Nationale. This one is beat to hell but still works."
 	fire_delay = 4
 	burst_size = 2
-	extra_damage = 0
+	extra_damage = 11
 
 
 //MP-5 SD				Keywords: 9mm, Automatic, 32 rounds, Suppressed
@@ -438,6 +447,7 @@
 	spread = 8
 	fire_delay = 3.5
 	burst_shot_delay = 2
+	extra_damage = 15
 	suppressed = 1
 	recoil = 0.1
 	can_attachments = TRUE
@@ -458,7 +468,8 @@
 	burst_size = 3
 	fire_delay = 6
 	burst_shot_delay = 1.5
-	extra_damage = -4
+	extra_damage = 14
+	extra_penetration = 0.05
 	recoil = 0.25
 	can_attachments = TRUE
 	can_scope = TRUE
@@ -482,8 +493,9 @@
 	burst_size = 1
 	fire_delay = 5
 	spread = 2
-	extra_damage = +2
-	slowdown = 0.2
+	extra_damage = 20
+	extra_penetration = 0.1
+	slowdown = 0.4
 	automatic_burst_overlay = FALSE
 	can_bayonet = TRUE
 	bayonet_state = "bayonet"
@@ -511,7 +523,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "ncr-m1carbine"
 	item_state = "rifle"
-	extra_damage = 3
+	extra_damage = 21
 
 
 //M1A1 Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel, Folding stock.
@@ -566,7 +578,7 @@
 	fire_delay = 9
 	burst_size = 1
 	spread = 0
-	extra_damage = 5
+	extra_damage = 25
 	can_bayonet = FALSE
 	semi_auto = TRUE
 	automatic_burst_overlay = FALSE
@@ -586,7 +598,7 @@
 	icon_state = "delisle"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
-	extra_damage = 9
+	extra_damage = 22
 	extra_penetration = 0.05
 	fire_delay = 9
 	burst_size = 1
@@ -616,7 +628,7 @@
 	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
 	icon_state = "ratslayer"
 	item_state = "ratslayer"
-	extra_damage = 10
+	extra_damage = 28
 	extra_penetration = 0.1
 	suppressed = 1
 	zoomable = TRUE
@@ -636,6 +648,7 @@
 	fire_delay = 4
 	burst_size = 1
 	spread = 1
+	extra_damage = 25
 	can_attachments = TRUE
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
@@ -655,6 +668,7 @@
 	fire_delay = 5.5
 	burst_size = 2
 	spread = 1
+	extra_damage = 26
 	can_attachments = FALSE
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
@@ -673,6 +687,7 @@
 	fire_delay = 4
 	spread = 1.1
 	slowdown = 0.4
+	extra_damage = 23
 	can_scope = TRUE
 	scope_state = "scope_short"
 	scope_x_offset = 4
@@ -692,8 +707,10 @@
 	icon_state = "rifle-police"
 	item_state = "assault_carbine"
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	extra_damage = 25
+	extra_penetration = 0.1
 	spread = 1.1
-	fire_delay = 4.2
+	fire_delay = 4.5
 	can_suppress = FALSE
 	can_scope = TRUE
 	zoomable = FALSE
@@ -708,7 +725,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 4
 	extra_penetration = 0.1
-	extra_damage = 5
+	extra_damage = 35
 	burst_size = 1
 	spread = 1
 	can_attachments = TRUE
@@ -738,7 +755,7 @@
 	icon_prefix = "308"
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/m762
-	extra_damage = 5
+	extra_damage = 40
 	burst_size = 1
 	fire_delay = 5
 	spread = 1
@@ -793,6 +810,8 @@
 	icon_prefix = "308"
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/garand308
+	extra_damage = 35
+	extra_penetration = 0.1
 	fire_delay = 5.5
 	burst_size = 1
 	spread = 1
@@ -832,7 +851,7 @@
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Chambered in 7.62x51."
 	icon_state = "republics_pride"
 	item_state = "scoped308"
-	extra_damage = 8
+	extra_damage = 40
 	extra_penetration = 0.1
 	zoomable = TRUE
 	zoom_amt = 10
@@ -851,6 +870,7 @@
 	item_state = "sks"
 	mag_type = /obj/item/ammo_box/magazine/sks
 	fire_delay = 6
+	extra_damage = 35
 	extra_penetration = 0.1
 	bayonet_state = "bayonet"
 	knife_x_offset = 24
@@ -869,13 +889,12 @@
 	icon_prefix = "sniperrifle"
 	icon_state = "sniper_rifle"
 	item_state = "sniper_rifle"
-	
 	mag_type = /obj/item/ammo_box/magazine/w308
 	fire_delay = 10
 	burst_size = 1
 	extra_speed = 800
 	extra_penetration = 0.25
-	extra_damage = 15
+	extra_damage = 45
 	zoom_amt = 10
 	zoom_out_amt = 13
 	semi_auto = TRUE
@@ -903,6 +922,7 @@
 	icon_state = "R82"
 	item_state = "R84"
 	icon_prefix = "r82"
+	extra_damage = 25
 	fire_delay = 2.5
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
@@ -919,6 +939,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 4
 	spread = 8
+	extra_damage = 25
 	recoil = 0.1
 	can_attachments = TRUE
 	can_bayonet = FALSE
@@ -940,7 +961,7 @@
 	icon_state = "infiltrator"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	extra_damage = -1
+	extra_damage = 22
 	spread = 9
 	fire_delay = 3.5
 	burst_shot_delay = 2
@@ -966,6 +987,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 3.25
 	spread = 1
+	extra_damage = 25
 	burst_size = 1
 	can_attachments = FALSE
 	semi_auto = TRUE
@@ -987,7 +1009,8 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 4
 	spread = 10
-	extra_damage = 1
+	extra_damage = 26
+	extra_penetration = 0.05
 	recoil = 0.1
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
@@ -996,7 +1019,7 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 
-/obj/item/gun/ballistic/automatic/type93/worn //23dmg
+/obj/item/gun/ballistic/automatic/type93/worn //24dmg
 	name = "\improper Worn Type 93"
 	desc = "This Type 93 Chinese assault rifle looks like it has been made in a garage. The bore is shot to hell, the threading is destroyed, but atleast it works."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
@@ -1004,7 +1027,7 @@
 	item_state = "handmade_rifle"
 	fire_delay = 5
 	spread = 13
-	extra_damage = -2
+	extra_damage = 24
 	can_suppress = FALSE
 
 
@@ -1018,6 +1041,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	burst_size = 3
 	burst_shot_delay = 1.5
+	extra_damage = 20
 	fire_delay = 3
 	spread = 4
 	recoil = 0.1
@@ -1041,6 +1065,8 @@
 	mag_type = /obj/item/ammo_box/magazine/m5mm
 	fire_delay = 3.5
 	burst_shot_delay = 2.0
+	extra_damage = 15
+	extra_penetration = 0.2
 	spread = 9
 	can_attachments = TRUE
 	can_scope = TRUE
@@ -1064,9 +1090,9 @@
 	icon_state = "assault_carbine"
 	fire_delay = 3.25
 	burst_shot_delay = 2.5
-	extra_penetration = -0.04
+	extra_penetration = 0.15
 	spread = 10
-	extra_damage = -4
+	extra_damage = 13
 
 //FN-FAL				Keywords: 7.62mm, Automatic, 10/20 round magazine NOT CANON
 /obj/item/gun/ballistic/automatic/fnfal
@@ -1075,6 +1101,7 @@
 	icon_state = "fnfal"
 	item_state = "fnfal"
 	force = 20
+	extra_damage = 30
 	fire_delay = 3.5
 	mag_type = /obj/item/ammo_box/magazine/m762
 	spread = 12
@@ -1091,6 +1118,7 @@
 	icon_state = "g11"
 	item_state = "g11"
 	mag_type = /obj/item/ammo_box/magazine/m473
+	extra_damage = 22
 	fire_delay = 2.5
 	burst_shot_delay = 1.5
 	can_attachments = TRUE
@@ -1117,6 +1145,7 @@
 	item_state = "R84"
 	slowdown = 1
 	mag_type = /obj/item/ammo_box/magazine/lmg
+	extra_damage = 23
 	burst_size = 1
 	fire_delay = 6
 	burst_shot_delay = 2.5
@@ -1131,14 +1160,14 @@
 			select += 1
 			burst_size = 2
 			spread = 8
-			extra_damage = -2
+			extra_damage = 23
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 5
 			spread = 14
-			extra_damage = -5
+			extra_damage = 23
 			recoil = 0.75
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -1159,6 +1188,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 4.5
 	burst_shot_delay = 2.25
+	extra_damage = 23
 	spread = 12
 	spawnwithmagazine = TRUE
 	zoomable = TRUE
@@ -1176,14 +1206,14 @@
 			select += 1
 			burst_size = 2
 			spread = 10
-			extra_damage = -3
+			extra_damage = 23
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 4
 			spread = 14
-			extra_damage = -6
+			extra_damage = 23
 			recoil = 0.5
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -1203,7 +1233,8 @@
 	burst_size = 1
 	burst_shot_delay = 1.5
 	fire_delay = 4
-	extra_damage = -4
+	extra_damage = 25
+	extra_penetration = 0.05
 	spread = 8
 	can_attachments = FALSE
 	var/cover_open = FALSE
@@ -1293,6 +1324,7 @@
 	item_state = "sniper"
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m2mm
+	extra_damage = 50
 	burst_size = 1
 	fire_delay = 12
 	zoomable = TRUE
@@ -1311,6 +1343,7 @@
 	fire_delay = 2
 	burst_shot_delay = 2
 	spawnwithmagazine = TRUE
+	extra_damage = 26
 	spread = 4
 	can_attachments = TRUE
 	zoomable = TRUE
