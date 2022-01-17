@@ -42,7 +42,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a556/rubber
 	name = "5.56 rubber bullet"
-	damage = 0
+	damage = -21
 	stamina = 30
 	sharpness = SHARP_NONE
 	armour_penetration = 0
@@ -51,8 +51,8 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a556/uraniumtipped
 	name = "5.56 uranium-tipped bullet"
-	damage = 25
-	armour_penetration = 0.2
+	damage = -5
+	armour_penetration = 0.1
 	irradiate = 300
 
 /obj/item/projectile/bullet/a556/simple //for simple mobs, separate to allow balancing
@@ -79,7 +79,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a762/rubber
 	name = "7.62 rubber bullet"
-	damage = 0
+	damage = -30
 	stamina = 30
 	sharpness = SHARP_NONE
 	armour_penetration = 0
@@ -105,7 +105,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 	zone_accuracy_factor = 100
 
 /obj/item/projectile/bullet/a50MG/incendiary
-	damage = 40
+	damage = -10
 	var/fire_stacks = 4
 	zone_accuracy_factor = 100
 
@@ -125,7 +125,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 
 /obj/item/projectile/bullet/a50MG/rubber
 	name = ".50 rubber bullet"
-	damage = 0
+	damage = -50
 	stamina = 80
 	armour_penetration = 0
 	sharpness = SHARP_NONE
