@@ -449,7 +449,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	name = "T-45d power armor"
-	desc = "riginally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
+	desc = "originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
 	slowdown = 0.24
@@ -500,11 +500,12 @@
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 80, "energy" = 27, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51green
-	name = "T-51b power armor"
+	name = "Hardened T-51b power armor"
 	desc = "The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51green"
 	item_state = "t51green"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
+	armor = list("melee" = 77, "bullet" = 77, "laser" = 82, "energy" = 29, "bomb" = 64, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
 	name = "Brotherhood T-51b Power Armour"
