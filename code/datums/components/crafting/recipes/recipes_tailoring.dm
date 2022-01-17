@@ -163,7 +163,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/ncrsalvagedhelmetconversion
 	name = "NCR salvaged T-45b helmet"
@@ -173,7 +173,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 20
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 
 /datum/crafting_recipe/ncrcombatarmor
@@ -184,7 +184,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/ncrcombathelmet
 	name = "Shred combat helmet for armor plates"
@@ -194,7 +194,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/ncrcombatarmormk2
 	name = "Shred combat armor mk2 for armor plates"
@@ -204,7 +204,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/ncrcombathelmetmk2
 	name = "Shred combat helmet mk2 for armor plates"
@@ -214,7 +214,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legioncombatarmor
 	name = "Shred combat armor for armor plates"
@@ -224,7 +224,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legioncombathelmet
 	name = "Shred combat helmet for armor plates"
@@ -234,7 +234,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legioncombatarmormk2
 	name = "Shred combat armor mk2 for armor plates"
@@ -244,7 +244,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legioncombathelmetmk2
 	name = "Shred combat helmet mk2 for armor plates"
@@ -254,7 +254,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legionsalvaged
 	name = "Shred power armor for armor plates"
@@ -263,7 +263,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legionsalvagedhelmet
 	name = "Shred power armor helmet for armor plates"
@@ -272,7 +272,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legionsalvaged_ncr
 	name = "Shred salvaged power armor for armor plates"
@@ -281,7 +281,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legionsalvaged_salvaged
 	name = "Shred salvaged power armor helmet for armor plates"
@@ -290,7 +290,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legionriot_broken
 	name = "Shred riot armor for armor plates"
@@ -299,7 +299,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legionriothelmet_broken
 	name = "Shred riot helmet for armor plates"
@@ -308,7 +308,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legionriot_ncr
 	name = "Shred veteran ranger armor for armor plates"
@@ -317,7 +317,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/legionriothelmet_ncr
 	name = "Shred veteran ranger helmet for armor plates"
@@ -326,7 +326,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/ncrsalvaged
 	name = "Shred power armor for armor plates"
@@ -335,7 +335,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/ncrsalvagedhelmet
 	name = "Shred power armor helmet for armor plates"
@@ -344,7 +344,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/ncrsalvaged_salvaged
 	name = "Shred salvaged power armor for armor plates"
@@ -353,7 +353,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/ncrriot_broken
 	name = "Shred riot armor for armor plates"
@@ -362,7 +362,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/ncrriothelmet_broken
 	name = "Shred riot helmet for armor plates"
@@ -371,7 +371,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/boscombatarmor
 	name = "knight armor"
@@ -382,7 +382,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/boscombathelmet
 	name = "knight helmet"
@@ -393,7 +393,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/boscombatarmormk2
 	name = "reinforced knight armor"
@@ -404,7 +404,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/boscombathelmetmk2
 	name = "reinforced knight helmet"
@@ -415,7 +415,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/durathread_vest
 	name = "Makeshift Durathread Armour"
@@ -425,7 +425,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 50
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 ///////////
 //HELMETS//
@@ -531,7 +531,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 30
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/riderw
 	name = "Rider Helmet, Reinforced"
@@ -626,7 +626,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/tailor/legionuniform
 	name = "Legion Uniform"
@@ -636,7 +636,7 @@ datum/crafting_recipe/steelbib/heavy
 	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
-	always_availible = FALSE
+	always_available = FALSE
 
 /datum/crafting_recipe/settler
 	name = "Settler outfit"
