@@ -384,13 +384,17 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-/datum/crafting_recipe/policepistol
+/datum/crafting_recipe/policerifle
 	name = "Police Rifle"
 	result = /obj/item/gun/ballistic/automatic/rangemaster
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/receiver = 1,
 				/obj/item/stack/crafting/metalparts = 2,
 				/obj/item/crafting/duct_tape =1)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
 
 /datum/crafting_recipe/policepistol
 	name = ".357 Police Pistol"
