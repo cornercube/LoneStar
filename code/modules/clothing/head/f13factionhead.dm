@@ -11,8 +11,8 @@
 	dynamic_hair_suffix = "+generic"
 	var/datum/beepsky_fashion/beepsky_fashion //the associated datum for applying this to a secbot
 	var/list/speechspan = null
-	armor = list("tier" = 1)
-	slowdown = 0.01
+	armor = list("melee" = 20, "bullet" = 10, "laser" = 10, "bio" = 0, "bomb" = 10, "rad" = 0, "fire" = 25, "acid" = 25)
+	slowdown = 0
 
 /obj/item/clothing/head/Initialize()
 	. = ..()
@@ -741,6 +741,7 @@
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/outcast
 	name = "brotherhood helmet"
@@ -980,7 +981,7 @@ obj/item/clothing/head/f13/army/beret
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "army_beret"
 	item_state = "army_beret"
-	armor = list("tier" = 2, "energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0)
+	armor = list("melee" = 27, "bullet" = 12, "laser" = 12, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/head/f13/army/beret/airborne
 	name = "US Army airborne beret"
@@ -1084,7 +1085,7 @@ obj/item/clothing/head/f13/army/beret
 
 /obj/item/clothing/head/f13/ncr/goggles
 	name = "NCR storm helmet"
-	desc = "(V) A standard issue NCR Infantry helmet, with a pair of goggles attached to it."
+	desc = "A standard issue NCR Infantry helmet, with a pair of goggles attached to it."
 	icon_state = "ncr_goggles_helmet"
 	item_state = "ncr_goggles_helmet"
 	toggle_message = "You pull the goggles down under "
@@ -1099,7 +1100,7 @@ obj/item/clothing/head/f13/army/beret
 
 /obj/item/clothing/head/hardhat/ncr
 	name = "NCR engineer helmet"
-	desc = "(V) A standard issue NCR Infantry helmet, modified with a head lamp for engineers."
+	desc = "A standard issue NCR Infantry helmet, modified with a head lamp for engineers."
 	icon_state = "hardhat_ncr"
 	item_state = "hardhat_ncr"
 	item_color = "ncr"
