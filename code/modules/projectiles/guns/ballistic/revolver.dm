@@ -189,7 +189,6 @@
 	extra_damage = 36
 	fire_delay = 6
 	spread = 0
-	extra_damage = 2
 	fire_sound = 'sound/f13weapons/357magnum.ogg'
 
 
