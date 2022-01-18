@@ -171,7 +171,6 @@
 	extra_damage = 32
 	fire_delay = 6
 	spread = 1
-	extra_damage = 2
 	fire_sound = 'sound/f13weapons/45revolver.ogg'
 
 
