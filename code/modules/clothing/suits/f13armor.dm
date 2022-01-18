@@ -303,7 +303,7 @@
 	var/mob/living/L = loc
 	if(istype(L))
 		L.update_equipment_speed_mods()
-	armor = armor.modifyRating(linemelee = 75, linebullet = 75, linelaser = 75)
+	armor = armor.modifyRating(melee = 75, bullet = 75, laser = 75)
 
 /obj/item/clothing/suit/armor/f13/power_armor/proc/powerDown(mob/user)
 	powerMode -= 1
@@ -311,7 +311,7 @@
 	var/mob/living/L = loc
 	if(istype(L))
 		L.update_equipment_speed_mods()
-	armor = armor.modifyRating(linemelee = -75, linebullet = -75, linelaser = -75)
+	armor = armor.modifyRating(melee = -75, bullet = -75, laser = -75)
 
 /obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/user, mob/equipper, slot, disable_warning = 1)
 	var/mob/living/carbon/human/H = user
@@ -390,7 +390,7 @@
 	requires_training = TRUE
 	armor = list("melee" = 65, "bullet" = 65, "laser" = 65, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 40)
 	powered = TRUE
-	slowdown = 0.15
+	slowdown = 0.2
 
 
 /obj/item/clothing/suit/armor/f13/power_armor/ncr
@@ -444,7 +444,7 @@
 	desc = "Developed by Garrahan Mining Co. in collaboration with West Tek, the Excavator-class power armor was designed to protect miners from rockfalls and airborne contaminants while increasing the speed at which they could work. "
 	icon_state = "excavator"
 	item_state = "excavator"
-	slowdown = 0.5 //+0.1 from helmet
+	slowdown = 0.5
 	armor = list("melee" = 70, "bullet" = 50, "laser" = 50, "energy" = 25, "bomb" = 80, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
