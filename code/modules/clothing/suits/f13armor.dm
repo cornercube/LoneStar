@@ -381,7 +381,7 @@
 	item_state = "t45bpowerarmor"
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 60, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
-	slowdown = 1
+	slowdown = 0.5
 	powered = FALSE
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored
@@ -401,7 +401,7 @@
 	item_state = "ncrpowerarmor"
 	armor = list("melee" = 60, "bullet" = 65, "laser" = 65, "energy" = 24, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
-	slowdown = 0.25
+	slowdown = 0.4
 
 /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	powered = FALSE
@@ -503,6 +503,7 @@
 	desc = "The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer. It's plates have been chemially treated to be stronger."
 	icon_state = "t51green"
 	item_state = "t51green"
+	slowdown = 0.15 //+0.05 from helmet = total 0.2
 	armor = list("melee" = 77, "bullet" = 77, "laser" = 82, "energy" = 27, "bomb" = 64, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
