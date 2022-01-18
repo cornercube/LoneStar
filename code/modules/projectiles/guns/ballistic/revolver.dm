@@ -312,7 +312,6 @@
 	name = "desert ranger revolver"
 	desc = "I hadn't noticed, but there on his hip, was a really spiffy looking iron..."
 	fire_delay = 4
-	extra_damage = 5
 	extra_penetration = 0.15
 	extra_damage = 36
 
