@@ -62,7 +62,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 /obj/item/projectile/bullet/a556/ap/simple //for simple mobs, separate to allow balancing
 	name = "5.56 bullet"
 	damage = 19
-	armor_penetration = 0.1
+	armour_penetration = 0.1
 
 ////////////////////
 // 7.62 MM & .308 //
@@ -91,7 +91,7 @@ Civilian round				=	-10% damage for .223. AP reduced by 50%
 /obj/item/projectile/bullet/a762/sport/simple //for simple mobs, separate to allow balancing
 	name = ".308 bullet"
 	damage = 35
-	armor_penetration = 0.2
+	armour_penetration = 0.2
 
 /obj/item/projectile/bullet/a762/uraniumtipped
 	name = "7.62 uranium-tipped bullet"
