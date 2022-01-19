@@ -112,12 +112,12 @@
 
 //C96 								Keywords: 10mm, 2-rnd burstm 12/24 round magazine.
 
+/obj/item/gun/ballistic/automatic/pistol/type17/auto
 	name = "C96 Boxcannon"
 	desc = "Chinese military sidearm at the time of the Great War. This one is modified for automatic fire."
-	icon_state = "chinapistol"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
 	fire_delay = 5
-	spread = 5
+	spread = 6
 	burst_size = 2
 	burst_shot_delay = 5.5
 	recoil = 0.2
