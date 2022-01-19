@@ -96,7 +96,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/c10mm/simple
 	name = "10mm FMJ bullet"
 	damage = 20
-	armor_penetration = 0.1
+	armour_penetration = 0.1
 	wound_bonus = 11
 
 /obj/item/projectile/bullet/c10mm/rubber
