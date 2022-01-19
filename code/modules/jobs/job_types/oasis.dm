@@ -262,10 +262,10 @@ loadout_options = list(/datum/outfit/loadout/mayoral,
 	head = /obj/item/clothing/head/f13/town/chief
 	neck = /obj/item/storage/belt/holster/legholster
 	shoes = /obj/item/clothing/shoes/jackboots
-	r_hand = /obj/item/gun/energy/laser/aer9
+	r_hand = /obj/item/gun/energy/laser/aer9/oasis
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/gun/ballistic/automatic/pistol/sig/commissioner = 1,
+		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
 		/obj/item/ammo_box/magazine/m9mm = 3,
 		)
 
