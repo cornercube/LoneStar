@@ -343,13 +343,13 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	item_state = "eshield0"
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
-	force = 2
-	throwforce = 10 //This is never used on mobs since this has a 100% embed chance.
+	force = 15
+	throwforce = 20
 	throw_speed = 4
-	embedding = list("pain_mult" = 4, "embed_chance" = 100, "fall_chance" = 0, "embed_chance_turf_mod" = 15)
-	armour_penetration = 0.65
+	embedding = list("pain_mult" = 3, "embed_chance" = 75, "fall_chance" = 15, "embed_chance_turf_mod" = 25)
+	armour_penetration = 0.25
 
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_TINY
 	sharpness = SHARP_EDGED
 	custom_materials = list(/datum/material/iron=500, /datum/material/glass=500)
 	resistance_flags = FIRE_PROOF
