@@ -298,6 +298,9 @@
 	desc = "Mass-produced weapon from the Great War, this one has seen use ever since. Grip is wrapped in tape to keep the plastic from crumbling, the metals are oxidizing, but the gun still works."
 	init_mag_type = /obj/item/ammo_box/magazine/m10mm_adv/ext
 	worn_out = TRUE
+	extra_penetration = 0.05
+	extra_damage = 20
+	spread = 10
 
 /obj/item/gun/ballistic/automatic/smg/smg10mm/burst_select()
 	var/mob/living/carbon/human/user = usr
