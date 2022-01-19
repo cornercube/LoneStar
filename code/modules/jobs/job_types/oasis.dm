@@ -67,7 +67,7 @@ loadout_options = list(/datum/outfit/loadout/mayoral,
 	r_pocket = /obj/item/flashlight/flare
 	shoes = 		/obj/item/clothing/shoes/f13/tan
 	uniform = /obj/item/clothing/under/f13/gentlesuit
-	head = /obj/item/clothing/head/f13/town/big = 1
+	head = /obj/item/clothing/head/f13/town/big
 	backpack_contents = list( 
 		/obj/item/storage/box/citizenship_permits = 1, \
 		/obj/item/pen/fountain/captain = 1)
