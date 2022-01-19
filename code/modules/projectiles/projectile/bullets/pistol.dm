@@ -81,6 +81,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/c9mm/simple //for simple mobs, separate to allow balancing
 	name = "9mm bullet"
+	damage = 20
 
 
 ///////////
@@ -90,6 +91,12 @@ Civilian round				=	-10% damage. AP reduced by 50%
 /obj/item/projectile/bullet/c10mm
 	name = "10mm FMJ bullet"
 	damage = 0
+	wound_bonus = 11
+
+/obj/item/projectile/bullet/c10mm/simple
+	name = "10mm FMJ bullet"
+	damage = 20
+	armor_penetration = 0.1
 	wound_bonus = 11
 
 /obj/item/projectile/bullet/c10mm/rubber
@@ -130,6 +137,10 @@ Civilian round				=	-10% damage. AP reduced by 50%
 	damage = 0
 	wound_bonus = 15
 
+/obj/item/projectile/bullet/c45/simple
+	name = ".45 FMJ bullet"
+	damage = 30
+	wound_bonus = 15
 
 /obj/item/projectile/bullet/c45/op
 	name = ".45 +P bullet"
@@ -188,7 +199,7 @@ Civilian round				=	-10% damage. AP reduced by 50%
 
 /obj/item/projectile/bullet/m44/simple //for simple mobs, separate to allow balancing
 	name = ".44 bullet"
-
+	damage = 40
 
 ////////////
 // .45-70 //
