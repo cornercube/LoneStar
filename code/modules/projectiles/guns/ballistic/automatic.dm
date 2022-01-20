@@ -552,7 +552,7 @@
 	name = "Prototype Carbine"
 	desc = "A carbine made by vault-tec, chambered in a curious caseless round and designed to fire a multitude of bullets. It has WT-550 on the side. This one looks like it was repaired by the Oasis citizenry."
 	item_state = "wt550"
-	mag_type = /obj/item/ammo_box/magazine/473/small
+	mag_type = /obj/item/ammo_box/magazine/m473/small
 	semi_auto = TRUE
 	spread = 0 //low-recoil + forward grip
 	fire_delay = 3
