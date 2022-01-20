@@ -550,10 +550,13 @@
 //WT-550								4.7mm, 20 round magazine, low damage/low AP
 /obj/item/gun/ballistic/automatic/wt550
 	name = "Prototype Carbine"
-	desc = "A carbine made by vault-tec, chambered in a curious caseless round and designed to fire a multitude of bullets. It has WT-550 on the side. This one looks like it was repaired by the Oasis citizenry."
+	desc = "A carbine made by vault-tec, chambered in a curious caseless round and designed to fire a multitude of bullets. It has 'WT-550' on the side. This one looks like it was repaired by the Oasis citizenry."
 	item_state = "wt550"
 	mag_type = /obj/item/ammo_box/magazine/m473/small
 	semi_auto = TRUE
+	burst_size = 1
+	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_NORMAL
 	spread = 0 //low-recoil + forward grip
 	fire_delay = 3
 	
