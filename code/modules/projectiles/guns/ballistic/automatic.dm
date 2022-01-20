@@ -556,7 +556,7 @@
 	semi_auto = TRUE
 	burst_size = 1
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_NORMAL
+	weapon_weight = WEAPON_MEDIUM
 	spread = 0 //low-recoil + forward grip
 	fire_delay = 3
 	
