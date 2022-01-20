@@ -43,7 +43,8 @@ Mayor
 		),
 	)
 
-loadout_options = list(/datum/outfit/loadout/mayoral,
+loadout_options = list(
+						/datum/outfit/loadout/mayoral,
 						/datum/outfit/loadout/dictator,
 						/datum/outfit/loadout/firstcitizen,
 						/datum/outfit/loadout/highroller,
@@ -102,7 +103,7 @@ loadout_options = list(/datum/outfit/loadout/mayoral,
 		/obj/item/clothing/shoes/jackboots = 1,
 		/obj/item/clothing/suit/armor/f13/battlecoat/vault/overseer = 1,
 		/obj/item/gun/energy/laser/pistol= 2,
-		 /obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
 		)
 
 /datum/outfit/loadout/highroller
