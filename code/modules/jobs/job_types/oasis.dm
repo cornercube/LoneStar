@@ -67,11 +67,11 @@ Mayor
 		/obj/item/pen/fountain/captain = 1)
 		
 
-loadout_options = list(
-						/datum/outfit/loadout/mayoral,
-						/datum/outfit/loadout/dictator,
-						/datum/outfit/loadout/firstcitizen,
-						/datum/outfit/loadout/highroller,
+	loadout_options = list(
+			/datum/outfit/loadout/mayoral,
+			/datum/outfit/loadout/dictator,
+			/datum/outfit/loadout/firstcitizen,
+			/datum/outfit/loadout/highroller,
 					)
 
 
