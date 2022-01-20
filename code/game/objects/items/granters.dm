@@ -839,6 +839,13 @@
 	icon_state = "book"
 	remarks = list("Never make dreams...", "Don't pick from an empty list...", "Runtimes are not good for cardio...", "Report an issue to a nearby technician, and expect to be told to post it to their terminal...", "Probably don't adjust the default safety settings.", "Clean up any messes left in the pod before the next use.")
 	crafting_recipe_types = list(/datum/crafting_recipe/set_vrboard/den)
+	
+	/obj/item/book/granter/crafting_recipe/ODF
+	name = "Weapons of Yuma and the Oasis Defense Force"
+	desc = "a book detailing weapons used in the region and by the local town, it has lithiographed pictures of hand-drawn schematics for each weapon type"
+	oneuse = TRUE
+	crafting_recipe_types = list(/datum/crafting_recipe/policepistol, /datum/crafting_recipe/policerifle, /datum/crafting_recipe/steelbib/heavy, /datum/crafting_recipe/armyhelmetheavy, /datum/crafting_recipe/huntingshotgun)
+	remarks = list("Looks like Oasis hand-crafts replicas from a pre-war police armory", "Some of these weapons are more than 200 years old....", "Duct tape really can hold it together!", "So that is how you laminate armor sheets together", "Looks like you can beat metal into just the right shape to replace the bits") 
 
 /obj/item/book/granter/trait/tagger
 	name = "Picket Fences"
@@ -945,14 +952,6 @@
 	granted_trait = TRAIT_NICE_SHOT
 	traitname = "gunslinging"
 	remarks = list("Engravings offer no tactical advantage whatsoever!", "I love to reload during battle.", "There's nothing like the feeling of slamming a long silver bullet into a well greased chamber.", "It doesn't feel right to shoot an unarmed man, but you get over it.", "He was pretty good, but I was better. At least, so I thought.", "The moment any truth is passed on, it starts turning into fiction. The problem is, fiction inspires people more than facts.")
-
-/obj/item/book/granter/crafting_recipe/trait/ODF
-	name = "Weapons of Yuma and the Oasis Defense Force"
-	desc = "a book detailing weapons used in the region and by the local town, it has lithiographed pictures of hand-drawn schematics for each weapon type"
-	oneuse = TRUE
-	traitname = "local weaponry"
-	crafting_recipe_types = list(/datum/crafting_recipe/policepistol, /datum/crafting_recipe/policerifle, /datum/crafting_recipe/steelbib/heavy, /datum/crafting_recipe/armyhelmetheavy, /datum/crafting_recipe/huntingshotgun)
-	remarks = list("Looks like Oasis hand-crafts replicas from a pre-war police armory", "Some of these weapons are more than 200 years old....", "Duct tape really can hold it together!", "So that is how you laminate armor sheets together", "Looks like you can beat metal into just the right shape to replace the bits") 
 
 /obj/item/book/granter/trait/iron_fist
 	name = "Brawler's Guide to Fisticuffs"
