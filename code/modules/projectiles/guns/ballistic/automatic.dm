@@ -547,6 +547,18 @@
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"][stock ? "" : "-f"]"
 
 
+//WT-550								4.7mm, 20 round magazine, low damage/low AP
+/obj/item/gun/ballistic/automatic/wt550
+	name = "Prototype Carbine"
+	desc = "A carbine made by vault-tec, chambered in a curious caseless round and designed to fire a multitude of bullets. It has WT-550 on the side. This one looks like it was repaired by the Oasis citizenry."
+	item_state = "wt550"
+	mag_type = /obj/item/ammo_box/magazine/473/small
+	semi_auto = TRUE
+	spread = 0 //low-recoil + forward grip
+	fire_delay = 3
+	
+	
+	
 
 ////////////////////
 //SEMI-AUTO RIFLES//
@@ -1093,6 +1105,8 @@
 	mag_type = /obj/item/ammo_box/magazine/m473
 	fire_delay = 2.5
 	burst_shot_delay = 1.5
+	extra_penetration = 0.1
+	extra_damage = 3
 	can_attachments = TRUE
 	can_automatic = TRUE
 	semi_auto = TRUE
