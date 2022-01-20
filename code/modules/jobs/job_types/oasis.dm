@@ -114,7 +114,7 @@ Mayor
 		/obj/item/clothing/suit/f13/vest,
 		/obj/item/clothing/under/f13/sleazeball,
 		/obj/item/clothing/shoes/laceup,
-		/obj/item/gun/ballistic/automatic/pistol/type17/auto = 1,
+	
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 	)
 
