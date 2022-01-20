@@ -457,7 +457,7 @@ Mayor
 		/obj/item/melee/onehanded/knife/hunting,
 		/obj/item/gun/ballistic/automatic/pistol/n99,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
-		/obj/item/book/granter/trait/ODF = 1,
+		/obj/item/book/granter/crafting_recipe/ODF = 1,
 		)
 
 /datum/outfit/job/den/f13settler/pre_equip(mob/living/carbon/human/H)
@@ -689,7 +689,7 @@ Mayor
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	backpack_contents = list(/obj/item/twohanded/sledgehammer = 1,
 	/obj/item/stack/sheet/metal/twenty = 1,
-	/obj/item/book/granter/trait/ODF = 1,
+	/obj/item/book/granter/crafting_recipe/ODF = 1,
 	)
 
 /datum/outfit/loadout/outdoorsman
