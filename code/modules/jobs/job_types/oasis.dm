@@ -42,12 +42,6 @@ Mayor
 		),
 	)
 
-loadout_options = list(
-						/datum/outfit/loadout/mayoral,
-						/datum/outfit/loadout/dictator,
-						/datum/outfit/loadout/firstcitizen,
-						/datum/outfit/loadout/highroller,
-					)
 
 /datum/outfit/job/den/f13mayor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -72,6 +66,14 @@ loadout_options = list(
 		/obj/item/storage/box/citizenship_permits = 1, \
 		/obj/item/pen/fountain/captain = 1)
 		
+
+loadout_options = list(
+						/datum/outfit/loadout/mayoral,
+						/datum/outfit/loadout/dictator,
+						/datum/outfit/loadout/firstcitizen,
+						/datum/outfit/loadout/highroller,
+					)
+
 
 /datum/outfit/loadout/dictator
 	name = "Mayor for Life"
