@@ -83,6 +83,7 @@
 	desc = "A particularly unhuggable armor, even by raider standards. Extremely spiky."
 	icon_state = "painspike"
 	item_state = "painspike"
+	armor = list("melee" = 40, "bullet" = 30, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 
 /obj/item/clothing/suit/armor/f13/raider/painspike/Initialize()
 	. = ..()
@@ -104,6 +105,7 @@
 	armor = list("melee" = 25, "bullet" = 50, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 	icon_state = "combatduster"
 	item_state = "combatduster"
+	0.07
 
 /obj/item/clothing/suit/armor/f13/raider/combatduster/patrolduster
 	name = "Patrol Duster"
@@ -163,16 +165,16 @@
 	icon_state = "raider_combat"
 	item_state = "raider_combat"
 	armor = list("melee" = 40, "bullet" = 40 , "laser" = 35,"energy" = 25, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
-	slowdown = 0.06
+	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/raider/raidermetal
 	name = "metal raider armor"
 	desc = "A suit of welded, fused metal plates. Looks bulky, with great protection."
 	icon_state = "raider_metal"
 	item_state = "raider_metal"
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 40, "energy" = 25, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 45, "energy" = 25, "bomb" = 45, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0)
 	resistance_flags = FIRE_PROOF
-	slowdown = 0.2
+	slowdown = 0.25
 
 //////////
 //LEGION//
@@ -255,8 +257,8 @@
 	desc = " Worn by Vexillarius, this armor has been reinforced with circular metal plates on the chest and a back mounted pole for the flag of the Bull, making the wearer easy to see at a distance."
 	icon_state = "legion_vex"
 	item_state = "legion_vex"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0)
-
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0)
+	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/legion/venator
 	name = "legion venator armor"
@@ -282,8 +284,8 @@
 	desc = "A Centurion able to defeat a Brotherhood Paladin gets the honorific title 'Paladin-Slayer', and adds bits of the looted armor to his own."
 	icon_state = "legion_palacent"
 	item_state = "legion_palacent"
-	armor = list("melee" = 50, "bullet" = 55, "laser" = 30, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0)
-	slowdown = 0.13
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0)
+	slowdown = 0.25
 
 
 /obj/item/clothing/suit/armor/f13/legion/rangercent
@@ -567,7 +569,7 @@
 	icon_state = "headscribe"
 	item_state = "headscribe"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 20, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 36, "bio" = 50, "rad" = 69, "fire" = 10, "acid" = 70)
+	armor = list("melee" = 10, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 36, "bio" = 50, "rad" = 69, "fire" = 10, "acid" = 70)
 
 /obj/item/clothing/suit/f13/scribe
 	name = "Brotherhood Scribe's robe"
@@ -575,7 +577,7 @@
 	icon_state = "scribe"
 	item_state = "scribe"
 	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("melee" = 20, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 16, "bio" = 100, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/f13/seniorscribe
 	name = "Brotherhood Senior Scribe's robe"
@@ -583,7 +585,7 @@
 	icon_state = "seniorscribe"
 	item_state = "seniorscribe"
 	body_parts_covered = CHEST|ARMS|LEGS
-	armor = list("melee" = 20, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 16, "bio" = 100, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/f13/elder
 	name = "Brotherhood Elder's robe"
@@ -618,6 +620,7 @@
 	desc = "An old degraded pre war combat armor, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor"
 	item_state = "brotherhood_armor"
+	slowdown = 0.13
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
 	name = "reinforced knight armor"
@@ -625,7 +628,7 @@
 	icon_state = "brotherhood_armor_mk2"
 	item_state = "brotherhood_armor_mk2"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
-	slowdown = 0.7
+	slowdown = 0.13
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
 	name = "brotherhood armor" //unused?
@@ -646,15 +649,16 @@
 
 /obj/item/clothing/suit/armor/f13/town/mayor
 	name = "mayor trenchcoat"
-	desc = "A symbol of the mayor's authority (or lack thereof)."
-	armor = list("melee" = 30, "bullet" = 35, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 10, "fire" = 15, "acid" = 5)
+	desc = "A symbol of the mayor's authority (or lack thereof). It has discrete armor plating in the lining, to foil assassination attempts."
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 10, "fire" = 15, "acid" = 5)
+	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/f13/town/sheriff
 	name = "sheriff trenchcoat"
 	desc = " A trenchcoat which does not attempt to hide the full-body combat armor beneath it."
 	icon_state = "towntrench_heavy"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 40,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
-	slowdown = 0.07 //slower
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
+	slowdown = 0.1 //reinforced combat armor, but less slowdown
 	
 /obj/item/clothing/suit/armor/f13/town/sheriff/Initialize()
 	. = ..()
@@ -667,9 +671,9 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/suit_cosmetic.dmi'
 	icon_state = "police_chief"
 	item_state = "police_chief"
-	armor = list("melee" = 45, "bullet" = 65, "laser" = 40,  "energy" = 35, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
+	armor = list("melee" = 45, "bullet" = 65, "laser" = 45,  "energy" = 35, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/holdout
-	slowdown = 0.05 
+	slowdown = 0.06  //bulletproof vest, but less weakness and more speed
 
 /obj/item/clothing/suit/armor/f13/town/chief/Initialize()
 	. = ..()
@@ -680,7 +684,7 @@
 	desc = "An armored trench coat with added shoulderpads, a chestplate, and legguards."
 	icon_state = "towntrench_medium"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 35,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
-	slowdown = 0.06
+	slowdown = 0.06 //combat armor but less slowdown
 
 /obj/item/clothing/suit/armor/f13/town/deputy/Initialize()
 	. = ..()
