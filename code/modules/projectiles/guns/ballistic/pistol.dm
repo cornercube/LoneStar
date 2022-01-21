@@ -17,7 +17,7 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	item_state = "gun"
 	w_class = WEIGHT_CLASS_NORMAL //How much space it takes in a bag
-	weapon_weight = WEAPON_LIGHT //Nakes dual wield possible
+	weapon_weight = WEAPON_MEDIUM //can only dual wield small pistols
 	slot_flags = ITEM_SLOT_BELT
 	force = 12 //Pistol whip
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
@@ -56,6 +56,7 @@
 	icon_state = "silenced22"
 	mag_type = /obj/item/ammo_box/magazine/m22
 	extra_damage = 15
+	weapon_weight = WEAPON_LIGHT
 	w_class = WEIGHT_CLASS_TINY
 	can_attachments = TRUE
 	can_suppress = FALSE
@@ -124,6 +125,7 @@
 	desc = "A mass produced pre-war Browning Hi-power 9mm pistol."
 	icon_state = "ninemil"
 	mag_type = /obj/item/ammo_box/magazine/m9mm
+	weapon_weight = WEAPON_LIGHT
 	extra_damage = 20
 	fire_delay = 3.5
 	can_attachments = TRUE
@@ -148,6 +150,7 @@
 	desc = "The P220 Sig Sauer. A Swiss designed pistol that is compact and has a good rate of fire."
 	icon_state = "sig"
 	w_class = WEIGHT_CLASS_SMALL
+	weapon_weight = WEAPON_LIGHT
 	mag_type = /obj/item/ammo_box/magazine/m9mm
 	extra_damage = 19
 	fire_delay = 3
@@ -266,7 +269,6 @@
 	desc = "A very tactical pistol chambered in .45 ACP with a built in laser sight and attachment point for a seclite."
 	icon_state = "mk23"
 	mag_type = /obj/item/ammo_box/magazine/m45exp
-	weapon_weight = WEAPON_MEDIUM
 	fire_delay = 3.5
 	extra_damage = 34
 	spread = 1
@@ -293,7 +295,6 @@
 	icon_state = "deagle"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/m44
-	weapon_weight = WEAPON_MEDIUM
 	force = 15
 	extra_damage = 35
 	extra_penetration = 0.05
@@ -321,7 +322,6 @@
 	icon_state = "automag"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/automag
-	weapon_weight = WEAPON_MEDIUM
 	extra_damage = 41
 	extra_speed = 300
 	fire_delay = 3.7
@@ -337,7 +337,6 @@
 	desc = "A Swiss SIG-Sauer 14mm handgun, powerful but a little inaccurate"
 	icon_state = "pistol14"
 	mag_type = /obj/item/ammo_box/magazine/m14mm
-	weapon_weight = WEAPON_MEDIUM
 	force = 15
 	extra_damage = 30
 	extra_penetration = 0.2
