@@ -115,7 +115,7 @@
 	item_state = "cowboyrepeater"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube357
 	extra_damage = 35
-	fire_delay = 4.5
+	fire_delay = 4
 	fire_sound = 'sound/f13weapons/cowboyrepeaterfire.ogg'
 
 
@@ -126,9 +126,9 @@
 	icon_state = "trailcarbine"
 	item_state = "trailcarbine"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube44
-	extra_damage = 35
+	extra_damage = 40
 	extra_penetration = 0.1
-	fire_delay = 4.5
+	fire_delay = 4
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 
 
@@ -139,8 +139,8 @@
 	icon_state = "brushgun"
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
-	extra_damage = 38
-	extra_penetration = 0.1
+	extra_damage = 50
+	extra_penetration = 0.15
 	fire_delay = 4.5
 	recoil = 0.1
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
