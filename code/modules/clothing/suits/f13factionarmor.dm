@@ -696,7 +696,7 @@
 	icon_state = "steel_bib"
 	item_state = "steel_bib"
 	armor = list( "melee" = 30, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	slowdown = 0.08
+	slowdown = 0.1
 	strip_delay = 5
 
 //Great Khan
