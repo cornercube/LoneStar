@@ -65,13 +65,16 @@ Mayor
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	l_pocket = /obj/item/storage/bag/money/small/settler
-	r_pocket = /obj/item/flashlight/flare
+	r_pocket = /obj/item/flashlight/seclite
+	belt = /obj/item/gun/ballistic/automatic/wt550
 	shoes = 		/obj/item/clothing/shoes/f13/tan
 	uniform = /obj/item/clothing/under/f13/gentlesuit
 	head = /obj/item/clothing/head/f13/town/big
 	backpack_contents = list( 
 		/obj/item/storage/box/citizenship_permits = 1, \
-		/obj/item/pen/fountain/captain = 1)
+		/obj/item/pen/fountain/captain = 1
+		/obj/item/ammo_box/magazine/m473/small = 2,
+		)
 		
 
 
@@ -80,8 +83,8 @@ Mayor
 	backpack_contents = list(
 	/obj/item/clothing/under/f13/general/oasis = 1,
 	/obj/item/clothing/head/f13/army/general = 1,
-	/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
-	/obj/item/ammo_box/magazine/m44 = 1,
+	/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
+	/obj/item/ammo_box/magazine/m45 = 2,
 	/obj/item/clothing/shoes/jackboots = 1,
 	/obj/item/clothing/mask/cigarette/pipe/cobpipe = 1,
 	)
@@ -91,8 +94,8 @@ Mayor
 	backpack_contents = list(
 		/obj/item/clothing/suit/armor/f13/town/mayor = 1,
 		/obj/item/clothing/head/f13/town/mayor = 1,
-		/obj/item/gun/ballistic/revolver/hunting = 1,
-		/obj/item/ammo_box/tube/c4570 = 2,
+		/obj/item/gun/ballistic/revolver/m29/snub = 1,
+		/obj/item/ammo_box/m44 = 2,
 		/obj/item/clothing/shoes/f13/cowboy = 1,
 		/obj/item/clothing/mask/cigarette/cigar = 1,
 		)
@@ -103,8 +106,9 @@ Mayor
 		/obj/item/clothing/under/f13/vault = 1,
 		/obj/item/clothing/shoes/jackboots = 1,
 		/obj/item/clothing/suit/armor/f13/battlecoat/vault/overseer = 1,
-		/obj/item/gun/energy/laser/pistol= 2,
-		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/reagent_containers/food/drinks/flask/vault113,
+		/obj/item/gun/energy/laser/pistol= 1,
+		/obj/item/stock_parts/cell/ammo/ec = 1,
 		)
 
 /datum/outfit/loadout/highroller
@@ -114,7 +118,8 @@ Mayor
 		/obj/item/clothing/suit/f13/vest,
 		/obj/item/clothing/under/f13/sleazeball,
 		/obj/item/clothing/shoes/laceup,
-	
+		/obj/item/toy/cards/deck/unum = 1,
+		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 	)
 
