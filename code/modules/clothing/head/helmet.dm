@@ -468,3 +468,18 @@
 	icon_state = "armyhelmet"
 	item_state = "armyhelmet"
 	armor = list("melee" = 20, "bullet" = 45, "laser" = 20, "energy" = 15, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	
+/obj/item/clothing/head/helmet/armyhelmet/heavy
+	name = "heavy steel helmet"
+	desc = "(V*) a steel helmet, inspired by several pre-war designs. This one has been modified by oasis citizens to provide more protection to the face and neck."
+	icon_state = "armyhelmetheavy"
+	item_state = "armyhelmetheavy"
+	armor = list("melee" = 25, "bullet" = 50, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = 0.025
+	
+/obj/item/clothing/head/helmet/armyhelmet/heavy/attack_self(mob/user)
+	weldingvisortoggle(user)
+	icon_state = "armyhelmetheavy_up"
+	item_state = "armyhelmetheavy_up"
+	armor = list("melee" = 25, "bullet" = 50, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	slowdown = 0.01
