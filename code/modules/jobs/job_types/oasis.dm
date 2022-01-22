@@ -72,7 +72,7 @@ Mayor
 	head = /obj/item/clothing/head/f13/town/big
 	backpack_contents = list( 
 		/obj/item/storage/box/citizenship_permits = 1, \
-		/obj/item/pen/fountain/captain = 1
+		/obj/item/pen/fountain/captain = 1,
 		/obj/item/ammo_box/magazine/m473/small = 2,
 		)
 		
