@@ -312,7 +312,7 @@
 	name = "desert ranger revolver"
 	desc = "I hadn't noticed, but there on his hip, was a really spiffy looking iron..."
 	fire_delay = 4
-	extra_penetration = 0.15
+	extra_penetration = 0.1
 	extra_damage = 36
 
 
@@ -328,8 +328,8 @@
 	item_state = "sequoia"
 	weapon_weight = WEAPON_MEDIUM
 	recoil = 0.2
-	extra_damage = 38
-	extra_penetration = 0.15
+	extra_damage = 50
+	extra_penetration = 0.1
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev4570
 	fire_sound = 'sound/f13weapons/sequoia.ogg'
 
@@ -359,8 +359,8 @@
 	recoil = 0.1
 	can_scope = TRUE
 	scope_state = "revolver_scope"
-	extra_damage = 40
-	extra_penetration = 0.2
+	extra_damage = 50
+	extra_penetration = 0.05 //its not brass hardcast
 	fire_delay = 5.5
 	scope_x_offset = 9
 	scope_y_offset = 20
