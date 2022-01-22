@@ -105,7 +105,7 @@
 	armor = list("melee" = 25, "bullet" = 50, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 	icon_state = "combatduster"
 	item_state = "combatduster"
-	0.07
+	slowdown = 0.07
 
 /obj/item/clothing/suit/armor/f13/raider/combatduster/patrolduster
 	name = "Patrol Duster"
