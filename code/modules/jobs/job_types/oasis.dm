@@ -114,10 +114,10 @@ Mayor
 /datum/outfit/loadout/highroller
 	name = "High Roller"
 	backpack_contents = list(
-		/obj/item/clothing/glasses/orange,
-		/obj/item/clothing/suit/f13/vest,
-		/obj/item/clothing/under/f13/sleazeball,
-		/obj/item/clothing/shoes/laceup,
+		/obj/item/clothing/glasses/orange = 1,
+		/obj/item/clothing/suit/f13/vest = 1,
+		/obj/item/clothing/under/f13/sleazeball = 1,
+		/obj/item/clothing/shoes/laceup = 1,
 		/obj/item/toy/cards/deck/unum = 1,
 		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
