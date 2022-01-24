@@ -238,7 +238,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "legion_heavy"
 	item_state = "legion_heavy"
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 5-)
+	armor = list("melee" = 35, "bullet" = 50, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/legion/vet/explorer
