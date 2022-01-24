@@ -841,15 +841,74 @@
 /obj/item/clothing/head/helmet/f13/khan
 	name = "Great Khan helmet"
 	desc = "A piece of headwear commonly worn by the Great Khans that appears to resemble stereotypical traditional Mongolian helmets - likely adapted from a pre-War motorcycle helmet.<br>It is black with two horns on either side and a small spike jutting from the top, much like a pickelhaube.<br>A leather covering protects the wearer's neck and ears from sunburn."
-	icon_state = "khan"
-	item_state = "khan"
+  mob_overlay_icon = 'icons/fallout/onmob/clothes/khaans.dmi'
+	icon_state = "khan_helmet"
+	item_state = "khan_helmet"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
-	flags_inv = HIDEEARS|HIDEHAIR
-	strip_delay = 20
+	flags_inv = null
+	flags_cover = null
+  strip_delay = 20
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/f13/khan/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
+
+
+/obj/item/clothing/head/helmet/f13/khan/pelt
+	desc = "(IV) A helmet with traditional horns, but wasteland-chique fur trimming instead of the classic leather cover. For the Khan who wants to show off their hair."
+	icon_state = "khan_helmetpelt"
+	item_state = "khan_helmetpelt"
+
+/obj/item/clothing/head/helmet/f13/khan/pelt/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+
+/obj/item/clothing/head/helmet/f13/khan/bandana
+	name = "Great Khan bandana"
+	desc = "(IV) A bandana. Tougher than it looks. One side of the cloth is dark, the other red, so it can be reversed."
+	icon_state = "khan_bandana"
+	item_state = "khan_bandana"
+	strip_delay = 10
+	dynamic_hair_suffix = null
+	dynamic_fhair_suffix = null
+	var/helmettoggled = FALSE
+
+/obj/item/clothing/head/helmet/f13/khan/bandana/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/head/helmet/f13/khan/bandana/AltClick(mob/user)
+	. = ..()
+	if(!user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
+		return
+	helmet_toggle(user)
+	return TRUE
+
+/obj/item/clothing/head/helmet/f13/khan/bandana/ui_action_click()
+	helmet_toggle()
+
+/obj/item/clothing/head/helmet/f13/khan/bandana/proc/helmet_toggle()
+	set src in usr
+
+	if(!can_use(usr))
+		return 0
+
+	to_chat(usr, "<span class='notice'>You turn the [src] inside out.</span>")
+	if(src.helmettoggled)
+		src.icon_state = "[initial(icon_state)]"
+		src.item_state = "[initial(icon_state)]"
+		src.helmettoggled = FALSE
+	else if(!src.helmettoggled)
+		src.icon_state = "[initial(icon_state)]_t"
+		src.item_state = "[initial(icon_state)]_t"
+		src.helmettoggled = TRUE
+	usr.update_inv_head()
+	for(var/X in actions)
+		var/datum/action/A = X
+		A.UpdateButtonIcon()
 
 
 //Wayfarer
