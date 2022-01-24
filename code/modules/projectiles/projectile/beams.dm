@@ -509,7 +509,7 @@
 /obj/item/projectile/beam/laser/aer14/hitscan
 	damage = 35
 	wound_bonus = 20
-	armour_penetration = 0.1
+	armour_penetration = 0.05
 	tracer_type = /obj/effect/projectile/tracer/pulse
 	muzzle_type = /obj/effect/projectile/muzzle/pulse
 	impact_type = /obj/effect/projectile/impact/pulse
@@ -536,6 +536,7 @@
 	name = "laser beam"
 	damage = 30
 	hitscan = TRUE
+	armour_penetration = 0.05
 	tracer_type = /obj/effect/projectile/tracer/xray
 	muzzle_type = /obj/effect/projectile/muzzle/xray
 	impact_type = /obj/effect/projectile/impact/xray
