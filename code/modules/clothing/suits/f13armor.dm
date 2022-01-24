@@ -421,7 +421,7 @@
 	desc = " It's a set of T-45b power armor with a with some of its plating removed. This set has exhaust pipes piped to the pauldrons, flames erupting from them."
 	icon_state = "t45hotrod"
 	item_state = "t45hotrod"
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 55, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 7-)
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 55, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 70)
 	slowdown = 0.25
 	requires_training = FALSE
 
