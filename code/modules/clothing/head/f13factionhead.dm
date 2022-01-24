@@ -847,7 +847,7 @@
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
 	flags_inv = null
 	flags_cover = null
-  strip_delay = 20
+	strip_delay = 20
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
