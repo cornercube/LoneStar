@@ -280,7 +280,6 @@ obj/item/melee/onehanded/knife/switchblade
 	name = "throwing knife"
 	desc = "a finely balanced knife made from a lightweight alloy, designed for being thrown. You can easily embed these in someone, and you look darn cool while doing so."
 	icon_state = "knife_throw"
-	item_state = "knife"
 	force = 20
 	throwforce = 23
 	armour_penetration = 0.25
