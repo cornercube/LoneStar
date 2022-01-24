@@ -296,7 +296,6 @@
 /obj/item/projectile/beam/laser/lasgun //AER9
 	name = "laser beam"
 	damage = 33
-	armour_penetration = 0.44
 
 /obj/item/projectile/beam/laser/lasgun/hitscan //hitscan aer9 test
 	name = "laser beam"
@@ -324,7 +323,7 @@
 	name = "laser beam"
 	damage = 25
 	hitscan = TRUE
-	armour_penetration = 0.1
+	armour_penetration = 0.02
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
@@ -345,6 +344,7 @@
 	name = "recharger beam"
 	damage = 22
 	hitscan = TRUE
+	armour_penetration = 0.02
 	tracer_type = /obj/effect/projectile/tracer/pulse
 	muzzle_type = /obj/effect/projectile/muzzle/pulse
 	impact_type = /obj/effect/projectile/impact/pulse
@@ -437,7 +437,7 @@
 	flag = "energy" //checks vs. energy protection
 	eyeblur = 0
 	is_reflectable = TRUE
-	pixels_per_second = TILES_TO_PIXELS(27)
+	pixels_per_second = TILES_TO_PIXELS(10)
 
 /obj/item/projectile/f13plasma/repeater //Plasma repeater
 	name = "plasma stream"
