@@ -67,7 +67,7 @@
 	desc = "Battlecruiser operational!"
 	icon_state = "battlecruiser"
 	item_state = "hostrench"
-		armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/f13/cowboybvest //Originally cowboy stuff by Nienhaus
 	name = "brown vest"
