@@ -1068,9 +1068,9 @@
 	mag_type = /obj/item/ammo_box/magazine/m5mm
 	fire_delay = 3.5
 	burst_shot_delay = 2.0
-	extra_damage = 15
-	extra_penetration = 0.2
-	spread = 9
+	extra_damage = 17
+	extra_penetration = 0.25
+	spread = 6 //high-velocity
 	can_attachments = TRUE
 	can_scope = TRUE
 	scope_state = "scope_short"
