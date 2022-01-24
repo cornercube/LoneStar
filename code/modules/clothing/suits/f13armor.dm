@@ -1151,7 +1151,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	item_state = "dead_horses_armour_heavy"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 10, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10)
-	slowdown = 0..05
+	slowdown = 0.05
 
 /obj/item/clothing/suit/f13/tribal/light/sorrows
 	name = "Sorrows armour"
