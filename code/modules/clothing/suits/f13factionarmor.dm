@@ -6,7 +6,7 @@
 	name = "base raider armor"
 	desc = "for testing"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 35)
 	strip_delay = 40
 	slowdown = 0.05
 
@@ -189,7 +189,7 @@
 	item_state = "legarmor"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/powered, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0)
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/f13/legion/Initialize()
@@ -238,7 +238,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "legion_heavy"
 	item_state = "legion_heavy"
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+	armor = list("melee" = 35, "bullet" = 50, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 5-)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/legion/vet/explorer
@@ -274,7 +274,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "legion_centurion"
 	item_state = "legion_centurion"
-	armor = list("melee" = 55, "bullet" = 55, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0)
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 55)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/legion/palacent
@@ -363,7 +363,7 @@
 	icon_state = "ncr_infantry_vest"
 	item_state = "ncr_infantry_vest"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/Initialize()
@@ -627,7 +627,7 @@
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design This one is kitted with additional plates and, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor_mk2"
 	item_state = "brotherhood_armor_mk2"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
 	slowdown = 0.13
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/outcast
@@ -644,7 +644,7 @@
 	icon_state = "towntrench"
 	item_state = "hostrench"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5, "wound" = 40)
 	slowdown = 0.025 // zoom zoom
 
 /obj/item/clothing/suit/armor/f13/town/mayor
@@ -657,7 +657,7 @@
 	name = "sheriff trenchcoat"
 	desc = " A trenchcoat which does not attempt to hide the full-body combat armor beneath it."
 	icon_state = "towntrench_heavy"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 55)
 	slowdown = 0.1 //reinforced combat armor, but less slowdown
 	
 /obj/item/clothing/suit/armor/f13/town/sheriff/Initialize()
@@ -671,7 +671,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/suit_cosmetic.dmi'
 	icon_state = "police_chief"
 	item_state = "police_chief"
-	armor = list("melee" = 45, "bullet" = 65, "laser" = 45,  "energy" = 35, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
+	armor = list("melee" = 45, "bullet" = 65, "laser" = 45,  "energy" = 35, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 55)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/holdout
 	slowdown = 0.06  //bulletproof vest, but less weakness and more speed
 
@@ -683,7 +683,7 @@
 	name = "deputy trenchcoat"
 	desc = "An armored trench coat with added shoulderpads, a chestplate, and legguards."
 	icon_state = "towntrench_medium"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 35,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 35,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 50)
 	slowdown = 0.06 //combat armor but less slowdown
 
 /obj/item/clothing/suit/armor/f13/town/deputy/Initialize()
@@ -695,7 +695,7 @@
 	desc = "a steel breastplate, inspired by a pre-war design. Looks like oasis citiznes added an additional layer of metal on the front face."
 	icon_state = "steel_bib"
 	item_state = "steel_bib"
-	armor = list( "melee" = 30, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+	armor = list( "melee" = 30, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 42)
 	slowdown = 0.1
 	strip_delay = 5
 
@@ -705,7 +705,7 @@
 	desc = "The symbol of the greatest pushers."
 	icon_state = "khan_jacket"
 	item_state = "khan_jacket"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 25,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 25,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 37)
 	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/khan_jacket/Initialize()
@@ -728,7 +728,7 @@
 	icon_state = "tribecombatarmor"
 	item_state = "tribecombatarmor"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 35,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 35,  "energy" = 25, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 45)
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/melee/onehanded, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	slowdown = 0.07
 	
@@ -738,7 +738,7 @@
 	icon_state = "tribal_armor"
 	item_state = "tribal_armor"
 	body_parts_covered = CHEST|GROIN|ARMS
-	armor = list("melee" = 40, "bullet" = 25, "laser" = 20, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
+	armor = list("melee" = 40, "bullet" = 25, "laser" = 20, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100, "wound" = 47)
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/melee/onehanded, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	slowdown = 0.04
 	
@@ -749,7 +749,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	icon_state = "tribal_heavy"
 	item_state = "tribal_heavy"
-	armor = list("melee" = 50, "bullet" = 35, "laser" = 30, "energy" = 30, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 30, "energy" = 30, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 50)
 	slowdown = 0.15
 	flags_inv = HIDEJUMPSUIT
 	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/melee/onehanded, /obj/item/twohanded/spear, /obj/item/melee/smith, /obj/item/melee/smith/twohand
