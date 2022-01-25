@@ -83,10 +83,11 @@
 	icon_state = "westender"
 	item_state = "lb_suit"
 	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bartender
 
 /obj/item/clothing/suit/f13/cowboygvest
 	name = "grey vest"
-	desc = "(I) A grey vest, typically worn by wannabe cowboys and prospectors. It has a few pockets for tiny items."
+	desc = "A grey vest, typically worn by wannabe cowboys and prospectors. It has a few pockets for tiny items."
 	icon_state = "cowboygvest"
 	item_state = "gy_suit"
 	body_parts_covered = CHEST|GROIN|LEGS
@@ -135,6 +136,7 @@
 	icon_state = "courier"
 	item_state = "suit-command"
 	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 	
 /obj/item/clothing/suit/f13/veteran
 	name = "merc veteran coat"
@@ -153,11 +155,12 @@
 
 /obj/item/clothing/suit/f13/sheriff
 	name = "sheriff duster"
-	desc = "(A long brown leather overcoat.<br>A powerful accessory of a respectful sheriff, bringer of justice."
+	desc = "A long brown leather overcoat.<br>A powerful accessory of a respectful sheriff, bringer of justice."
 	icon_state = "sheriff"
 	item_state = "det_suit"
 	armor = list("melee" = 25, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
 /obj/item/clothing/suit/f13/banker
 	name = "bankers tailcoat"
@@ -174,6 +177,7 @@
 	item_state = "autumn"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 15, "energy" = 5, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	
 
 /obj/item/clothing/suit/f13/hubologist
@@ -214,6 +218,7 @@
 		/obj/item/holosign_creator,
 		/obj/item/assembly/signaler
 	) //robust storage options!! -superballs
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
 //Special Biosuit
 
@@ -272,6 +277,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0)
 	slowdown = 0.05
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 
 /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/Initialize()
 	. = ..()
@@ -286,6 +292,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
 	armor = list("melee" = 35, "bullet" = 37, "laser" = 35, "energy" = 25, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0)
 	slowdown = 0.07
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
 /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/armored/Initialize()
 	. = ..()
@@ -299,6 +306,7 @@
 	item_state = "khan_heavy"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|HANDS|FEET
 	armor = list("melee" = 37, "bullet" = 35, "laser" = 35, "energy" = 25, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 10, "acid" = 0)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small
 
 /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket/coat/Initialize()
 	. = ..()
@@ -312,6 +320,7 @@
 	icon_state = "followers"
 	item_state = "labcoat"
 	armor = list("melee" = 25, "bullet" = 15, "laser" = 20, "energy" = 25, "bomb" = 20, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/medical
 
 /obj/item/clothing/suit/armor/f13/generaluniform
 	name = "Yuma 1st Irregular General Uniform"
