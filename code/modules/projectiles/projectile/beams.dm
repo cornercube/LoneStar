@@ -507,7 +507,7 @@
 	light_color = LIGHT_COLOR_BLUE
 
 /obj/item/projectile/beam/laser/aer14/hitscan
-	damage = 33
+	damage = 32
 	wound_bonus = 20
 	armour_penetration = 0.05
 	tracer_type = /obj/effect/projectile/tracer/pulse
@@ -534,7 +534,7 @@
 
 /obj/item/projectile/beam/laser/aer12/hitscan
 	name = "laser beam"
-	damage = 30
+	damage = 28
 	hitscan = TRUE
 	armour_penetration = 0.02
 	tracer_type = /obj/effect/projectile/tracer/xray
@@ -557,7 +557,7 @@
 
 /obj/item/projectile/beam/laser/wattz2k/hitscan
 	name = "sniper laser bolt"
-	damage = 28
+	damage = 25
 	wound_bonus = 10
 	bare_wound_bonus = 20
 	tracer_type = /obj/effect/projectile/tracer/heavy_laser
