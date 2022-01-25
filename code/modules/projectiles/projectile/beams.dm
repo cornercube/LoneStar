@@ -557,7 +557,7 @@
 
 /obj/item/projectile/beam/laser/wattz2k/hitscan
 	name = "sniper laser bolt"
-	damage = 30
+	damage = 28
 	wound_bonus = 10
 	bare_wound_bonus = 20
 	tracer_type = /obj/effect/projectile/tracer/heavy_laser
