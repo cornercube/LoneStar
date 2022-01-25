@@ -299,7 +299,7 @@
 
 /obj/item/projectile/beam/laser/lasgun/hitscan //hitscan aer9 test
 	name = "laser beam"
-	damage = 25
+	damage = 22
 	armour_penetration = 0.02 //mostly just to allow scratch damage, so you arent SOL just mostly fucced
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
@@ -321,7 +321,7 @@
 
 /obj/item/projectile/beam/laser/pistol/hitscan //hitscan AEP7
 	name = "laser beam"
-	damage = 21
+	damage = 19
 	hitscan = TRUE
 	armour_penetration = 0.02
 	tracer_type = /obj/effect/projectile/tracer/laser
@@ -507,7 +507,7 @@
 	light_color = LIGHT_COLOR_BLUE
 
 /obj/item/projectile/beam/laser/aer14/hitscan
-	damage = 35
+	damage = 33
 	wound_bonus = 20
 	armour_penetration = 0.05
 	tracer_type = /obj/effect/projectile/tracer/pulse
@@ -536,7 +536,7 @@
 	name = "laser beam"
 	damage = 30
 	hitscan = TRUE
-	armour_penetration = 0.05
+	armour_penetration = 0.02
 	tracer_type = /obj/effect/projectile/tracer/xray
 	muzzle_type = /obj/effect/projectile/muzzle/xray
 	impact_type = /obj/effect/projectile/impact/xray
