@@ -451,6 +451,9 @@
 /obj/item/projectile/f13plasma/pistol //Plasma pistol
 	damage = 42
 
+/obj/item/projectile/f13plasma/pistol/worn
+	damage = 32
+
 /obj/item/projectile/f13plasma/pistol/glock //Glock (streamlined plasma pistol)
 	damage = 38
 
