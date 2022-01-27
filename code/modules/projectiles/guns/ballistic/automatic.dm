@@ -571,6 +571,8 @@
 	mag_type = /obj/item/ammo_box/magazine/m473/small
 	semi_auto = TRUE
 	burst_size = 1
+	extra_damage = 15
+	extra_penetration = 0.2
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	spread = 0 //low-recoil + forward grip
