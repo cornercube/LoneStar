@@ -476,7 +476,3 @@
 	item_state = "armyhelmetheavy"
 	armor = list("melee" = 30, "bullet" = 50, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	slowdown = 0.025
-	
-/obj/item/clothing/head/helmet/armyhelmet/heavy/attack_self(mob/user)
-	weldingvisortoggle(user)
-
