@@ -1182,14 +1182,12 @@
 			select += 1
 			burst_size = 2
 			spread = 8
-			extra_damage = 23
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 5
 			spread = 14
-			extra_damage = 23
 			recoil = 0.75
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -1228,14 +1226,12 @@
 			select += 1
 			burst_size = 2
 			spread = 10
-			extra_damage = 23
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 4
 			spread = 14
-			extra_damage = 23
 			recoil = 0.5
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -1318,14 +1314,12 @@
 			select += 1
 			burst_size = 2
 			spread = 8
-			extra_damage = -2
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 4
 			spread = 14
-			extra_damage = -5
 			recoil = 1
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
