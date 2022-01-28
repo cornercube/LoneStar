@@ -819,7 +819,7 @@
 	
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat/Initialize() 
 	. = ..()
-	AddComponent(/datum/component/armor_plate
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/police
 	name = "police hat"
