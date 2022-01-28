@@ -369,7 +369,7 @@
 	desc = "It's a salvaged T-45b power armor helmet."
 	icon_state = "t45bhelmet"
 	item_state = "t45bhelmet"
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 60, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 75, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 //	darkness_view = 0
 //	armor_block_chance = 25
 //	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
@@ -381,7 +381,7 @@
 	desc = "It's an NCR salvaged T-45b power armor helmet, better repaired than regular salvaged PA, and decorated with the NCR flag and other markings for an NCR Heavy Trooper."
 	icon_state = "t45bhelmet_ncr"
 	item_state = "t45bhelmet_ncr"
-	armor = list("melee" = 60, "bullet" = 65, "laser" = 65, "energy" = 24, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 75, "energy" = 24, "bomb" = 50, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 //	darkness_view = 0
 //	armor_block_chance = 40
 //	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
@@ -391,7 +391,7 @@
 /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored
 	name = "restored T-45b helmet"
 	desc = "It's a restored T-45b power armor helmet."
-	armor = list("melee" = 65, "bullet" = 65, "laser" = 65, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 75, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 40)
 //	armor_block_chance = 60
 //	deflection_chance = 10 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 	requires_training = TRUE
@@ -444,7 +444,7 @@
 	icon_state = "t45dhelmet0"
 	item_state = "t45dhelmet0"
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 25, "bomb" = 65, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 40)
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 75, "energy" = 25, "bomb" = 65, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 40)
 //	armor_block_chance = 60
 //	deflection_chance = 10 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 
@@ -490,7 +490,7 @@
 	desc = "It's a T-51b power helmet, typically used by the Brotherhood. It looks somewhat charming."
 	icon_state = "t51bhelmet0"
 	item_state = "t51bhelmet0"
-	armor = list("melee" = 75, "bullet" = 75, "laser" = 80, "energy" = 27, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 75, "energy" = 27, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 //	armor_block_chance = 70
 //	deflection_chance = 10 //35% chance to block damage from blockable bullets and redirect the bullet at a random angle. Less overall armor compared to T-60, but higher deflection.
@@ -703,6 +703,12 @@
 	icon_state = "cowboy"
 	item_state = "dethat"
 	flags_inv = HIDEHAIR
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
+
+/obj/item/clothing/head/f13/cowboy/Initialize() 
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 
 /obj/item/clothing/head/f13/bandit
 	name = "bandit hat"
@@ -710,6 +716,11 @@
 	icon_state = "bandit"
 	item_state = "fedora"
 	flags_inv = HIDEHAIR
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
+
+/obj/item/clothing/head/f13/bandit/Initialize() 
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/gambler
 	name = "gambler hat"
@@ -717,6 +728,12 @@
 	icon_state = "gambler"
 	item_state = "dethat"
 	flags_inv = HIDEHAIR
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
+	
+/obj/item/clothing/head/f13/gambler/Initialize() 
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 
 /obj/item/clothing/head/helmet/f13/motorcycle
 	name = "motorcycle helmet"
@@ -727,6 +744,10 @@
 	armor = list("melee" = 35, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEHAIR
 	strip_delay = 10
+	
+/obj/item/clothing/head/helmet/f13/motorcycle/Initialize() 
+	. = ..()
+	AddComponent(/datum/component/armor_plate)	
 
 /obj/item/clothing/head/helmet/f13/firefighter
 	name = "firefighter helmet"
@@ -759,6 +780,11 @@
 	item_state = "wastewar"
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
+	
+/obj/item/clothing/head/helmet/f13/wastewarhat/Initialize() 
+	. = ..()
+	AddComponent(/datum/component/armor_plate)	
+
 
 /obj/item/clothing/head/helmet/f13/hoodedmask
 	name = "hooded mask"
@@ -775,8 +801,12 @@
 	desc = "A cowboy hat made from brahmin hides."
 	icon_state = "brahmin_leather_cowboy_hat"
 	item_state = "brahmin_leather_cowboy_hat"
-	armor = list("tier" = 2, "energy" = 15, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 15)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
+	
+/obj/item/clothing/head/helmet/f13/brahmincowboyhat/Initialize() 
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat
 	name = "Rusted Cowboy Hat"
@@ -784,10 +814,16 @@
 	icon_state = "rusted_cowboy"
 	item_state = "rusted_cowboy"
 	flags_inv = HIDEEARS|HIDEHAIR
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
+	flags_inv = HIDEEARS|HIDEHAIR
+	
+/obj/item/clothing/head/helmet/f13/rustedcowboyhat/Initialize() 
+	. = ..()
+	AddComponent(/datum/component/armor_plate
 
 /obj/item/clothing/head/f13/police
 	name = "police hat"
-	desc = "(I) The wasteland's finest."
+	desc = "The wasteland's finest."
 	icon_state = "retropolice"
 	item_state = "fedora"
 	flags_inv = HIDEEARS|HIDEHAIR
@@ -959,6 +995,10 @@
 	icon_state = "ranger_grey_hat"
 	item_state = "ranger_grey_hat"
 	flags_inv = HIDEEARS|HIDEHAIR
+	
+/obj/item/clothing/head/f13/ranger_hat/Initialize() //HQ parts reinforcement
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/ranger_hat/banded
 	name = "banded cowboy hat"
