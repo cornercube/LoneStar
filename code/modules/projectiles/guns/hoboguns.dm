@@ -73,6 +73,7 @@
 	mag_type = /obj/item/ammo_box/magazine/zipgun
 	force = 16
 	extra_damage = 27 //unrealistically high to make up for low capacity and explode in your hands, roughly where the old 9mm used to be
+
 	spread = 8
 	fire_delay = 4
 	burst_size = 1
@@ -255,16 +256,16 @@
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
 
-//Destroyer carbine										Keywords: .45 ACP, Automatic, 30 rounds, Long barrel, Suppressor
+//Destroyer carbine										Keywords: 9mm, Automatic, 30 rounds, Long barrel, Suppressor
 /obj/item/gun/ballistic/automatic/hobo/destroyer
 	name = "destroyer carbine"
-	desc = "There are many ways to describe this, very few of them nice. This is a .45 caliber silenced bolt action rifle - that via the expertise of a gun runner mainlining 50 liters of psycho, mentats, and turbo - has been converted into a semi auto."
+	desc = "There are many ways to describe this, very few of them nice. This is a 9mm silenced bolt action rifle - that via the expertise of a gun runner mainlining 50 liters of psycho, mentats, and turbo - has been converted into a semi auto."
 	icon_state = "destroyer-carbine"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
 	extra_damage = 30
 	fire_delay = 5
-	burst_size = 2
+	burst_size = 1
 	can_attachments = FALSE
 	can_automatic = FALSE
 	automatic_burst_overlay = TRUE
