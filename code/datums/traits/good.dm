@@ -266,6 +266,19 @@
 	mob_trait = TRAIT_NUKA_LOVER
 	gain_text = "<span class='notice'>You want to buy the whole world a nuka-cola!</span>"
 	lose_text = "<span class='danger'>What's the big deal about nuka-cola?</span>"
+	
+/datum/quirk/nukalover/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/datum/species/species = H.dna.species
+	species.liked_food |= NUKA
+	species.disliked_food |= FRUIT
+
+/datum/quirk/nukalover/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(H)
+		var/datum/species/species = H.dna.species
+		species.liked_food = initial(species.liked_food)
+		species.disliked_food = initial(species.disliked_food)
 
 /datum/quirk/trapper
 	name = "Trapper"
