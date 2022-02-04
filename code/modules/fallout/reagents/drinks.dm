@@ -5,7 +5,7 @@
 	taste_description = "the future"
 	glass_icon_state = "nukacolaglass"
 	glass_name = "Nuka Cola"
-	foodtype = NUKA
+	var/foodtype = NUKA
 	glass_desc = "Don't cry, Don't raise your eye, It's only nuclear wasteland."
 
 /datum/reagent/consumable/nuka_cola/on_mob_life(mob/living/carbon/M)
