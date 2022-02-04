@@ -259,6 +259,14 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	H.update_sight()
 
+/datum/quirk/nukalover
+	name = "Nuka Fiend"
+	desc = "You are a fan of America's most popular pre-war soft drink. Your body simply loves the sugary drink so much, it rejects healthier alternatives."
+	value = 3
+	mob_trait = TRAIT_NUKA_LOVER
+	gain_text = "<span class='notice'>You want to buy the whole world a nuka-cola!</span>"
+	lose_text = "<span class='danger'>What's the big deal about nuka-cola?</span>"
+
 /datum/quirk/trapper
 	name = "Trapper"
 	desc = "As an experienced hunter and trapper you know your way around butchering animals for their products, and are able to get twice the usable materials by eliminating waste."
