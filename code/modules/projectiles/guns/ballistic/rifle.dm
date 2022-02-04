@@ -97,7 +97,7 @@
 	desc = "should not exist"
 	can_scope = TRUE
 	scope_state = "scope_long"
-	fire_delay = 4.5
+	fire_delay = 5
 	scope_x_offset = 5
 	scope_y_offset = 13
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
@@ -115,7 +115,7 @@
 	item_state = "cowboyrepeater"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube357
 	extra_damage = 35
-	fire_delay = 4
+	fire_delay = 4.5
 	fire_sound = 'sound/f13weapons/cowboyrepeaterfire.ogg'
 
 
@@ -127,8 +127,6 @@
 	item_state = "trailcarbine"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube44
 	extra_damage = 40
-	extra_penetration = 0.1
-	fire_delay = 4
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 
 
@@ -140,11 +138,10 @@
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
 	extra_damage = 50
-	extra_penetration = 0.15
-	fire_delay = 4.5
-	recoil = 0.1
+	extra_penetration = 0.05
+	fire_delay = 5.1
+	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
-
 
 
 ////////////////////////
@@ -161,8 +158,8 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_delay = 10
-	extra_damage = 35
-	extra_penetration = 0.05
+	extra_damage = 37
+	extra_penetration = 0.20
 	extra_speed = 800
 	spread = 0
 	force = 18
@@ -188,7 +185,7 @@
 	desc = "A militarized hunting rifle rechambered to 7.62. This one has had the barrel floated with shims to increase accuracy."
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/remington
 	fire_delay = 12
-	extra_damage = 38
+	extra_damage = 39
 	extra_speed = 800
 	force = 18
 
@@ -236,7 +233,7 @@
 	icon_state = "mosin"
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	extra_damage = 36
+	extra_damage = 37
 	extra_speed = 600
 	fire_delay = 12
 	force = 18
@@ -252,13 +249,13 @@
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
 
 //Lee-Enfield,SMLE 						Keywords: 7.62, Bolt-action, 5 rounds internal, short barrel (-2 damage, -100 velocity, -2 melee, less slowdown), faster firing rate
-/obj/item/gun/ballistic/rifle/enfield		
+/obj/item/gun/ballistic/rifle/enfield
 	name = "Lee-Enfield rifle"
 	desc = "A british rifle sometimes known as the SMLE. It seems to have been re-chambered in .308."
 	icon_state = "enfield2"
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	extra_damage = 30
+	extra_damage = 35
 	extra_speed = 500
 	fire_delay = 10
 	slowdown = 0.35
@@ -327,7 +324,7 @@
 	mag_type = /obj/item/ammo_box/magazine/amr
 	fire_delay = 11 //Heavy round, tiny bit slower
 	extra_damage = 60
-	extra_penetration = 0.3
+	extra_penetration = 0.25
 	recoil = 1
 	spread = 0
 	force = 10 //Big clumsy and sensitive scope, makes for a poor club
