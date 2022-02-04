@@ -5,6 +5,7 @@
 	taste_description = "the future"
 	glass_icon_state = "nukacolaglass"
 	glass_name = "Nuka Cola"
+	foodtype = NUKA
 	glass_desc = "Don't cry, Don't raise your eye, It's only nuclear wasteland."
 
 /datum/reagent/consumable/nuka_cola/on_mob_life(mob/living/carbon/M)
@@ -124,6 +125,7 @@
 	glass_icon_state = "nukacherryglass"
 	glass_name = "Nuka Cherry"
 	glass_desc = "Nuka-Cola with a Cherry Aftertaste."
+	foodtype = NUKA
 
 /datum/reagent/consumable/nukacherry/on_mob_life(mob/living/carbon/M)
 	M.adjustFireLoss(-0.1*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -141,6 +143,7 @@
 	glass_icon_state = "nukagrapeglass"
 	glass_name = "Nuka Grape"
 	glass_desc = "Nuka-Cola with a Grape Aftertaste."
+	foodtype = NUKA
 
 /datum/reagent/consumable/nukagrape/on_mob_life(mob/living/carbon/M)
 	M.adjustBruteLoss(-0.1*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -158,6 +161,7 @@
 	glass_icon_state = "nukaorangeglass"
 	glass_name = "Nuka Orange"
 	glass_desc = "Nuka-Cola with a Orange Aftertaste."
+	foodtype = NUKA
 
 /datum/reagent/consumable/nukaorange/on_mob_life(mob/living/carbon/M)
 	M.adjustToxLoss(-0.1*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -174,6 +178,7 @@
 	glass_icon_state = "nukaquartzglass"
 	glass_name = "Nuka Quartz"
 	glass_desc = "An abomination of Americas favourite soda."
+	foodtype = NUKA
 
 /datum/reagent/consumable/nukaquartz/on_mob_life(mob/living/carbon/M)
 	M.adjustOxyLoss(-1*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -191,6 +196,7 @@
 	glass_icon_state = "nukaiceglass"
 	glass_name = "Iced Nuka"
 	glass_desc = "Nuka. Stay frosty."
+	foodtype = NUKA
 
 /datum/reagent/consumable/nukaice/on_mob_life(mob/living/carbon/M)
 	M.adjust_bodytemperature(-20 * TEMPERATURE_DAMAGE_COEFFICIENT, T0C) //310.15 is the normal bodytemp.
@@ -207,6 +213,7 @@
 	glass_icon_state = "nukawildglass"
 	glass_name = "Nuka Wild"
 	glass_desc = "A totally original concept of Nuka-Cola!"
+	foodtype = NUKA
 
 /datum/reagent/consumable/nukawild/on_mob_life(mob/living/carbon/M)
 	M.AdjustStun(-2, 0)
@@ -227,6 +234,7 @@
 	glass_icon_state = "nukanewglass"
 	glass_name = "Newka Cola"
 	glass_desc = "The tastiest Hybridisation of Nuka-Colas."
+	foodtype = NUKA
 
 /datum/reagent/consumable/nukanew/on_mob_life(mob/living/carbon/M)
 	M.adjustFireLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -246,6 +254,7 @@
 	glass_icon_state = "nukaberryglass"
 	glass_name = "Nuka Berry"
 	glass_desc = "Nuka-Cola with a Berry Aftertaste."
+	foodtype = NUKA
 
 /datum/reagent/consumable/nukacooler
 	name = "Nuka Cooler"
@@ -270,6 +279,7 @@
 	glass_icon_state = "nukafreeglass"
 	glass_name = "Diet Nuka"
 	glass_desc = "Nuka-Cola with no added sugars!"
+	foodtype = NUKA
 
 /datum/reagent/consumable/nukafree/on_mob_life(mob/living/carbon/M)
 	if(M.nutrition <= NUTRITION_LEVEL_STARVING)
@@ -288,6 +298,7 @@
 	glass_icon_state = "nukafruttiglass"
 	glass_name = "Nuka Frutti"
 	glass_desc = "The frutiest of Nukas."
+	foodtype = NUKA
 
 /datum/reagent/consumable/nukafrutti/on_mob_life(mob/living/carbon/M)
 	M.adjustToxLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER, 0)
@@ -308,6 +319,7 @@
 	glass_icon_state = "nukafloatglass"
 	glass_name = "Nuka Float"
 	glass_desc = "A delicious blend of ice-cream and classic Nuka-Cola!"
+	foodtype = NUKA
 
 /datum/reagent/consumable/sunsetfloat
 	name = "Sunset Float"
@@ -328,6 +340,7 @@
 	glass_icon_state = "bawlsshakeglass"
 	glass_name = "Bawls Shake"
 	glass_desc = "A blended shake consumed by those on high energy blitz-lifestyles."
+	foodtype = NUKA
 
 /datum/reagent/consumable/jakeshake
 	name = "Jake Shake"
