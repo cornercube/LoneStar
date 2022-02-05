@@ -139,7 +139,7 @@
 	icon = 'icons/obj/f13vending.dmi'
 	icon_state = "nukacola"
 	list_reagents = list(/datum/reagent/consumable/nuka_cola = 25, /datum/reagent/radium = 5)
-	foodtype = SUGAR
+	foodtype = SUGAR | NUKA
 	isGlass = TRUE
 
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola/radioactive
@@ -693,6 +693,7 @@
 	desc = "You've really hit rock bottom now... yet theres nothing like homebrew nukashine in times like these!"
 	icon_state = "nukashine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/nukashine = 100)
+	foodtype = NUKA
 
 
 // Empty bottles
