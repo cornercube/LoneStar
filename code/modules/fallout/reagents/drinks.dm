@@ -11,9 +11,11 @@
 	M.drowsyness = 0
 	M.AdjustSleeping(-40, FALSE)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
+	if(HAS_TRAIT(M, TRAIT_NUKA_lOVER))
+		M.adjustBruteLoss(-0.5)
+	else
+		M.adjustBruteLoss(-0.0)
 	..()
-	. = TRUE
-
 
 /datum/reagent/consumable/sunset
 	name = "Sunset Sarsaparilla"
