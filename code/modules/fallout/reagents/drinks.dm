@@ -11,12 +11,7 @@
 	M.drowsyness = 0
 	M.AdjustSleeping(-40, FALSE)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
-	if(HAS_TRAIT(M, TRAIT_NUKA_LOVER))
-		if(prob(10))
-		M.adjustBruteLoss(-0.5*REM, 0)
-		M.adjustFireLoss(-0.5*REM, 0)
-		. = TRUE
-			..()
+	..()
 	. = TRUE
 
 
