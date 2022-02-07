@@ -450,6 +450,7 @@
 /obj/machinery/autolathe/basic
 	name = "makeshift workshop"
 	desc = "It produces items using metal and glass. Only very simple tools and designs can be built with this."
+	circuit = /obj/item/circuitboard/machine/autolathe/basic
 	base_print_speed = 30
 	
 /obj/machinery/autolathe/toy
