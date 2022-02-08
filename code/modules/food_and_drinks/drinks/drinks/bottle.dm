@@ -139,7 +139,7 @@
 	icon = 'icons/obj/f13vending.dmi'
 	icon_state = "nukacola"
 	list_reagents = list(/datum/reagent/consumable/nuka_cola = 25, /datum/reagent/radium = 5)
-	foodtype = SUGAR | NUKA
+	foodtype = NUKA
 	isGlass = TRUE
 
 /obj/item/reagent_containers/food/drinks/bottle/f13nukacola/radioactive
@@ -152,7 +152,6 @@
 	icon = 'icons/obj/f13vending.dmi'
 	icon_state = "sunset"
 	list_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 1, /datum/reagent/consumable/sunset = 15, /datum/reagent/medicine/salglu_solution = 5)
-	foodtype = SUGAR
 	isGlass = TRUE
 
 
