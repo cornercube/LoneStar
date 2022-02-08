@@ -12,7 +12,8 @@
 	M.AdjustSleeping(-40, FALSE)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
 	if(HAS_TRAIT(M, TRAIT_NUKA_LOVER))
-		M.adjustBruteLoss(-0.5)
+		M.adjustBruteLoss(-0.01)
+		M.adjustBurneLoss(-0.01)
 	else
 		M.adjustBruteLoss(-0.0)
 	..()
