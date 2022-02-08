@@ -266,6 +266,7 @@
 	mob_trait = TRAIT_NUKA_LOVER
 	gain_text = "<span class='notice'>You want to buy the whole world a nuka-cola!</span>"
 	lose_text = "<span class='danger'>What's the big deal about nuka-cola?</span>"
+	medical_record_text = "Patient has an addiction to the soft drink Nuka-Cola. Somehow, their metabolism has adapted to the sugars and artifical flavorings."
 	
 /datum/quirk/nukalover/add()
 	var/mob/living/carbon/human/H = quirk_holder
