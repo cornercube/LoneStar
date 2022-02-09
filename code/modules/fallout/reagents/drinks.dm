@@ -14,7 +14,6 @@
 	if(HAS_TRAIT(M, TRAIT_NUKA_LOVER))
 		M.adjustBruteLoss(-0.01)
 		M.adjustFireLoss(-0.01)
-	else
 		M.adjustBruteLoss(-0.0)
 	..()
 
