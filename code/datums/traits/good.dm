@@ -262,7 +262,7 @@
 /datum/quirk/nukalover
 	name = "Nuka Fiend"
 	desc = "You are a fan of America's most popular pre-war soft drink. Your body simply loves the sugary drink so much, it rejects healthier alternatives."
-	value = 3
+	value = 2
 	mob_trait = TRAIT_NUKA_LOVER
 	gain_text = "<span class='notice'>You want to buy the whole world a nuka-cola!</span>"
 	lose_text = "<span class='danger'>What's the big deal about nuka-cola?</span>"
