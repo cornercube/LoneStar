@@ -6,16 +6,21 @@
 	glass_icon_state = "nukacolaglass"
 	glass_name = "Nuka Cola"
 	glass_desc = "Don't cry, Don't raise your eye, It's only nuclear wasteland."
+	overdose_threshold = 100
 
 /datum/reagent/consumable/nuka_cola/on_mob_life(mob/living/carbon/M)
 	M.drowsyness = 0
 	M.AdjustSleeping(-40, FALSE)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
 	if(HAS_TRAIT(M, TRAIT_NUKA_LOVER))
-		M.adjustBruteLoss(-0.01)
-		M.adjustFireLoss(-0.01)
-		M.adjustBruteLoss(-0.0)
+		M.adjustBruteLoss(-0.05)
+		M.adjustFireLoss(-0.05)
 	..()
+
+/datum/reagent/consumable/nuka_cola/overdose_start(mob/living/M)
+	to_chat(M, "<span class='userdanger'>Too much Nuka-Cola! This cannot be good for you!</span>")
+	M.AdjustSleeping(600, FALSE)
+	. = 1
 
 /datum/reagent/consumable/sunset
 	name = "Sunset Sarsaparilla"
