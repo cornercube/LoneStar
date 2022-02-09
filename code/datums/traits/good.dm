@@ -272,7 +272,7 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	var/datum/species/species = H.dna.species
 	species.liked_food |= NUKA
-	species.disliked_food |= FRUIT
+	species.disliked_food |= VEGETABLES
 
 /datum/quirk/nukalover/remove()
 	var/mob/living/carbon/human/H = quirk_holder
