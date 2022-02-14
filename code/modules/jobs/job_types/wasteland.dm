@@ -469,7 +469,7 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/yankee
 	head = /obj/item/clothing/head/helmet/f13/raider/yankee
 	backpack_contents = list(
-		/obj/item/twohanded/steelsaw = 1,
+		/obj/item/shishkebabpack = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1,
 		/obj/item/megaphone=1,
 		/obj/item/book/granter/trait/bigleagues = 1)
@@ -505,7 +505,8 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/badlands
 	head = /obj/item/clothing/head/helmet/f13/fiend
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/wattz/magneto = 2,
+		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/gun/energy/laser/wattz = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
 		/obj/item/reagent_containers/pill/patch/turbo = 2,
@@ -597,7 +598,7 @@ Raider
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
 		/obj/item/ammo_box/magazine/m45 = 1,
-		/obj/item/shishkebabpack = 1,
+		/obj/item/twohanded/steelsaw = 1,
 		/obj/item/melee/smith/hammer = 1,
 		/obj/item/stack/sheet/mineral/sandstone = 50,
 		/obj/item/book/granter/trait/techno = 1,
