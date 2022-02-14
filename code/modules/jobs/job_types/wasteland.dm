@@ -470,7 +470,7 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/yankee
 	head = /obj/item/clothing/head/helmet/f13/raider/yankee
 	backpack_contents = list(
-		/obj/item/twohanded/fireaxe/bmprsword = 1,
+		/obj/item/twohanded/steelsaw = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1,
 		/obj/item/megaphone=1,
 		/obj/item/book/granter/trait/bigleagues = 1)
@@ -493,7 +493,7 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/sadist
 	head = /obj/item/clothing/head/helmet/f13/raider/arclight
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/gun/ballistic/revolver/revolver44 = 1,
 		/obj/item/clothing/mask/gas/explorer/folded=1,
 		/obj/item/storage/belt/tribe_quiver = 1,
 		/obj/item/restraints/legcuffs/beartrap = 2,
@@ -506,7 +506,7 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/badlands
 	head = /obj/item/clothing/head/helmet/f13/fiend
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/gun/energy/laser/wattz/magneto = 2,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
 		/obj/item/reagent_containers/pill/patch/turbo = 2,
@@ -571,7 +571,9 @@ Raider
 	id = /obj/item/card/id/rusted/brokenholodog
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2)
+		/obj/item/stock_parts/cell/ammo/ec=2,
+		/obj/item/book/granter/crafting_recipe/blueprint/aer9 = 1,
+		)
 
 /datum/outfit/loadout/raider_sheriff
 	name = "Desperado"
@@ -595,7 +597,7 @@ Raider
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
 		/obj/item/ammo_box/magazine/m45 = 1,
-		/obj/item/melee/onehanded/machete/scrapsabre = 1,
+		/obj/item/shishkebabpack = 1,
 		/obj/item/melee/smith/hammer = 1,
 		/obj/item/stack/sheet/mineral/sandstone = 50,
 		/obj/item/book/granter/trait/techno = 1,
@@ -603,34 +605,20 @@ Raider
 
 /datum/outfit/loadout/raider_vault
 	name = "Vault Renegade"
-	suit = /obj/item/clothing/suit/armor/f13/leather_jacket/combat
+	suit = /obj/item/clothing/suit/armor/vest/alt
 	uniform = /obj/item/clothing/under/f13/exile/vault
 	id = /obj/item/card/id/rusted/fadedvaultid
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/smg10mm/worn = 1,
+		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/ext = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/imitation = 2,
-		)
-
-/datum/outfit/loadout/raider_cannibal
-	name = "Humanitarian"
-	suit = /obj/item/clothing/suit/armor/bone
-	head = /obj/item/clothing/head/helmet/skull
-	backpack_contents = list(
-		/obj/item/twohanded/fireaxe/boneaxe = 1,
-		/obj/item/restraints/legcuffs/bola = 2,
-		/obj/item/stack/sheet/sinew = 8,
-		/obj/item/stack/sheet/animalhide/human = 10,
-		/obj/item/reagent_containers/food/snacks/soup/longpork_stew = 1,
-		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv = 2,
 		)
 
 /datum/outfit/loadout/raider_tribal
 	name = "Tribal Outcast"
 	uniform = /obj/item/clothing/under/f13/exile/tribal
 	suit = /obj/item/clothing/suit/hooded/tribaloutcast
-	suit_store = /obj/item/melee/onehanded/club/warclub
+	suit_store = /obj/item/twohanded/spear/bonespear
 	shoes = /obj/item/clothing/shoes/sandal
 	belt = /obj/item/storage/backpack/spearquiver
 	box = /obj/item/storage/survivalkit_tribal
