@@ -32,6 +32,21 @@
 	icon_state = "survivalkit"
 	w_class = WEIGHT_CLASS_SMALL
 
+/obj/item/storage/survivalkit_outlaw
+	name = "survival kit"
+	desc = "A robust leather pouch containing the essentials for wasteland survival."
+	icon_state = "survivalkit"
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/storage/survivalkit/PopulateContents()
+	. = ..()
+	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+	new /obj/item/stack/medical/suture(src)
+	new /obj/item/stack/medical/ointment(src)
+	new /obj/item/stack/medical/gauze(src)
+	new /obj/item/flashlight/flare(src)
+	new /obj/item/reagent_containers/pill/radx(src)
+
 /obj/item/storage/survivalkit_tribal/PopulateContents()
 	. = ..()
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
