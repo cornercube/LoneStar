@@ -492,7 +492,7 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/sadist
 	head = /obj/item/clothing/head/helmet/f13/raider/arclight
 	backpack_contents = list(
-		 /obj/item/melee/onehanded/knife/throwing = 5,
+		/obj/item/melee/onehanded/knife/throwing = 5,
 		/obj/item/clothing/mask/gas/explorer/folded=1,
 		/obj/item/storage/belt/tribe_quiver = 1,
 		/obj/item/restraints/legcuffs/beartrap = 2,
