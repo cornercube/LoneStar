@@ -572,6 +572,7 @@ Raider
 		/obj/item/gun/energy/laser/pistol=1,
 		/obj/item/stock_parts/cell/ammo/ec=2,
 		/obj/item/book/granter/crafting_recipe/blueprint/aer9 = 1,
+		/obj/item/grenade/f13/frag = 2,
 		)
 
 /datum/outfit/loadout/raider_sheriff
@@ -600,6 +601,7 @@ Raider
 		/obj/item/melee/smith/hammer = 1,
 		/obj/item/stack/sheet/mineral/sandstone = 50,
 		/obj/item/book/granter/trait/techno = 1,
+		/obj/item/book/granter/crafting_recipe/scav_one = 1,
 		)
 
 /datum/outfit/loadout/raider_vault
