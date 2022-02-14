@@ -570,8 +570,8 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/exile/bosexile
 	id = /obj/item/card/id/rusted/brokenholodog
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
+		/obj/item/gun/energy/laser/aer9=1,
+		//obj/item/stock_parts/cell/ammo/mfc=1,
 		/obj/item/book/granter/crafting_recipe/blueprint/aer9 = 1,
 		/obj/item/grenade/f13/frag = 2,
 		)
