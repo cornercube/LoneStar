@@ -438,8 +438,7 @@ Raider
 		/obj/item/gun/ballistic/rifle/hunting, \
 		/obj/item/gun/ballistic/automatic/hobo/zipgun, \
 		/obj/item/gun/ballistic/revolver/hobo/pepperbox, \
-		/obj/item/gun/ballistic/revolver/caravan_shotgun, \
-		/obj/item/gun/ballistic/revolver/single_shotgun)
+		/obj/item/gun/ballistic/revolver/caravan_shotgun)
 
 
 /datum/outfit/job/wasteland/f13raider/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -456,11 +455,13 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/supafly
 	head = /obj/item/clothing/head/helmet/f13/raider/supafly
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/autopipe = 1,
-		/obj/item/ammo_box/magazine/autopipe = 3,
-		/obj/item/melee/onehanded/knife/cosmic = 1,
+		/obj/item/gun/ballistic/automatic/varmint/verminkiller = 1,
+		/obj/item/ammo_box/magazine/m556/rifle/small = 2,
+		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 1,
+		/obj/item/ammo_box/c45rev = 2,
 		/obj/item/storage/box/dice = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis = 1,
+		/obj/item/grenade/smokebomb = 2,
 		/obj/item/book/granter/trait/trekking = 1
 		)
 
@@ -540,6 +541,7 @@ Raider
 		/obj/item/storage/pill_bottle/happy = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/stack/sheet/mineral/silver=2,
+		/obj/item/defibrillator/primitive=1,
 		)
 
 /datum/outfit/loadout/raider_ncr
@@ -550,6 +552,7 @@ Raider
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/service = 1,
 		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/r82 = 1)
 
 /datum/outfit/loadout/raider_legion
@@ -560,7 +563,7 @@ Raider
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
-		/obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
+		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
 		/obj/item/ammo_box/magazine/greasegun = 1,
 		/obj/item/book/granter/trait/trekking = 1
 		)
