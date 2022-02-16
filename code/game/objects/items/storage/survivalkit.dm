@@ -38,7 +38,7 @@
 	icon_state = "survivalkit"
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/storage/survivalkit/PopulateContents()
+/obj/item/storage/survivalkit_outlaw/PopulateContents()
 	. = ..()
 	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
 	new /obj/item/stack/medical/suture(src)
