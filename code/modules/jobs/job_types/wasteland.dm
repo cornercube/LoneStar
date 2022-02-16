@@ -455,12 +455,12 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/supafly
 	head = /obj/item/clothing/head/helmet/f13/raider/supafly
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/varmint/verminkiller = 1,
+		/obj/item/gun/ballistic/automatic/varmint = 1,
 		/obj/item/ammo_box/magazine/m556/rifle/small = 2,
 		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 1,
 		/obj/item/ammo_box/c45rev = 2,
-		/obj/item/storage/box/dice = 1,
-		/obj/item/storage/fancy/cigarettes/cigpack_cannabis = 1,
+		/obj/item/attachments/scope = 1,
+		/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/radioactive = 1,
 		/obj/item/grenade/smokebomb = 2,
 		/obj/item/book/granter/trait/trekking = 1
 		)
