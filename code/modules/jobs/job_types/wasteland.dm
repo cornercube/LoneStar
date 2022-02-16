@@ -435,10 +435,10 @@ Raider
 
 	suit_store = pick(
 		/obj/item/gun/ballistic/revolver/detective, \
-		/obj/item/gun/ballistic/rifle/hunting, \
-		/obj/item/gun/ballistic/automatic/hobo/zipgun, \
-		/obj/item/gun/ballistic/revolver/hobo/pepperbox, \
-		/obj/item/gun/ballistic/revolver/caravan_shotgun)
+		/obj/item/gun/ballistic/automatic/pistol/ninemil,\
+		/obj/item/gun/ballistic/automatic/pistol/m1911, \
+		/obj/item/gun/ballistic/automatic/pistol/type17, \
+		)
 
 
 /datum/outfit/job/wasteland/f13raider/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
