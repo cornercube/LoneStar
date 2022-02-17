@@ -631,6 +631,7 @@ Raider
 		/obj/item/clothing/mask/cigarette/pipe = 1,
 		/obj/item/melee/onehanded/knife/bone = 1,
 		/obj/item/radio/tribal = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
 		)
 
 /datum/outfit/loadout/raider_mobster
