@@ -456,7 +456,7 @@ Raider
 	head = /obj/item/clothing/head/helmet/f13/raider/supafly
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/varmint = 1,
-		/obj/item/ammo_box/magazine/m556/rifle/small = 2,
+		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
 		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 1,
 		/obj/item/ammo_box/c45rev = 2,
 		/obj/item/attachments/scope = 1,
@@ -473,7 +473,7 @@ Raider
 		/obj/item/shishkebabpack = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1,
 		/obj/item/megaphone=1,
-		/obj/item/book/granter/trait/bigleagues = 1)
+		/obj/item/storage/pill_bottle/chem_tin/buffout = 1)
 
 /datum/outfit/loadout/raider_blast
 	name = "Blastmaster"
@@ -553,6 +553,7 @@ Raider
 		/obj/item/gun/ballistic/automatic/service = 1,
 		/obj/item/ammo_box/magazine/m556/rifle=2,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/storage/box/ration/ranger_breakfast = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/r82 = 1)
 
 /datum/outfit/loadout/raider_legion
@@ -585,12 +586,10 @@ Raider
 	uniform = /obj/item/clothing/under/syndicate/tacticool
 	head = /obj/item/clothing/head/f13/town/big
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/colt357=1,
-		/obj/item/gun/ballistic/revolver/m29/snub=1,
-		/obj/item/ammo_box/a357=1,
+		/obj/item/gun/ballistic/revolver/m29/snub=2,
 		/obj/item/storage/belt/holster=1,
-		/obj/item/ammo_box/m44=1,
-		/obj/item/book/granter/trait/trekking = 1)
+		/obj/item/ammo_box/m44=3,
+		/obj/item/book/granter/trait/gunslinger = 1)
 
 /datum/outfit/loadout/raider_smith
 	name = "Raider Smith"
@@ -627,11 +626,11 @@ Raider
 	shoes = /obj/item/clothing/shoes/sandal
 	belt = /obj/item/storage/backpack/spearquiver
 	box = /obj/item/storage/survivalkit_tribal
-	id = /obj/item/card/id/outcasttattoo
 	back = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
 		/obj/item/clothing/mask/cigarette/pipe = 1,
 		/obj/item/melee/onehanded/knife/bone = 1,
+		/obj/item/radio/tribal = 1,
 		)
 
 /datum/outfit/loadout/raider_mobster
@@ -644,8 +643,7 @@ Raider
 	head = /obj/item/clothing/head/fedora
 	mask =  /obj/item/clothing/mask/bandana/durathread
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/police = 1,
-		/obj/item/melee/onehanded/knife/hunting = 1,
+		/obj/item/melee/onehanded/knife/switchblade = 1,
 		/obj/item/gun/ballistic/automatic/smg/rockwell = 1,
 		/obj/item/ammo_box/magazine/uzim9mm/rockwell = 2,
 		/obj/item/card/id/dogtag/town/mafia=1,
