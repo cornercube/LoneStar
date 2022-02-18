@@ -25,6 +25,21 @@
 	M.radiation = max(M.radiation-3,0)
 	return ..()
 
+/datum/reagent/consumable/ethanol/buffalo
+	name = "buffalo juice"
+	description = "The fermented liquid of the buffalo gourd. Very bitter."
+	color = "#706A58"
+	boozepwr = 100
+	taste_description = "bitter boozey sludge"
+	glass_icon_state = "glass_brown"
+	glass_name = "glass of fermented buffalo juice"
+	glass_desc = "The fermented liquid of the buffalo gourd. Very bitter."
+
+/datum/reagent/consumable/ethanol/buffalo/on_mob_life(mob/living/carbon/M)
+	if(M.disgust < 80)
+		M.adjust_disgust(10)
+	return ..()
+
 /datum/reagent/consumable/ethanol/pungajuice
 	name = "punga juice"
 	description = "The fermented juice of the punga fruit, used to treat radiation sickness"
@@ -401,6 +416,7 @@
 	glass_name = "Nuka Quantum"
 	glass_desc = "An extremely blue and glowing combination of Nuka-Cola and (REDACTED)"
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
+	
 
 /datum/reagent/consumable/ethanol/nukaquantum/on_mob_life(mob/living/carbon/M)
 	M.drowsyness = 0
@@ -414,6 +430,9 @@
 	M.adjustStaminaLoss(-3, 0)
 	M.hallucination += 20
 	M.Jitter(2)
+	if(HAS_TRAIT(M, TRAIT_NUKA_LOVER))
+		M.adjustBruteLoss(-0.1)
+		M.adjustFireLoss(-0.1)
 	ADD_TRAIT(M, TRAIT_SLEEPIMMUNE, "[type]")
 	if(iscarbon(M))
 		var/mob/living/carbon/C = M

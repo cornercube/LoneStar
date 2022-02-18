@@ -225,7 +225,7 @@
 	name = "tier 1 armor"
 	loot = list(
 				/obj/item/clothing/suit/armor/f13/leather_jacket,
-				/obj/item/clothing/suit/armor/f13/kit,
+				/obj/item/clothing/suit/armor/f13/leatherarmor,
 				/obj/effect/spawner/bundle/f13/armor/supafly,
 				/obj/effect/spawner/bundle/f13/armor/sadist,
 				/obj/effect/spawner/bundle/f13/armor/blastmaster,
@@ -234,7 +234,8 @@
 				/obj/effect/spawner/bundle/f13/armor/psycho,
 				/obj/item/clothing/suit/f13/duster,
 				/obj/effect/spawner/bundle/f13/armor/combatduster,
-				/obj/item/clothing/suit/armor/f13/raider/iconoclast
+				/obj/item/clothing/suit/armor/f13/raider/iconoclast,
+				/obj/item/clothing/suit/armor/f13/plates,
 	)
 
 /obj/effect/spawner/bundle/f13/armor/supafly
@@ -291,9 +292,11 @@
 	loot = list(
 				/obj/effect/spawner/bundle/f13/armor/knight,
 				/obj/effect/spawner/bundle/f13/armor/metal,
-				/obj/item/clothing/suit/armor/f13/leatherarmor,
+				/obj/effect/spawner/bundle/f13/armor/laserproofmetal,
 				/obj/item/clothing/suit/armor/f13/leather_jacket/combat,
-				/obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat
+				/obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat,
+				/obj/item/clothing/suit/armor/vest,
+				/obj/item/clothing/suit/armor/vest/alt,
 				)
 
 /obj/effect/spawner/bundle/f13/armor/knight
@@ -310,6 +313,14 @@
 				/obj/item/clothing/head/helmet/f13/metalmask
 				)
 
+/obj/effect/spawner/bundle/f13/armor/laserproofmetal
+	name = "polsihed metal armor spawner"
+	items = list(
+				/obj/item/clothing/suit/armor/f13/metalarmor/laserproof,
+				/obj/item/clothing/head/helmet/f13/metalmask
+				)
+
+
 /obj/effect/spawner/lootdrop/f13/armor/tier3 //TIER 3 ARMOR
 	name = "tier 3 armor"
 	loot = list(
@@ -318,7 +329,8 @@
 				/obj/effect/spawner/bundle/f13/armor/combat,
 				/obj/effect/spawner/bundle/f13/armor/bulletproof,
 				/obj/effect/spawner/bundle/f13/armor/combat/dark,
-				/obj/effect/spawner/bundle/f13/armor/sulphite
+				/obj/effect/spawner/bundle/f13/armor/sulphite,
+				/obj/effect/spawner/bundle/f13/armor/vault,
 				)
 
 /obj/effect/spawner/bundle/f13/armor/metal/reinforced
@@ -354,6 +366,7 @@
 				/obj/item/clothing/head/helmet/f13/combat/dark
 				)
 
+
 /obj/effect/spawner/bundle/f13/armor/sulphite
 	name = "sulphite raider armor spawner"
 	items = list(
@@ -382,6 +395,13 @@
 	items = list(
 				/obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice,
 				/obj/item/clothing/head/helmet/f13/rangerbroken
+				)
+				
+/obj/effect/spawner/bundle/f13/armor/vault
+	name = "vault armor spawner"
+	items = list(
+				/obj/item/clothing/suit/armor/vest/big,
+				/obj/item/clothing/head/helmet/riot/vaultsec,
 				)
 
 /obj/effect/spawner/bundle/f13/armor/combat/mk2
@@ -1550,7 +1570,8 @@
 				/obj/item/grenade/plastic/c4,
 				/obj/item/grenade/empgrenade,
 				/obj/item/grenade/f13/radiation,
-				/obj/item/grenade/f13/frag
+				/obj/item/grenade/f13/frag,
+				/obj/effect/spawner/bundle/f13/grenadelauncher,
 				)
 /obj/effect/spawner/lootdrop/f13/bomb/top_tier
 	lootcount = 1
@@ -1559,7 +1580,8 @@
 				/obj/item/grenade/f13/incendiary,
 				/obj/item/grenade/f13/radiation,
 				/obj/item/grenade/plastic/x4,
-				/obj/item/grenade/stingbang/shred = 1
+				/obj/item/grenade/stingbang/shred = 1,
+				/obj/effect/spawner/bundle/f13/rocketlauncher,
 				)
 
 
@@ -1981,6 +2003,7 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/thatgun,
 		/obj/item/book/granter/crafting_recipe/blueprint/uzi,
 		/obj/item/book/granter/crafting_recipe/blueprint/smg10mm,
+		/obj/item/book/granter/crafting_recipe/blueprint/aep7,
 		/obj/item/book/granter/crafting_recipe/blueprint/m1carbine,
 		/obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine,
 		/obj/item/book/granter/crafting_recipe/blueprint/commando,
@@ -1998,7 +2021,6 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/r84,
 		/obj/item/book/granter/crafting_recipe/blueprint/deagle,
 		/obj/item/book/granter/crafting_recipe/blueprint/marksman,
-		/obj/item/book/granter/crafting_recipe/blueprint/aep7,
 		/obj/item/book/granter/crafting_recipe/blueprint/plasmapistol,
 		/obj/item/book/granter/crafting_recipe/blueprint/brushgun,
 	)

@@ -6,15 +6,15 @@
 	name = "base raider armor"
 	desc = "for testing"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 35)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 35)
 	strip_delay = 40
 	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/f13/raider/supafly
 	name = "supa-fly raider armor"
 	desc = "Fabulous mutant powers were revealed to me the day I held aloft my bumper sword and said...<br>BY THE POWER OF NUKA-COLA, I AM RAIDER MAN!"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-	slowdown = 0.02
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	slowdown = 0.01
 	icon_state = "supafly"
 	item_state = "supafly"
 
@@ -48,7 +48,7 @@
 	icon_state = "blastmaster"
 	item_state = "blastmaster"
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	armor = list("melee" = 40, "bullet" = 20, "laser" = 40, "bio" = 0, "bomb" = 50, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 40, "bullet" = 25, "laser" = 40, "bio" = 0, "bomb" = 50, "rad" = 0, "fire" = 25, "acid" = 25)
 	flash_protect = 2
 
 /obj/item/clothing/suit/armor/f13/raider/blastmaster/Initialize()
@@ -71,7 +71,7 @@
 	desc = "A leather top with a bandolier over it and a straps that cover the arms."
 	icon_state = "badlands"
 	item_state = "badlands"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt
 
 /obj/item/clothing/suit/armor/f13/raider/badlands/Initialize()
@@ -164,7 +164,7 @@
 	desc = "An old military-grade pre-war combat armor. It appears to be fitted with metal plates to replace the crumbling ceramic."
 	icon_state = "raider_combat"
 	item_state = "raider_combat"
-	armor = list("melee" = 40, "bullet" = 40 , "laser" = 35,"energy" = 25, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
+	armor = list("melee" = 40, "bullet" = 40 , "laser" = 40,"energy" = 25, "bomb" = 50, "bio" = 50, "rad" = 10, "fire" = 60, "acid" = 10)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/raider/raidermetal
@@ -336,6 +336,7 @@
 	icon_state = "legion_slaveleather"
 	item_state = "legion_slaveleather"
 	allowed = list(/obj/item/hatchet, /obj/item/scythe, /obj/item/cultivator, /obj/item/shovel)
+	armor = list("melee" = 20, "bullet" = 5, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 0)
 
 /*
 /obj/item/clothing/suit/armor/f13/legion/vet/orator
@@ -358,8 +359,16 @@
 	item_state = "vest_utility"
 	icon = 'icons/fallout/clothing/suits_utility.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/suit_utility.dmi'
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 5, "bomb" = 10, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0)
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 0)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/utility
+	slowdown = 0.02
+	
+/datum/component/storage/concrete/pockets/utility
+	max_items = 4
+	
+/obj/item/clothing/suit/armor/f13/utilityvest/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor
 	name = "NCR patrol vest"
@@ -616,14 +625,14 @@
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
 	name = "brotherhood senior knight armor"
-	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knight. It bears a silver stripe."
+	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knights. It bears a silver stripe."
 	icon_state = "brotherhood_armor_senior"
 	item_state = "brotherhood_armor_senior"
 	
 	
 /obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
-	name = "brotherhood knight-captain armor"
-	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Knight-Captains. It bears golden embroidery."
+	name = "brotherhood head knight armor"
+	desc = "A combat armor set made by the Brotherhood of Steel, standard issue for all Head Knights. It bears golden embroidery."
 	icon_state = "brotherhood_armor_captain"
 	item_state = "brotherhood_armor_captain"
 
@@ -698,11 +707,22 @@
 	icon_state = "towntrench_medium"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 35,  "energy" = 35, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 50)
 	slowdown = 0.06 //combat armor but less slowdown
-
+	
 /obj/item/clothing/suit/armor/f13/town/deputy/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/armor/vest/oasis
+	name = "OPD vest"
+	desc = "A slim armored vest with a rigid exterior that provides decent protection against most types of damage. This one has pockets sewn into the front and OPD stitched on the back."
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets
+	armor = list("melee" = 38, "bullet" = 38, "laser" = 38,  "energy" = 30, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10, "wound" = 50)
+	slowdown = 0.06
 	
+/obj/item/clothing/suit/armor/vest/oasis/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)		
+
 /obj/item/clothing/suit/armor/f13/metalarmor/steelbib/oasis
 	name = "heavy steel breastplate"
 	desc = "a steel breastplate, inspired by a pre-war design. Looks like oasis citiznes added an additional layer of metal on the front face."
