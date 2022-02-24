@@ -1041,7 +1041,7 @@
 	icon_state = "R82"
 	item_state = "R84"
 	icon_prefix = "r82"
-	extra_damage = 28
+	extra_damage = 25
 	fire_delay = 2.5
 	is_automatic = TRUE
 	automatic = 1
