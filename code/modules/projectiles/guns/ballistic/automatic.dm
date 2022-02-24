@@ -1390,6 +1390,7 @@
 	autofire_shot_delay = 3.25
 	fire_delay = 4
 	extra_damage = 28
+	extra_penetration = 0.05
 	spread = 8
 	can_attachments = FALSE
 	var/cover_open = FALSE
