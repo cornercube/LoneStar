@@ -390,9 +390,9 @@
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto/hitscan
 	name = "penetrating laser beam"
-	damage = 15
+	damage = 17
 	hitscan = TRUE
-	armour_penetration = 0.2 //rare laser to keep its AP, since base model is so bad
+	armour_penetration = 0.22 //rare laser to keep its AP, since base model is so bad
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
