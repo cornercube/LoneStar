@@ -801,7 +801,7 @@
 //Police rifle			Keywords: OASIS, 5.56mm, Semi-auto, 20 (10-50) round magazine
 /obj/item/gun/ballistic/automatic/marksman/policerifle
 	name = "Police Rifle"
-	desc = "A pre-war Rifle that has been constantly repaired and rebuilt by the Oasis Police Department. Held together by duct tape and prayers, it somehow still shoots."
+	desc = "A pre-war Rifle that has been constantly repaired and rebuilt by the Oasis Police Department. Held together by duct tape and prayers, it somehow still shoots. This one is chambered in 5.56."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
@@ -1241,7 +1241,8 @@
 	fire_delay = 3.5
 	burst_shot_delay = 2.2
 	spread = 14
-	extra_damage = 18
+	extra_damage = 17
+	extra_penetration = 0.22
 
 //FN-FAL				Keywords: 7.62mm, Automatic, 10/20 round magazine
 /obj/item/gun/ballistic/automatic/fnfal
