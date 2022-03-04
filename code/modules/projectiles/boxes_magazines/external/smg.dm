@@ -19,7 +19,7 @@
 	name = "Grease gun magazine (9mm)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "grease"
-	ammo_type = /obj/item/ammo_casing/c9mm
+	ammo_type = /obj/item/ammo_casing/c45
 	caliber = "9mm"
 	max_ammo = 30
 	multiple_sprites = 2
