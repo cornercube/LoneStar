@@ -245,12 +245,12 @@
 	icon_state = "grease_gun"
 	item_state = "smg9mm"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
-	spread = 8
-	extra_damage = 19
-	burst_shot_delay = 2.75
+	spread = 6
+	extra_damage = 22
+	burst_shot_delay = 3.25 
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 2.5
+	autofire_shot_delay = 3.25 //barely faster than semi-auto
 	spread = 14
 	can_attachments = TRUE
 	suppressor_state = "uzi_suppressor"
@@ -288,7 +288,7 @@
 	can_attachments = FALSE
 	spread = 16.5
 	recoil = 0.3
-	extra_damage = 17
+	extra_damage = 19
 
 /obj/item/gun/ballistic/automatic/smg/greasegun/worn/auto_select()
 	var/mob/living/carbon/human/user = usr
