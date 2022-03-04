@@ -1017,6 +1017,21 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
+//wattz 2000e
+/datum/crafting_recipe/wattz2ke
+	name = "Wattz 2000 Laser Rifle Ext. Capacity"
+	result = /obj/item/gun/energy/laser/wattz2k/extended
+	reqs = list(/obj/item/gun/energy/laser/wattz2k = 1,
+				/obj/item/advanced_crafting_components/alloys = 2,
+				/obj/item/stock_parts/capacitor/adv = 1,
+				/obj/item/stack/crafting/electronicparts = 3
+				)
+	tools = list(TOOL_AWORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
+
 //magneto
 /datum/crafting_recipe/magnetowattz
 	name = "Wattz 1000 Magneto-laser Pistol"
