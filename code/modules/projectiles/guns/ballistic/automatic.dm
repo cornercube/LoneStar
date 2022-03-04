@@ -232,7 +232,7 @@
 	autofire_shot_delay = 1.5
 	spread = 18
 	burst_shot_delay = 1.5
-	extra_damage = 16
+	extra_damage = 12
 	suppressed = 1
 	actions_types = null
 	fire_sound = 'sound/f13weapons/american180.ogg'
