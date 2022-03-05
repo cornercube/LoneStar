@@ -1242,7 +1242,7 @@
 	burst_shot_delay = 2.2
 	spread = 14
 	extra_damage = 17
-	extra_penetration = 0.22
+	extra_penetration = 0.2
 
 //FN-FAL				Keywords: 7.62mm, Automatic, 10/20 round magazine
 /obj/item/gun/ballistic/automatic/fnfal
