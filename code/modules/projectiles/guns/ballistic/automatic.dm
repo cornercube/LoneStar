@@ -246,7 +246,7 @@
 	item_state = "smg9mm"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
 	spread = 6
-	extra_damage = 22
+	extra_damage = 20
 	burst_shot_delay = 3.25 
 	is_automatic = TRUE
 	automatic = 1
