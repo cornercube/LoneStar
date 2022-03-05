@@ -198,25 +198,6 @@
 	force = 12
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 
-
-//Rockwell gun				Keywords: 9mm, Automatic, 20/32 rounds. Special modifiers: damage -2
-/obj/item/gun/ballistic/automatic/smg/rockwell
-	name = "Rockwell gun"
-	desc = "Post-war submachine gun in 9mm, based on old schematics by T.G. Rockwell for home-made weapons if under enemy occupation. The Rockwell is basically a toploaded sten gun with a pistol grip, allowing makeshift magazines without a spring."
-	icon_state = "rockwell"
-	item_state = "rockwell"
-	mag_type = /obj/item/ammo_box/magazine/uzim9mm
-	init_mag_type = /obj/item/ammo_box/magazine/uzim9mm/rockwell
-	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 2.25
-	burst_shot_delay = 2.75
-	recoil = 0.1
-	spread = 12
-	extra_damage = 18
-	can_attachments = TRUE
-	actions_types = null
-
 //American 180				Keywords: .22 LR, Automatic, 180 rounds
 /obj/item/gun/ballistic/automatic/smg/american180
 	name = "American 180"
@@ -229,10 +210,10 @@
 	can_unsuppress = FALSE
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 1.5
+	autofire_shot_delay = 1.75
 	spread = 18
 	burst_shot_delay = 1.5
-	extra_damage = 12
+	extra_damage = 11
 	suppressed = 1
 	actions_types = null
 	fire_sound = 'sound/f13weapons/american180.ogg'
@@ -786,9 +767,8 @@
 	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
 	icon_state = "scout_carbine"
-	fire_delay = 4
-	spread = 1.1
-	slowdown = 0.4
+	spread = 1.2
+	slowdown = 0.3
 	extra_damage = 25
 	can_scope = TRUE
 	scope_state = "scope_short"
@@ -846,7 +826,7 @@
 	suppressor_x_offset = 31
 	suppressor_y_offset = 15
 	fire_sound = 'sound/f13weapons/marksman_rifle.ogg'
-	
+
 /obj/item/gun/ballistic/automatic/marksman/policerifle
 	name = "Police Rifle"
 	desc = "A pre-war Rifle that has been constantly repaired and rebuilt by the Oasis Police Department. Held together by duct tape and prayers, it somehow still shoots. This one has been re-chambered to 5.56"
@@ -1012,8 +992,8 @@
 	fire_delay = 8
 	burst_size = 1
 	extra_speed = 800
-	extra_penetration = 0.25
-	extra_damage = 45
+	extra_penetration = 0.2
+	extra_damage = 35
 	zoom_amt = 10
 	zoom_out_amt = 13
 	semi_auto = TRUE
@@ -1060,13 +1040,14 @@
 	icon_state = "assault_rifle"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 4
+	fire_delay = 2.5
+	slowdown = 0.45
 	spread = 10
 	extra_damage = 23
 	recoil = 0.1
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 3
+	autofire_shot_delay = 2.5
 	can_attachments = TRUE
 	can_bayonet = FALSE
 	bayonet_state = "rifles"
@@ -1229,9 +1210,8 @@
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "rifle-police"
-	extra_damage = 22 //longer barrel
 	autofire_shot_delay = 3.5 //not a real auto-gun
-	spread = 8 //longer barrel
+	spread = 12 //makeshift longer barrel
 	can_scope = TRUE
 	
 /obj/item/gun/ballistic/automatic/assault_carbine/worn	
