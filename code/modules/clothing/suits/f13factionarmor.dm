@@ -728,8 +728,8 @@
 	desc = "a steel breastplate, inspired by a pre-war design. Looks like oasis citiznes added an additional layer of metal on the front face."
 	icon_state = "steel_bib"
 	item_state = "steel_bib"
-	armor = list( "melee" = 30, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 42)
-	slowdown = 0.1
+	armor = list( "melee" = 25, "bullet" = 50, "laser" = 40, "energy" = 15, "bomb" = 20, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 42)
+	slowdown = 0.11
 	strip_delay = 5
 
 //Great Khan
