@@ -381,9 +381,9 @@
 	burst_shot_delay = 2.5
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 2
+	autofire_shot_delay = 1.75
 	spread = 16
-	extra_damage = 18
+	extra_damage = 15
 	can_suppress = TRUE
 	can_attachments = TRUE
 	spread = 10
@@ -400,7 +400,7 @@
 			automatic = 1
 			spread = 16
 			fire_delay = 3
-			recoil = 0.1
+			recoil = 0.2
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 			enable_burst()
