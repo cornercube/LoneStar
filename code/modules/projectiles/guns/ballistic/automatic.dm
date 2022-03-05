@@ -381,8 +381,8 @@
 	burst_shot_delay = 2.5
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 1.75
-	spread = 16
+	autofire_shot_delay = 2
+	spread = 18
 	extra_damage = 15
 	can_suppress = TRUE
 	can_attachments = TRUE
