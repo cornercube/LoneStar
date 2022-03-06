@@ -16,11 +16,11 @@
 	start_empty = TRUE
 	
 /obj/item/ammo_box/magazine/greasegun
-	name = "Grease gun magazine (9mm)"
+	name = ".45 SMG magazine"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "grease"
 	ammo_type = /obj/item/ammo_casing/c45
-	caliber = "9mm"
+	caliber = ".45"
 	max_ammo = 30
 	multiple_sprites = 2
 
