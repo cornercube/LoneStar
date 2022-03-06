@@ -16,7 +16,7 @@
 	start_empty = TRUE
 	
 /obj/item/ammo_box/magazine/greasegun
-	name = ".45 SMG magazine"
+	name = "SMG magazine (.45)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "grease"
 	ammo_type = /obj/item/ammo_casing/c45
