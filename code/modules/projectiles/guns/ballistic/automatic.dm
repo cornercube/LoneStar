@@ -222,7 +222,7 @@
 //Greasegun				Keywords: 9mm, Automatic, 30 rounds
 /obj/item/gun/ballistic/automatic/smg/greasegun
 	name = "Grease Gun"
-	desc = "An inexpensive submachine gun, downscaled and rechambered in 9mm. Very high rate of fire in bursts."
+	desc = "An inexpensive submachine gun. Has a relatively tame rate of fire."
 	icon_state = "grease_gun"
 	item_state = "smg9mm"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
