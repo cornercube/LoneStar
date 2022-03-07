@@ -1042,9 +1042,9 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 2.5
 	slowdown = 0.45
-	spread = 10
+	spread = 12
 	extra_damage = 23
-	recoil = 0.1
+	recoil = 0.15
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 2.5
@@ -1109,7 +1109,7 @@
 	can_bayonet = FALSE
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
-//Type 93 Chinese rifle				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine, 26dmg
+//Type 93 Chinese rifle				Keywords: 5.56mm, Automatic, 20 (10-50) round magazine
 /obj/item/gun/ballistic/automatic/type93
 	name = "type 93 assault rifle"
 	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
@@ -1118,13 +1118,13 @@
 	icon_prefix = "handmade_rifle"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 4
-	spread = 10
+	spread = 14
 	extra_damage = 23
 	extra_penetration = 0.05
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 3
-	recoil = 0.1
+	recoil = 0.2
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
@@ -1158,7 +1158,7 @@
 	burst_shot_delay = 1.5
 	extra_damage = 25
 	fire_delay = 3
-	spread = 8
+	spread = 10
 	recoil = 0.1
 	can_attachments = FALSE
 	zoomable = TRUE
@@ -1211,7 +1211,8 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "rifle-police"
 	autofire_shot_delay = 3.5 //not a real auto-gun
-	spread = 12 //makeshift longer barrel
+	extra_damage = 22
+	spread = 9 //longer barrel
 	can_scope = TRUE
 	
 /obj/item/gun/ballistic/automatic/assault_carbine/worn	
@@ -1243,8 +1244,8 @@
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 
 /obj/item/gun/ballistic/automatic/bar
-	name = "automatic rifle (debug)"
-	desc = "An ancient machine gun that looks like outdated even by pre-war standards. It has Colt etched on one-side and Sierra Madre on the other. It is alarmingly heavy for a rifle.(Debug)"
+	name = "automatic rifle (.308)"
+	desc = "An ancient machine gun that looks like outdated even by pre-war standards. It has Colt etched on one-side and Sierra Madre on the other. It is alarmingly heavy for a rifle."
 	icon = 'icons/fallout/objects/guns/bar.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	icon_state = "BAR"
@@ -1255,7 +1256,7 @@
 	slowdown = 1.25 //really goddamn big
 	autofire_shot_delay = 2.75
 	extra_damage = 28
-	spread = 10
+	spread = 12
 	recoil = 0.3
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
@@ -1305,7 +1306,7 @@
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 3
-	spread = 8
+	spread = 11
 	can_attachments = FALSE
 	actions_types = null
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
@@ -1372,7 +1373,7 @@
 	fire_delay = 4
 	extra_damage = 28
 	extra_penetration = 0.05
-	spread = 8
+	spread = 14 //open bolt machine gun with no stock
 	can_attachments = FALSE
 	var/cover_open = FALSE
 	var/require_twohands = FALSE
