@@ -1024,9 +1024,9 @@
 	extra_damage = 25
 	fire_delay = 2.5
 	is_automatic = TRUE
-	automatic = 1
-	autofire_shot_delay = 3
-	spread = 10
+	automatic = 1 //pseudo-automatic
+	autofire_shot_delay = 4
+	spread = 1.5
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
