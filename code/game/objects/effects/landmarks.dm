@@ -741,6 +741,10 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "Secretary"
 	icon_state = "Lawyer"
 
+/obj/effect/landmark/start/f13/aide
+	name = "Mayoral Aide"
+	icon_state = "Warden"
+
 /obj/effect/landmark/start/f13/sheriff
 	name = "Chief"
 
