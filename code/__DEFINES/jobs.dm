@@ -122,11 +122,12 @@
 #define F13DEPUTY		(1<<5)
 #define F13MAYOR		(1<<6)
 #define F13SECRETARY    (1<<7)
-#define F13PREACHER		(1<<8)
-#define F13SHOPKEEPER	(1<<9)
+#define F13AIDE			(1<<8)
+#define F13PREACHER		(1<<9)
+#define F13SHOPKEEPER	(1<<10)
 #define F13FAITHFUL		(1<<10) // WHAT IS BITFLAG. WHAT DOES IT DO. WHERE IS THIS INFO USED.
-#define F13BANKER		(1<<11)	// IDK MAN BUT IT SEEMS IMPORTANT
-#define F13BARKEEP		(1<<12)
+#define F13BANKER		(1<<12)	// IDK MAN BUT IT SEEMS IMPORTANT
+#define F13BARKEEP		(1<<13)
 
 #define VAULT			(1<<7)
 
@@ -149,7 +150,6 @@
 #define F13RAIDER		(1<<3)
 #define F13PUSHER		(1<<4)
 #define F13PUNRAIDER	(1<<5)
-#define F13DETECTIVE	(1<<6)
 #define EVENTCOVEN		(1<<7)
 #define F13VIGILANTE	(1<<8)
 #define F13ADMINBOOS	(1<<9)
