@@ -805,15 +805,15 @@ Mayor
 /*----------------------------------------------------------------
 --							Detective							--
 ----------------------------------------------------------------*/
-/datum/job/oasis/f13detective
-	title = "Detective"
-	flag = F13DETECTIVE
+/datum/job/oasis/f13aide
+	title = "Mayoral Aide"
+	flag = F13AIDE
 	total_positions = 0
 	spawn_positions = 0
-	description = "As a Detective you are a private eye who assists clients to gather evidence, conduct surveillance, find missing people, and verify information. As a private investigator you are not responsible for peacekeeping the valley, but for finding answers. Your life is already over, make the ending mean something."
-	supervisors = "paying clients"
+	description =  "You are the Mayor's Aide de Campe, their best friend, and their bodyguard. While their secretary handles civic concerns, you are responsible for the Mayor's personal well-being, by any means necessary."
+	supervisors = "The Mayor"
 	selection_color = "#dcba97"
-	outfit = /datum/outfit/job/oasis/f13detective
+	outfit = /datum/outfit/job/oasis/f13aide
 
 	access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
 	minimal_access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
@@ -832,9 +832,9 @@ Mayor
 	)
 
 
-/datum/outfit/job/oasis/f13detective
-	name = "Detective"
-	jobtype = /datum/job/oasis/f13detective
+/datum/outfit/job/oasis/f13aide
+	name = "Mayoral Aide"
+	jobtype = /datum/job/oasis/f13aide
 	suit = /obj/item/clothing/suit/det_suit/grey
 	ears = /obj/item/radio/headset/headset_town
 	uniform = /obj/item/clothing/under/f13/detectivealt
@@ -847,12 +847,10 @@ Mayor
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	suit_store = /obj/item/gun/ballistic/revolver/police
 	backpack_contents = list(
-		/obj/item/pda/detective=1,
+		/obj/item/pda=1,
 		/obj/item/camera/detective=1,
-		/obj/item/toy/crayon/white=1,
 		/obj/item/detective_scanner=1,
-		/obj/item/storage/box/gloves=1,
-		/obj/item/storage/box/evidence=1,
+		/obj/item/gun/ballistic/revolver/police = 1,
 		/obj/item/ammo_box/a357=2)
 
 /*--------------------------------------------------------------*/
