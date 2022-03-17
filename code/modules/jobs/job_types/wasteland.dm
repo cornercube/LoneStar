@@ -257,7 +257,7 @@
 	uniform = /obj/item/clothing/under/f13/khan
 	r_hand = /obj/item/book/granter/trait/selection
 	r_pocket = /obj/item/flashlight/flare
-	l_pocket = /obj/item/storage/survivalkit_khan
+	l_pocket = /obj/item/storage/survivalkit/khan
 	gloves = /obj/item/melee/unarmed/brass/spiked
 	box = null
 	backpack_contents = list(
@@ -296,7 +296,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/thatgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/uzi)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/colt6520)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_khanate)
 
 /datum/outfit/loadout/enforcer
 	name = "Enforcer"
@@ -371,7 +371,6 @@ Raider
 	/datum/outfit/loadout/raider_bos,
 	/datum/outfit/loadout/quack_doctor,
 	/datum/outfit/loadout/raider_mobster,
-	/datum/outfit/loadout/raider_cannibal,
 	/datum/outfit/loadout/raider_tribal
 	)
 
@@ -379,7 +378,7 @@ Raider
 /datum/outfit/job/wasteland/f13raider
 	name = "Outlaw"
 	jobtype = /datum/job/wasteland/f13raider
-
+	box = /obj/item/storage/survivalkit/outlaw
 	id = null
 	ears = null
 	belt = null
@@ -436,11 +435,10 @@ Raider
 
 	suit_store = pick(
 		/obj/item/gun/ballistic/revolver/detective, \
-		/obj/item/gun/ballistic/rifle/hunting, \
-		/obj/item/gun/ballistic/automatic/hobo/zipgun, \
-		/obj/item/gun/ballistic/revolver/hobo/pepperbox, \
-		/obj/item/gun/ballistic/revolver/caravan_shotgun, \
-		/obj/item/gun/ballistic/revolver/single_shotgun)
+		/obj/item/gun/ballistic/automatic/pistol/ninemil,\
+		/obj/item/gun/ballistic/automatic/pistol/m1911, \
+		/obj/item/gun/ballistic/automatic/pistol/type17, \
+		)
 
 
 /datum/outfit/job/wasteland/f13raider/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -457,11 +455,13 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/supafly
 	head = /obj/item/clothing/head/helmet/f13/raider/supafly
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/autopipe = 1,
-		/obj/item/ammo_box/magazine/autopipe = 3,
-		/obj/item/melee/onehanded/knife/cosmic = 1,
-		/obj/item/storage/box/dice = 1,
-		/obj/item/storage/fancy/cigarettes/cigpack_cannabis = 1,
+		/obj/item/gun/ballistic/automatic/varmint = 1,
+		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
+		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 1,
+		/obj/item/ammo_box/c45rev = 2,
+		/obj/item/attachments/scope = 1,
+		/obj/item/reagent_containers/food/drinks/bottle/f13nukacola/radioactive = 1,
+		/obj/item/grenade/smokebomb = 2,
 		/obj/item/book/granter/trait/trekking = 1
 		)
 
@@ -470,10 +470,10 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/yankee
 	head = /obj/item/clothing/head/helmet/f13/raider/yankee
 	backpack_contents = list(
-		/obj/item/twohanded/fireaxe/bmprsword = 1,
+		/obj/item/shishkebabpack = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1,
 		/obj/item/megaphone=1,
-		/obj/item/book/granter/trait/bigleagues = 1)
+		/obj/item/storage/pill_bottle/chem_tin/buffout = 1)
 
 /datum/outfit/loadout/raider_blast
 	name = "Blastmaster"
@@ -493,9 +493,9 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/sadist
 	head = /obj/item/clothing/head/helmet/f13/raider/arclight
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/melee/onehanded/knife/throwing = 5,
 		/obj/item/clothing/mask/gas/explorer/folded=1,
-		/obj/item/storage/belt/tribe_quiver = 1,
+		/obj/item/storage/belt = 1,
 		/obj/item/restraints/legcuffs/beartrap = 2,
 		/obj/item/reverse_bear_trap = 1,
 		/obj/item/melee/unarmed/lacerator = 1,
@@ -507,6 +507,7 @@ Raider
 	head = /obj/item/clothing/head/helmet/f13/fiend
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/gun/energy/laser/wattz = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
 		/obj/item/reagent_containers/pill/patch/turbo = 2,
@@ -540,6 +541,7 @@ Raider
 		/obj/item/storage/pill_bottle/happy = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/stack/sheet/mineral/silver=2,
+		/obj/item/defibrillator/primitive=1,
 		)
 
 /datum/outfit/loadout/raider_ncr
@@ -550,6 +552,8 @@ Raider
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/service = 1,
 		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/storage/box/ration/ranger_breakfast = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/r82 = 1)
 
 /datum/outfit/loadout/raider_legion
@@ -560,18 +564,21 @@ Raider
 	backpack_contents = list(
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
-		/obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
+		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
 		/obj/item/ammo_box/magazine/greasegun = 1,
 		/obj/item/book/granter/trait/trekking = 1
 		)
-		
+
 /datum/outfit/loadout/raider_bos
 	name = "Brotherhood Exile"
 	suit = /obj/item/clothing/suit/armor/f13/exile/bosexile
 	id = /obj/item/card/id/rusted/brokenholodog
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2)
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/book/granter/crafting_recipe/blueprint/aep7 = 1,
+		/obj/item/grenade/f13/frag = 2,
+		)
 
 /datum/outfit/loadout/raider_sheriff
 	name = "Desperado"
@@ -579,12 +586,10 @@ Raider
 	uniform = /obj/item/clothing/under/syndicate/tacticool
 	head = /obj/item/clothing/head/f13/town/big
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/colt357=1,
-		/obj/item/gun/ballistic/revolver/m29/snub=1,
-		/obj/item/ammo_box/a357=1,
+		/obj/item/gun/ballistic/revolver/m29/snub=2,
 		/obj/item/storage/belt/holster=1,
-		/obj/item/ammo_box/m44=1,
-		/obj/item/book/granter/trait/trekking = 1)
+		/obj/item/ammo_box/m44=3,
+		/obj/item/book/granter/trait/gunslinger = 1)
 
 /datum/outfit/loadout/raider_smith
 	name = "Raider Smith"
@@ -595,50 +600,38 @@ Raider
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
 		/obj/item/ammo_box/magazine/m45 = 1,
-		/obj/item/melee/onehanded/machete/scrapsabre = 1,
+		/obj/item/twohanded/steelsaw = 1,
 		/obj/item/melee/smith/hammer = 1,
 		/obj/item/stack/sheet/mineral/sandstone = 50,
 		/obj/item/book/granter/trait/techno = 1,
+		/obj/item/book/granter/crafting_recipe/scav_one = 1,
 		)
 
 /datum/outfit/loadout/raider_vault
 	name = "Vault Renegade"
-	suit = /obj/item/clothing/suit/armor/f13/leather_jacket/combat
+	suit = /obj/item/clothing/suit/armor/vest/big
 	uniform = /obj/item/clothing/under/f13/exile/vault
 	id = /obj/item/card/id/rusted/fadedvaultid
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/smg10mm/worn = 1,
+		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/ext = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/imitation = 2,
-		)
-
-/datum/outfit/loadout/raider_cannibal
-	name = "Humanitarian"
-	suit = /obj/item/clothing/suit/armor/bone
-	head = /obj/item/clothing/head/helmet/skull
-	backpack_contents = list(
-		/obj/item/twohanded/fireaxe/boneaxe = 1,
-		/obj/item/restraints/legcuffs/bola = 2,
-		/obj/item/stack/sheet/sinew = 8,
-		/obj/item/stack/sheet/animalhide/human = 10,
-		/obj/item/reagent_containers/food/snacks/soup/longpork_stew = 1,
-		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv = 2,
 		)
 
 /datum/outfit/loadout/raider_tribal
 	name = "Tribal Outcast"
 	uniform = /obj/item/clothing/under/f13/exile/tribal
 	suit = /obj/item/clothing/suit/hooded/tribaloutcast
-	suit_store = /obj/item/melee/onehanded/club/warclub
+	suit_store = /obj/item/twohanded/spear/bonespear
 	shoes = /obj/item/clothing/shoes/sandal
 	belt = /obj/item/storage/backpack/spearquiver
-	box = /obj/item/storage/survivalkit_tribal
-	id = /obj/item/card/id/outcasttattoo
+	box = /obj/item/storage/survivalkit/tribal
 	back = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
 		/obj/item/clothing/mask/cigarette/pipe = 1,
 		/obj/item/melee/onehanded/knife/bone = 1,
+		/obj/item/radio/tribal = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
 		)
 
 /datum/outfit/loadout/raider_mobster
@@ -653,8 +646,9 @@ Raider
 	backpack_contents = list(
 		/obj/item/gun/ballistic/shotgun/police = 1,
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/gun/ballistic/automatic/smg/rockwell = 1,
-		/obj/item/ammo_box/magazine/uzim9mm/rockwell = 2,
+		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
+		/obj/item/melee/onehanded/knife/switchblade = 1,
+		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/card/id/dogtag/town/mafia=1,
 		)
 
@@ -745,7 +739,7 @@ Raider
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	head = /obj/item/clothing/head/welding
 	r_hand = /obj/item/weldingtool/largetank
-	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/m1911/compact=1)
+	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/m1911=1)
 
 /datum/outfit/loadout/scavenger
 	name = "Scavenger"
@@ -756,7 +750,7 @@ Raider
 	backpack_contents = list(/obj/item/mining_scanner=1,
 							/obj/item/metaldetector=1,
 							/obj/item/shovel=1,
-							/obj/item/gun/ballistic/automatic/pistol/m1911/compact=1)
+							/obj/item/gun/ballistic/automatic/pistol/m1911=1)
 
 /datum/outfit/loadout/settler
 	name = "Settler"
@@ -788,7 +782,7 @@ Raider
 							/obj/item/smelling_salts=1,
 							/obj/item/healthanalyzer=1,
 							/obj/item/stack/sheet/mineral/silver=1,
-							/obj/item/gun/ballistic/automatic/pistol/m1911/compact=1,
+							/obj/item/gun/ballistic/automatic/pistol/m1911=1,
 							/obj/item/lighter=1,
 							/obj/item/screwdriver=1,
 							/obj/item/wirecutters=1,
@@ -805,7 +799,7 @@ Raider
 	glasses = /obj/item/clothing/glasses/f13/biker
 	l_hand = /obj/item/gun/ballistic/revolver/caravan_shotgun
 	backpack_contents =  list(/obj/item/storage/box/vendingmachine=1,
-							/obj/item/gun/ballistic/automatic/pistol/m1911/compact=1)
+							/obj/item/gun/ballistic/automatic/pistol/m1911=1)
 
 //end new
 
@@ -817,7 +811,7 @@ Raider
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/n99=1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple=2,
-		/obj/item/pda)
+		/obj/item/pda=1,)
 
 /datum/outfit/loadout/warrior
 	name = "Wasteland Warrior"
@@ -1422,7 +1416,8 @@ datum/job/wasteland/f13dendoctor
 	/datum/outfit/loadout/eightiesshaman,
 	/datum/outfit/loadout/rustwalkersscipher,
 	/datum/outfit/loadout/rustwalkersscrapper,
-	/datum/outfit/loadout/rustwalkersshaman
+	/datum/outfit/loadout/rustwalkersshaman,
+	/datum/outfit/loadout/bonedancerexile
 	)
 
 /datum/outfit/job/wasteland/f13tribal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1433,9 +1428,42 @@ datum/job/wasteland/f13dendoctor
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
+	ADD_TRAIT(H, TRAIT_AUTO_DRAW, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	H.grant_language(/datum/language/tribal)
+	var/list/recipes = list(
+		/datum/crafting_recipe/tribal_pa,
+		/datum/crafting_recipe/tribal_pa_helmet,
+		/datum/crafting_recipe/tribal_combat_armor,
+		/datum/crafting_recipe/tribal_combat_armor_helmet,
+		/datum/crafting_recipe/tribal_r_combat_armor,
+		/datum/crafting_recipe/tribal_r_combat_armor_helmet,
+		/datum/crafting_recipe/tribalwar/chitinarmor,
+		/datum/crafting_recipe/tribalwar/deathclawspear,
+		/datum/crafting_recipe/tribalwar/lightcloak,
+		/datum/crafting_recipe/tribalwar/legendaryclawcloak,
+		/datum/crafting_recipe/warpaint,
+		/datum/crafting_recipe/tribalradio,
+		/datum/crafting_recipe/tribalwar/goliathcloak,
+		/datum/crafting_recipe/tribalwar/bonebow,
+		/datum/crafting_recipe/tribalwar/tribe_bow,
+		/datum/crafting_recipe/tribalwar/sturdybow,
+		/datum/crafting_recipe/tribalwar/warclub,
+		/datum/crafting_recipe/tribalwar/silverbow,
+		/datum/crafting_recipe/tribalwar/arrowbone,
+		/datum/crafting_recipe/tribalwar/bonespear,
+		/datum/crafting_recipe/tribalwar/bonecodpiece,
+		/datum/crafting_recipe/tribalwar/bracers,
+		/datum/crafting_recipe/tribal/bonetalisman,
+		/datum/crafting_recipe/tribal/bonebag,
+		/datum/crafting_recipe/tribalwar/spearquiver
+	)
+	for(var/datum/crafting_recipe/recipe as() in recipes)
+		H.mind.teach_crafting_recipe(recipe)
 	H.grant_language(/datum/language/tribal)
 	H.social_faction = FACTION_WASTELAND
 	add_verb(H, /mob/living/proc/create_tribe)
+
 
 /datum/outfit/job/wasteland/f13tribal
 	name = "Tribal"
@@ -1445,7 +1473,7 @@ datum/job/wasteland/f13dendoctor
 	ears = null
 	belt = /obj/item/melee/onehanded/knife/bone
 	uniform =     /obj/item/clothing/under/f13/settler
-	box =         /obj/item/storage/survivalkit_tribal
+	box =         /obj/item/storage/survivalkit/tribal
 	shoes =     /obj/item/clothing/shoes/sandal
 	gloves =    /obj/item/clothing/gloves/f13/handwraps
 	r_hand = /obj/item/book/granter/trait/selection/tribal
@@ -1650,7 +1678,7 @@ datum/job/wasteland/f13dendoctor
 	head = /obj/item/clothing/head/helmet/f13/wayfarer/antler
 	neck = /obj/item/clothing/neck/mantle/brown
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/sturdybow = 1,
+		/obj/item/gun/ballistic/bow/sturdy = 1,
 		/obj/item/storage/belt/tribe_quiver/bone = 1,
 		/obj/item/storage/belt/tribe_quiver = 1,
 		/obj/item/binoculars = 1,
@@ -1708,37 +1736,17 @@ datum/job/wasteland/f13dendoctor
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		/obj/item/storage/belt/utility/full = 1,
 		/obj/item/book/granter/crafting_recipe/tribal/rustwalkers = 1
-)
 
-/datum/outfit/job/wasteland/f13tribal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	H.grant_language(/datum/language/tribal)
-	var/list/recipes = list(
-		/datum/crafting_recipe/punji_sticks,
-		/datum/crafting_recipe/tribalwar/chitinarmor,
-		/datum/crafting_recipe/tribalwar/deathclawspear,
-		/datum/crafting_recipe/tribalwar/lightcloak,
-		/datum/crafting_recipe/tribalwar/legendaryclawcloak,
-		/datum/crafting_recipe/warpaint,
-		/datum/crafting_recipe/tribalradio,
-		/datum/crafting_recipe/tribalwar/goliathcloak,
-		/datum/crafting_recipe/tribalwar/bonebow,
-		/datum/crafting_recipe/tribalwar/tribe_bow,
-		/datum/crafting_recipe/tribalwar/sturdybow,
-		/datum/crafting_recipe/tribalwar/warclub,
-		/datum/crafting_recipe/tribalwar/silverbow,
-		/datum/crafting_recipe/tribalwar/arrowbone,
-		/datum/crafting_recipe/tribalwar/bonespear,
-		/datum/crafting_recipe/tribalwar/bonecodpiece,
-		/datum/crafting_recipe/tribalwar/bracers,
-		/datum/crafting_recipe/tribal/bonetalisman,
-		/datum/crafting_recipe/tribal/bonebag,
-		/datum/crafting_recipe/tribalwar/spearquiver
 	)
+//Bone Dancer
+/datum/outfit/loadout/bonedancerexile
+	name = "Bone Dancer Exile"
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/bone = 1,
+		/obj/item/clothing/head/helmet/skull/bone = 1,
+		/obj/item/book/granter/crafting_recipe/tribal/bone = 1,
+		/obj/item/twohanded/spear/bonespear = 1,
+		/obj/item/warpaint_bowl=1,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 2
 
-	for(var/datum/crafting_recipe/recipe as() in recipes)
-		H.mind.teach_crafting_recipe(recipe)
+	)

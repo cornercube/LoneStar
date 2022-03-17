@@ -186,7 +186,7 @@
 	new /obj/item/bonesetter(src)
 
 // END OF FALLOUT BELTS
-// ------------------------------------------------------ 
+// ------------------------------------------------------
 
 /obj/item/storage/belt/utility/servant/PopulateContents()
 	new /obj/item/screwdriver/brass(src)
@@ -506,7 +506,7 @@
 	STR.max_items = 7
 
 
-/obj/item/storage/belt/military/followers/PopulateContents()
+/obj/item/storage/belt/military/army/military/followers/PopulateContents()
 	new /obj/item/reagent_containers/spray/pepper(src)
 	new /obj/item/restraints/handcuffs(src)
 	new /obj/item/melee/classic_baton(src)
@@ -776,6 +776,7 @@
 		/obj/item/ammo_box/c4570,
 		/obj/item/ammo_box/a50MG,
 		/obj/item/ammo_box/c45rev,
+		/obj/item/ammo_box/a45lcrev,
 		/obj/item/gun/energy/laser/solar,
 		/obj/item/gun/energy/laser/pistol,
 		/obj/item/gun/energy/laser/complianceregulator,
@@ -823,12 +824,6 @@
 	new /obj/item/ammo_box/c4570(src)
 	new /obj/item/ammo_box/c4570(src)
 
-/obj/item/storage/belt/holster/ranger10mm/PopulateContents()
-	new /obj/item/gun/ballistic/revolver/colt6520(src)
-	new /obj/item/ammo_box/l10mm(src)
-	new /obj/item/ammo_box/l10mm(src)
-	new /obj/item/ammo_box/l10mm(src)
-
 /obj/item/storage/belt/holster/legholster
 	name = "leg holster"
 	desc = "A holster to carry a handgun and ammo worn on the leg."
@@ -869,8 +864,8 @@
 /obj/item/storage/belt/sabre
 	name = "sabre sheath"
 	desc = "An ornate sheath designed to hold an officer's blade."
-	icon_state = "sheath"
-	item_state = "sheath"
+	icon_state = "utilitybelt"
+	item_state = "utility"
 	w_class = WEIGHT_CLASS_BULKY
 	content_overlays = TRUE
 	onmob_overlays = TRUE
@@ -893,6 +888,33 @@
 
 /obj/item/storage/belt/sabre/PopulateContents()
 	new starting_sword(src)
+
+/obj/item/storage/belt/sabre/heavy
+	name = "heavy-duty sheath"
+	desc = "A rugged set of leather straps and metal tips to comfortably carry a large variety of blades (and even blunt objects) on your side."
+	icon_state = "sheath"
+	item_state = "sheath"
+	w_class = WEIGHT_CLASS_BULKY
+	content_overlays = TRUE
+	onmob_overlays = TRUE
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
+	fitting_swords = list(/obj/item/melee/smith/shortsword,
+	/obj/item/melee/smith/wakizashi,
+	/obj/item/melee/smith/twohand/broadsword,
+	/obj/item/melee/smith/twohand/zweihander,
+	/obj/item/melee/smith/twohand/katana,
+	/obj/item/melee/smith/sabre,
+	/obj/item/melee/smith/cogheadclub,
+	/obj/item/melee/onehanded/machete,
+	/obj/item/melee/onehanded/club,
+	/obj/item/melee/classic_baton,
+	/obj/item/twohanded/fireaxe,
+	/obj/item/twohanded/baseball,
+	/obj/item/twohanded/sledgehammer,
+	/obj/item/melee/transforming/energy/axe/protonaxe,
+	/obj/item/melee/powered/ripper)
+	starting_sword = null
+
 
 /obj/item/storage/belt/sabre/rapier
 	name = "rapier sheath"

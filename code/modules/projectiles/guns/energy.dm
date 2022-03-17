@@ -39,7 +39,8 @@
 
 	/// SET THIS TO TRUE IF YOU OVERRIDE altafterattack() or ANY right click action! If this is FALSE, the gun will show in examine its default right click behavior, which is to switch modes.
 	var/right_click_overridden = FALSE
-	isenergy = TRUE
+	dryfire_sound = 'sound/f13weapons/noammoenergy.ogg'
+	dryfire_text = "*power failure*"
 
 /obj/item/gun/energy/emp_act(severity)
 	. = ..()
@@ -104,12 +105,6 @@
 		if(!chambered) //if empty chamber we try to charge a new shot
 			recharge_newshot(TRUE)
 		update_icon()
-
-// ATTACK SELF IGNORING PARENT RETURN VALUE
-/obj/item/gun/energy/attack_self(mob/living/user)
-	. = ..()
-	if(can_select_fire(user))
-		select_fire(user)
 
 /obj/item/gun/energy/can_shoot()
 	var/obj/item/ammo_casing/energy/shot = ammo_type[current_firemode_index]
@@ -204,7 +199,7 @@
 	return user_set_firemode_to_next(user)
 
 /obj/item/gun/energy/proc/can_select_fire(mob/living/user)
-	return TRUE
+	return (length(ammo_type) > 1)
 
 #define INCREMENT_OR_WRAP(i) i = (i >= length(ammo_type))? 1 : (i + 1)
 #define DECREMENT_OR_WRAP(i) i = (i <= 1)? length(ammo_type) : (i - 1)
@@ -361,25 +356,14 @@
 		else
 			to_chat(user, "<span class='notice'>There's no cell in \the [src].</span>")
 		return
-	else 
+	else
 		return
 
 /obj/item/gun/energy/attack_self(mob/living/user)
-	if (!ishuman(user))
+	. = ..()
+	if(can_select_fire(user))
+		select_fire(user)
 		return
-	if(cell)
-		if(can_charge == 0 && can_remove == 0)
-			to_chat(user, "<span class='notice'>You can't remove the cell from \the [src].</span>")
-			return
-		cell.forceMove(drop_location())
-		user.put_in_hands(cell)
-		cell.update_icon()
-		cell = null
-		to_chat(user, "<span class='notice'>You pull the cell out of \the [src].</span>")
-		playsound(src, 'sound/f13weapons/equipsounds/laserreload.ogg', 50, 1)
-	else
-		to_chat(user, "<span class='notice'>There's no cell in \the [src].</span>")
-	return
 
 
 /obj/item/gun/energy/attackby(obj/item/A, mob/user, params)

@@ -97,6 +97,20 @@
 	build_path = /obj/item/ammo_box/magazine/m556/rifle/small/empty
 	category = list("initial", "Simple Magazines")
 
+/datum/design/ammolathe/m762_rifle_small
+	name = "empty stripper clip (7.62mm)"
+	id = "m762_rifle_small"
+	materials = list(/datum/material/iron = 3000)
+	build_path = /obj/item/ammo_box/a762/empty
+	category = list("initial", "Simple Magazines")
+
+/datum/design/ammolathe/m762_rifle_small
+	name = "empty stripper clip (.308)"
+	id = "ma762_rifle_small"
+	materials = list(/datum/material/iron = 3000)
+	build_path = /obj/item/ammo_box/a308/empty
+	category = list("initial", "Simple Magazines")
+
 /datum/design/ammolathe/m45magazine
 	name = "empty handgun magazine (.45)"
 	id = "m45magazine"
@@ -226,6 +240,12 @@
 	build_path = /obj/item/ammo_box/magazine/uzim9mm/empty
 	category = list("initial", "Basic Magazines")
 
+/datum/design/ammolathe/carl_gustafmag
+	name = "empty carl gustaf magazine (10mm)"
+	id = "carl_gustafmag"
+	materials = list(/datum/material/iron = 4000)
+	build_path = /obj/item/ammo_box/magazine/cg45/empty
+	category = list("initial", "Basic Magazines")
 
 /datum/design/ammolathe/pistol22mag
 	name = "empty pistol magazine (.22lr)"
@@ -371,6 +391,13 @@
 	build_path = /obj/item/ammo_box/c4570/empty
 	category = list("initial", "Intermediate Magazines")
 
+/datum/design/ammolathe/m762_rifle_doublestack
+	name = "empty double stack stripper clip (7.62mm)"
+	id = "m762_rifle_doublestack"
+	materials = list(/datum/material/iron = 5000)
+	build_path = /obj/item/ammo_box/a762/doublestacked/empty
+	category = list("initial", "Intermediate Magazines")
+
 /datum/design/ammolathe/tube4570
 	name = "empty speed loader tube (.45-70)"
 	id = "tube4570"
@@ -456,7 +483,6 @@
 	build_path = /obj/item/ammo_box/c4570box
 	category = list("initial", "Intermediate Ammo")
 
-
 /datum/design/ammolathe/lc45
 	name = ".45 LC ammo box"
 	id = "c45lc"
@@ -476,27 +502,6 @@
 	id = "a127mm"
 	build_path = /obj/item/ammo_box/m14mm
 	materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 2000)
-	category = list("initial", "Intermediate Ammo")
-
-/datum/design/ammolathe/a10mmwounding
-	name = "10mm wounding ammo box"
-	id = "a10mmwound"
-	build_path = /obj/item/ammo_box/c10mm/wounding
-	materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 5000)
-	category = list("initial", "Intermediate Ammo")
-
-/datum/design/ammolathe/a10mmfire
-	name = "10mm incendiary ammo box"
-	id = "10mmincend"
-	build_path = /obj/item/ammo_box/c10mm/fire
-	materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 10000)
-	category = list("initial", "Intermediate Ammo")
-
-/datum/design/ammolathe/a9mmwounding
-	name = "9mm wounding ammo box"
-	id = "9mmincend"
-	build_path = /obj/item/ammo_box/c9mm/wounding
-	materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 5000)
 	category = list("initial", "Intermediate Ammo")
 
 /*/datum/design/ammolathe/a45op
@@ -551,6 +556,14 @@
 	build_path = /obj/item/ammo_box/magazine/m473/empty
 	category = list("initial", "Advanced Magazines")
 
+/datum/design/ammolathe/m473s
+	name = "empty wt550 magazine (4.73mm)"
+	id = "m473s"
+	materials = list(/datum/material/iron = 2000)
+	build_path = /obj/item/ammo_box/magazine/m473/small/empty
+	category = list("initial", "Advanced Magazines")
+
+
 /datum/design/ammolathe/m762ext
 	name = "empty extended rifle magazine (7.62x51)"
 	id = "m762ext"
@@ -598,30 +611,64 @@
 /datum/design/ammolathe/m473fmj
 	name = "4.73mm caseless ammo box"
 	id = "m473fmj"
-	materials = list(/datum/material/iron = 25000, /datum/material/blackpowder = 2000)
+	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 2000)
 	build_path = /obj/item/ammo_box/m473
 	category = list("initial", "Advanced Ammo")
 
-/datum/design/ammolathe/a556uraniumtipped
-	name = "5.56mm uranium-tipped ammo box"
-	id = "a556uranium"
-	materials = list(/datum/material/iron = 40000, /datum/material/titanium = 15000, /datum/material/blackpowder = 5000, /datum/material/uranium = 4000)
-	build_path = /obj/item/ammo_box/a556/uraniumtipped
+/datum/design/ammolathe/m473rubber
+	name = "4.73mm caseless rubber ammo box"
+	id = "m473rubber"
+	materials = list(/datum/material/plastic = 12000, /datum/material/blackpowder = 1000)
+	build_path = /obj/item/ammo_box/m473/rubber
 	category = list("initial", "Advanced Ammo")
 
-/datum/design/ammolathe/a762uraniumtipped
-	name = "7.62 uranium-tipped ammo box"
-	id = "a762uranium"
-	materials = list(/datum/material/iron = 40000, /datum/material/titanium = 15000, /datum/material/blackpowder = 5000, /datum/material/uranium = 4000)
-	build_path = /obj/item/ammo_box/a762box/uraniumtipped
+/datum/design/ammolathe/m473incin
+	name = "4.73mm incendiary caseless ammo box"
+	id = "m473incin"
+	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 3000)
+	build_path = /obj/item/ammo_box/m473/incendiary
 	category = list("initial", "Advanced Ammo")
 
-/datum/design/ammolathe/a45incendiary
-	name = ".45 incendiary ammo box"
-	id = "45incend"
-	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 15000)
-	build_path = /obj/item/ammo_box/c45/incendiary
+/datum/design/ammolathe/m473u235
+	name = "4.73mm uranium-tipped caseless ammo box"
+	id = "m473u235"
+	materials = list(/datum/material/titanium = 10000, /datum/material/uranium = 4000, /datum/material/blackpowder = 2000)
+	build_path = /obj/item/ammo_box/m473/uraniumtipped
 	category = list("initial", "Advanced Ammo")
+
+/datum/design/ammolathe/m473wound
+	name = "4.73mm flat-nose caseless ammo box"
+	id = "m473wound"
+	materials = list(/datum/material/iron = 12000,/datum/material/titanium = 2000, /datum/material/blackpowder = 2000)
+	build_path = /obj/item/ammo_box/m473/dumdum
+	category = list("initial", "Advanced Ammo")
+
+/datum/design/ammolathe/m473explosive
+	name = "4.73mm explosive caseless ammo box"
+	id = "m473explosive"
+	materials = list(/datum/material/iron = 24000, /datum/material/titanium = 10000, /datum/material/blackpowder = 10000)
+	build_path = /obj/item/ammo_box/m473/explosive
+	category = list("initial", "Advanced Ammo")
+
+/datum/design/ammolathe/m473esd
+	name = "4.73mm ESD caseless ammo box"
+	id = "m473esd"
+	materials = list(/datum/material/iron = 12000, /datum/material/gold = 2000, /datum/material/silver = 2000, /datum/material/titanium = 2000, /datum/material/blackpowder = 2000)
+	build_path = /obj/item/ammo_box/m473/shock
+	category = list("initial", "Advanced Ammo")
+
+/datum/design/ammolathe/m473hv
+	name = "4.73mm high-velocity caseless ammo box"
+	id = "m473hv"
+	materials = list(/datum/material/iron = 12000, /datum/material/titanium = 8000, /datum/material/blackpowder = 3000)
+	build_path = /obj/item/ammo_box/m473/hv
+	category = list("initial", "Advanced Ammo")
+
+
+
+
+
+
 
 /datum/design/ammolathe/a357ricochet
 	name = ".357 ricochet ammo"

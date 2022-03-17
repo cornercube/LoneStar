@@ -147,10 +147,11 @@
 	var/impact_effect_type //what type of impact effect to show when hitting something
 	var/log_override = FALSE //is this type spammed enough to not log? (KAs)
 
+	var/supereffective_damage = 0
+	var/list/supereffective_faction //Any mob with a faction that exists in this list will take bonus damage
+
 	var/temporary_unstoppable_movement = FALSE
 
-	///If defined, on hit we create an item of this type then call hitby() on the hit target with this, mainly used for embedding items (bullets) in targets
-	var/shrapnel_type
 	///If TRUE, hit mobs even if they're on the floor and not our target
 	var/hit_stunned_targets = FALSE
 
@@ -166,7 +167,7 @@
 	. = ..()
 	permutated = list()
 	decayedRange = range
-	if(embedding)
+	if(LAZYLEN(embedding))
 		updateEmbedding()
 
 /**
@@ -178,7 +179,7 @@
 	if(wound_bonus != CANT_WOUND)
 		wound_bonus += wound_falloff_tile
 		bare_wound_bonus = max(0, bare_wound_bonus + wound_falloff_tile)
-	if(embedding)
+	if(LAZYLEN(embedding))
 		embedding["embed_chance"] += embed_falloff_tile
 	if(range <= 0 && loc)
 		on_range()
@@ -359,6 +360,12 @@
 #define FORCE_QDEL 3		//Force deletion.
 
 /obj/item/projectile/proc/process_hit(turf/T, atom/target, qdel_self, hit_something = FALSE)		//probably needs to be reworked entirely when pixel movement is done.
+	if(isliving(target) && LAZYLEN(supereffective_faction))
+		var/mob/living/L = target
+		for(var/F in L.faction)
+			if(F in supereffective_faction)
+				damage += supereffective_damage
+				break
 	if(QDELETED(src) || !T || !target)		//We're done, nothing's left.
 		if((qdel_self == FORCE_QDEL) || ((qdel_self == QDEL_SELF) && !temporary_unstoppable_movement && !CHECK_BITFIELD(movement_type, UNSTOPPABLE)))
 			qdel(src)
@@ -480,8 +487,8 @@
 /obj/item/projectile/proc/fire(angle, atom/direct_target)
 	if(fired_from)
 		SEND_SIGNAL(fired_from, COMSIG_PROJECTILE_BEFORE_FIRE, src, original)	//If no angle needs to resolve it from xo/yo!
-	if(shrapnel_type)
-		AddElement(/datum/element/embed, projectile_payload = shrapnel_type)
+	if(LAZYLEN(embedding))//our embedding stats change, possibly
+		updateEmbedding()
 	if(!log_override && firer && original)
 		log_combat(firer, original, "fired at", src, "from [get_area_name(src, TRUE)]")
 	if(direct_target)

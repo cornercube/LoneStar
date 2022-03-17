@@ -270,7 +270,7 @@
 	icon = 'icons/obj/crates.dmi'
 	icon_state = "weaponcrate"
 	item_state = "syringe_kit"
-	
+
 /obj/item/choice_beacon/weapon/follower
 	name = "Follower of the Apocalpyse standard issue self-defense weapon crate"
 	desc = "Has that weapon you ordered"
@@ -278,17 +278,28 @@
 	"lethal, energy" = /obj/item/gun/energy/laser/wattz,
 	"lethal, ballistics" = /obj/item/gun/ballistic/revolver/colt357,
 	)
-	
+
 /obj/item/choice_beacon/weapon/follower/generate_display_names()
 	return follower_guns
-	
+
 /obj/item/choice_beacon/weapon/wastelander
 	name = "personal weapon stash"
 	desc = "contains your personal weapon, whatever it may be"
 	var/static/list/follower_guns = list("M1911" = /obj/item/gun/ballistic/automatic/pistol/m1911,
-	"M1911 compact" = /obj/item/gun/ballistic/automatic/pistol/m1911/compact,
+	"M1911" = /obj/item/gun/ballistic/automatic/pistol/m1911,
 	"N99, 10mm" = /obj/item/gun/ballistic/automatic/pistol/n99,
 	".357 Police Pistol" = /obj/item/gun/ballistic/revolver/police,
 	".357 Single Action Revolver" = /obj/item/gun/ballistic/revolver/colt357,
 	"5.56mm Varmint Rifle" = /obj/item/gun/ballistic/automatic/varmint
 	)
+
+/obj/item/choice_beacon/box/g11ammo
+	name = "choice box (tactical ammunition)"
+	desc = "Contains 50 rounds of your preferred tactical 4.73mm ammunition."
+	var/static/list/ammolist = list("4.73mm flat-nose bullets" = /obj/item/ammo_box/m473/dumdum,
+		"4.73mm incendiary bullets" = /obj/item/ammo_box/m473/incendiary,
+		"4.73mm electro-static discharge bullets" = /obj/item/ammo_box/m473/shock,
+		"4.73mm high-velocity bullets" = /obj/item/ammo_box/m473/hv)
+
+/obj/item/choice_beacon/box/g11ammo/generate_display_names()
+	return ammolist

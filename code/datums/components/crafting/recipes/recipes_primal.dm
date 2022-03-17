@@ -110,20 +110,16 @@
 			/obj/item/stack/sheet/mineral/bamboo = 5)
 	result = /obj/structure/punji_sticks
 	category = CAT_PRIMAL
-	always_available = FALSE
 
 /datum/crafting_recipe/tribal_pa
 	name = "Tribal Salvaged Power Armor"
 	time = 120
 	reqs = list(
 			/obj/item/clothing/suit/armor/f13/power_armor/t45b = 1,
-			/obj/item/stack/sheet/cloth = 15,
-			/obj/item/stack/sheet/metal = 35,
-			/obj/item/stack/sheet/leather = 10,
-			/obj/item/stack/sheet/mineral/diamond = 5,
-			/obj/item/stack/sheet/bone = 20
+			/obj/item/stack/sheet/sinew = 2,
+			/obj/item/stack/sheet/bone = 4
 			)
-	result = /obj/item/clothing/suit/armor/f13/wayfarer/tribal_pa
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t45b/tribal
 	category = CAT_TRIBAL
 	always_available = FALSE
 
@@ -132,13 +128,10 @@
 	time = 120
 	reqs = list(
 			/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
-			/obj/item/stack/sheet/cloth = 10,
-			/obj/item/stack/sheet/metal = 15,
-			/obj/item/stack/sheet/leather = 20,
-			/obj/item/stack/sheet/mineral/diamond = 10,
-			/obj/item/stack/sheet/bone = 10
+			/obj/item/stack/sheet/sinew = 1,
+			/obj/item/stack/sheet/bone = 2
 			)
-	result = /obj/item/clothing/head/helmet/f13/wayfarer/pa_helmet
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t45b/tribal
 	category = CAT_TRIBAL
 	always_available = FALSE
 
@@ -147,11 +140,22 @@
 	time = 40
 	reqs = list(
 			/obj/item/clothing/suit/armor/f13/combat = 1,
-			/obj/item/stack/sheet/cloth = 10,
-			/obj/item/stack/sheet/sinew = 5,
-			/obj/item/stack/sheet/bone = 5
+			/obj/item/stack/sheet/sinew = 1,
+			/obj/item/stack/sheet/bone = 2
 			)
-	result = /obj/item/clothing/suit/armor/f13/tribal_combat_armor
+	result = /obj/item/clothing/suit/armor/f13/combat/tribal
+	category = CAT_TRIBAL
+	always_available = FALSE
+
+/datum/crafting_recipe/tribal_r_combat_armor
+	name = "Tribal Reinforced Combat Armor"
+	time = 40
+	reqs = list(
+			/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
+			/obj/item/stack/sheet/sinew = 1,
+			/obj/item/stack/sheet/bone = 2
+			)
+	result = /obj/item/clothing/suit/armor/f13/combat/mk2/tribal
 	category = CAT_TRIBAL
 	always_available = FALSE
 
@@ -160,17 +164,27 @@
 	time = 40
 	reqs = list(
 			/obj/item/clothing/head/helmet/f13/combat = 1,
-			/obj/item/stack/sheet/cloth = 5,
-			/obj/item/stack/sheet/sinew = 3,
-			/obj/item/stack/sheet/bone = 3
+			/obj/item/stack/sheet/bone = 1
 			)
-	result = /obj/item/clothing/head/helmet/f13/combat/wayfarer/tribe_helmet
+	result = /obj/item/clothing/head/helmet/f13/combat/tribal
 	category = CAT_TRIBAL
 	always_available = FALSE
 
+/datum/crafting_recipe/tribal_r_combat_armor_helmet
+	name = "Tribal Reinforced Combat Helmet"
+	time = 40
+	reqs = list(
+			/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
+			/obj/item/stack/sheet/bone = 1
+			)
+	result = /obj/item/clothing/head/helmet/f13/combat/mk2/tribal
+	category = CAT_TRIBAL
+	always_available = FALSE
+
+
 /datum/crafting_recipe/tribalwar/sturdybow
 	name = "Sturdy Bow"
-	result = /obj/item/gun/ballistic/automatic/sturdybow
+	result = /obj/item/gun/ballistic/bow/sturdy
 	time = 80
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 5,
 				/obj/item/stack/sheet/metal = 10,
@@ -181,7 +195,7 @@
 
 /datum/crafting_recipe/tribalwar/silverbow
 	name = "Silver Bow"
-	result = /obj/item/gun/ballistic/automatic/silverbow
+	result = /obj/item/gun/ballistic/bow/silver
 	time = 80
 	reqs = list(/obj/item/stack/sheet/mineral/silver = 10,
 				/obj/item/stack/sheet/metal = 10,
@@ -192,7 +206,7 @@
 
 /datum/crafting_recipe/tribalwar/bonebow
 	name = "Deathclaw Bow"
-	result = /obj/item/gun/ballistic/automatic/bonebow
+	result = /obj/item/gun/ballistic/bow/claw
 	time = 80
 	reqs = list(/obj/item/stack/sheet/animalhide/deathclaw = 6,
 				/obj/item/stack/sheet/bone = 10,
@@ -203,7 +217,7 @@
 
 /datum/crafting_recipe/tribalwar/tribe_bow
 	name = "Short Bow"
-	result = /obj/item/gun/ballistic/automatic/tribalbow
+	result = /obj/item/gun/ballistic/bow/tribal
 	time = 50
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 10,
 				/obj/item/stack/sheet/sinew = 3)
@@ -212,7 +226,7 @@
 
 /datum/crafting_recipe/tribalwar/crossbow
 	name = "CrossBow"
-	result = /obj/item/gun/ballistic/automatic/crossbow
+	result = /obj/item/gun/ballistic/bow/crossbow
 	time = 180
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/metalparts = 3,
@@ -244,6 +258,15 @@
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
 
+/datum/crafting_recipe/tribalwar/arrowbronze
+	name = "Bronze Arrow"
+	result = /obj/item/ammo_casing/caseless/arrow/bronze
+	time = 30
+	reqs = list(/obj/item/stack/sheet/bronze = 1,
+				/obj/item/stack/sheet/mineral/wood = 1)
+	category = CAT_TRIBAL
+	tools = list(TOOL_WORKBENCH)
+
 /datum/crafting_recipe/tribalwar/arrowpoison
 	name = "Poison Arrow"
 	result = /obj/item/ammo_casing/caseless/arrow/poison
@@ -259,8 +282,8 @@
 	name = "Bone Arrow"
 	result = /obj/item/ammo_casing/caseless/arrow/bone
 	time = 30
-	reqs = list(/obj/item/stack/sheet/bone = 4,
-				/obj/item/stack/sheet/sinew = 1)
+	reqs = list(/obj/item/stack/sheet/bone = 1,
+				/obj/item/stack/sheet/mineral/wood = 1)
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
 	always_available = FALSE
@@ -274,7 +297,29 @@
 				/obj/item/stack/sheet/mineral/sandstone = 2)
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
-	always_available = FALSE
+
+
+/datum/crafting_recipe/tribalwar/arrowwound
+	name = "Serrated Arrow"
+	result = /obj/item/ammo_casing/caseless/arrow/serrated
+	time = 10
+	reqs = list(
+		/obj/item/stack/rods = 1,
+		/obj/item/stack/crafting/goodparts = 1
+		)
+	category = CAT_TRIBAL
+	tools = list(TOOL_WORKBENCH)
+
+/datum/crafting_recipe/tribalwar/arrowembed
+	name = "Broadhead Arrow"
+	result = /obj/item/ammo_casing/caseless/arrow/broadhead
+	time = 10
+	reqs = list(
+		/obj/item/stack/rods = 1,
+		/obj/item/stack/crafting/goodparts = 1
+		)
+	category = CAT_TRIBAL
+	tools = list(TOOL_WORKBENCH)
 
 //MELEE
 
@@ -411,3 +456,14 @@
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
 	always_available = FALSE
+
+/* tdo
+/datum/crafting_recipe/beartrap
+	name = "Bear Trap"
+	result = /obj/item/restraints/legcuffs/beartrap
+	time = 25
+	reqs = list(/obj/item/stack/crafting/metalparts = 2,
+				/obj/item/stack/sheet/metal = 1)
+	category = CAT_TRIBAL
+	tools = list(TOOL_WORKBENCH)
+*/

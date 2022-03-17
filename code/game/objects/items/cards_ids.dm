@@ -893,7 +893,7 @@
 
 
 /obj/item/card/id/dogtag/deputy
-	name = "deputy's badge"
+	name = "officer's badge"
 	desc = "A silver badge which shows honour and dedication."
 	assignment = "badge"
 	assignment = "Deputy"
@@ -903,7 +903,7 @@
 
 /obj/item/card/id/dogtag/deputy/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/card/id/dogtag/sheriff))
-		var/newname = stripped_input(user, "Who do you want to designate as your deputy?", , "", MAX_NAME_LEN)
+		var/newname = stripped_input(user, "Who do you want to designate as your officer?", , "", MAX_NAME_LEN)
 		if(newname)
 			to_chat(user, "You scribble the [registered_name] for the name on the badge.")
 			registered_name = newname
@@ -911,8 +911,8 @@
 	return ..()
 
 /obj/item/card/id/dogtag/sheriff
-	name = "sheriff's badge"
-	desc = "A golden Sheriff's badge."
+	name = "chief's badge"
+	desc = "A golden Chief's badge."
 	assignment = "badge"
 	icon_state = "sheriff"
 	item_state = "badge-sheriff"
@@ -1051,12 +1051,12 @@
 	item_state = "card-id_leg"
 	assignment = "prime medallion"
 
-/obj/item/card/id/dogtag/legslavemaster
-	name = "slavemaster medallion"
-	desc = "A marked silver disc stamped with the Legion's Bull insignia and a whip. Worn by legionnaires on camp duty."
+/obj/item/card/id/dogtag/legimmune
+	name = "immune medallion"
+	desc = "A marked silver disc stamped with the Legion's Bull insignia. Worn by legionnaires on camp duty."
 	icon_state = "legionmedallionprime"
 	item_state = "card-id_leg"
-	assignment = "slavemaster medallion"
+	assignment = "immune medallion"
 
 /obj/item/card/id/dogtag/legveteran
 	name = "veteran medallion"

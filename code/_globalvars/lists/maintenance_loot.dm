@@ -171,7 +171,7 @@ GLOBAL_LIST_INIT(trash_part, list(
 GLOBAL_LIST_INIT(trash_clothing, list(
 	/obj/item/clothing/glasses/sunglasses/big = 5,
 	/obj/item/clothing/glasses/sunglasses = 5,
-	/obj/item/clothing/glasses/eyepatch = 5,
+	/obj/item/clothing/suit/armor/f13/plates = 5,
 	/obj/item/clothing/head/helmet/knight/f13/rider = 5,
 	/obj/item/clothing/shoes/f13/cowboy = 5,
 	/obj/item/clothing/shoes/f13/explorer = 5,
@@ -483,13 +483,13 @@ GLOBAL_LIST_INIT(loot_t5_melee, list(
 	/obj/item/twohanded/chainsaw,
 	/obj/item/melee/transforming/energy/axe/protonaxe,
 	/obj/item/melee/powered/ripper,
-	/obj/item/melee/powerfist/f13,
+	/obj/item/melee/unarmed/powerfist,
 	/obj/item/twohanded/sledgehammer/rockethammer,
 	/obj/item/gun/ballistic/revolver/ballisticfist,
 	/obj/item/twohanded/sledgehammer/supersledge,
 	/obj/item/shishkebabpack,
 	/obj/item/melee/unarmed/deathclawgauntlet,
-	/obj/item/melee/powerfist/f13/moleminer
+	/obj/item/melee/unarmed/powerfist/moleminer
 ))
 
 GLOBAL_LIST_INIT(loot_t1_range, list(
@@ -509,7 +509,7 @@ GLOBAL_LIST_INIT(loot_t1_range, list(
 	/obj/item/ammo_box/magazine/m45,
 	/obj/item/gun/ballistic/automatic/pistol/ninemil,
 	/obj/item/ammo_box/magazine/m9mm,
-	/obj/item/gun/ballistic/revolver/colt6520,
+	/obj/item/gun/ballistic/automatic/pistol/n99,
 	/obj/item/ammo_box/magazine/m10mm_adv/simple,
 	/obj/item/gun/ballistic/automatic/varmint,
 	/obj/item/ammo_box/magazine/m556/rifle/small

@@ -596,13 +596,19 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Gas Mask",						/obj/item/clothing/mask/gas,										50),
 		new /datum/data/wasteland_equipment("Advanced Mop",					/obj/item/mop/advanced,												100),
 		new /datum/data/wasteland_equipment("Fixer",						/obj/item/storage/pill_bottle/chem_tin/fixer,						200),
-		new /datum/data/wasteland_equipment("X-tra Large Beaker",			/obj/item/reagent_containers/glass/beaker/plastic,					500),
+		new /datum/data/wasteland_equipment("Metamaterial Beaker",			/obj/item/reagent_containers/glass/beaker/meta,						500),
 		new /datum/data/wasteland_equipment("Medical HUD",					/obj/item/clothing/glasses/hud/health,								500),
+		new /datum/data/wasteland_equipment("Prosthetic Left Arm",			/obj/item/bodypart/l_arm/robot,										600),
+		new /datum/data/wasteland_equipment("Prosthetic Right Arm",		/obj/item/bodypart/r_arm/robot,										600),
+		new /datum/data/wasteland_equipment("Prosthetic Left Leg",			/obj/item/bodypart/l_leg/robot,										600),
+		new /datum/data/wasteland_equipment("Prosthetic Right Leg",		/obj/item/bodypart/r_leg/robot,										600),
+		new /datum/data/wasteland_equipment("Integrated Toolset Implant",	/obj/item/organ/cyberimp/arm/toolset,								700),
 		new /datum/data/wasteland_equipment("Defibrillator",				/obj/item/defibrillator,											1000),
-		new /datum/data/wasteland_equipment("Integrated Toolset Implant",	/obj/item/organ/cyberimp/arm/toolset,								2000),
-		new /datum/data/wasteland_equipment("Upgraded Prosthethic Limbs",	/obj/item/storage/box/sparelimbs,									2000),
+		new /datum/data/wasteland_equipment("Chest reviver Implant",			/obj/item/organ/cyberimp/chest/reviver,								1500),
+		new /datum/data/wasteland_equipment("Upgraded Prosthetic Limbs",	/obj/item/storage/box/sparelimbs,									2000),
 		new /datum/data/wasteland_equipment("Cat",							/mob/living/simple_animal/pet/cat/Runtime,							10000),
 		)
+		
 	highpop_list = list(
 		new /datum/data/wasteland_equipment("Medicated Suture",				/obj/item/stack/medical/suture/medicated,							45),
 		new /datum/data/wasteland_equipment("Advanced Regen. Mesh",			/obj/item/stack/medical/mesh/advanced,								45),
@@ -610,11 +616,16 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Gas Mask",						/obj/item/clothing/mask/gas,										50),
 		new /datum/data/wasteland_equipment("Advanced Mop",					/obj/item/mop/advanced,												100),
 		new /datum/data/wasteland_equipment("Fixer",						/obj/item/storage/pill_bottle/chem_tin/fixer,						200),
-		new /datum/data/wasteland_equipment("X-tra Large Beaker",			/obj/item/reagent_containers/glass/beaker/plastic,					500),
+		new /datum/data/wasteland_equipment("Metamaterial Beaker",			/obj/item/reagent_containers/glass/beaker/meta,						500),
 		new /datum/data/wasteland_equipment("Medical HUD",					/obj/item/clothing/glasses/hud/health,								500),
+		new /datum/data/wasteland_equipment("Prosthetic Left Arm",			/obj/item/bodypart/l_arm/robot,										600),
+		new /datum/data/wasteland_equipment("Prosthetic Right Arm",			/obj/item/bodypart/r_arm/robot,										600),
+		new /datum/data/wasteland_equipment("Prosthetic Left Leg",			/obj/item/bodypart/l_leg/robot,										600),
+		new /datum/data/wasteland_equipment("Prosthetic Right Leg",			/obj/item/bodypart/r_leg/robot,										600),
+		new /datum/data/wasteland_equipment("Integrated Toolset Implant",	/obj/item/organ/cyberimp/arm/toolset,								700),
 		new /datum/data/wasteland_equipment("Defibrillator",				/obj/item/defibrillator,											1000),
-		new /datum/data/wasteland_equipment("Integrated Toolset Implant",	/obj/item/organ/cyberimp/arm/toolset,								2000),
-		new /datum/data/wasteland_equipment("Upgraded Prosthethic Limbs",	/obj/item/storage/box/sparelimbs,									2000),
+		new /datum/data/wasteland_equipment("Chest reviver Implant",		/obj/item/organ/cyberimp/chest/reviver,								1500),
+		new /datum/data/wasteland_equipment("Upgraded Prosthetic Limbs",	/obj/item/storage/box/sparelimbs,									2000),
 		new /datum/data/wasteland_equipment("Cat",							/mob/living/simple_animal/pet/cat/Runtime,							10000),
 		)
 		
@@ -632,7 +643,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		)
 	highpop_list = list(
 		new /datum/data/wasteland_equipment("survival knife",				/obj/item/melee/onehanded/knife/survival, 							40),
-		new /datum/data/wasteland_equipment("9mm pistol",					/obj/item/gun/ballistic/automatic/pistol/ninemil,					60),
+		new /datum/data/wasteland_equipment("9mm pistol",					/obj/item/gun/ballistic/automatic/pistol/beretta,					60),
 		new /datum/data/wasteland_equipment("M1911",						/obj/item/gun/ballistic/automatic/pistol/m1911,						70),
 		new /datum/data/wasteland_equipment("Guns and Bullets, Part 1",		/obj/item/book/granter/crafting_recipe/gunsmith_one, 				100),
 		new /datum/data/wasteland_equipment("Guns and Bullets, Part 2",		/obj/item/book/granter/crafting_recipe/gunsmith_two,				200),
@@ -645,7 +656,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	icon_state = "ammo_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Handgun magazine (.45)",		/obj/item/ammo_box/magazine/m45,									50),
-		new /datum/data/wasteland_equipment("9mm pistol magazine (9mm)",	/obj/item/ammo_box/magazine/m9mm,									50),
+		new /datum/data/wasteland_equipment("9mm pistol magazine (9mm)",	/obj/item/ammo_box/magazine/m9mmds,									50),
 		new /datum/data/wasteland_equipment("10mm pistol magazine (10mm)",	/obj/item/ammo_box/magazine/m10mm_adv/simple,						60),
 		new /datum/data/wasteland_equipment("Speed strip (.357)",			/obj/item/ammo_box/a357,											70),
 		new /datum/data/wasteland_equipment("Smoke Bomb",					/obj/item/grenade/smokebomb,										70),

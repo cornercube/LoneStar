@@ -30,6 +30,32 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_MELEE
 
+
+
+/datum/crafting_recipe/scraptower
+	name = "Scrap Towershield"
+	result = /obj/item/shield/riot/tower/scrap
+	reqs = list(/obj/item/stack/cable_coil = 30,
+				/obj/item/stack/sheet/metal = 35,
+				/obj/item/crafting/duct_tape = 1,
+				/obj/item/crafting/wonderglue = 1)
+	tools = list(TOOL_WELDER)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_MELEE
+
+/datum/crafting_recipe/steeltower
+	name = "Steel Towershield"
+	result = /obj/item/shield/riot/tower
+	reqs = list(/obj/item/stack/cable_coil = 30,
+				/obj/item/stack/sheet/metal = 15,
+				/obj/item/stack/crafting/metalparts = 5)
+	tools = list(TOOL_WELDER)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_MELEE
+	always_available = FALSE
+
 /datum/crafting_recipe/buckler
 	name = "Wooden Buckler"
 	result = /obj/item/shield/riot/buckler
@@ -96,9 +122,9 @@
 	subcategory = CAT_MELEE
 	always_available = FALSE
 
-/////////////////////////
-///POWER CELL RECYCLING//
-/////////////////////////
+////////////////
+///POWER CELLS//
+///////////////
 
 /datum/crafting_recipe/ecrecharge
 	name = "Small Energy Cell (recycle)"
@@ -149,6 +175,469 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
 
+
+
+
+/////////////////
+///ammo        //
+/////////////////
+
+/datum/crafting_recipe/flamerfuel
+	name = "Flamethrower Fuel"
+	result = /obj/item/ammo_box/jerrycan
+	reqs = list(/datum/reagent/napalm = 50,
+				/obj/item/reagent_containers/glass/beaker/large)
+	tools = list(TOOL_WORKBENCH)
+	time = 30
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/shotgunammo
+	name = "12g handloaded ammo bag"
+	result = /obj/item/ammo_box/shotgun/improvised
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/blackpowder = 25
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/shotgunammo3p
+	name = "12g 3p trainshot box"
+	result = /obj/item/ammo_box/shotgun/trainshot
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/prewar = 2,
+	/obj/item/stack/sheet/metal = 1,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+
+/datum/crafting_recipe/m22
+	name = ".22 Long Rifle ammo box"
+	result = /obj/item/ammo_box/m22
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/metal = 1,
+	/datum/reagent/blackpowder = 30
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/m22shock
+	name = ".22 Long Rifle electroshock ammo box"
+	result = /obj/item/ammo_box/m22/shock
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/cable_coil = 5,
+	/obj/item/stack/crafting/electronicparts = 2,
+	/obj/item/stack/sheet/metal = 1,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c9mm
+	name = "9mm handloaded ammo bag"
+	result = /obj/item/ammo_box/c9mm/improv
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/blackpowder = 25
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c9mmacid
+	name = "9mm acid-tipped ammo box"
+	result = /obj/item/ammo_box/c9mm/acid
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/toxin/acid = 20,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c9mmincin
+	name = "9mm incendiary-tipped ammo box"
+	result = /obj/item/ammo_box/c9mm/incendiary
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/fuel = 20,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+
+
+/datum/crafting_recipe/c38boxacid
+	name = ".38 acid-tipped ammo box"
+	result = /obj/item/ammo_box/c38box/acid
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/toxin/acid = 20,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c38boxincin
+	name = ".38 incendiary-tipped ammo box"
+	result = /obj/item/ammo_box/c38box/incendiary
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/fuel = 20,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c38box
+	name = ".38 handloaded ammo bag"
+	result = /obj/item/ammo_box/c38box/improvised
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/blackpowder = 25
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c10mmincin
+	name = "10mm incendiary-tipped ammo box"
+	result = /obj/item/ammo_box/c10mm/fire
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/metal = 6,
+	/datum/reagent/phosphorus = 20,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c10mm
+	name = "10mm handloaded ammo bag"
+	result = /obj/item/ammo_box/c10mm/improvised
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/blackpowder = 25
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+
+/datum/crafting_recipe/a357boxacid
+	name = ".357 acid-tipped ammo box"
+	result = /obj/item/ammo_box/a357box/acid
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/toxin/acid = 20,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/a357boxincin
+	name = ".357 incendiary-tipped ammo box"
+	result = /obj/item/ammo_box/a357box/incendiary
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/phosphorus = 20,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/a357boximprov
+	name = ".357 handloaded ammo bag"
+	result = /obj/item/ammo_box/a357box/improvised
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/blackpowder = 25
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/m44boxincin
+	name = ".44 incendiary-tipped ammo box"
+	result = /obj/item/ammo_box/m44box/incendiary
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/crafting/abraxo = 1,
+	/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/phosphorus = 10,
+	/datum/reagent/fuel = 10,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/m44box
+	name = ".44 handloaded ammo bag"
+	result = /obj/item/ammo_box/m44box/improvised
+	reqs = list(/obj/item/stack/sheet/metal = 6,
+	/datum/reagent/blackpowder = 25
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c45incin
+	name = ".45 ACP incendiary-tipped ammo box"
+	result = /obj/item/ammo_box/c45/incendiary
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/crafting/abraxo = 1,
+	/obj/item/stack/sheet/metal = 5,
+	/datum/reagent/phosphorus = 10,
+	/datum/reagent/fuel = 10,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c45
+	name = ".45 ACP handloaded ammo bag"
+	result = /obj/item/ammo_box/c45/improvised
+	reqs = list(/obj/item/stack/sheet/metal = 6,
+	/datum/reagent/blackpowder = 25
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c4570boxacid
+	name = ".45-70 Gv'mt acid-tipped ammo box"
+	result = /obj/item/ammo_box/c4570box/acid
+	reqs = list(/obj/item/stack/crafting/metalparts = 2,
+	/obj/item/stack/sheet/metal = 2,
+	/datum/reagent/toxin/acid/fluacid = 20,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c4570boxheavy
+	name = ".45-70 Gv'mt ultradense ammo box"
+	result = /obj/item/ammo_box/c4570box/knockback
+	reqs = list(/obj/item/stack/crafting/metalparts = 2,
+	/obj/item/stack/sheet/mineral/titanium = 1,
+	/obj/item/stack/sheet/prewar = 2,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/c4570boxheavy
+	name = ".45-70 Gv'mt ultradense ammo box"
+	result = /obj/item/ammo_box/c4570box/knockback
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/mineral/titanium = 1,
+	/obj/item/stack/sheet/prewar = 1,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/m5mmboxshock
+	name = "5mm ESD ammo box"
+	result = /obj/item/ammo_box/m5mmbox/shock
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/mineral/titanium = 1,
+	/obj/item/stack/sheet/prewar = 1,
+	/obj/item/stack/cable_coil = 5,
+	/obj/item/stack/crafting/electronicparts = 2,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/a556shrap
+	name = "5.56mm micro-shrapnel ammo box"
+	result = /obj/item/ammo_box/a556/microshrapnel
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/prewar = 2,
+	/obj/item/stack/sheet/mineral/titanium = 1,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/a556
+	name = ".223  handloaded ammo bag"
+	result = /obj/item/ammo_box/a556/sport/improvised
+	reqs = list(/obj/item/stack/sheet/metal = 6,
+	/datum/reagent/blackpowder = 30
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/a762boxirr
+	name = "7.62 U-235 ammo box"
+	result = /obj/item/ammo_box/a762box/uraniumtipped
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/mineral/titanium = 1,
+	/obj/item/stack/sheet/prewar = 1,
+	/obj/item/stack/sheet/mineral/uranium = 1,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+
+/datum/crafting_recipe/a762boxshrap
+	name = "7.62mm micro-shrapnel ammo box"
+	result = /obj/item/ammo_box/a762box/microshrapnel
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/prewar = 2,
+	/obj/item/stack/sheet/mineral/titanium = 1,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/a308
+	name = ".308 ammo box"
+	result = /obj/item/ammo_box/a308box
+	reqs = list(/obj/item/stack/sheet/metal = 7,
+	/datum/reagent/blackpowder = 25
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+
+/datum/crafting_recipe/a50MGboxuranium
+	name = "12.7mm U-235 ammo box"
+	result = /obj/item/ammo_box/a50MGbox/uraniumtipped
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/stack/sheet/prewar = 2,
+	/obj/item/stack/sheet/mineral/uranium = 2,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/a50MGboxcontaminated
+	name = "12.7mm contaminated ammo box"
+	result = /obj/item/ammo_box/a50MGbox/contam
+	reqs = list(/obj/item/stack/crafting/metalparts = 2,
+	/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/stack/sheet/prewar = 2,
+	/datum/reagent/toxin/formaldehyde = 25,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+
+/datum/crafting_recipe/m14mmboxcontaminated
+	name = "14mm contaminated ammo box"
+	result = /obj/item/ammo_box/m14mm/contam
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/stack/sheet/prewar = 2,
+	/datum/reagent/toxin/formaldehyde = 30,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/m14mmboxuranium
+	name = "14mm uranium-tipped ammo box"
+	result = /obj/item/ammo_box/m14mm/uraniumtipped
+	reqs = list(/obj/item/stack/crafting/metalparts = 1,
+	/obj/item/stack/sheet/mineral/titanium = 1,
+	/obj/item/stack/sheet/mineral/uranium = 1,
+	/datum/reagent/blackpowder = 50
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+/datum/crafting_recipe/p14mm
+	name = "14mm handloaded ammo bag"
+	result = /obj/item/ammo_box/m14mm/improv
+	reqs = list(/obj/item/stack/sheet/metal = 6,
+	/datum/reagent/blackpowder = 30
+	)
+	tools = list(TOOL_MSRELOADER)
+	time = 75
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+
+
+/datum/crafting_recipe/m2mmblender
+	name = "2mm \"Blender\" magazine"
+	result = /obj/item/ammo_box/magazine/m2mm/blender
+	reqs = list(/obj/item/stack/crafting/metalparts = 2,
+	/obj/item/stack/sheet/prewar = 2,
+	/obj/item/stack/crafting/goodparts = 1,
+	/obj/item/stack/sheet/mineral/titanium = 1,
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 100
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
+
+
+/////////////////
+///GUN CRAFTING//
+/////////////////
 /datum/crafting_recipe/gun/rockitlauncher
 	name = "Rock-It-Launcher"
 	result = /obj/item/rockitlauncher_pack
@@ -163,22 +652,6 @@
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-
-/datum/crafting_recipe/flamerfuel
-	name = "Flamethrower Fuel"
-	result = /obj/item/ammo_box/jerrycan
-	reqs = list(/datum/reagent/napalm = 50,
-				/obj/item/reagent_containers/glass/beaker/large)
-	tools = list(TOOL_WORKBENCH)
-	time = 30
-	category = CAT_WEAPONRY
-	subcategory = CAT_AMMO
-
-
-
-/////////////////
-///GUN CRAFTING//
-/////////////////
 
 //Hobo Guns
 /datum/crafting_recipe/gun/zipgun
@@ -288,6 +761,25 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+/datum/crafting_recipe/plasmasniper
+	name = "Plasma Cannon"
+	result = /obj/item/gun/energy/laser/plasma/sniper
+	reqs = list(/obj/item/gun/ballistic/rifle/hobo/plasmacaster = 1,
+				/obj/item/stack/crafting/electronicparts = 5,
+				/obj/item/stack/sheet/metal = 4,
+				/obj/item/stack/crafting/goodparts = 3,
+				/obj/item/advanced_crafting_components/assembly = 1,
+				/obj/item/advanced_crafting_components/alloys = 1,
+				/obj/item/advanced_crafting_components/conductors = 1,
+				/obj/item/advanced_crafting_components/flux = 2,
+				/obj/item/stack/sheet/mineral/titanium = 1,
+				/obj/item/attachments/scope = 1,
+				/obj/item/stack/cable_coil = 10)
+	tools = list(TOOL_WORKBENCH, TOOL_MULTITOOL, TOOL_WELDER, TOOL_SCREWDRIVER)
+	time = 150
+	always_available = FALSE
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
 
 //browning hi-power
 /datum/crafting_recipe/ninemil
@@ -296,20 +788,6 @@
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
 				/obj/item/stack/crafting/metalparts = 1,
 				/obj/item/stack/sheet/metal = 2)
-	tools = list(TOOL_WORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_available = FALSE
-
-//colt 6520
-/datum/crafting_recipe/colt6520
-	name = "Colt 6520 Revolver"
-	result = /obj/item/gun/ballistic/revolver/colt6520
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
-				/obj/item/stack/crafting/metalparts = 5,
-				/datum/reagent/blackpowder = 10,
-				/obj/item/stack/sheet/metal = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 120
 	category = CAT_WEAPONRY
@@ -384,9 +862,25 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
+//craftable psuedo-ratslayer
+/datum/crafting_recipe/verminkiller
+	name = "Upgraded Varmint Rifle"
+	result = /obj/item/gun/ballistic/automatic/varmint/verminkiller
+	reqs = list(/obj/item/gun/ballistic/automatic/varmint = 1,
+				/obj/item/gun/ballistic/automatic/delisle = 1, //silencer
+				/obj/item/weaponcrafting/improvised_parts/trigger_assembly = 1,
+				/obj/item/advanced_crafting_components/lenses = 1, //scope
+				/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/sheet/plastic = 2,
+				/obj/item/stack/sheet/metal = 10)
+	tools = list(TOOL_WORKBENCH)
+	time = 300 //30 sec
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
 /datum/crafting_recipe/policerifle
 	name = "Police Rifle"
-	result = /obj/item/gun/ballistic/automatic/marksman/policerifle
+	result = /obj/item/gun/ballistic/automatic/assault_carbine/policerifle
 	reqs = list(/obj/item/stack/sheet/metal = 5,
 				/obj/item/advanced_crafting_components/receiver = 1,
 				/obj/item/stack/crafting/metalparts = 2,
@@ -993,6 +1487,21 @@
 				/obj/item/advanced_crafting_components/alloys = 1,
 				/obj/item/advanced_crafting_components/lenses = 1,
 				/obj/item/stack/crafting/goodparts = 3,
+				/obj/item/stack/crafting/electronicparts = 3
+				)
+	tools = list(TOOL_AWORKBENCH)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
+
+//wattz 2000e
+/datum/crafting_recipe/wattz2ke
+	name = "Wattz 2000 Laser Rifle Ext. Capacity"
+	result = /obj/item/gun/energy/laser/wattz2k/extended
+	reqs = list(/obj/item/gun/energy/laser/wattz2k = 1,
+				/obj/item/advanced_crafting_components/alloys = 2,
+				/obj/item/stock_parts/capacitor/adv = 1,
 				/obj/item/stack/crafting/electronicparts = 3
 				)
 	tools = list(TOOL_AWORKBENCH)

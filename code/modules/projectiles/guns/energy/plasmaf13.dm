@@ -11,7 +11,7 @@
 	icon_state = "plasma-pistol"
 	desc = "A pistol-sized miniaturized plasma caster built by REPCONN. It fires a bolt of superhot ionized gas."
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_LIGHT
+	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
@@ -103,3 +103,74 @@
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/scatter)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+
+
+/obj/item/gun/energy/laser/plasma/spear
+	name = "ergonomic plasmacaster"
+	icon = 'icons/fallout/objects/melee/twohanded.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/melee2h_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/melee2h_righthand.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
+	item_state = "plasma"
+	icon_state = "plasma"
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_LIGHT //you need to wield it to fire it
+	slot_flags = ITEM_SLOT_BACK
+	desc = "An ergonomic pre-war plasmacaster designed for precision mining work. This one appears to be built into a single thick staff, with a bulbous hilt and sharp saturnite alloy blades ringing the caster assembly- strongly resembling sort of spear."
+	ammo_type = list(/obj/item/ammo_casing/energy/plasma/miner)
+	cell_type = /obj/item/stock_parts/cell/ammo/ecp
+	sharpness = SHARP_EDGED
+	max_reach = 2
+	force = 20
+	burst_size = 5
+	burst_shot_delay = 0.5
+	fire_delay = 10
+	scope_y_offset = 16
+	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
+	var/twohands = FALSE
+
+/obj/item/gun/energy/laser/plasma/spear/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_unwielded=20, force_wielded=40, icon_wielded="[item_state]2")
+	AddElement(/datum/element/update_icon_updates_onmob)
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/allow_fire)
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/deny_fire)
+
+/obj/item/gun/energy/laser/plasma/spear/proc/allow_fire()
+	twohands = TRUE
+/obj/item/gun/energy/laser/plasma/spear/proc/deny_fire()
+	twohands = FALSE
+
+/obj/item/gun/energy/laser/plasma/spear/Destroy()
+	..()
+	UnregisterSignal(src, list(COMSIG_TWOHANDED_WIELD,
+								COMSIG_TWOHANDED_UNWIELD))
+
+/obj/item/gun/energy/laser/plasma/spear/can_shoot()
+	. = ..()
+	if(!twohands)
+		return FALSE
+
+
+//Plasma Cannon.
+/obj/item/gun/energy/laser/plasma/sniper
+	name = "Plasma Cannon"
+	desc = "A refined design, taking the common wasteland plasma musket and improving upon it. Trash parts and safety hazards give way to proper stamped and machined construction. It's even been fitted with a scope and designed to take MFCs rather than shoddy plasma cans."
+	icon = 'icons/fallout/objects/guns/energy.dmi'
+	icon_state = "plasmasniper"
+	item_state = "plasmamusket"
+	slowdown = 0.3
+	ammo_type = list(/obj/item/ammo_casing/energy/plasma/sniper)
+	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	fire_delay = 30
+	dryfire_sound = 'sound/f13weapons/noammoenergy.ogg'
+	dryfire_text = "*power failure*"
+	can_bayonet = TRUE
+	knife_x_offset = 22
+	knife_y_offset = 20
+	bayonet_state = "bayonet"
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	fire_sound = 'sound/f13weapons/lasmusket_fire.ogg'
+	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'

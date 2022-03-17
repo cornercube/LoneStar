@@ -99,6 +99,17 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
+/datum/crafting_recipe/metalarmor/polish
+	name = "Polished Metal Armor"
+	result = /obj/item/clothing/suit/armor/f13/metalarmor/laserproof
+	reqs = list(/obj/item/clothing/suit/armor/f13/metalarmor = 1,
+				/obj/item/crafting/abraxo,
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
 /datum/crafting_recipe/metalarmormk2
 	name = "Metal Armor, reinforced"
 	result = /obj/item/clothing/suit/armor/f13/metalarmor/reinforced
@@ -109,7 +120,7 @@
 	time = 120
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	
+
 datum/crafting_recipe/steelbib
 	name = "Steel Breastplate"
 	result = /obj/item/clothing/suit/armor/f13/metalarmor/steelbib
@@ -121,7 +132,7 @@ datum/crafting_recipe/steelbib
 	time = 120
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	
+
 datum/crafting_recipe/steelbib/heavy
 	name = "Heavy Steel Breastplate"
 	result = /obj/item/clothing/suit/armor/f13/metalarmor/steelbib/oasis
@@ -131,7 +142,7 @@ datum/crafting_recipe/steelbib/heavy
 	tools = list(TOOL_WORKBENCH)
 	time = 120
 	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR	
+	subcategory = CAT_ARMOR
 	always_available = FALSE
 
 /datum/crafting_recipe/metalmask
@@ -321,7 +332,7 @@ datum/crafting_recipe/steelbib/heavy
 
 /datum/crafting_recipe/legionriothelmet_ncr
 	name = "Shred veteran ranger helmet for armor plates"
-	result = /obj/item/stack/crafting/armor_plate/fifteen
+	result = list(/obj/item/stack/crafting/armor_plate/fifteen, /obj/item/clothing/glasses/night/polarizing)
 	reqs = list(/obj/item/clothing/head/helmet/f13/ncr/rangercombat = 1,)
 	time = 30
 	category = CAT_CLOTHING
@@ -461,11 +472,11 @@ datum/crafting_recipe/steelbib/heavy
 	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
-	
+
 /datum/crafting_recipe/armyhelmetheavy
 	name = "Heavy Steel Helmet"
 	result = /obj/item/clothing/head/helmet/armyhelmet/heavy
-	reqs = list(/obj/item/clothing/head/helmet/armyhelmet,
+	reqs = list(/obj/item/clothing/head/helmet/armyhelmet = 1,
 				/obj/item/stack/crafting/goodparts = 1,
 				/obj/item/stack/sheet/prewar = 5)
 	tools = list(TOOL_WORKBENCH)
@@ -614,6 +625,17 @@ datum/crafting_recipe/steelbib/heavy
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 */
+
+/datum/crafting_recipe/combat_armor
+	name = "replace ballistic plates in combat armor with laser-proof plates"
+	result = /obj/item/clothing/suit/armor/f13/combat/laserproof
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 5,
+				/obj/item/clothing/suit/armor/f13/combat = 1,
+				/obj/item/stack/crafting/goodparts = 2)
+	tools = list(TOOL_AWORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_GENCLOTHES
 
 //CLOTHING//
 
@@ -1277,5 +1299,3 @@ datum/crafting_recipe/steelbib/heavy
 	category = CAT_CLOTHING
 	subcategory = CAT_GENCLOTHES
 */
-
-

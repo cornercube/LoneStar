@@ -13,7 +13,7 @@
 /obj/machinery/door/poddoor{
 	id = "lock3"
 	},
-/obj/effect/mine/shrapnel/sting,
+/obj/item/mine/shrapnel/sting,
 /turf/open/floor/carpet/green,
 /area/f13/underground/cave)
 "aaK" = (
@@ -2006,7 +2006,7 @@
 /obj/machinery/door/poddoor{
 	id = "lock2"
 	},
-/obj/effect/mine/shrapnel/sting,
+/obj/item/mine/shrapnel/sting,
 /turf/open/floor/carpet/green,
 /area/f13/underground/cave)
 "cpI" = (
@@ -2353,7 +2353,7 @@
 /area/f13/vault)
 "cND" = (
 /obj/structure/table/wood,
-/obj/item/crafting/timer,
+/obj/item/assembly/timer,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -2469,7 +2469,7 @@
 /obj/machinery/door/poddoor{
 	id = "lock3"
 	},
-/obj/effect/mine/shrapnel/sting,
+/obj/item/mine/shrapnel/sting,
 /turf/open/floor/carpet/green,
 /area/f13/underground/cave)
 "cWc" = (
@@ -3190,6 +3190,12 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/bunker)
+"dPz" = (
+/obj/structure/stone_tile/slab,
+/obj/item/gun/energy/laser/plasma/spear,
+/mob/living/simple_animal/hostile/deathclaw/mother,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "dQM" = (
 /obj/structure/ladder/unbreakable{
 	height = 2;
@@ -3723,7 +3729,6 @@
 "eqU" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/dildo,
 /obj/effect/decal/cleanable/cobweb,
 /obj/item/clothing/mask/muzzle,
 /obj/item/clothing/glasses/sunglasses/blindfold,
@@ -4057,7 +4062,7 @@
 	id = "lock1";
 	max_integrity = 9600
 	},
-/obj/effect/mine/shrapnel/sting,
+/obj/item/mine/shrapnel/sting,
 /turf/open/floor/carpet/green,
 /area/f13/underground/cave)
 "ePz" = (
@@ -4741,7 +4746,7 @@
 /obj/item/crafting/buzzer,
 /obj/item/crafting/buzzer,
 /obj/item/crafting/buzzer,
-/obj/item/crafting/timer,
+/obj/item/assembly/timer,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -5525,7 +5530,7 @@
 /area/f13/underground/cave)
 "gwo" = (
 /obj/structure/table/wood,
-/obj/item/crafting/timer,
+/obj/item/assembly/timer,
 /turf/open/floor/f13{
 	icon_state = "darkdirty"
 	},
@@ -6681,6 +6686,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/vaultdoor,
 /area/f13/vault)
+"hJV" = (
+/obj/structure/stone_tile/slab/cracked,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "hJW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
@@ -7927,6 +7936,10 @@
 /obj/item/pen,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
+"jvv" = (
+/obj/structure/stone_tile/block/burnt,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "jvO" = (
 /obj/structure/bedsheetbin,
 /obj/structure/table,
@@ -8778,7 +8791,7 @@
 /area/f13/bunker)
 "kxg" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/mine/shrapnel/sting,
+/obj/item/mine/shrapnel/sting,
 /obj/machinery/door/poddoor{
 	id = "lock1";
 	max_integrity = 9600
@@ -9894,9 +9907,9 @@
 /area/f13/bunker)
 "lYs" = (
 /obj/structure/rack,
-/obj/item/crafting/igniter,
-/obj/item/crafting/igniter,
-/obj/item/crafting/igniter,
+/obj/item/assembly/igniter,
+/obj/item/assembly/igniter,
+/obj/item/assembly/igniter,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -10947,7 +10960,7 @@
 	id = "lock1";
 	max_integrity = 9600
 	},
-/obj/effect/mine/shrapnel/sting,
+/obj/item/mine/shrapnel/sting,
 /turf/open/floor/carpet/green,
 /area/f13/underground/cave)
 "nbF" = (
@@ -11847,7 +11860,7 @@
 "ogw" = (
 /obj/structure/rack,
 /obj/item/crafting/large_gear,
-/obj/item/crafting/sensor,
+/obj/item/assembly/prox_sensor,
 /obj/item/crafting/small_gear,
 /obj/item/crafting/transistor,
 /obj/item/crafting/transistor,
@@ -12075,7 +12088,7 @@
 "owo" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/mine/shrapnel/sting,
+/obj/item/mine/shrapnel/sting,
 /obj/machinery/door/poddoor{
 	id = "lock2"
 	},
@@ -12707,6 +12720,10 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
+/area/f13/underground/cave)
+"pjy" = (
+/obj/structure/stone_tile/slab,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
 "pjP" = (
 /obj/structure/table,
@@ -13369,6 +13386,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/vault)
+"pYE" = (
+/obj/structure/stone_tile/block,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "pYM" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf/cooking,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -14326,7 +14347,7 @@
 /obj/item/crafting/capacitor,
 /obj/item/crafting/capacitor,
 /obj/item/crafting/capacitor,
-/obj/item/crafting/sensor,
+/obj/item/assembly/prox_sensor,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -14846,7 +14867,7 @@
 /obj/structure/rack,
 /obj/item/book/granter/crafting_recipe/gunsmith_three,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/crafting/timer,
+/obj/item/assembly/timer,
 /obj/item/mining_scanner,
 /turf/open/floor/plasteel/darkpurple/side{
 	dir = 1
@@ -15050,7 +15071,7 @@
 "rLZ" = (
 /obj/item/storage/toolbox/electrical,
 /obj/structure/table,
-/obj/item/crafting/timer,
+/obj/item/assembly/timer,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
 "rMe" = (
@@ -17306,7 +17327,7 @@
 /obj/structure/table,
 /obj/item/crafting/board,
 /obj/item/crafting/board,
-/obj/item/crafting/sensor,
+/obj/item/assembly/prox_sensor,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault)
 "uNm" = (
@@ -17859,7 +17880,7 @@
 /obj/machinery/door/poddoor{
 	id = "lock2"
 	},
-/obj/effect/mine/shrapnel/sting,
+/obj/item/mine/shrapnel/sting,
 /turf/open/floor/carpet/green,
 /area/f13/underground/cave)
 "vtn" = (
@@ -19845,7 +19866,7 @@
 /turf/open/floor/carpet/green,
 /area/f13/underground/cave)
 "xMl" = (
-/obj/effect/mine/shrapnel/sting,
+/obj/item/mine/shrapnel/sting,
 /obj/machinery/door/poddoor{
 	id = "lock1";
 	max_integrity = 9600
@@ -77518,7 +77539,7 @@ fpy
 gTc
 qOX
 tRH
-pOr
+tHQ
 atE
 pOr
 cIT
@@ -82412,8 +82433,8 @@ wxj
 wxj
 wxj
 wxj
-bYA
-bYA
+hJV
+pjy
 fyx
 bYA
 wxj
@@ -82669,9 +82690,9 @@ wxj
 wxj
 wxj
 wxj
-bYA
-bYA
-bYA
+hJV
+dPz
+pYE
 bYA
 wxj
 wxj
@@ -82926,9 +82947,9 @@ wxj
 wxj
 wxj
 wxj
-bYA
-bYA
-bYA
+hJV
+hJV
+jvv
 bYA
 wxj
 wxj

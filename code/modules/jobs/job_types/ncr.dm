@@ -10,7 +10,7 @@ Money		Commanding Officer (LT and CAP) - "small" money bag
 			Officers and Rangers - /obj/item/storage/bag/money/small/ncrofficers
 			Rest - /obj/item/storage/bag/money/small/ncrenlisted
 Sidearm		Officers & a few specialists - 9mm pistol
-Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
+Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 			Don't use Greaseguns, Lever shotguns, Police shotguns, Berettas, Hunting knives
 */
 
@@ -87,11 +87,11 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory = /obj/item/clothing/accessory/ncr
-	head = /obj/item/clothing/head/helmet/f13/power_armor/t45d/sierra
+	head = /obj/item/clothing/head/helmet/f13/power_armor/t45d
 	neck = /obj/item/storage/belt/holster/legholster
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	gloves = /obj/item/clothing/gloves/f13/leather
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/t45d/sierra
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	r_pocket = /obj/item/binoculars
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle
 	backpack_contents = list(
@@ -136,7 +136,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m44 = 2,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/aid = 1,
 		)
 
 
@@ -262,7 +262,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1, \
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1, \
-		/obj/item/ammo_box/magazine/m9mm = 2, \
+		/obj/item/ammo_box/magazine/m9mmds = 2, \
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/ammo_box/magazine/garand308 = 1,
 		)
@@ -316,7 +316,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	neck = /obj/item/storage/belt/holster/legholster
 	backpack_contents = list(
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/aid = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		)
 
@@ -329,7 +329,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/storage/box/ration/menu_two = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mm = 3,
+		/obj/item/ammo_box/magazine/m9mmds = 3,
 		/obj/item/flashlight/seclite = 1,
 		)
 
@@ -340,7 +340,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mm = 3,
+		/obj/item/ammo_box/magazine/m9mmds = 3,
 		/obj/item/storage/box/ration/menu_eight = 1,
 		/obj/item/attachments/scope = 1,
 		/obj/item/book/granter/trait/trekking = 1,
@@ -356,7 +356,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/grenade/smokebomb = 2,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mm = 3,
+		/obj/item/ammo_box/magazine/m9mmds = 3,
 		)
 
 /datum/job/ncr/f13representative
@@ -396,7 +396,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 2,
 		/obj/item/storage/bag/money/small/ncr = 2,
-		/obj/item/storage/survivalkit_aid = 1
+		/obj/item/storage/survivalkit/aid = 1
 		)
 
 /datum/outfit/loadout/repbrahminbaron
@@ -454,6 +454,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/datum/outfit/loadout/vrclassic, // AMR, Sequoia
 		/datum/outfit/loadout/vrlite, // Brush Gun, Sequoia
 		/datum/outfit/loadout/vrcqc, // 2 x .45 Long colt revolvers
+		/datum/outfit/loadout/vrshotgunner //Riot shotty, Sequoia
 		)
 
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -481,7 +482,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/storage/survivalkit_aid_adv = 1,
+		/obj/item/storage/survivalkit/aid/adv = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		)
 
@@ -504,6 +505,16 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/ammo_box/c4570 = 1,
 		)
 
+/datum/outfit/loadout/vrshotgunner
+	name = "Veteran Ranger Shotgunner"
+	suit_store = /obj/item/gun/ballistic/automatic/shotgun/riot
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/ammo_box/shotgun/slug = 1,
+		/obj/item/gun/ballistic/revolver/sequoia = 1,
+		/obj/item/ammo_box/c4570 = 1,
+		)
+
 /datum/outfit/loadout/vrcqc
 	name = "Gunslinger"
 	mask = /obj/item/clothing/mask/cigarette/cigar/havana
@@ -520,8 +531,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 /datum/job/ncr/f13ranger
 	title = "NCR Ranger"
 	flag = F13RANGER
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	description = "As an NCR Ranger, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
 	supervisors = "Veteran Ranger"
 	selection_color = "#fff5cc"
@@ -574,7 +585,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/w308 = 3,
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/aid = 1,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
 		/obj/item/ammo_box/c45rev = 2,
 		)
@@ -588,7 +599,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44 = 3,
 		/obj/item/melee/classic_baton/telescopic = 1,
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/aid = 1,
 		/obj/item/attachments/scope = 1,
 		/obj/item/gun/ballistic/revolver/colt357 = 2,
 		/obj/item/ammo_box/a357=4,
@@ -604,7 +615,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/aid = 1,
 		/obj/item/attachments/scope = 1,
 		/obj/item/gun/ballistic/revolver/revolver44 = 1,
 		/obj/item/ammo_box/m44 = 2,
@@ -621,7 +632,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/ammo_box/shotgun/buck = 1,
 		/obj/item/ammo_box/shotgun/slug = 1,
 		/obj/item/clothing/head/helmet/f13/combat/ncr_patrol = 1,
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/aid = 1,
 		/obj/item/gun/ballistic/revolver/m29/snub = 1,
 		/obj/item/ammo_box/m44box = 1,
 		)
@@ -664,8 +675,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t45b/ncr
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/storage/survivalkit_aid = 1,
-		/obj/item/ammo_box/magazine/m9mm = 2,
+		/obj/item/storage/survivalkit/aid = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		)
 
@@ -690,8 +701,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 /datum/job/ncr/f13combatengineer
 	title = "NCR Combat Engineer"
 	flag = F13COMBATENGINEER
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are a senior enlisted trooper with an engineering skill set. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Corporals and Above"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY)
@@ -701,7 +712,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 
 	loadout_options = list( // ALL: Trench tool, Limited blueprints
 		/datum/outfit/loadout/combatengineerbuilder, // M1/n carbine, X4 explosive, Extra materials
-		/datum/outfit/loadout/combatengineertrapper, // Rockwell SMG, Minelaying, Explosive Crafting
+		/datum/outfit/loadout/combatengineertrapper, // Grease Gun, Minelaying, Explosive Crafting
 		/datum/outfit/loadout/combatengineerflamethrower, // Flamer, M1/n carbine
 		)
 
@@ -743,7 +754,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	belt = null
 	backpack_contents = list(
 		/obj/item/shovel/trench = 1,
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/aid = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		)
 
@@ -764,9 +775,9 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	name = "Minelayer"
 	head = /obj/item/clothing/head/f13/ncr
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
-	suit_store = /obj/item/gun/ballistic/automatic/smg/rockwell
+	suit_store = /obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/uzim9mm/rockwell = 2,
+		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
 		/obj/item/book/granter/trait/explosives = 1
 		)
@@ -805,14 +816,14 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	accessory = /obj/item/clothing/accessory/armband/black
 	glasses	= /obj/item/clothing/glasses/sunglasses/big
 	head = /obj/item/clothing/head/f13/ncr/steelpot_mp
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	backpack = /obj/item/storage/backpack/satchel/trekker
 	suit_store = /obj/item/melee/classic_baton/militarypolice
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
 		/obj/item/ammo_box/magazine/m45 = 3,
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/aid = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		)
 
@@ -828,8 +839,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 /datum/job/ncr/f13combatmedic
 	title = "NCR Combat Medic"
 	flag = F13COMBATMEDIC
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are a senior enlisted with a medical skill set. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Corporals and Above"
 	selection_color = "#fff5cc"
@@ -858,7 +869,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/survivalkit_aid_adv = 1,
+		/obj/item/storage/survivalkit/aid/adv = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/storage/firstaid/regular = 1,
 		)
@@ -911,7 +922,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/aid = 1,
 		)
 
 /datum/outfit/loadout/corporaldesignatedmarksman
@@ -924,7 +935,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/attachments/scope = 1,
 		/obj/item/ammo_box/a762 = 4,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mm = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 1,
 		/obj/item/storage/box/ration/menu_two = 1,
 		)
 
@@ -1046,8 +1057,8 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
 		/obj/item/ammo_box/magazine/m45 = 2,
 		/obj/item/melee/classic_baton/telescopic = 1,
-		/obj/item/storage/survivalkit_aid = 1,
-		/obj/item/storage/survivalkit_aid_adv = 1,
+		/obj/item/storage/survivalkit/aid = 1,
+		/obj/item/storage/survivalkit/aid/adv = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/storage/firstaid/regular = 1,
 		)
@@ -1102,9 +1113,10 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/marksmancarbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmasniper)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 
-/datum/outfit/job/ncr/f13logisticsofficer		// Rockwell, 9mm sidearm, Survival knife, C-4 bomb, Extra materials, Full blueprints
+/datum/outfit/job/ncr/f13logisticsofficer		// Grease Gun, 9mm sidearm, Survival knife, C-4 bomb, Extra materials, Full blueprints
 	name = "NCR Logistics Officer"
 	jobtype	= /datum/job/ncr/f13logisticsofficer
 	id = /obj/item/card/id/dogtag/ncrlieutenant
@@ -1116,14 +1128,14 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	glasses	= /obj/item/clothing/glasses/welding
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
 	gloves = /obj/item/clothing/gloves/color/yellow
-	suit_store = /obj/item/gun/ballistic/automatic/smg/rockwell
+	suit_store = /obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/uzim9mm/rockwell = 2,
+		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/ammo_box/magazine/m9mm = 2,
 		/obj/item/grenade/plastic/c4 = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/survivalkit_aid = 1,
+		/obj/item/storage/survivalkit/aid = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/stack/sheet/metal/twenty = 2,
 		/obj/item/stack/sheet/glass/ten = 2,
@@ -1209,7 +1221,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	neck = /obj/item/storage/belt/holster/legholster
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mm = 2,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/storage/firstaid/regular = 1,
 		/obj/item/book/granter/trait/chemistry = 1,
@@ -1224,7 +1236,7 @@ Weapons		Service Rifle, Rockwell, 9mm pistol, all good.
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mm = 2,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/reagent_containers/food/snacks/cheesyburrito = 2,
 		/obj/item/reagent_containers/food/drinks/bottle/f13nukacola = 1,
