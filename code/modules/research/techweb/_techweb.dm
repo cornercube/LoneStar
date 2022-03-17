@@ -404,6 +404,10 @@
 	design_autounlock_buildtypes = AUTOLATHE
 	allowed_buildtypes = AUTOLATHE|TOYLATHE|AMMOLATHE
 
+/datum/techweb/specialized/autounlocking/basiclathe
+	design_autounlock_buildtypes = BASIC
+	allowed_buildtypes = BASIC
+	
 /datum/techweb/specialized/autounlocking/autolathe/public
 	design_autounlock_skip_types = NO_PUBLIC_LATHE
 
