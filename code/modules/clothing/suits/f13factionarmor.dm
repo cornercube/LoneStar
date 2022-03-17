@@ -814,6 +814,15 @@
 	slowdown = 0.3
 //Followers
 
+/obj/item/clothing/suit/armor/f13/vest/followers
+	name = "followers armor vest"
+	desc = "A coat in light colors with the markings of the Followers, concealing a bullet-proof vest."
+	icon_state = "vest_follower"
+	item_state = "vest_follower"
+	slowdown = 0.05
+	armor = list("melee" = 15, "bullet" = 45, "laser" = 35, "energy" = 25, "bomb" = 15, "bio" = 50, "rad" = 0, "fire" = 5, "acid" = 0, "wound" = 40)
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/medical
+	
 //Vault
 
 /obj/item/clothing/suit/armor/f13/riot/vault
