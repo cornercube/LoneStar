@@ -50,10 +50,6 @@
 /obj/item/circuitboard/machine/autolathe/secure
 	name = "Secure Autolathe (Machine Board)"
 	build_path = /obj/machinery/autolathe/secure
-	
-/obj/item/circuitboard/machine/autolathe/basic
-	name = "Makeshift Workshop"
-	build_path = /obj/machinery/autolathe/basic
 
 /obj/item/circuitboard/machine/bloodbankgen
 	name = "Blood Bank Generator (Machine Board)"
