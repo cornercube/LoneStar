@@ -1253,6 +1253,7 @@
 	item_state = "BAR"
 	icon_prefix = "BAR"
 	automatic = 1
+	mag_type = /obj/item/ammo_box/magazine/m762/ext
 	force = 24 //club
 	slowdown = 1.25 //really goddamn big
 	autofire_shot_delay = 2.75
@@ -1260,7 +1261,7 @@
 	spread = 12
 	recoil = 0.3
 	actions_types = list(/datum/action/item_action/toggle_firemode)
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	fire_sound = 'sound/f13weapons/automaticrifle_BAR.ogg'
 
 //H&K G11				Keywords: 4.73mm, Automatic, 50 round magazine
 /obj/item/gun/ballistic/automatic/g11
