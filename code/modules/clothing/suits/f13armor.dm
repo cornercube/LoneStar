@@ -428,7 +428,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	powered = FALSE
-	name = "raider power armor"
+	name = "heavy metal raider armor"
 	desc = "An attempt by raider engineers to duplicate power armor. They failed miserably, but it is still pretty tough."
 	icon_state = "raiderpa"
 	item_state = "raiderpa"
