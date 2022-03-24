@@ -432,8 +432,8 @@
 	desc = "An attempt by raider engineers to duplicate power armor. They failed miserably, but it is still pretty tough."
 	icon_state = "raiderpa"
 	item_state = "raiderpa"
-	armor = list("melee" = 60, "bullet" = 40, "laser" = 55, "energy" = 25, "bomb" = 50, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0, "wound" = 65)
-	slowdown = 0.3
+	armor = list("melee" = 65, "bullet" = 50, "laser" = 60, "energy" = 25, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 65)
+	slowdown = 0.35
 	requires_training = FALSE
 
 /obj/item/clothing/suit/armor/f13/power_armor/hotrod
