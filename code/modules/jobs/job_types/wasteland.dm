@@ -446,7 +446,7 @@ Raider
 		return
 	ADD_TRAIT(H, TRAIT_LONGPORKLOVER, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/wastehound)
-
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/raiderpa)
 	H.social_faction = FACTION_RAIDERS
 	add_verb(H, /mob/living/proc/creategang)
 
