@@ -534,6 +534,17 @@ datum/crafting_recipe/steelbib/heavy
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
+/datum/crafting_recipe/wastehound
+	name = "wastehound raider helmet"
+	result = /obj/item/clothing/head/helmet/f13/raider/wastehound
+	time = 120
+	reqs = list(/obj/item/stack/sheet/animalhide/human = 5,
+				/obj/item/stack/sheet/mineral/titanium = 5,
+				/obj/item/stack/sheet/cloth = 5)
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+	always_available = FALSE
+
 /datum/crafting_recipe/durathread_helmet
 	name = "Makeshift Durathread Helmet"
 	result = /obj/item/clothing/head/helmet/durathread
@@ -1069,22 +1080,6 @@ datum/crafting_recipe/steelbib/heavy
 	subcategory = CAT_MISCCLOTHING
 
 /*
-/datum/crafting_recipe/durathread_vest
-	name = "Makeshift Vest"
-	result = /obj/item/clothing/suit/armor/vest/durathread
-	reqs = list( /obj/item/stack/sheet/durathread = 5,
-				/obj/item/stack/sheet/leather = 4)
-	time = 50
-	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
-/datum/crafting_recipe/durathread_helmet
-	name = "Makeshift Helmet"
-	result = /obj/item/clothing/head/helmet/durathread
-	reqs = list( /obj/item/stack/sheet/durathread = 4,
-				/obj/item/stack/sheet/leather = 5)
-	time = 40
-	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
 /datum/crafting_recipe/fannypack
 	name = "Fannypack"
 	result = /obj/item/storage/belt/fannypack
