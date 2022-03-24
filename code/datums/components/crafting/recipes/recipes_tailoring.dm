@@ -126,9 +126,7 @@
 	result = /obj/item/clothing/suit/armor/f13/power_armor/raiderpa
 	reqs = list(/obj/item/clothing/suit/armor/f13/metalarmor = 1,
 				/obj/item/stack/crafting/goodparts = 2,
-				/obj/item/crafting = 10,
-				/obj/item/advanced_crafting_components/conductors = 1,
-				/obj/item/advanced_crafting_components/flux = 1,
+				/obj/item/crafting = 15,
 				/obj/item/ingot/gold = 1,
 				/obj/item/stock_parts/cell/ammo/mfc = 5,
 				/obj/item/stack/sheet/prewar = 10
