@@ -1,218 +1,13 @@
 /datum/job/wasteland
 	department_flag = WASTELAND
 
-/datum/job/wasteland/enclavespy
-	title = "Enclave Private"
-	flag = F13USPRIVATE
-	faction = FACTION_ENCLAVE
-	total_positions = 0
-	spawn_positions = 0
-	description = "You are an undercover operative for the remnants of the Enclave. You are to remain concealed and attempt to present the Enclave in a positive light to the population of the wasteland unless overt action is absolutely necessary."
-	forbids = ""
-	enforces = ""
-	supervisors = "the United States Government."
-	selection_color = "#323232"
-	exp_type = EXP_TYPE_FALLOUT
-	exp_requirements = 1200
-
-	access = list(ACCESS_ENCLAVE)
-	minimal_access = list(ACCESS_ENCLAVE)
-
-	outfit = /datum/outfit/job/wasteland/enclavespy
-
-/datum/outfit/job/wasteland/enclavespy
-	name = "Enclave Private"
-	jobtype = /datum/job/wasteland/enclavespy
-	backpack = /obj/item/storage/backpack/satchel/leather
-	head = 			/obj/item/clothing/head/helmet/f13/combat/enclave
-	ears = 			/obj/item/radio/headset/headset_enclave
-	glasses = 		/obj/item/clothing/glasses/night
-	uniform =		/obj/item/clothing/under/f13/navy
-	suit = 			/obj/item/clothing/suit/armor/f13/combat/enclave
-	belt = 			/obj/item/storage/belt/military/army
-	shoes = 		/obj/item/clothing/shoes/combat/swat
-	id = 			/obj/item/card/id/dogtag/enclave
-	suit_store =  	/obj/item/gun/ballistic/automatic/assault_carbine
-
-	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/grenade/flashbang = 1,
-		/obj/item/pda = 1,
-		/obj/item/ammo_box/magazine/m556/rifle/extended = 2,
-		/obj/item/storage/bag/money/small/wastelander = 1,
-		/obj/item/melee/onehanded/knife/survival = 1
-		)
-
-/datum/job/wasteland/enclavesgt
-	title = "Enclave Sergeant"
-	flag = F13USSGT
-	faction = FACTION_ENCLAVE
-	total_positions = 0
-	spawn_positions = 0
-	description = "You are in charge of the recruiting for the remnants of the Enclave. You are to recruit all those interested to your cause."
-	forbids = "You are not allowed to have friendly interactions with those outside of the Enclave."
-	enforces = "You must maintain the secrecy of organization."
-	supervisors = "the United States Government."
-	selection_color = "#323232"
-	exp_requirements = 2400
-	exp_type = EXP_TYPE_FALLOUT
-	access = list(ACCESS_ENCLAVE)
-	minimal_access = list(ACCESS_ENCLAVE)
-
-	outfit = /datum/outfit/job/wasteland/enclavesgt
-
-/datum/outfit/job/wasteland/enclavesgt
-	name = "Enclave Sergeant"
-	jobtype = /datum/job/wasteland/enclavesgt
-	backpack = /obj/item/storage/backpack/satchel/enclave
-	ears = 			/obj/item/radio/headset/headset_enclave
-	glasses = 		/obj/item/clothing/glasses/night
-	uniform =		/obj/item/clothing/under/f13/enclave/peacekeeper
-	accessory =     /obj/item/clothing/accessory/ncr/SGT
-	belt = 			/obj/item/storage/belt/military/assault/enclave
-	shoes = 		/obj/item/clothing/shoes/f13/enclave/serviceboots
-	gloves = 		/obj/item/clothing/gloves/combat
-	id = 			/obj/item/card/id/dogtag/enclave
-
-	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2,
-		/obj/item/grenade/flashbang=1,
-		/obj/item/pda=1,
-		/obj/item/storage/bag/money/small/wastelander=1,
-		/obj/item/melee/onehanded/knife/survival=1,
-		/obj/item/clothing/head/helmet/f13/helmet/enclave/peacekeeper=1
-		)
-
-/datum/outfit/job/wasteland/enclavesgt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-
-/datum/job/wasteland/enclavesci
-	title = "Enclave Scientist"
-	flag = F13USSCIENTIST
-	faction = FACTION_ENCLAVE
-	total_positions = 0
-	spawn_positions = 0
-	description = "You're responsible for the maintenance of the base, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in proficiency, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
-	forbids = "The Enclave forbids you from leaving the base alone while it is still habitable."
-	enforces = "You must maintain the secrecy of organization."
-	supervisors = "the United States Government."
-	selection_color = "#323232"
-	exp_requirements = 2800
-	exp_type = EXP_TYPE_FALLOUT
-	access = list(ACCESS_ENCLAVE)
-	minimal_access = list(ACCESS_ENCLAVE)
-
-	outfit = /datum/outfit/job/wasteland/enclavesci
-
-/datum/outfit/job/wasteland/enclavesci
-	name = "Enclave Scientist"
-	jobtype = /datum/job/wasteland/enclavesci
-	backpack = /obj/item/storage/backpack/satchel/enclave
-	head = 			/obj/item/clothing/head/helmet/f13/envirosuit
-	ears = 			/obj/item/radio/headset/headset_enclave
-	glasses = 		/obj/item/clothing/glasses/night
-	mask =			/obj/item/clothing/mask/breath/medical
-	gloves = 		/obj/item/clothing/gloves/color/latex/nitrile
-	uniform =		/obj/item/clothing/under/f13/enclave/science
-	suit = 			/obj/item/clothing/suit/armor/f13/environmentalsuit
-	belt = 			/obj/item/storage/belt/medical
-	shoes = 		/obj/item/clothing/shoes/f13/enclave/serviceboots
-	id = 			/obj/item/card/id/dogtag/enclave
-	suit_store =  	/obj/item/tank/internals/oxygen
-
-	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2,
-		/obj/item/grenade/chem_grenade/cleaner=1,
-		/obj/item/pda=1,
-		/obj/item/gun/energy/laser/ultra_pistol=1,
-		/obj/item/stock_parts/cell/ammo/ec=2,
-		/obj/item/storage/bag/money/small/wastelander=1,
-		/obj/item/melee/onehanded/knife/survival=1,
-		/obj/item/clothing/head/helmet/f13/helmet/enclave/science=1
-		)
-
-/datum/outfit/job/wasteland/enclavesci/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
-	ADD_TRAIT(H, TRAIT_CYBERNETICIST_EXPERT, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_UNETHICAL_PRACTITIONER, src) // Brainwashing
-
-
-/datum/job/wasteland/enclavelt
-	title = "Enclave Lieutenant"
-	flag = F13USLT
-	faction = FACTION_ENCLAVE
-	total_positions = 0
-	spawn_positions = 0
-	description = "You are the Lieutenant in charge of commanding the remnants of the Enclave forces in the area. You are to recruit all those interested to your cause."
-	forbids = "You are not allowed to have friendly interactions with those outside of the Enclave."
-	enforces = "You must maintain the secrecy of organization."
-	supervisors = "the United States Government."
-	selection_color = "#323232"
-	exp_requirements = 1500
-	exp_type = EXP_TYPE_ENCLAVE
-
-	access = list(ACCESS_ENCLAVE)
-	minimal_access = list(ACCESS_ENCLAVE)
-
-	outfit = /datum/outfit/job/wasteland/enclavelt
-
-/datum/outfit/job/wasteland/enclavelt
-	name = "Enclave Lieutenant"
-	jobtype = /datum/job/wasteland/enclavelt
-	backpack = /obj/item/storage/backpack/satchel/enclave
-	head = /obj/item/clothing/head/helmet/f13/helmet/enclave/officer
-	ears = /obj/item/radio/headset/headset_enclave
-	glasses = /obj/item/clothing/glasses/night
-	mask = /obj/item/clothing/mask/gas/enclave
-	uniform = /obj/item/clothing/under/f13/enclave/officer
-	accessory = /obj/item/clothing/accessory/ncr/LT1
-	belt = /obj/item/storage/belt/military/assault/enclave
-	shoes = /obj/item/clothing/shoes/f13/enclave/serviceboots
-	gloves = /obj/item/clothing/gloves/combat
-	id = /obj/item/card/id/dogtag/enclave
-
-	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 2,
-		/obj/item/grenade/flashbang = 1,
-		/obj/item/pda = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 3,
-		/obj/item/gun/energy/laser/plasma/glock/extended = 1,
-		/obj/item/storage/bag/money/small/wastelander = 1,
-		/obj/item/melee/onehanded/knife/survival = 1,
-		)
-
-/datum/outfit/job/wasteland/enclavelt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-
-/datum/outfit/job/wasteland/enclavelt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	if(H.mind)
-		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
-		H.mind.AddSpell(S)
-
-
 ////////////////
 // GREAT KHAN //
 ////////////////
 
 /datum/job/wasteland/f13pusher
 	title = "Great Khan"
-	flag = F13USPRIVATE
+	flag = F13PUSHER
 	department_head = list("Captain")
 	head_announce = list("Security")
 	faction = FACTION_WASTELAND
@@ -257,7 +52,7 @@
 	uniform = /obj/item/clothing/under/f13/khan
 	r_hand = /obj/item/book/granter/trait/selection
 	r_pocket = /obj/item/flashlight/flare
-	l_pocket = /obj/item/storage/survivalkit_khan
+	l_pocket = /obj/item/storage/survivalkit/khan
 	gloves = /obj/item/melee/unarmed/brass/spiked
 	box = null
 	backpack_contents = list(
@@ -296,6 +91,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/thatgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/uzi)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_khanate)
 
 /datum/outfit/loadout/enforcer
 	name = "Enforcer"
@@ -377,7 +173,7 @@ Raider
 /datum/outfit/job/wasteland/f13raider
 	name = "Outlaw"
 	jobtype = /datum/job/wasteland/f13raider
-
+	box = /obj/item/storage/survivalkit/outlaw
 	id = null
 	ears = null
 	belt = null
@@ -624,7 +420,7 @@ Raider
 	suit_store = /obj/item/twohanded/spear/bonespear
 	shoes = /obj/item/clothing/shoes/sandal
 	belt = /obj/item/storage/backpack/spearquiver
-	box = /obj/item/storage/survivalkit_tribal
+	box = /obj/item/storage/survivalkit/tribal
 	back = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
 		/obj/item/clothing/mask/cigarette/pipe = 1,
@@ -1428,9 +1224,41 @@ datum/job/wasteland/f13dendoctor
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 	ADD_TRAIT(H, TRAIT_AUTO_DRAW, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	H.grant_language(/datum/language/tribal)
+	var/list/recipes = list(
+		/datum/crafting_recipe/tribal_pa,
+		/datum/crafting_recipe/tribal_pa_helmet,
+		/datum/crafting_recipe/tribal_combat_armor,
+		/datum/crafting_recipe/tribal_combat_armor_helmet,
+		/datum/crafting_recipe/tribal_r_combat_armor,
+		/datum/crafting_recipe/tribal_r_combat_armor_helmet,
+		/datum/crafting_recipe/tribalwar/chitinarmor,
+		/datum/crafting_recipe/tribalwar/deathclawspear,
+		/datum/crafting_recipe/tribalwar/lightcloak,
+		/datum/crafting_recipe/tribalwar/legendaryclawcloak,
+		/datum/crafting_recipe/warpaint,
+		/datum/crafting_recipe/tribalradio,
+		/datum/crafting_recipe/tribalwar/goliathcloak,
+		/datum/crafting_recipe/tribalwar/bonebow,
+		/datum/crafting_recipe/tribalwar/tribe_bow,
+		/datum/crafting_recipe/tribalwar/sturdybow,
+		/datum/crafting_recipe/tribalwar/warclub,
+		/datum/crafting_recipe/tribalwar/silverbow,
+		/datum/crafting_recipe/tribalwar/arrowbone,
+		/datum/crafting_recipe/tribalwar/bonespear,
+		/datum/crafting_recipe/tribalwar/bonecodpiece,
+		/datum/crafting_recipe/tribalwar/bracers,
+		/datum/crafting_recipe/tribal/bonetalisman,
+		/datum/crafting_recipe/tribal/bonebag,
+		/datum/crafting_recipe/tribalwar/spearquiver
+	)
+	for(var/datum/crafting_recipe/recipe as() in recipes)
+		H.mind.teach_crafting_recipe(recipe)
 	H.grant_language(/datum/language/tribal)
 	H.social_faction = FACTION_WASTELAND
 	add_verb(H, /mob/living/proc/create_tribe)
+
 
 /datum/outfit/job/wasteland/f13tribal
 	name = "Tribal"
@@ -1440,7 +1268,7 @@ datum/job/wasteland/f13dendoctor
 	ears = null
 	belt = /obj/item/melee/onehanded/knife/bone
 	uniform =     /obj/item/clothing/under/f13/settler
-	box =         /obj/item/storage/survivalkit_tribal
+	box =         /obj/item/storage/survivalkit/tribal
 	shoes =     /obj/item/clothing/shoes/sandal
 	gloves =    /obj/item/clothing/gloves/f13/handwraps
 	r_hand = /obj/item/book/granter/trait/selection/tribal
@@ -1717,35 +1545,3 @@ datum/job/wasteland/f13dendoctor
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2
 
 	)
-/datum/outfit/job/wasteland/f13tribal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	H.grant_language(/datum/language/tribal)
-	var/list/recipes = list(
-		/datum/crafting_recipe/punji_sticks,
-		/datum/crafting_recipe/tribalwar/chitinarmor,
-		/datum/crafting_recipe/tribalwar/deathclawspear,
-		/datum/crafting_recipe/tribalwar/lightcloak,
-		/datum/crafting_recipe/tribalwar/legendaryclawcloak,
-		/datum/crafting_recipe/warpaint,
-		/datum/crafting_recipe/tribalradio,
-		/datum/crafting_recipe/tribalwar/goliathcloak,
-		/datum/crafting_recipe/tribalwar/bonebow,
-		/datum/crafting_recipe/tribalwar/tribe_bow,
-		/datum/crafting_recipe/tribalwar/sturdybow,
-		/datum/crafting_recipe/tribalwar/warclub,
-		/datum/crafting_recipe/tribalwar/silverbow,
-		/datum/crafting_recipe/tribalwar/arrowbone,
-		/datum/crafting_recipe/tribalwar/bonespear,
-		/datum/crafting_recipe/tribalwar/bonecodpiece,
-		/datum/crafting_recipe/tribalwar/bracers,
-		/datum/crafting_recipe/tribal/bonetalisman,
-		/datum/crafting_recipe/tribal/bonebag,
-		/datum/crafting_recipe/tribalwar/spearquiver
-	)
-
-	for(var/datum/crafting_recipe/recipe as() in recipes)
-		H.mind.teach_crafting_recipe(recipe)
