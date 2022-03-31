@@ -110,20 +110,16 @@
 			/obj/item/stack/sheet/mineral/bamboo = 5)
 	result = /obj/structure/punji_sticks
 	category = CAT_PRIMAL
-	always_available = FALSE
 
 /datum/crafting_recipe/tribal_pa
 	name = "Tribal Salvaged Power Armor"
 	time = 120
 	reqs = list(
 			/obj/item/clothing/suit/armor/f13/power_armor/t45b = 1,
-			/obj/item/stack/sheet/cloth = 15,
-			/obj/item/stack/sheet/metal = 35,
-			/obj/item/stack/sheet/leather = 10,
-			/obj/item/stack/sheet/mineral/diamond = 5,
-			/obj/item/stack/sheet/bone = 20
+			/obj/item/stack/sheet/sinew = 2,
+			/obj/item/stack/sheet/bone = 4
 			)
-	result = /obj/item/clothing/suit/armor/f13/wayfarer/tribal_pa
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t45b/tribal
 	category = CAT_TRIBAL
 	always_available = FALSE
 
@@ -132,13 +128,10 @@
 	time = 120
 	reqs = list(
 			/obj/item/clothing/head/helmet/f13/power_armor/t45b = 1,
-			/obj/item/stack/sheet/cloth = 10,
-			/obj/item/stack/sheet/metal = 15,
-			/obj/item/stack/sheet/leather = 20,
-			/obj/item/stack/sheet/mineral/diamond = 10,
-			/obj/item/stack/sheet/bone = 10
+			/obj/item/stack/sheet/sinew = 1,
+			/obj/item/stack/sheet/bone = 2
 			)
-	result = /obj/item/clothing/head/helmet/f13/wayfarer/pa_helmet
+	result = /obj/item/clothing/head/helmet/f13/power_armor/t45b/tribal
 	category = CAT_TRIBAL
 	always_available = FALSE
 
@@ -147,11 +140,22 @@
 	time = 40
 	reqs = list(
 			/obj/item/clothing/suit/armor/f13/combat = 1,
-			/obj/item/stack/sheet/cloth = 10,
-			/obj/item/stack/sheet/sinew = 5,
-			/obj/item/stack/sheet/bone = 5
+			/obj/item/stack/sheet/sinew = 1,
+			/obj/item/stack/sheet/bone = 2
 			)
-	result = /obj/item/clothing/suit/armor/f13/tribal_combat_armor
+	result = /obj/item/clothing/suit/armor/f13/combat/tribal
+	category = CAT_TRIBAL
+	always_available = FALSE
+
+/datum/crafting_recipe/tribal_r_combat_armor
+	name = "Tribal Reinforced Combat Armor"
+	time = 40
+	reqs = list(
+			/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
+			/obj/item/stack/sheet/sinew = 1,
+			/obj/item/stack/sheet/bone = 2
+			)
+	result = /obj/item/clothing/suit/armor/f13/combat/mk2/tribal
 	category = CAT_TRIBAL
 	always_available = FALSE
 
@@ -160,13 +164,23 @@
 	time = 40
 	reqs = list(
 			/obj/item/clothing/head/helmet/f13/combat = 1,
-			/obj/item/stack/sheet/cloth = 5,
-			/obj/item/stack/sheet/sinew = 3,
-			/obj/item/stack/sheet/bone = 3
+			/obj/item/stack/sheet/bone = 1
 			)
-	result = /obj/item/clothing/head/helmet/f13/combat/wayfarer/tribe_helmet
+	result = /obj/item/clothing/head/helmet/f13/combat/tribal
 	category = CAT_TRIBAL
 	always_available = FALSE
+
+/datum/crafting_recipe/tribal_r_combat_armor_helmet
+	name = "Tribal Reinforced Combat Helmet"
+	time = 40
+	reqs = list(
+			/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
+			/obj/item/stack/sheet/bone = 1
+			)
+	result = /obj/item/clothing/head/helmet/f13/combat/mk2/tribal
+	category = CAT_TRIBAL
+	always_available = FALSE
+
 
 /datum/crafting_recipe/tribalwar/sturdybow
 	name = "Sturdy Bow"
@@ -228,8 +242,7 @@
 	result = /obj/item/ammo_casing/caseless/arrow/burning
 	time = 30
 	reqs = list(/obj/item/ammo_casing/caseless/arrow = 1,
-				/obj/item/reagent_containers/food/drinks/bottle = 1,
-				/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul = 4)
+				/datum/reagent/fuel = 10)
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
 
@@ -259,7 +272,7 @@
 	time = 30
 	reqs = list(
 		/obj/item/ammo_casing/caseless/arrow = 1,
-		/obj/item/reagent_containers/food/snacks/grown/nettle = 5,
+		/obj/item/reagent_containers/food/snacks/grown/feracactus = 1,
 		)
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)

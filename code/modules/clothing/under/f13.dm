@@ -957,11 +957,12 @@
 
 /obj/item/clothing/under/f13/police/swat
 	name = "SWAT officer uniform"
-	desc = "A US Army combat uniform, modified for SWAT team personnel."
+	desc = "The uniform of the Oasis Police Department, modified for SWAT team personnel."
 	icon = 'icons/fallout/clothing/uniforms.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/uniform.dmi'
-	icon_state = "army_uniform"
-	item_state = "army_uniform"
+	icon_state = "navy"
+	item_state = "bl_suit"
+	item_color = "navy"
 
 /obj/item/clothing/under/f13/machinist
 	name = "workman outfit"
@@ -1680,9 +1681,9 @@
 	icon_state = "mutie_ranger_under"
 	item_state = "mutie_ranger_under"
 
-/obj/item/clothing/under/f13/desert_ranger_scout
-	name = "desert ranger scouting uniform"
-	desc = "A set of clothing worn by desert ranger scouts."
+/obj/item/clothing/under/f13/arizona_ranger_scout
+	name = "Arizona ranger scouting uniform"
+	desc = "A set of clothing worn by Arizona ranger scouts."
 	icon_state = "scoutclothes"
 	can_adjust = FALSE
 	item_state = "scoutclothes"

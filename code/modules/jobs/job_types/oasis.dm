@@ -1,6 +1,6 @@
 /*
 Town access doors
-Sheriff/Deputy, Gatehouse etc: 62 ACCESS_GATEWAY
+Chief/Officer, Gatehouse etc: 62 ACCESS_GATEWAY
 General access: 25 ACCESS_BAR
 Clinic surgery/storage: 68 ACCESS_CLONING
 Shopkeeper: 34 ACCESS_CARGO_BOT
@@ -64,12 +64,13 @@ Mayor
 	id =            /obj/item/card/id/silver/mayor
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	l_pocket = /obj/item/storage/bag/money/small/settler
+	l_pocket = /obj/item/storage/bag/money/small/oasis
 	r_pocket = /obj/item/flashlight/seclite
 	shoes = 		/obj/item/clothing/shoes/f13/tan
 	uniform = /obj/item/clothing/under/f13/gentlesuit
 	head = /obj/item/clothing/head/f13/town/big
 	backpack_contents = list( 
+		/obj/item/stack/f13Cash/caps/onezerozerozero = 1,
 		/obj/item/storage/box/citizenship_permits = 1, \
 		/obj/item/pen/fountain/captain = 1,
 		)
@@ -165,11 +166,12 @@ Mayor
 	satchel = /obj/item/storage/backpack/satchel/leather
 	r_hand = /obj/item/storage/briefcase/secretary
 	l_hand = /obj/item/book/granter/trait/selection
-	l_pocket = /obj/item/storage/bag/money/small/settler
+	l_pocket = /obj/item/storage/bag/money/small/oasis
 	r_pocket = /obj/item/flashlight/seclite
 	shoes = 		/obj/item/clothing/shoes/f13/fancy
 	uniform = /obj/item/clothing/under/suit/black
 	backpack_contents = list(
+		/obj/item/stack/f13Cash/caps/fivezerozero = 1,
 		/obj/item/ammo_box/magazine/m9mm = 1,
 		/obj/item/melee/onehanded/knife/switchblade = 1,
 		/obj/item/pda = 1,
@@ -198,14 +200,14 @@ Mayor
 /*--------------------------------------------------------------*/
 
 /datum/job/oasis/f13sheriff
-	title = "Sheriff"
+	title = "Chief"
 	flag = F13SHERIFF
 	department_flag = DEP_OASIS
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Oasis Government"
-	description = "You are the Mayor's best friend, you helped them get where they are. While they handle civil matters, you've been rewarded with more hands-on work, as preferred. With your loyal patrolmen, you maintain your claim to authority by keeping the peace, and protecting the citizens from threats within and without. Never leave Oasis undefended, and don't let its people die out. You have nowhere left to go, if this town falls, so will you."
+	description = "You are the Chief of the Oasis Police Department. With your loyal patrolmen, you maintain your claim to authority by keeping the peace, and protecting the citizens from threats within and without. Never leave Oasis undefended, and don't let its people die out. You have nowhere left to go, if this town falls, so will you."
 	selection_color = "#d7b088"
 	exp_requirements = 1500
 
@@ -228,47 +230,41 @@ Mayor
 	)
 
 /datum/outfit/job/den/f13sheriff
-	name = "Sheriff"
+	name = "Chief"
 	jobtype = /datum/job/oasis/f13sheriff
 
 	id = /obj/item/card/id/dogtag/sheriff
 	belt = null
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-
-	ears = 			/obj/item/radio/headset/headset_town
-	uniform =  		/obj/item/clothing/under/f13/sheriff
-	belt =			/obj/item/storage/belt/military/army
-	shoes = 		/obj/item/clothing/shoes/f13/cowboy
-	glasses =		/obj/item/clothing/glasses/sunglasses
-	l_pocket =		/obj/item/storage/bag/money/small/den
+	ears = /obj/item/radio/headset/headset_town
+	uniform = /obj/item/clothing/under/f13/police/formal
+	suit = /obj/item/clothing/suit/armor/f13/town/chief
+	head = /obj/item/clothing/head/f13/town/chief
+	neck = /obj/item/storage/belt/holster/legholster
+	belt = /obj/item/storage/belt/military/army
+	shoes = /obj/item/clothing/shoes/jackboots
+	glasses = /obj/item/clothing/glasses/sunglasses
+	l_pocket = /obj/item/storage/bag/money/small/den
 	backpack_contents = list(
 		/obj/item/storage/box/deputy_badges = 1,
-		/obj/item/restraints/handcuffs = 1,
+		/obj/item/restraints/handcuffs = 2,
 		/obj/item/melee/classic_baton = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		)
 
 /datum/outfit/loadout/thelaw
 	name = "The Law Man"
-	suit = /obj/item/clothing/suit/armor/f13/town/sheriff
-	head = /obj/item/clothing/head/f13/town/sheriff
-	neck = /obj/item/storage/belt/holster
-	r_hand = /obj/item/gun/ballistic/rifle/repeater/brush
-	belt = /obj/item/gun/ballistic/revolver/m29/peacekeeper
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/c4570 = 3,
 		/obj/item/ammo_box/m44 = 2,
+		/obj/item/gun/ballistic/revolver/m29/peacekeeper = 1,
 		)
 
 /datum/outfit/loadout/thechief
 	name = "The Chief"
-	uniform = /obj/item/clothing/under/f13/police/formal
-	suit = /obj/item/clothing/suit/armor/f13/town/chief
-	head = /obj/item/clothing/head/f13/town/chief
-	neck = /obj/item/storage/belt/holster/legholster
-	shoes = /obj/item/clothing/shoes/jackboots
-	r_hand = /obj/item/gun/energy/laser/aer9/oasis
+	suit_store = /obj/item/gun/energy/laser/aer9/oasis
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
@@ -302,11 +298,11 @@ Mayor
 /*--------------------------------------------------------------*/
 
 /datum/job/oasis/f13deputy
-	title = "Deputy"
+	title = "Officer"
 	flag = F13DEPUTY
 	department_flag = DEP_OASIS
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "Oasis Police Department"
 	description = "You've passed the training and tests to join the OPD, and your loyalty to the Chief is absolute - this is your new home, your family. This oasis of civilization will not fall as long as you breathe. Protect its citizens and property, for that is your new purpose."
 	selection_color = "#dcba97"
@@ -315,7 +311,7 @@ Mayor
 	exp_requirements = 600
 
 	loadout_options = list(
-	/datum/outfit/loadout/frontierjustice,
+	/datum/outfit/loadout/standardpd,
 	/datum/outfit/loadout/police,
 	/datum/outfit/loadout/swat,)
 
@@ -332,64 +328,61 @@ Mayor
 	)
 
 /datum/outfit/job/den/f13deputy
-	name = "Deputy"
+	name = "Officer"
 	jobtype = /datum/job/oasis/f13deputy
 
 	ears = /obj/item/radio/headset/headset_town
 	id = /obj/item/card/id/dogtag/deputy
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	belt = /obj/item/storage/belt/security
+	belt = /obj/item/storage/belt/military/assault
+	suit = /obj/item/clothing/suit/armor/bulletproof
+	neck = /obj/item/storage/belt/holster/legholster
 	l_pocket = /obj/item/storage/bag/money/small/settler
 	r_pocket = /obj/item/flashlight/flare
-	shoes = /obj/item/clothing/shoes/f13/explorer
-	uniform = /obj/item/clothing/under/f13/cowboyb
-	backpack_contents = list(
-		/obj/item/restraints/handcuffs = 1,
-		/obj/item/melee/onehanded/knife/bowie = 1,
-		)
-
-/datum/outfit/loadout/frontierjustice
-	name = "Frontier Justice"
-	suit = /obj/item/clothing/suit/armor/f13/town/deputy
-	head = /obj/item/clothing/head/f13/town/deputy
-	neck =	/obj/item/storage/belt/holster
-	r_hand = /obj/item/gun/ballistic/rifle/repeater/trail
-	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44 = 2,
-		/obj/item/ammo_box/m44 = 2,
-		/obj/item/gun/ballistic/revolver/m29 = 1,
-		)
-
-/datum/outfit/loadout/police
-	name = "Oasis PD"
-	uniform = /obj/item/clothing/under/f13/police/officer
-	suit = /obj/item/clothing/suit/armor/bulletproof
-	head = /obj/item/clothing/head/f13/town/officer
-	neck = /obj/item/storage/belt/holster/legholster
-	r_hand = /obj/item/gun/ballistic/shotgun/police
 	shoes = /obj/item/clothing/shoes/jackboots
+	uniform = /obj/item/clothing/under/f13/police/officer
+	backpack_contents = list(
+		/obj/item/restraints/handcuffs = 2,
+		/obj/item/melee/onehanded/knife/bowie = 1,
+		/obj/item/flashlight/seclite = 1,
+		)
+
+/datum/outfit/loadout/standardpd
+	name = "Standard"
+	head = /obj/item/clothing/head/f13/town/officer
+	suit_store = /obj/item/gun/ballistic/shotgun/police
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/bean = 1,
 		/obj/item/ammo_box/shotgun/buck = 1,
 		/obj/item/ammo_box/a357 = 3,
-		/obj/item/flashlight/seclite = 1,
 		/obj/item/gun/ballistic/revolver/police = 1,
+		)
+
+/datum/outfit/loadout/police
+	name = "Police Marksman"
+	head = /obj/item/clothing/head/f13/town/marksman
+	gloves = /obj/item/clothing/gloves/rifleman
+	suit_store = /obj/item/gun/ballistic/rifle/hunting/remington
+	backpack_contents = list(
+		/obj/item/attachments/scope = 1,
+		/obj/item/ammo_box/a762 = 3,
+		/obj/item/gun/ballistic/revolver/police = 1,
+		/obj/item/ammo_box/a357 = 3,
+		/obj/item/book/granter/trait/rifleman = 1,
 		)
 
 /datum/outfit/loadout/swat
 	name = "S.W.A.T. Officer"
 	uniform = /obj/item/clothing/under/f13/police/swat
-	suit = /obj/item/clothing/suit/armor/bulletproof
 	head = /obj/item/clothing/head/helmet/alt
-	neck = /obj/item/storage/belt/holster/legholster
-	l_hand = /obj/item/gun/ballistic/automatic/assault_carbine/policerifle
-	shoes = /obj/item/clothing/shoes/jackboots
+	mask = /obj/item/clothing/mask/balaclava
+	gloves = /obj/item/clothing/gloves/f13/military
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/policerifle
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45exp=2,
-		/obj/item/gun/ballistic/automatic/pistol/mk23=1,
-		/obj/item/ammo_box/magazine/m5mm=1,
-		/obj/item/flashlight/seclite = 1,
+		/obj/item/ammo_box/magazine/m45exp= 2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m5mm = 1,
 		)
 
 /datum/outfit/job/den/f13deputy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -416,8 +409,8 @@ Mayor
 	title = "Farmer"
 	flag = F13FARMER
 	department_flag = DEP_OASIS
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Oasis Government & Police Department"
 	description = "Growing up in the Oasis, you have an endless love for the sacred Oak, for nowhere in the valley is the soil as fertile, the bounty as rich. Behind the safety of the walls, you grow crops, medicines, and raise livestock. The community depends on you, you are a manifestation of the Oak’s will."
 	selection_color = "#dcba97"
@@ -662,8 +655,8 @@ Mayor
 	title = "Citizen"
 	flag = F13SETTLER
 	department_flag = DEP_OASIS
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 9
+	spawn_positions = 9
 	supervisors = "Oasis Government & Police Department"
 	description = "You are a citizen living in the Town of Oasis - as the name suggests, it is a somewhat safe place amidst the chaos of the continent. Treat it as such, be sure to follow the laws of the land and do not associate with those who have a tendency not to, or you are likely to face exile. Remember that Oasis is your home, DO NOT act in a manner that would threaten it's safety or other citizens."
 	selection_color = "#dcba97"
@@ -677,6 +670,7 @@ Mayor
 		/datum/outfit/loadout/outdoorsman,
 		/datum/outfit/loadout/militia,
 		/datum/outfit/loadout/singer,
+		/datum/outfit/loadout/ofarmer,
 	)
 	access = list(ACCESS_BAR)
 	minimal_access = list(ACCESS_BAR)
@@ -694,7 +688,6 @@ Mayor
 	name = "Citizen"
 	jobtype = /datum/job/oasis/f13settler
 	ears = /obj/item/radio/headset/headset_town
-	belt = null
 	id = /obj/item/card/id/dogtag/town
 	ears = /obj/item/radio/headset/headset_town
 	uniform = /obj/item/clothing/under/f13/settler
@@ -765,6 +758,20 @@ Mayor
 	gloves = /obj/item/clothing/gloves/f13/leather
 	backpack_contents = list(/obj/item/ammo_box/a308 = 2,
 	)
+
+/datum/outfit/loadout/ofarmer
+	name = "Farmer"
+	belt = /obj/item/storage/belt/utility
+	shoes = /obj/item/clothing/shoes/workboots
+	suit = /obj/item/clothing/suit/overalls
+	r_hand = /obj/item/gun/ballistic/automatic/pistol/n99
+	backpack_contents = list(
+		/obj/item/cultivator = 1,
+		/obj/item/hatchet = 1,
+		/obj/item/shovel/spade = 1,
+		/obj/item/storage/bag/plants = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		)
 /*
 /datum/outfit/loadout/secretary
 	name = "Secretary"
@@ -793,57 +800,113 @@ Mayor
 	)
 
 /*----------------------------------------------------------------
---							Detective							--
+--							Bodyguard							--
 ----------------------------------------------------------------*/
 /datum/job/oasis/f13detective
-	title = "Detective"
+	title = "Bodyguard"
 	flag = F13DETECTIVE
-	total_positions = 0
-	spawn_positions = 0
-	description = "As a Detective you are a private eye who assists clients to gather evidence, conduct surveillance, find missing people, and verify information. As a private investigator you are not responsible for peacekeeping the valley, but for finding answers. Your life is already over, make the ending mean something."
-	supervisors = "paying clients"
+	total_positions = 2
+	spawn_positions = 2
+	description = "You're the Mayor's bodyguard, handpicked by them to protect them from anything or anyone who may want to harm them. Whether you're their lifelong friend, a special officer assigned to them by the Chief, or just some mercenary they hired off the street, you're loyal to no one except the Mayor."
+	supervisors = "The Mayor"
 	selection_color = "#dcba97"
 	outfit = /datum/outfit/job/oasis/f13detective
+	exp_requirements = 12
+	exp_type = EXP_TYPE_OASIS
+	exp_requirements = 800
 
-	access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_FORENSICS_LOCKERS)
+	loadout_options = list(
+	/datum/outfit/loadout/formercontractor,
+	/datum/outfit/loadout/formerraider,
+	/datum/outfit/loadout/formerregulator,)
+
+	access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	minimal_access = list(ACCESS_BAR, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
-			/datum/job/wasteland/f13wastelander,
-			/datum/job/oasis/f13detective,
+			/datum/job/oasis/f13mayor,
 		),
 		/datum/matchmaking_pref/rival = list(
-			/datum/job/wasteland/f13wastelander,
-			/datum/job/oasis/f13detective,
-		),
-		/datum/matchmaking_pref/mentor = list(
-			/datum/job/wasteland/f13wastelander,
+			/datum/job/oasis,
 		),
 	)
 
 
 /datum/outfit/job/oasis/f13detective
-	name = "Detective"
+	name = "Bodyguard"
 	jobtype = /datum/job/oasis/f13detective
-	suit = /obj/item/clothing/suit/det_suit/grey
 	ears = /obj/item/radio/headset/headset_town
-	uniform = /obj/item/clothing/under/f13/detectivealt
-	head = /obj/item/clothing/head/f13/det_hat_alt
-	shoes =  /obj/item/clothing/shoes/laceup
+	uniform = /obj/item/clothing/under/f13/merca
+	shoes = /obj/item/clothing/shoes/f13/military
+	neck = /obj/item/storage/belt/holster
+	belt = /obj/item/storage/belt/military/assault
 	id = /obj/item/card/id/silver
 	l_pocket = /obj/item/storage/bag/money/small/oasis
-	r_pocket = /obj/item/flashlight/flare
+	r_pocket = /obj/item/flashlight/seclite
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
-	suit_store = /obj/item/gun/ballistic/revolver/police
 	backpack_contents = list(
-		/obj/item/pda/detective=1,
-		/obj/item/camera/detective=1,
-		/obj/item/toy/crayon/white=1,
-		/obj/item/detective_scanner=1,
-		/obj/item/storage/box/gloves=1,
-		/obj/item/storage/box/evidence=1,
-		/obj/item/ammo_box/a357=2)
+		/obj/item/melee/onehanded/knife/bowie = 1,
+		/obj/item/storage/survivalkit/aid = 1,
+		)
+
+/datum/outfit/loadout/formercontractor
+	name = "Former Contractor"
+	suit = /obj/item/clothing/suit/armor/f13/combat/swat
+	head = /obj/item/clothing/head/helmet/f13/combat/swat
+	gloves = /obj/item/clothing/gloves/f13/military
+	suit_store = /obj/item/gun/ballistic/automatic/type93
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle/assault = 1,
+		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		/obj/item/suppressor = 1,
+		)
+
+/datum/outfit/loadout/formerraider
+	name = "Former Raider"
+	suit = /obj/item/clothing/suit/armor/f13/plates
+	head = /obj/item/clothing/head/helmet/f13/metalmask
+	gloves = /obj/item/clothing/gloves/f13/handwraps
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
+		/obj/item/reagent_containers/pill/patch/jet = 2,
+		)
+
+/datum/outfit/loadout/formerregulator
+	name = "Former Regulator"
+	suit = /obj/item/clothing/suit/armor/f13/raider/combatduster
+	head = /obj/item/clothing/head/f13/town/big
+	shoes = /obj/item/clothing/shoes/f13/cowboy
+	gloves = /obj/item/clothing/gloves/rifleman
+	suit_store = /obj/item/gun/ballistic/automatic/marksman
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/gun/ballistic/automatic/pistol/automag = 1,
+		/obj/item/ammo_box/magazine/automag = 2,
+		/obj/item/storage/box/ration/menu_two = 1,
+		)
+
+/datum/outfit/job/oasis/f13detective/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmet)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatarmormk2)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombathelmetmk2)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionsalvaged)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionsalvaged_ncr)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionsalvaged_salvaged)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionsalvagedhelmet)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriot_broken)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriothelmet_broken)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriot_ncr)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionriothelmet_ncr)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /*--------------------------------------------------------------*/
 
@@ -985,6 +1048,7 @@ Mayor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/thatgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/uzi)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmasniper)
 
 /datum/outfit/job/den/f13shopkeeper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

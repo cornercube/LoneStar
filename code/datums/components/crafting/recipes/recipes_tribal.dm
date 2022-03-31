@@ -34,7 +34,6 @@
 	result = /obj/item/gun/syringe/blowgun
 	time = 50
 	reqs = list(/obj/item/stack/sheet/mineral/bamboo = 10)
-	always_available = FALSE
 
 /datum/crafting_recipe/tribalwar/bow
 	name = "String Wooden Bow"
@@ -49,7 +48,6 @@
 	name = "Manual Crossbow"
 	result = /obj/item/gun/ballistic/bow/xbow
 	time = 120
-	always_available = FALSE
 	reqs = list(/obj/item/stack/crafting/metalparts = 5,
 				/obj/item/stack/rods = 1,
 				/obj/item/stack/sheet/mineral/wood = 15,
@@ -187,13 +185,14 @@
 	category = CAT_TRIBAL
 	always_available = FALSE
 
-/datum/crafting_recipe/tribalwar/warmace
+/datum/crafting_recipe/warmace
 	name = "Carve Wooden Warmace"
 	result = /obj/item/twohanded/sledgehammer/warmace
 	time = 100
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 10,
 				/obj/item/stack/sheet/cloth = 3)
 	tools = list(TOOL_WORKBENCH)
+	category = CAT_TRIBAL
 	always_available = FALSE
 
 /*datum/crafting_recipe/voodoo
