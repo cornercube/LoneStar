@@ -570,6 +570,15 @@
 	filling_color = "B#22222"
 	foodtype = MEAT
 
+/obj/item/reagent_containers/food/snacks/f13/squirrelstick
+	name = "squirrel on a stick"
+	desc = "It's a whole squirrel roasted on a stick. Tastes of home on the wastes."
+	icon = 'icons/fallout/objects/food&drinks/food.dmi'
+	icon_state = "squrrielstick"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 24)
+	filling_color = "B#22222"
+	foodtype = MEAT
+	
 /obj/item/reagent_containers/food/snacks/f13/mirelurkcake
 	name = "mirelurk cake"
 	desc = "A savory cake made from the meat of a Mirelurk.  A popular dish from the coastlines."
