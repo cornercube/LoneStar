@@ -74,6 +74,7 @@ Mayor
 		/obj/item/stack/f13Cash/caps/onezerozerozero = 1,
 		/obj/item/storage/box/citizenship_permits = 1, \
 		/obj/item/pen/fountain/captain = 1,
+		/obj/item/ammo_box/magazine/m473/small = 2
 		)
 		
 
