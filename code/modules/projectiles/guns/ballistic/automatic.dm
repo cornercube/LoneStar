@@ -607,10 +607,11 @@
 
 //WT-550								4.7mm, 20 round magazine
 /obj/item/gun/ballistic/automatic/wt550
-	name = "WT-550"
-	desc = "A compact PDW derived from the G11, firing the same 4.73mm rounds."
+	name = "4.73mm carbine"
+	desc = "A WT-550 personal defense weapon developed by West-Tek, fires 4.73mm caseless rounds."
 	item_state = "WT550"
 	mag_type = /obj/item/ammo_box/magazine/m473/small
+	slowdown = 0.45
 	burst_size = 1
 	is_automatic = TRUE
 	automatic = TRUE
