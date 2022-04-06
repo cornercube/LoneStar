@@ -62,6 +62,7 @@ Mayor
 	jobtype = /datum/job/oasis/f13mayor
 	ears = 			/obj/item/radio/headset/headset_town
 	id =            /obj/item/card/id/silver/mayor
+	suit = /obj/item/gun/ballistic/automatic/wt550
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	l_pocket = /obj/item/storage/bag/money/small/oasis
