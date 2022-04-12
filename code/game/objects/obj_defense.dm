@@ -21,7 +21,7 @@
 		obj_destruction(damage_flag)
 
 //returns the damage value of the attack after processing the obj's various armor protections
-/obj/proc/run_obj_armor(damage_amount, damage_type, damage_flag = 0, attack_dir, armour_penetration = 0)
+/obj/proc/run_obj_armor(damage_amount, damage_type, damage_flag = 0, attack_dir, armour_penetration = 0, armour_threshold = 0)
 	switch(damage_type)
 		if(BRUTE)
 		if(BURN)
@@ -32,7 +32,7 @@
 		armor_protection = armor.getRating(damage_flag)
 	if(armor_protection > 0)		//Only apply weak-against-armor/hollowpoint effects if there actually IS armor.
 		armor_protection = clamp(armor_protection*(1-armour_penetration), 0, 100) //FO13 AP OVERHAUL - just using simple % reduction here instead of full formula
-	return round((damage_amount - armor_threshold) * (100 - armor_protection)*0.01, DAMAGE_PRECISION)
+	return round((damage_amount - armour_threshold) * (100 - armor_protection)*0.01, DAMAGE_PRECISION)
 
 //the sound played when the obj is damaged.
 /obj/proc/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
