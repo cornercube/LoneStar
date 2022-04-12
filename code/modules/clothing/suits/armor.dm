@@ -432,3 +432,18 @@ Suits. 0-10 in its primary value, slowdown 0, various utility
 	max_integrity = 250
 	resistance_flags = NONE
 	togglename = "collar"
+
+/obj/item/clothing/suit/armor/thresholdtest
+	name = "treshold testing armor"
+	desc = "for testing damage threshold"
+	armour_threshold = 5
+	
+/obj/item/clothing/suit/armor/thresholdtest
+	name = "treshold testing armor"
+	desc = "for testing damage threshold"
+	armour_threshold = 5
+
+/obj/item/clothing/suit/armor/thresholdtest/heavy
+	name = "treshold testing armor heavy"
+	desc = "for testing high damage threshold"
+	armour_threshold = 10
