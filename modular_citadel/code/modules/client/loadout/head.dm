@@ -408,3 +408,15 @@ datum/gear/head/steelpot_bandolier
 	restricted_desc = "OUTLAW"
 	restricted_roles = list("outlaw")
 
+/datum/gear/head/oasishelmet
+	name = "light security helmet"
+	path = /obj/item/clothing/head/helmet/blueshirt
+	cost = 3
+	restricted_desc = "Oasis PD, Oasis officials"
+	restricted_roles = list("Chief",
+							"Officer",
+							"Mayor",
+							"Detective",
+							"Secretary",
+							"Shopkeeper",
+						)
