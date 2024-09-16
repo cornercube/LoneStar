@@ -44,6 +44,8 @@ Main doors: ACCESS_CAPTAIN 20
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/set_vrboard/bos)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_bos)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/durathread_vest)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalradio)
 /*
 Elder
 */
@@ -431,7 +433,6 @@ Star Paladin
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/melee/unarmed/powerfist = 1,
-		/obj/item/tank/internals/oxygen = 1,
 	)
 
 /datum/outfit/loadout/spaladina
@@ -446,7 +447,6 @@ Star Paladin
 	name = "Frontline Senior Paladin"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer12 = 1,
-		/obj/item/attachments/scope = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
