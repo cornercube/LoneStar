@@ -431,3 +431,19 @@ Suits. 0-10 in its primary value, slowdown 0, various utility
 	max_integrity = 250
 	resistance_flags = NONE
 	togglename = "collar"
+	
+/obj/item/clothing/suit/armor/thresholdtest
+	name = "threshold testing armor"
+	desc = "for testing damage threshold"
+	armour_threshold = 5
+
+/obj/item/clothing/suit/armor/thresholdtest/heavy
+	name = "threshold testing armor heavy"
+	desc = "for testing high damage threshold"
+	armour_threshold = 10
+
+/obj/item/clothing/suit/armor/thresholdtest/hybrid
+	name = "threshold testing armor hybrid"
+	desc = "for testing combinations of threshold and armor"
+	armour_threshold = 5
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50 , "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 25)
