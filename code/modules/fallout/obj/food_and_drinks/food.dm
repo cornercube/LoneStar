@@ -578,7 +578,7 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 24)
 	filling_color = "B#22222"
 	foodtype = MEAT
-
+	
 /obj/item/reagent_containers/food/snacks/f13/mirelurkcake
 	name = "mirelurk cake"
 	desc = "A savory cake made from the meat of a Mirelurk.  A popular dish from the coastlines."
@@ -859,3 +859,4 @@
 	tastes = list("beef luncheon loaf" = 3, "jalapeno peppers and spices" = 2)
 	trash = /obj/item/trash/f13/k_ration
 	foodtype = MEAT
+	
